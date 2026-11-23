@@ -27,7 +27,7 @@ Qwen 引擎还需要匹配的 Python 环境和可用于合成的参考录音及�
 
 ## 从 GitHub Release 离线安装
 
-在一台能联网的电脑上，从语音模型发行页把 `Atri-voice-models.7z.001` 起的全部分卷、`SHA256SUMS` 和 `MODEL-BUNDLE.txt` 下载到同一目录。可以把整个目录拷贝到离线电脑。[语音模型发行页](https://github.com/lounthinker/Atri-Desktop/releases/tag/voice-models-2026-11)
+在一台能联网的电脑上，从语音模型发行页把 `Atri-voice-models.7z.001` 起的全部分卷、`SHA256SUMS` 和 `MODEL-BUNDLE.txt` 下载到同一目录。可以把整个目录拷贝到离线电脑。[语音模型发行页](https://github.com/lounthinker-hash/Atri-Desktop/releases/tag/voice-models-2026-11)
 
 先用 PowerShell 的 `Get-FileHash -Algorithm SHA256` 将各分卷的结果与 `SHA256SUMS` 逐项比对。然后在项目根目录用 7-Zip 解开第一卷，最后检查模型文件。
 
