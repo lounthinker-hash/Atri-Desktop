@@ -1,0 +1,56 @@
+{
+  "schema": "atri.d1.small-horizontal-step.v1",
+  "character": "d1-p1-f18e483b6",
+  "logicalHeight": 280,
+  "pixelRatio": 1.5,
+  "physicalHeight": 420,
+  "kind": "正面白裙横挪，画面左侧近腿与右侧远腿交替承重，衣摆与上身随髋换重。角色仍穿两只原作棕皮鞋。",
+  "source": {
+    "archive": "fgimage.xp3",
+    "dressAndLegs": "アトリ/tatr01_m_694.tlg",
+    "shoes": "アトリ/tatr01_m_695.tlg",
+    "upperBody": "アトリ/tatr01_m_715.tlg",
+    "layerCatalogFromProjectRoot": "assets/sprites/layers.json",
+    "artCrop": "666×1706，无加边 d1/p1，原作大画布中的左上角为 [354,285]。",
+    "referenceRight": "../weight-step/frames.json",
+    "referenceLeft": "../weight-step-left/frames.json",
+    "localWork": "按参考的髋、膝、踝与鞋底，重新对准反馈轨迹中的实际步长。分别绘出完整的远腿、远鞋、近腿、近鞋和裙摆。鞋帮至鞋底整体平移，髋、膝分别配准。原画自身的前后脚形及高低关系保留。"
+  },
+  "frames": "frames.json",
+  "reader": "read.py sample_lower(case, travel_x) 按已画到桌面的有符号位移直接取 420px RGBA 下层、上层偏移、角色额外注册量、脚膝锚和支撑状态。",
+  "cases": {
+    "menu-left": {
+      "signedTravelLogical": -25,
+      "segments": 1,
+      "atlas": "menu-left.webp",
+      "paintedContacts": "menu-left-contacts.json"
+    },
+    "target-right": {
+      "signedTravelLogical": 173,
+      "segments": 4,
+      "atlas": "target-right.webp",
+      "paintedContacts": "target-right-contacts.json"
+    }
+  },
+  "registration": {
+    "frame": "使用 art.sample(total_dx,实际窗口相对起点的水平位移,280)，返回方向、步段号、局部帧号、相对原步幅、registrationX。当前已烘好的图集分别匹配 cases 中两个总位移。",
+    "root": "实际窗口已经应用位移，只给当前 p1 未加边绘图原点额外加 registrationX 逻辑像素。它补偿源格取样与实际窗口的亚帧残差，使支撑鞋留在世界坐标。不要再次叠加整段位移或旧的 stride 腿形。",
+    "lower": "读取 frames.json 对应 case 与 row.rect，左上闭、右下开。放到该 case 的 tileOriginPhysical。位图是直通 RGBA，包含下裙、双腿及鞋。交叉时远腿在下，近腿在前，下裙压在两个腿根上。",
+    "upper": "同一 d1/p1 去掉 694、695，保留 715 与当帧眉眼口。把上层画到同一原点加 row.upperOffsetPhysical。修订回放用原作正面上身和方向注视；专门的侧面走路转身原画不在本图集中。",
+    "anchors": "anchors390 各点均为 p1 局部 [x,y]，左上原点，向右、向下为正。画面左腿是近腿。点乘 280/390 再加角色当前绘图原点和 registrationX，即为逻辑世界位置。用于跳变核验时，实际纹理需另计物理像素舍入。",
+    "otherDistances": "其余水平步长可用 art.lower(direction,index,amplitude) 从原作重新采样，再按 420/780 缩放原画瓦片；art.sample 提供幅度与逐帧对准量。两份预烘图集实测范围为 -25 与 +173 逻辑像素。斜行、纯上行和踮脚采用各自支撑路径。"
+  },
+  "review": {
+    "realtime": "walk-small-realtime.webp",
+    "sameScaleComparison": "feedback-vs-art.png",
+    "feet": "target-right-feet.png",
+    "checks": "checks.json",
+    "physicalStage": "按反馈版的 108 个真实窗口位置，每 50 ms 在固定地面画同一原作角色。人物原画高 420 物理像素，全身录像按 280 逻辑像素显示。放大图从原物理帧裁取。录像是可接入的原画合成。",
+    "verify": "verify.py",
+    "rebuild": [
+      "build.py",
+      "review.py"
+    ],
+    "checksDefinition": "contactDrift 以同一鞋连续接地期间世界坐标包围盒对角线计，单位为逻辑像素。visibleBrownSole 来自深色鞋底最低三物理行；两鞋重叠而不能区分时跳过实像素赋值，保留两个独立鞋锚。"
+  }
+}

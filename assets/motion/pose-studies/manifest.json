@@ -1,0 +1,394 @@
+{
+  "schema": "atri.d1.pose-studies.v1",
+  "allowed_dress": "d1",
+  "description": "白色水手领日常连衣裙三段 2D 原画衍生动作。所有带鞋首尾、脸和上身沿用项目原作部件。",
+  "sources": {
+    "layer_index": "assets/sprites/layers.json",
+    "sprite_index": "assets/sprites/manifest.json",
+    "poses": {
+      "p1": {
+        "id": "d1-p1-f18e483b6",
+        "source_layer_ids": [
+          694,
+          715,
+          695,
+          804,
+          827,
+          850
+        ]
+      },
+      "p2": {
+        "id": "d1-p2-95e4357ff",
+        "source_layer_ids": [
+          694,
+          877,
+          695,
+          805,
+          828,
+          851
+        ]
+      },
+      "p3": {
+        "id": "d1-p3-69c23b49b",
+        "source_layer_ids": [
+          1611,
+          1706,
+          1628,
+          1652,
+          1676
+        ]
+      }
+    },
+    "standing_shoes": {
+      "p1": 695,
+      "p2": 695,
+      "p3": 1708
+    },
+    "original_layers": [
+      {
+        "layer": "tatr01_694",
+        "original_archive": "fgimage.xp3",
+        "member": "アトリ/tatr01_m_694.tlg",
+        "local_original_copy_archive": "assets/sprites/originals.zip",
+        "rgba": "assets/sprites/layers/tatr01_694.png",
+        "rgba_sha256": "d86883d9ce7aa52952add9517cc21762f45f943e80a9c0063d58d6cb454d4897"
+      },
+      {
+        "layer": "tatr01_695",
+        "original_archive": "fgimage.xp3",
+        "member": "アトリ/tatr01_m_695.tlg",
+        "local_original_copy_archive": "assets/sprites/originals.zip",
+        "rgba": "assets/sprites/layers/tatr01_695.png",
+        "rgba_sha256": "a5127ca1ed931b25f791d673494b91b9cdc74d09ba46f0b77197e5d115ddcd56"
+      },
+      {
+        "layer": "tatr01_715",
+        "original_archive": "fgimage.xp3",
+        "member": "アトリ/tatr01_m_715.tlg",
+        "local_original_copy_archive": "assets/sprites/originals.zip",
+        "rgba": "assets/sprites/layers/tatr01_715.png",
+        "rgba_sha256": "3c61a34c4834890f23d37e04a6a1c93a427d9cd44268bb7ab3b923db5a5dce4d"
+      },
+      {
+        "layer": "tatr01_877",
+        "original_archive": "fgimage.xp3",
+        "member": "アトリ/tatr01_m_877.tlg",
+        "local_original_copy_archive": "assets/sprites/originals.zip",
+        "rgba": "assets/sprites/layers/tatr01_877.png",
+        "rgba_sha256": "d51373dcfe369486cf519fe7ab1b1b02b6629984051f8897f048ea3bde692c1f"
+      },
+      {
+        "layer": "tatr02_1611",
+        "original_archive": "fgimage.xp3",
+        "member": "アトリ/tatr02_m_1611.tlg",
+        "local_original_copy_archive": "assets/sprites/originals.zip",
+        "rgba": "assets/sprites/layers/tatr02_1611.png",
+        "rgba_sha256": "ec6255c742165a153b0a615c9429ad35bafd9d89facb2cfb9f7501d473d2f1de"
+      },
+      {
+        "layer": "tatr02_1708",
+        "original_archive": "fgimage.xp3",
+        "member": "アトリ/tatr02_m_1708.tlg",
+        "local_original_copy_archive": "assets/sprites/originals.zip",
+        "rgba": "assets/sprites/layers/tatr02_1708.png",
+        "rgba_sha256": "5509ff124ba79486d144e89cb7472e1b5f5df85e1238ad5e26785c2cd5b27709"
+      }
+    ],
+    "prepared_reach_upper": "assets/motion/reach/{00..64}.webp",
+    "prepared_reach_face_mask": "assets/motion/reach/face-mask.png",
+    "prepared_kick": "assets/motion/kick/",
+    "originals_note": "原作提供衣裙、头发、脸、鞋与三种立绘。错时收臂、屈膝、挪步及这些中间帧是据原件加工的项目美术。"
+  },
+  "current_runtime": {
+    "observed_entry": "desktop_atri.pyw: pose_source 分支调用 desktop_reach.reach_pose 或 desktop_pose_bridge.bridge_pose。",
+    "registration": "独立素材交接。新增清单需由主实现选取。",
+    "existing_reusable_functions": [
+      "desktop_expression.ExpressionRenderer.render",
+      "desktop_reach._restore_expression",
+      "desktop_pose_bridge.bridge_pose"
+    ]
+  },
+  "units": {
+    "reference_actor_height": 390,
+    "pixel_density": 2,
+    "x": "向画面右",
+    "y": "向画面下",
+    "left_right": "始终为观看者左/右。",
+    "runtime_scale": "所有 position/offset/sole 数值按 displayHeightInPhysicalPx / 390 同比例放大；绘制替换位图时 resampleFactor=displayHeightInPhysicalPx/780，等比采样。支持任意设备缩放。",
+    "sample_rate": 30,
+    "time_origin_ms": 0,
+    "paths": "动作的 frames、每一 row.file、所有 previews 均相对本 manifest 所在目录。sources 内路径相对项目根。",
+    "sampling": "frame = clamp(floor(elapsedSeconds*30+0.5),0,lastFrame)。行含 t_ms（0 基）。最后一帧为逻辑动作端点，WebP 预览另显示该端点一帧。",
+    "channel": "WebP lossless RGBA / straight alpha，坐标为连续逻辑像素。",
+    "default_preview": {
+      "viewport": [
+        421,
+        470
+      ],
+      "actor_bottom_center": [
+        210.5,
+        465
+      ],
+      "d1_p1_local_top_left": [
+        134.25,
+        75
+      ],
+      "opaque_sole_y": 463.5,
+      "floor_guide_pixel_row": 464,
+      "background": "#c7d1cf"
+    }
+  },
+  "lower_layer_contract": {
+    "visual_path": "lower",
+    "source_rest": "d1-p1；真实鞋体的鞋底世界目标静止时为 y=388.5，此值相对于动作开始时的 p1 画布顶部。",
+    "replacement_source_ids": [
+      694,
+      695
+    ],
+    "tile_rect_xywh_on_p1_at390": [
+      0,
+      145,
+      156,
+      249
+    ],
+    "raster_size": [
+      312,
+      498
+    ],
+    "ordering": [
+      "清空本帧角色画布。",
+      "以 p1 左上角为局部原点，先将 row.file 放到 tile_rect。图内已包括 694 材质与 695 真鞋，远侧右腿先画、近侧左腿在前。",
+      "用当前白裙 p1 sprite 的 layerIds 排除 694 与足层，再以 ExpressionRenderer.render 使用当帧的 mood/blink/mouth；将此完整上层放在 p1 原点 + row.upper_offset。",
+      "在场景中只施加一次 row.stage_travel_x。"
+    ],
+    "coordinates": {
+      "upper_offset": "[dx,dy]；相对 p1 局部原点的头、发、手、上衣整体偏移。已针对换重/沉降计入原画。",
+      "stage_travel_x": "动作开始后角色在世界水平的累计有符号位移；素材局部腿部已做反向补偿。宿主可移动窗口或画面内角色，各帧仅用一个位移。",
+      "legs.*.hip_knee_ankle": "衣内髋点、膝部折点及鞋帮联接控制点，均在当前 p1 局部画布。鞋底的 point 单独按 alpha≥128 实测。",
+      "legs.*.sole.point": "当前鞋底着力中心 p1 局部坐标；船形鞋底最低排的横坐标中位数。",
+      "legs.*.sole.world": "point + [stage_travel_x,0]，相对起始 p1 左上角；鞋图半像素栅格量化。",
+      "legs.*.sole.support_target_world": "该鞋在地面指定的恒定 [x,y]，离地时 null。contact=true 才约束。",
+      "legs.*.sole.clearance": "水平地面到本帧鞋底 alpha 样本的垂距，单位 px。",
+      "support": "当前接地的侧名列表。接触交接为双支撑；空中为空。"
+    },
+    "existing_global_motion": "主实现对同一通道用本段约束替换已有跳高、挪步平移及纵向压缩，避免对贴地足重复施加弹跳。后续风动可单独处理脸发衣摆。"
+  },
+  "actions": {
+    "release": {
+      "frames": "release/frames.json",
+      "sample_count": 37,
+      "last_frame": 36,
+      "duration_to_endpoint_ms": 1200.0,
+      "start_pose": "d1-p2-95e4357ff",
+      "end_pose": "d1-p1-f18e483b6",
+      "preview": "previews/release-390.webp",
+      "strip": "previews/release-strip.png",
+      "strip_indices": [
+        0,
+        8,
+        14,
+        18,
+        22,
+        28,
+        36
+      ],
+      "tile_count": 37,
+      "native_rig_extent_wh": [
+        1450,
+        1152
+      ],
+      "native_height_basis": 1706,
+      "upper_tile_raster_wh": [
+        663,
+        527
+      ],
+      "p1_native_crop_left": 354,
+      "p2_native_crop_left": 353,
+      "time_landmarks": {
+        "0": "原作 p2 举高手",
+        "14": "左袖已平，右袖仍斜上",
+        "18": "肩到袖线左下右上",
+        "22": "左臂收起，右臂才经水平",
+        "36": "原作 p1 垂手"
+      },
+      "order": [
+        "第0帧直接使用当前表情的原作 p2，第36帧直接使用当前表情的原作 p1；分别采用现有 _placement。",
+        "中间帧以 row.wide_origin_from_floor_at390 定位新的宽画布左上角；坐标原点是角色正常底边中心。",
+        "用 row.file 替换整个 reach 上身。中间画布宽度来自 native_rig_extent 的宽；高为完整人物高度。",
+        "从 live p1 画布 y=round(1152*H/1706) 以下粘贴原下身到 x=round((354+15)*H/1706)。转场上身层掩盖旧臂以免重影。",
+        "在上身最后用 desktop_reach._restore_expression(canvas, liveP1, \"p1\", H/1706) 还原实时局部表情。H 表示物理渲染高度。"
+      ],
+      "anchors": "每行 shoulder/elbow/cuff 各为 [画面左,画面右] 两个 xy；单位为宽上身画布原点起的 390 逻辑像素。cuff 为蓝袖中心，elbow 为衣袖弯折控制点。source_steps 是两侧选用的原 reach 0–64 帧号。",
+      "preview_expression": "两端和中间采用同一原作眉1目1口1，以便只对照动作。",
+      "native_source_rect_xywh": [
+        -15,
+        285,
+        1450,
+        1152
+      ]
+    },
+    "landing": {
+      "frames": "landing/frames.json",
+      "sample_count": 61,
+      "last_frame": 60,
+      "duration_to_endpoint_ms": 2000.0,
+      "start_pose": "d1-p1-f18e483b6",
+      "end_pose": "d1-p1-f18e483b6",
+      "preview": "previews/landing-390.webp",
+      "strip": "previews/landing-strip.png",
+      "strip_indices": [
+        0,
+        9,
+        24,
+        38,
+        44,
+        52,
+        60
+      ],
+      "tile_count": 41,
+      "phase_frames": {
+        "0": "原作单脚承重站姿",
+        "5": "双鞋踩稳",
+        "9": "准备蹬地",
+        "12": "末帧蹬地",
+        "13": "离地",
+        "15-24": "原作穿鞋 p1 → p3",
+        "25-34": "原作穿鞋 p3 → p1",
+        "35-37": "两鞋回落",
+        "38": "双鞋同时落地",
+        "44": "最低髋，较收势下沉20px",
+        "46-55": "保持双足并起身",
+        "56-60": "恢复原作轻提右鞋的收势"
+      },
+      "flight_contract": {
+        "selector": "row.flight.draw == native_shod_bridge_only",
+        "order": [
+          "本帧单独绘制 native bridge，p1 渲染高度 H、p3 渲染高度 round(.922*H)；ExpressionRenderer standing_shoes=True。",
+          "按 flight.source / destination 取两张同表情实时立绘，将 flight.progress 原样传给 desktop_pose_bridge.bridge_pose。使用返回的底中心偏移再加 [0,flight.vertical_offset] 乘比例，进度已按动画节奏采样。",
+          "空中两脚 contact=false，无支撑目标。air_silhouette_floor_clearance 是 421×470 完整画面相对地面的最低 alpha≥128 样本间距。"
+        ],
+        "native_body_art_layer": 1611,
+        "native_shoe_layer": 1708
+      }
+    },
+    "weight_step": {
+      "frames": "weight-step/frames.json",
+      "sample_count": 48,
+      "last_frame": 47,
+      "duration_to_endpoint_ms": 1566.667,
+      "start_pose": "d1-p1-f18e483b6",
+      "end_pose": "d1-p1-f18e483b6",
+      "preview": "previews/weight-step-390.webp",
+      "strip": "previews/weight-step-strip.png",
+      "strip_indices": [
+        0,
+        9,
+        14,
+        22,
+        26,
+        31,
+        43,
+        47
+      ],
+      "tile_count": 48,
+      "phase_frames": {
+        "0-13": "左足支撑，右足抬起前摆",
+        "14-18": "右鞋先落下，双支撑",
+        "19-30": "换到右足，左脚前摆",
+        "31-35": "左鞋落在右鞋前，双支撑",
+        "36-47": "左足着地，右足跟进并回到原立姿"
+      },
+      "horizontal_direction": "向画面右，累计 +55px；首尾同为原作 p1。",
+      "front_foot_order_at_contact": {
+        "frame14": "右鞋世界x=127，左鞋x=82.75。",
+        "frame31": "左鞋世界x=137.75，右鞋x=127。"
+      }
+    },
+    "weight_step_left": {
+      "sample_count": 48,
+      "last_frame": 47,
+      "duration_to_endpoint_ms": 1566.667,
+      "start_pose": "d1-p1-f18e483b6",
+      "end_pose": "d1-p1-f18e483b6",
+      "frames": "weight-step-left/frames.json",
+      "preview": "previews/weight-step-left-390.webp",
+      "strip": "previews/weight-step-left-strip.png",
+      "strip_indices": [
+        0,
+        4,
+        12,
+        16,
+        21,
+        29,
+        39,
+        47
+      ],
+      "tile_count": 48,
+      "new_tile_count": 0,
+      "horizontal_direction": "向画面左，stage_travel_x 由 0 到 −55px。人物朝向与原作一致。",
+      "reuse": {
+        "source_action": "weight_step",
+        "index": "j = 47 − i",
+        "file": "取右向 j 帧的同一 RGBA 文件。",
+        "geometry": "左右角色部位、upper_offset、局部脚点与接触位使用 j 帧原值。",
+        "stage_travel_x": "right[j].stage_travel_x − 55",
+        "world_foot": "leftward[i].legs[side].sole.world = right[j].legs[side].sole.world − [55,0]。支撑目标同减 [55,0]；腾空仍为 null。",
+        "runtime": "已逐行展开为可直接读取的坐标；读左向 frames.json 时按正时间递增 i。"
+      },
+      "phase_frames": {
+        "0-11": "左鞋支撑，右鞋向画面左前摆",
+        "12-16": "右鞋先落到左鞋前方，双支撑",
+        "17-28": "换到右鞋支撑，左鞋向画面左摆过支撑鞋",
+        "29-33": "左鞋着地领先，双支撑",
+        "34-47": "左鞋支撑，右鞋向左跟入原作轻提的收势"
+      },
+      "front_foot_order_at_contact": {
+        "frame12": "右鞋世界 x72，左鞋 x82.75。向左行进时右鞋领先 10.75px。",
+        "frame29": "左鞋世界 x27.75，右鞋 x72。向左行进时左鞋领先 44.25px。"
+      }
+    }
+  },
+  "verification": "checks.json",
+  "directional_steps": {
+    "direction_to_action_key": {
+      "positive_x": "weight_step",
+      "negative_x": "weight_step_left"
+    },
+    "origin": "两段各自起始 p1 左上角为各自 world 的零点；独立播放时可用当前角色位置。走回时左段的世界零点为右段终点 +55px。",
+    "compositor": "所有有向片段都已写出带符号的 stage_travel_x、左右部位与支撑目标。交给同一 lower_layer_contract 顺序绘制即可。",
+    "return_demo": {
+      "preview": "previews/weight-step-roundtrip-390.webp",
+      "strip": "previews/weight-step-roundtrip-strip.png",
+      "samples": 95,
+      "segments": [
+        {
+          "action": "weight_step",
+          "indices": [
+            0,
+            47
+          ],
+          "origin_x": 0
+        },
+        {
+          "action": "weight_step_left",
+          "indices": [
+            1,
+            47
+          ],
+          "origin_x": 55
+        }
+      ],
+      "turnaround": "右末帧与左首帧逐像素一致，接回时转向样本只显示一次。"
+    }
+  },
+  "inventory": {
+    "distinct_actions": 4,
+    "timeline_samples": 194,
+    "unique_transparent_replacement_images": 126,
+    "separate_directional_step_samples": {
+      "right": 48,
+      "left": 48
+    },
+    "derived_roundtrip_preview_samples": 95
+  }
+}

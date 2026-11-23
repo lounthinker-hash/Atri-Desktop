@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>亚托莉 · 语音合成</title>
+  <style>
+    :root { color-scheme: light; font: 16px/1.6 Inter, "Microsoft YaHei UI", sans-serif; color: #172f39; background: #f4f8f7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(100% - 36px, 690px); margin: clamp(28px, 8vh, 85px) auto; }
+    h1 { margin: 0 0 24px; font-weight: 600; font-size: clamp(27px, 5vw, 38px); letter-spacing: .02em; }
+    form, section { border: 1px solid #cadbdb; padding: clamp(18px, 4vw, 32px); border-radius: 12px; background: white; }
+    label, h2 { display: block; margin: 0 0 8px; font-size: 16px; font-weight: 600; }
+    textarea, select, button { font: inherit; color: inherit; }
+    textarea, select { border: 1px solid #9fb8bb; border-radius: 6px; background: #fff; }
+    textarea { display: block; width: 100%; min-height: 165px; padding: 12px 14px; resize: vertical; }
+    button, select { min-height: 44px; padding: 7px 15px; }
+    button { border: none; border-radius: 6px; background: #205d6e; color: white; cursor: pointer; }
+    button:hover { background: #164b59; }
+    button:disabled { opacity: .65; cursor: wait; }
+    :focus-visible { outline: 3px solid #238ca5; outline-offset: 3px; }
+    .actions, .result-title { display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; }
+    .actions { margin-top: 20px; flex-wrap: wrap; justify-content: flex-start; }
+    .actions button { margin-left: auto; }
+    .voice-note { margin: 10px 0 0; color: #395c64; font-size: 14px; }
+    #status { margin: 14px 0 0; font-size: 14px; color: #395c64; white-space: pre-wrap; overflow-wrap: anywhere; }
+    #status:empty { margin: 0; }
+    #status[data-error] { color: #9a3730; }
+    section { margin-top: 18px; }
+    .result-title { align-items: baseline; }
+    #reference-status { margin: 8px 0; color: #395c64; font-size: 14px; }
+    h2 { margin-bottom: 0; }
+    a { color: #155b70; text-underline-offset: 3px; font-size: 14px; }
+    #transcript { margin: 12px 0; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 8em; overflow-y: auto; }
+    audio { display: block; width: 100%; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>亚托莉语音合成</h1>
+    <form id="speech-form">
+      <label for="text">朗读文本</label>
+      <textarea id="text" required placeholder="输入想让亚托莉朗读的文字"></textarea>
+      <div class="actions">
+        <div>
+          <label for="language">朗读语言</label>
+          <select id="language">
+            <option value="auto">自动识别</option>
+            <option value="zh">中文</option>
+            <option value="ja">日语</option>
+            <option value="en">英语</option>
+          </select>
+        </div>
+        <div>
+          <label for="emotion">语气</label>
+          <select id="emotion" aria-describedby="voice-note">
+            <option value="auto">按句意</option>
+          </select>
+        </div>
+        <button id="generate" type="submit">生成并试听</button>
+      </div>
+      <p id="voice-note" class="voice-note">日语可切换语气，中文和英语使用自然语气。</p>
+      <p id="status" role="status" aria-live="polite"></p>
+    </form>
+    <section id="result" hidden aria-labelledby="result-label">
+      <div class="result-title">
+        <h2 id="result-label">合成结果</h2>
+        <a id="download" download="atri-speech.wav">下载 WAV</a>
+      </div>
+      <p id="transcript"></p>
+      <audio id="audio" controls preload="metadata" aria-label="合成语音"></audio>
+    </section>
+    <section aria-labelledby="reference-label">
+      <h2 id="reference-label">原作参考</h2>
+      <p id="reference-status" role="status"></p>
+      <audio id="reference" controls preload="metadata" aria-label="原作参考语音"></audio>
+    </section>
+    <p><button id="stop" type="button" style="background:transparent;color:#365763;padding-left:0">退出本地服务</button></p>
+  </main>
+  <script>
+    'use strict';
+    const byId = id => document.getElementById(id);
+    const form = byId('speech-form');
+    const audio = byId('audio');
+    const status = byId('status');
+    const button = byId('generate');
+    const reference = byId('reference');
+    const referenceStatus = byId('reference-status');
+    const languageField = byId('language');
+    const emotionField = byId('emotion');
+    let voiceOptions, preferredEmotion = 'auto';
+    let lastUrl;
+    let referenceId, referenceUrl, referenceRequest;
+
+    audio.addEventListener('play', () => { if (!audio.paused) reference.pause(); });
+    reference.addEventListener('play', () => { if (!reference.paused) audio.pause(); });
+
+    async function updateReference(actualEmotion) {
+      referenceRequest?.abort();
+      const request = new AbortController();
+      referenceRequest = request;
+      referenceStatus.textContent = '正在读取原作录音…';
+      try {
+        const emotion = actualEmotion || emotionField.value;
+        const query = new URLSearchParams({ language: languageField.value, emotion });
+        const response = await fetch('/api/reference?' + query, {
+          signal: request.signal
+        });
+        if (!response.ok) {
+          const details = await response.json().catch(() => ({}));
+          throw new Error(details.error || '原作参考加载失败。');
+        }
+        const id = response.headers.get('X-Reference-Id');
+        if (!id) throw new Error('无法确认原作录音编号。');
+        if (id !== referenceId) {
+          const blob = await response.blob();
+          if (request.signal.aborted) return;
+          if (!blob.size || blob.type !== 'audio/ogg') throw new Error('未收到原作录音。');
+          const url = URL.createObjectURL(blob);
+          const playing = !reference.paused;
+          reference.src = url;
+          if (referenceUrl) URL.revokeObjectURL(referenceUrl);
+          referenceId = id;
+          referenceUrl = url;
+          if (playing) reference.play().catch(() => {});
+        }
+        const effective = response.headers.get('X-Emotion') || 'natural';
+        const label = voiceOptions?.labels[effective] || '自然';
+        referenceStatus.textContent = label + ' · ' + id +
+          (emotion === 'auto' ? '（生成后按句意更新）' : '');
+      } catch (error) {
+        if (request.signal.aborted) return;
+        reference.pause();
+        reference.removeAttribute('src');
+        reference.load();
+        if (referenceUrl) URL.revokeObjectURL(referenceUrl);
+        referenceId = referenceUrl = undefined;
+        referenceStatus.textContent = error instanceof TypeError ? '无法连接本地服务以读取原作参考。' : error.message;
+      }
+    }
+    function updateEmotionChoices() {
+      const allowed = voiceOptions?.emotions[languageField.value] || ['natural'];
+      emotionField.replaceChildren(...allowed.map(value => new Option(voiceOptions?.labels[value] || '自然', value)));
+      emotionField.value = allowed.includes(preferredEmotion) ? preferredEmotion : allowed[0];
+      emotionField.disabled = allowed.length === 1;
+      updateReference();
+    }
+    languageField.addEventListener('change', updateEmotionChoices);
+    emotionField.addEventListener('change', () => {
+      preferredEmotion = emotionField.value;
+      updateReference();
+    });
+    async function loadVoiceOptions() {
+      try {
+        const response = await fetch('/api/options');
+        if (!response.ok) throw new Error();
+        voiceOptions = await response.json();
+        for (const option of [...languageField.options]) {
+          if (!voiceOptions.emotions[option.value]) option.remove();
+        }
+        if (languageField.options.length === 1 && languageField.value === 'ja') {
+          languageField.disabled = true;
+          byId('text').placeholder = '输入想让亚托莉朗读的日语';
+        }
+      } catch {
+        byId('voice-note').textContent = '未能读取可用语气，当前使用自然语气。';
+      }
+      updateEmotionChoices();
+    }
+    loadVoiceOptions();
+
+    const stopButton = byId('stop');
+    stopButton.onclick = async () => {
+      stopButton.disabled = true;
+      try {
+        const response = await fetch('/api/stop', {
+          method: 'POST', headers: {'Content-Type': 'application/json'}, body: '{}'
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error);
+        button.disabled = true;
+        status.textContent = '服务已退出。双击「启动亚托莉语音合成」可再次打开。';
+      } catch (error) {
+        status.textContent = error.message || '无法连接本地服务。';
+        stopButton.disabled = false;
+      }
+    };
+
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (button.disabled) return;
+      const text = byId('text').value.trim();
+      if (!text) {
+        status.textContent = '请输入要朗读的文字。';
+        status.setAttribute('data-error', '');
+        byId('text').focus();
+        return;
+      }
+      const language = languageField.value;
+      const languageLabel = languageField.selectedOptions[0].text;
+      const emotion = emotionField.value;
+      audio.pause();
+      button.disabled = true;
+      stopButton.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      status.removeAttribute('data-error');
+      status.textContent = '正在本机生成语音，首次加载模型可能需要一些时间。';
+      try {
+        const response = await fetch('/api/synthesize', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text, language, emotion })
+        });
+        if (!response.ok) {
+          const details = await response.json().catch(() => ({}));
+          throw new Error(details.error || '本地服务返回错误 ' + response.status);
+        }
+        const blob = await response.blob();
+        if (!blob.size || blob.type !== 'audio/wav') throw new Error('服务未返回可播放的 WAV 音频。');
+        const url = URL.createObjectURL(blob);
+        audio.src = url;
+        byId('download').href = url;
+        if (lastUrl) URL.revokeObjectURL(lastUrl);
+        lastUrl = url;
+        const actualEmotion = response.headers.get('X-Emotion') || 'natural';
+        const emotionLabel = actualEmotion === 'mixed' ? '分段语气' : voiceOptions?.labels[actualEmotion] || '自然';
+        byId('result-label').textContent = '合成结果 · ' + languageLabel + ' · ' + emotionLabel;
+        byId('transcript').textContent = text;
+        byId('result').hidden = false;
+        if (languageField.value === language && emotionField.value === emotion && actualEmotion !== emotion && actualEmotion !== 'mixed') {
+          updateReference(actualEmotion);
+        }
+        status.textContent = '已生成。';
+        try {
+          await audio.play();
+        } catch (error) {
+          status.textContent = error.name === 'NotAllowedError'
+            ? '已生成，点击播放器即可试听。'
+            : '已生成，浏览器未能播放。可下载 WAV 查看。';
+        }
+      } catch (error) {
+        status.setAttribute('data-error', '');
+        status.textContent = error instanceof TypeError ? '连接本地服务失败，请检查服务是否运行。' : error.message;
+      } finally {
+        button.disabled = false;
+        stopButton.disabled = false;
+        form.removeAttribute('aria-busy');
+      }
+    });
+  </script>
+</body>
+</html>

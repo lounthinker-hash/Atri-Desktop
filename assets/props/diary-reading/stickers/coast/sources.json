@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "group": "海边与天气",
+  "repository": "https://github.com/microsoft/fluentui-emoji",
+  "revision": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "licenseUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/LICENSE",
+  "treatment": "官方 32×32 Flat SVG 以透明底等比栅格化，图形最长边 146 px，外加约 2 px 暖色浅边，居中放置在 160×160 像素画布。",
+  "assets": {
+    "sea_wave": {
+      "id": "sea_wave",
+      "file": "sea_wave.png",
+      "alt": "一卷带着浅色泡沫的蓝色海浪",
+      "theme": "海浪拍岸、观察潮水",
+      "tags": [
+        "海浪",
+        "潮水",
+        "浪花",
+        "海潮"
+      ],
+      "source": "Microsoft Fluent Emoji · Water wave / Flat（MIT）",
+      "sourcePath": "assets/Water wave/Flat/water_wave_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Water%20wave/Flat/water_wave_flat.svg",
+      "sourceSha256": "8bd8b1e0d8e7f58571ffe1ce09135d9715c0b26a77ce0bf19f55c354823ddf7f",
+      "sha256": "a25ca03e317a1fec29a4a40d98b3e4c36bc9425a86eea8be73c2e25bfa904337",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        6,
+        155,
+        153
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "seashell": {
+      "id": "seashell",
+      "file": "seashell.png",
+      "alt": "一枚盘旋的海螺壳",
+      "theme": "当天见到或聊起海螺与拾贝",
+      "tags": [
+        "海螺",
+        "贝壳",
+        "拾贝",
+        "螺壳"
+      ],
+      "source": "Microsoft Fluent Emoji · Spiral shell / Flat（MIT）",
+      "sourcePath": "assets/Spiral shell/Flat/spiral_shell_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Spiral%20shell/Flat/spiral_shell_flat.svg",
+      "sourceSha256": "c4b2587cb7593ce513c536cb5ddf0bf903e59705b909d4b3dae638f5f5aac5b0",
+      "sha256": "73ca69cbca7f14f1adbc855cace89764b74fe13ef8b9dbf574b8c922d99025e7",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        8,
+        155,
+        152
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "tropical_fish": {
+      "id": "tropical_fish",
+      "file": "tropical_fish.png",
+      "alt": "一条摆开尾鳍的热带鱼",
+      "theme": "观察或谈论水里的热带鱼",
+      "tags": [
+        "热带鱼",
+        "小鱼",
+        "游鱼"
+      ],
+      "source": "Microsoft Fluent Emoji · Tropical fish / Flat（MIT）",
+      "sourcePath": "assets/Tropical fish/Flat/tropical_fish_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Tropical%20fish/Flat/tropical_fish_flat.svg",
+      "sourceSha256": "56b1ba27b8871ba2bd7f59cf8ea9b68c4b289e4850d83bf1a22a1b5e4553819a",
+      "sha256": "e4de3074726e2b7d719495207e082c0e297183411b36865a95ac9a0c2e456653",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        18,
+        155,
+        142
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "sailboat": {
+      "id": "sailboat",
+      "file": "sailboat.png",
+      "alt": "一艘扬起船帆的小帆船",
+      "theme": "当天遇见或谈到真正的帆船",
+      "tags": [
+        "帆船",
+        "扬帆",
+        "船帆"
+      ],
+      "source": "Microsoft Fluent Emoji · Sailboat / Flat（MIT）",
+      "sourcePath": "assets/Sailboat/Flat/sailboat_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Sailboat/Flat/sailboat_flat.svg",
+      "sourceSha256": "e80a311ad9504c1a8b754c295b6279e6d54c7c28437835b09d1ed33697241c03",
+      "sha256": "847fd6873d2ed2e9d4a6d89a2f7f0c0be6d7a1a22171ad987d7b33ca6988475a",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        5,
+        155,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "anchor": {
+      "id": "anchor",
+      "file": "anchor.png",
+      "alt": "一枚双爪船锚",
+      "theme": "码头、停泊或当天聊到船锚",
+      "tags": [
+        "船锚",
+        "锚链",
+        "抛锚",
+        "下锚"
+      ],
+      "source": "Microsoft Fluent Emoji · Anchor / Flat（MIT）",
+      "sourcePath": "assets/Anchor/Flat/anchor_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Anchor/Flat/anchor_flat.svg",
+      "sourceSha256": "c9050a134a9953f9020ddf46b65a6f8fdc1765b1eb471243aee037334fa4289e",
+      "sha256": "00806f1754fa6e291783236e9b4de374c7ca1a578971698c22abf06544fd76c6",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        10,
+        5,
+        150,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "dolphin": {
+      "id": "dolphin",
+      "file": "dolphin.png",
+      "alt": "一只跃起的海豚",
+      "theme": "当天看到或谈论海豚",
+      "tags": [
+        "海豚",
+        "宽吻海豚"
+      ],
+      "source": "Microsoft Fluent Emoji · Dolphin / Flat（MIT）",
+      "sourcePath": "assets/Dolphin/Flat/dolphin_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Dolphin/Flat/dolphin_flat.svg",
+      "sourceSha256": "76b57f2babc3de5fc188242bcf4f80a30266e8b4a866af9d080fe85426594aaf",
+      "sha256": "5dff3979540df7d2ad2b8891685dfa48dd3d2d0595a628a84e772611dd4829b3",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        20,
+        5,
+        140,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "jellyfish": {
+      "id": "jellyfish",
+      "file": "jellyfish.png",
+      "alt": "一只拖着长触手的水母",
+      "theme": "观察或聊到水母的触手与游动",
+      "tags": [
+        "水母",
+        "海蜇"
+      ],
+      "source": "Microsoft Fluent Emoji · Jellyfish / Flat（MIT）",
+      "sourcePath": "assets/Jellyfish/Flat/jellyfish_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Jellyfish/Flat/jellyfish_flat.svg",
+      "sourceSha256": "eafdf92dc015a21867d6c764f6b946e44691a8aa9b08f38977d3f1ec3993b922",
+      "sha256": "babcc30d486ce97b125e7228f756e4d600bd24f7831f41c3999acf7127f7fced",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        10,
+        5,
+        150,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "sunshine": {
+      "id": "sunshine",
+      "file": "sunshine.png",
+      "alt": "一轮向四面伸出光芒的太阳",
+      "theme": "当天有阳光，或谈起晒太阳",
+      "tags": [
+        "晴天",
+        "太阳",
+        "阳光",
+        "放晴"
+      ],
+      "source": "Microsoft Fluent Emoji · Sun / Flat（MIT）",
+      "sourcePath": "assets/Sun/Flat/sun_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Sun/Flat/sun_flat.svg",
+      "sourceSha256": "a51d98e68ac038b917584d43b7729174f035a94ed7cd694802a3a7160f0b08f2",
+      "sha256": "fe92f5f443f419d146970efb7c16443d137add239ae97d3c3f49746e36357594",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        8,
+        5,
+        152,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "cloud": {
+      "id": "cloud",
+      "file": "cloud.png",
+      "alt": "一朵圆滚滚的云",
+      "theme": "当日观察到的云团或阴天",
+      "tags": [
+        "云朵",
+        "白云",
+        "阴天",
+        "云层"
+      ],
+      "source": "Microsoft Fluent Emoji · Cloud / Flat（MIT）",
+      "sourcePath": "assets/Cloud/Flat/cloud_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Cloud/Flat/cloud_flat.svg",
+      "sourceSha256": "b679020aa5321149bad0a7f4dd0f0362a570a1ba1e3ddfeccac94064c4e87955",
+      "sha256": "fda6a4d28e73f57aae36cc6b7f85af70a4d9fe859edecd77e4d0849e36606ec1",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        29,
+        155,
+        130
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "rain_umbrella": {
+      "id": "rain_umbrella",
+      "file": "rain_umbrella.png",
+      "alt": "一把挡住雨点的伞",
+      "theme": "当天遇雨、撑伞或聊起淋雨",
+      "tags": [
+        "下雨",
+        "雨伞",
+        "雨点",
+        "撑伞"
+      ],
+      "source": "Microsoft Fluent Emoji · Umbrella with rain drops / Flat（MIT）",
+      "sourcePath": "assets/Umbrella with rain drops/Flat/umbrella_with_rain_drops_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Umbrella%20with%20rain%20drops/Flat/umbrella_with_rain_drops_flat.svg",
+      "sourceSha256": "f172b4ffbd29b3762479ea09796bd7005308df4a6eac60985bb3f32f4d017e0e",
+      "sha256": "6bf1691676028187e1dd8542b382b41ad0dedbfcc92c52f36f7792b8ffd8db0d",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        5,
+        155,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "rainbow": {
+      "id": "rainbow",
+      "file": "rainbow.png",
+      "alt": "一道多色小彩虹",
+      "theme": "雨后看到彩虹，或当天谈论彩虹",
+      "tags": [
+        "彩虹",
+        "雨后彩虹"
+      ],
+      "source": "Microsoft Fluent Emoji · Rainbow / Flat（MIT）",
+      "sourcePath": "assets/Rainbow/Flat/rainbow_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Rainbow/Flat/rainbow_flat.svg",
+      "sourceSha256": "85a0bee875fa032375f0448ac5ed89bf5fa8662438dbb539abbfcba118c18c74",
+      "sha256": "3242dea2c24bea23f4e02bc5690b2eef33226bfd31452a8efe19988a539663f3",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        5,
+        155,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "crescent_moon": {
+      "id": "crescent_moon",
+      "file": "crescent_moon.png",
+      "alt": "一弯新月",
+      "theme": "当晚看月亮，或聊到弯月",
+      "tags": [
+        "月牙",
+        "弯月",
+        "月亮",
+        "新月"
+      ],
+      "source": "Microsoft Fluent Emoji · Crescent moon / Flat（MIT）",
+      "sourcePath": "assets/Crescent moon/Flat/crescent_moon_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Crescent%20moon/Flat/crescent_moon_flat.svg",
+      "sourceSha256": "d749d4a9c2917cf5d13193d214898c4173371a9037aa92874f034e27b77ad540",
+      "sha256": "833607cb5c7f56866d5bf48b37c0ac89f4dd50fbdf2209da049d0841098bcdc7",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        8,
+        155,
+        151
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "snowflake": {
+      "id": "snowflake",
+      "file": "snowflake.png",
+      "alt": "一片有六枝的雪花",
+      "theme": "当天遇雪，或聊到雪花的形状",
+      "tags": [
+        "雪花",
+        "下雪",
+        "飘雪"
+      ],
+      "source": "Microsoft Fluent Emoji · Snowflake / Flat（MIT）",
+      "sourcePath": "assets/Snowflake/Flat/snowflake_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Snowflake/Flat/snowflake_flat.svg",
+      "sourceSha256": "bbe0ff7fbfbd17f02d26aa59d4f961c6470af1cff9474047b7b031a81c4915ab",
+      "sha256": "1914e977d9875386c8f1025f5983d50228442494c3df943ac51a002055857dee",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        7,
+        5,
+        152,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "wind": {
+      "id": "wind",
+      "file": "wind.png",
+      "alt": "一团向外卷起的小风，旁边飞着几缕气流",
+      "theme": "当日刮风，或谈起海风吹动的东西",
+      "tags": [
+        "刮风",
+        "海风",
+        "阵风",
+        "起风"
+      ],
+      "source": "Microsoft Fluent Emoji · Dashing away / Flat（MIT）",
+      "sourcePath": "assets/Dashing away/Flat/dashing_away_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Dashing%20away/Flat/dashing_away_flat.svg",
+      "sourceSha256": "6c2c9ca17e52a19c856c9efaa487bcb75e991193ddb3b73a4520f9eaa5e54286",
+      "sha256": "42390bad56d5bf0aa64356f9d9b93fda4ff8cb9a0824449638ce666908ac51e3",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        10,
+        155,
+        150
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "lightning": {
+      "id": "lightning",
+      "file": "lightning.png",
+      "alt": "一道折线状的闪电",
+      "theme": "当天听雷见闪，或聊起雷雨",
+      "tags": [
+        "闪电",
+        "雷电",
+        "雷雨",
+        "打雷"
+      ],
+      "source": "Microsoft Fluent Emoji · High voltage / Flat（MIT）",
+      "sourcePath": "assets/High voltage/Flat/high_voltage_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/High%20voltage/Flat/high_voltage_flat.svg",
+      "sourceSha256": "e85d1b10f93078bbc7cf9eb047ae37b5fa47a66a2aed63c25523592e567036ba",
+      "sha256": "5f16e798aecda0244647d72bcd194ef81887ca17da876c93dc046fb0f8a51ea8",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        34,
+        5,
+        125,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "island": {
+      "id": "island",
+      "file": "island.png",
+      "alt": "一座长着棕榈树的小岛",
+      "theme": "当天看到、画过或谈论海岛",
+      "tags": [
+        "海岛",
+        "岛屿",
+        "小岛"
+      ],
+      "source": "Microsoft Fluent Emoji · Desert island / Flat（MIT）",
+      "sourcePath": "assets/Desert island/Flat/desert_island_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Desert%20island/Flat/desert_island_flat.svg",
+      "sourceSha256": "c24f5a68d174a58d42e92587d20ccfd06e8b572a2220ba5b2c605a69256850c2",
+      "sha256": "261afed76a72ec80f661fb4bd975d42771cf97cd8991f8bbcccdddec5e835e6b",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        10,
+        155,
+        150
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    "shooting_star": {
+      "id": "shooting_star",
+      "file": "shooting_star.png",
+      "alt": "紫色夜空里，一颗星拖着金色的尾巴",
+      "theme": "当晚看到流星或聊起观星",
+      "tags": [
+        "流星",
+        "流星雨"
+      ],
+      "source": "Microsoft Fluent Emoji · Shooting star / Flat（MIT）",
+      "sourcePath": "assets/Shooting star/Flat/shooting_star_flat.svg",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Shooting%20star/Flat/shooting_star_flat.svg",
+      "sourceSha256": "131040edf02fd8597286142b6d281c66b86ffe7fd1e0d07b1ff2c97775299d3d",
+      "sha256": "c44c217d1e6d6b6e856a83bfd63a8fdfaa64ffde2181ae7a8c5a04a39331b9b9",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        5,
+        5,
+        155,
+        155
+      ],
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    }
+  }
+}

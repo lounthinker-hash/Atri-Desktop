@@ -1,0 +1,923 @@
+{
+  "dress": "d1",
+  "pose": "p1",
+  "canvas": [
+    666,
+    1706
+  ],
+  "rectXYWH": [
+    0,
+    100,
+    666,
+    472
+  ],
+  "mask": "replace-mask.png",
+  "maskDefinition": "白色完整替换，黑色沿用传入的透明人体。原画坐标从左上起算；肩和袖由独立的 arms 层绘制。",
+  "frames": [
+    {
+      "i": 0,
+      "file": "look-00.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          308.0,
+          405.0
+        ],
+        [
+          391.0,
+          403.0
+        ]
+      ],
+      "chinActorPx": [
+        349.0,
+        478.0
+      ],
+      "mouthActorPx": [
+        347.0,
+        452.0
+      ],
+      "retainLiveFace": 1.0,
+      "sha256": "80b086286767ce42caf0e0e2bee4db1151560a9fa5df715c6b5574657a13e868"
+    },
+    {
+      "i": 1,
+      "file": "look-01.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          305.38,
+          406.69
+        ],
+        [
+          387.0,
+          404.75
+        ]
+      ],
+      "chinActorPx": [
+        346.88,
+        478.62
+      ],
+      "mouthActorPx": [
+        344.44,
+        453.12
+      ],
+      "retainLiveFace": 0.547,
+      "sha256": "8a9841f925d54e6ec8e2a47907814374777b94fe224d5d3cb33b258e07421970"
+    },
+    {
+      "i": 2,
+      "file": "look-02.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          302.75,
+          408.38
+        ],
+        [
+          383.0,
+          406.5
+        ]
+      ],
+      "chinActorPx": [
+        344.75,
+        479.25
+      ],
+      "mouthActorPx": [
+        341.88,
+        454.25
+      ],
+      "retainLiveFace": 0.2296,
+      "sha256": "294c426a9710a9ab96d47e6424dc10d866464ad8c07dd72d4b889fe03664e972"
+    },
+    {
+      "i": 3,
+      "file": "look-03.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          300.12,
+          410.06
+        ],
+        [
+          379.0,
+          408.25
+        ]
+      ],
+      "chinActorPx": [
+        342.62,
+        479.88
+      ],
+      "mouthActorPx": [
+        339.31,
+        455.38
+      ],
+      "retainLiveFace": 0.0479,
+      "sha256": "5fc3acc19bf0d68b5cbbb3be936c2ada067fbda66c6214953f19ec50fc1ac0c1"
+    },
+    {
+      "i": 4,
+      "file": "look-04.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          297.5,
+          411.75
+        ],
+        [
+          375.0,
+          410.0
+        ]
+      ],
+      "chinActorPx": [
+        340.5,
+        480.5
+      ],
+      "mouthActorPx": [
+        336.75,
+        456.5
+      ],
+      "retainLiveFace": 0,
+      "sha256": "153864bd02f1044eefe1e3a593197204680b8d256943f4a88c3840b6f9ad04f7"
+    },
+    {
+      "i": 5,
+      "file": "look-05.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          294.88,
+          413.44
+        ],
+        [
+          371.0,
+          411.75
+        ]
+      ],
+      "chinActorPx": [
+        338.38,
+        481.12
+      ],
+      "mouthActorPx": [
+        334.19,
+        457.62
+      ],
+      "retainLiveFace": 0,
+      "sha256": "024eed0090d1caa6581504bf94e49bcbd4c0083078411e58685889ec3773d6b2"
+    },
+    {
+      "i": 6,
+      "file": "look-06.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          292.25,
+          415.12
+        ],
+        [
+          367.0,
+          413.5
+        ]
+      ],
+      "chinActorPx": [
+        336.25,
+        481.75
+      ],
+      "mouthActorPx": [
+        331.62,
+        458.75
+      ],
+      "retainLiveFace": 0,
+      "sha256": "e86194f000f972842ef5e3946150a1f787016fbc285434216a19a93b25d1e490"
+    },
+    {
+      "i": 7,
+      "file": "look-07.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          289.62,
+          416.81
+        ],
+        [
+          363.0,
+          415.25
+        ]
+      ],
+      "chinActorPx": [
+        334.12,
+        482.38
+      ],
+      "mouthActorPx": [
+        329.06,
+        459.88
+      ],
+      "retainLiveFace": 0,
+      "sha256": "e348e9f5b08442487286061f68922298e0999cd7941b201e4c85a953e70a2b6e"
+    },
+    {
+      "i": 8,
+      "file": "look-08.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          287.0,
+          418.5
+        ],
+        [
+          359.0,
+          417.0
+        ]
+      ],
+      "chinActorPx": [
+        332.0,
+        483.0
+      ],
+      "mouthActorPx": [
+        326.5,
+        461.0
+      ],
+      "retainLiveFace": 0,
+      "sha256": "8efaa2ca4586b5db90584b20b7ccd9e50ad55d3e81701fd2ba9ee1b561c7c0b6"
+    },
+    {
+      "i": 9,
+      "file": "look-09.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          284.38,
+          420.19
+        ],
+        [
+          355.0,
+          418.75
+        ]
+      ],
+      "chinActorPx": [
+        329.88,
+        483.62
+      ],
+      "mouthActorPx": [
+        323.94,
+        462.12
+      ],
+      "retainLiveFace": 0,
+      "sha256": "a0630fecdfca849a5663f38b7dacfe7bcc5e017e5b91e1c3b93a4cf105b2be33"
+    },
+    {
+      "i": 10,
+      "file": "look-10.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          281.75,
+          421.88
+        ],
+        [
+          351.0,
+          420.5
+        ]
+      ],
+      "chinActorPx": [
+        327.75,
+        484.25
+      ],
+      "mouthActorPx": [
+        321.38,
+        463.25
+      ],
+      "retainLiveFace": 0,
+      "sha256": "45d1390ab7658a5955c416eb94593f118e098d12ec21f310ca3a8d90186c9fe1"
+    },
+    {
+      "i": 11,
+      "file": "look-11.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          279.12,
+          423.56
+        ],
+        [
+          347.0,
+          422.25
+        ]
+      ],
+      "chinActorPx": [
+        325.62,
+        484.88
+      ],
+      "mouthActorPx": [
+        318.81,
+        464.38
+      ],
+      "retainLiveFace": 0,
+      "sha256": "655b9769e9f4813b7329a1cbe2cc859bc36f618bc912e70f76bb3ab385a8891b"
+    },
+    {
+      "i": 12,
+      "file": "look-12.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          276.5,
+          425.25
+        ],
+        [
+          343.0,
+          424.0
+        ]
+      ],
+      "chinActorPx": [
+        323.5,
+        485.5
+      ],
+      "mouthActorPx": [
+        316.25,
+        465.5
+      ],
+      "retainLiveFace": 0,
+      "sha256": "75b4233c8ad0f57a3ef92d6f43cb08087611c9bc0908c514bf61c5030da9f173"
+    },
+    {
+      "i": 13,
+      "file": "look-13.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          273.88,
+          426.94
+        ],
+        [
+          339.0,
+          425.75
+        ]
+      ],
+      "chinActorPx": [
+        321.38,
+        486.12
+      ],
+      "mouthActorPx": [
+        313.69,
+        466.62
+      ],
+      "retainLiveFace": 0,
+      "sha256": "04bdffa271a89f915d65c20b94e9070844d6f17a9c22c0c3e33f7d0626314d93"
+    },
+    {
+      "i": 14,
+      "file": "look-14.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          271.25,
+          428.62
+        ],
+        [
+          335.0,
+          427.5
+        ]
+      ],
+      "chinActorPx": [
+        319.25,
+        486.75
+      ],
+      "mouthActorPx": [
+        311.12,
+        467.75
+      ],
+      "retainLiveFace": 0,
+      "sha256": "f43de94ab48edd32d56eefd333197f8d3912e7605f732d54fab14b08980cc588"
+    },
+    {
+      "i": 15,
+      "file": "look-15.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          268.62,
+          430.31
+        ],
+        [
+          331.0,
+          429.25
+        ]
+      ],
+      "chinActorPx": [
+        317.12,
+        487.38
+      ],
+      "mouthActorPx": [
+        308.56,
+        468.88
+      ],
+      "retainLiveFace": 0,
+      "sha256": "2e95540be4d67203e2a27280a0a4ab6df01955ebbef6368809efa30fed4bdc91"
+    },
+    {
+      "i": 16,
+      "file": "look-16.webp",
+      "rectXYWH": [
+        0,
+        100,
+        666,
+        472
+      ],
+      "pupilsActorPx": [
+        [
+          266.0,
+          432.0
+        ],
+        [
+          327.0,
+          431.0
+        ]
+      ],
+      "chinActorPx": [
+        315.0,
+        488.0
+      ],
+      "mouthActorPx": [
+        306.0,
+        470.0
+      ],
+      "retainLiveFace": 0,
+      "sha256": "0b8eacfe2c3f3093ca0ae3c9cce4a3c778ca7d0e6ac8db23b992111faae8aa13"
+    }
+  ],
+  "source": {
+    "standing": "../../../../sprites/d1-p1-f18e483b6.webp",
+    "standingSha256": "cab39b78d85c77dcde17b7fc83d6a425d295670f3b6be2269719d68ab9eb43c8",
+    "authoredBust": "source-bust.webp",
+    "authoredSha256": "e98b8c7cab0d57ebe9d00d91cb3fde7fc1fe8ec5d19f0d29e18cf805d0de2274",
+    "treatment": "用原作 d1 正面作为图像参考，ImageGen 辅助补绘三分之四朝左的低头胸像。人物比例、瞳心、下颏及水手领以原立绘坐标登记。0–16 之间以眉、眼、嘴、下颏、发弓和缎带分块插值。此低头视角为桌面新增原画。",
+    "register": {
+      "scale": 0.49,
+      "offsetActorPx": [
+        31,
+        117
+      ]
+    },
+    "standingLandmarks": {
+      "ahogeTip": [
+        391,
+        146
+      ],
+      "ahogeRoot": [
+        350,
+        233
+      ],
+      "crown": [
+        348,
+        221
+      ],
+      "farHairline": [
+        262,
+        276
+      ],
+      "nearHairline": [
+        431,
+        273
+      ],
+      "farRibbonTip": [
+        213,
+        270
+      ],
+      "farRibbonPin": [
+        246,
+        298
+      ],
+      "farRibbonLower": [
+        218,
+        329
+      ],
+      "nearRibbonTip": [
+        489,
+        262
+      ],
+      "nearRibbonPin": [
+        456,
+        296
+      ],
+      "nearRibbonLower": [
+        487,
+        329
+      ],
+      "farTemple": [
+        250,
+        350
+      ],
+      "nearTemple": [
+        456,
+        350
+      ],
+      "farBrow": [
+        304,
+        372
+      ],
+      "nearBrow": [
+        392,
+        370
+      ],
+      "farEyeOuter": [
+        278,
+        395
+      ],
+      "farPupil": [
+        308,
+        405
+      ],
+      "farEyeInner": [
+        326,
+        396
+      ],
+      "farEyeLower": [
+        309,
+        419
+      ],
+      "nearEyeInner": [
+        367,
+        394
+      ],
+      "nearPupil": [
+        391,
+        403
+      ],
+      "nearEyeOuter": [
+        417,
+        389
+      ],
+      "nearEyeLower": [
+        390,
+        416
+      ],
+      "nose": [
+        347,
+        430
+      ],
+      "mouth": [
+        347,
+        452
+      ],
+      "chin": [
+        349,
+        478
+      ],
+      "farCheek": [
+        286,
+        440
+      ],
+      "nearCheek": [
+        406,
+        442
+      ],
+      "templeHairFar": [
+        263,
+        442
+      ],
+      "templeHairNear": [
+        428,
+        454
+      ],
+      "farChinHair": [
+        279,
+        464
+      ],
+      "nearChinHair": [
+        406,
+        477
+      ],
+      "hairOuterFar": [
+        193,
+        502
+      ],
+      "hairOuterNear": [
+        514,
+        500
+      ],
+      "collarFar": [
+        251,
+        508
+      ],
+      "neckFar": [
+        320,
+        490
+      ],
+      "neckNear": [
+        379,
+        491
+      ],
+      "collarNear": [
+        456,
+        506
+      ],
+      "tieTop": [
+        335,
+        565
+      ],
+      "ahoge151": [
+        379,
+        151
+      ],
+      "ahoge160": [
+        362,
+        160
+      ],
+      "ahoge170": [
+        350,
+        170
+      ],
+      "ahoge179": [
+        342,
+        179
+      ],
+      "ahoge189": [
+        337,
+        189
+      ],
+      "ahoge199": [
+        334,
+        199
+      ],
+      "ahoge208": [
+        335,
+        208
+      ],
+      "ahoge215": [
+        337,
+        215
+      ]
+    },
+    "writingLandmarks": {
+      "ahogeTip": [
+        302,
+        151
+      ],
+      "ahogeRoot": [
+        278,
+        242
+      ],
+      "crown": [
+        322,
+        210
+      ],
+      "farHairline": [
+        219,
+        281
+      ],
+      "nearHairline": [
+        406,
+        259
+      ],
+      "farRibbonTip": [
+        184,
+        285
+      ],
+      "farRibbonPin": [
+        194,
+        322
+      ],
+      "farRibbonLower": [
+        174,
+        357
+      ],
+      "nearRibbonTip": [
+        459,
+        252
+      ],
+      "nearRibbonPin": [
+        412,
+        298
+      ],
+      "nearRibbonLower": [
+        458,
+        329
+      ],
+      "farTemple": [
+        210,
+        364
+      ],
+      "nearTemple": [
+        415,
+        352
+      ],
+      "farBrow": [
+        248,
+        403
+      ],
+      "nearBrow": [
+        327,
+        395
+      ],
+      "farEyeOuter": [
+        238,
+        415
+      ],
+      "farPupil": [
+        266,
+        432
+      ],
+      "farEyeInner": [
+        272,
+        431
+      ],
+      "farEyeLower": [
+        266,
+        439
+      ],
+      "nearEyeInner": [
+        308,
+        422
+      ],
+      "nearPupil": [
+        327,
+        431
+      ],
+      "nearEyeOuter": [
+        350,
+        414
+      ],
+      "nearEyeLower": [
+        328,
+        438
+      ],
+      "nose": [
+        286,
+        457
+      ],
+      "mouth": [
+        306,
+        470
+      ],
+      "chin": [
+        315,
+        488
+      ],
+      "farCheek": [
+        251,
+        444
+      ],
+      "nearCheek": [
+        363,
+        450
+      ],
+      "templeHairFar": [
+        231,
+        449
+      ],
+      "templeHairNear": [
+        385,
+        465
+      ],
+      "farChinHair": [
+        250,
+        493
+      ],
+      "nearChinHair": [
+        367,
+        503
+      ],
+      "hairOuterFar": [
+        164,
+        503
+      ],
+      "hairOuterNear": [
+        514,
+        501
+      ],
+      "collarFar": [
+        252,
+        508
+      ],
+      "neckFar": [
+        325,
+        498
+      ],
+      "neckNear": [
+        387,
+        492
+      ],
+      "collarNear": [
+        459,
+        506
+      ],
+      "tieTop": [
+        329,
+        565
+      ],
+      "ahoge151": [
+        305,
+        151
+      ],
+      "ahoge160": [
+        286,
+        160
+      ],
+      "ahoge170": [
+        274,
+        170
+      ],
+      "ahoge179": [
+        266,
+        179
+      ],
+      "ahoge189": [
+        262,
+        189
+      ],
+      "ahoge199": [
+        259,
+        199
+      ],
+      "ahoge208": [
+        258,
+        208
+      ],
+      "ahoge215": [
+        260,
+        215
+      ]
+    }
+  },
+  "focus": "落纸时固定使用第 16 格。两眼睁开，近眼瞳色可见，视线朝身前纸页下方。书、笔尖和托掌从 arms 合同同步取得。"
+}

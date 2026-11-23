@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "group": "desk",
+  "label": "课堂、电脑与日用品",
+  "source": "Microsoft Fluent Emoji / Flat",
+  "repository": "https://github.com/microsoft/fluentui-emoji",
+  "commit": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+  "license": "MIT",
+  "copyright": "Copyright (c) Microsoft Corporation.",
+  "license_file": "LICENSE.txt",
+  "license_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/LICENSE",
+  "license_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+  "canvas_px": [
+    160,
+    160
+  ],
+  "coordinates": "PNG 左上为原点。alpha_bbox_px 使用 alpha > 0 的半开边界 [left,top,right,bottom)。",
+  "treatment": "按上游 Flat SVG 的可见边界等比缩到最长边 146 px，居中，加约 3.3 px 暖白边；保留透明间隙和原有颜色。",
+  "assets": {
+    "pencil": {
+      "id": "pencil",
+      "file": "pencil.png",
+      "alt": "削尖的铅笔",
+      "theme": "课堂文具",
+      "tags": [
+        "铅笔",
+        "削铅笔",
+        "铅笔尖"
+      ],
+      "source": "Microsoft Fluent Emoji · Pencil (Flat)",
+      "original_path": "assets/Pencil/Flat/pencil_flat.svg",
+      "original_file": "originals/pencil_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Pencil/Flat/pencil_flat.svg",
+      "source_sha256": "f82b7820c41b57d2cca96ef75e32fdedcb07d2d8b786a781274c25fe306c76d7",
+      "license": "MIT",
+      "sha256": "28dbb0464563cbbe170d60f33c52aa5955c2ae44f2974e73943f67ef0837a18f",
+      "alpha_bbox_px": [
+        1,
+        1,
+        159,
+        159
+      ]
+    },
+    "ruler": {
+      "id": "ruler",
+      "file": "ruler.png",
+      "alt": "三角尺",
+      "theme": "课堂文具",
+      "tags": [
+        "三角尺",
+        "三角板",
+        "直角尺"
+      ],
+      "source": "Microsoft Fluent Emoji · Triangular ruler (Flat)",
+      "original_path": "assets/Triangular ruler/Flat/triangular_ruler_flat.svg",
+      "original_file": "originals/triangular_ruler_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Triangular%20ruler/Flat/triangular_ruler_flat.svg",
+      "source_sha256": "dedb412a28066caad9639f0aa2d6f75a83ead45413e307b720f77d450255b20c",
+      "license": "MIT",
+      "sha256": "c76eb5e9c9067354b342b6c74516963a0e4c8eb9ef5e8b3b2119f7d81933c909",
+      "alpha_bbox_px": [
+        1,
+        1,
+        159,
+        159
+      ]
+    },
+    "scissors": {
+      "id": "scissors",
+      "file": "scissors.png",
+      "alt": "剪刀",
+      "theme": "课堂文具",
+      "tags": [
+        "剪刀",
+        "裁纸剪",
+        "剪纸"
+      ],
+      "source": "Microsoft Fluent Emoji · Scissors (Flat)",
+      "original_path": "assets/Scissors/Flat/scissors_flat.svg",
+      "original_file": "originals/scissors_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Scissors/Flat/scissors_flat.svg",
+      "source_sha256": "67d643e25a39792627bfef5aaea3866cdd083fe047a7e449d0070945e32f163f",
+      "license": "MIT",
+      "sha256": "52a844965fb46216ebe89d061d01ff284f5eb7d9f2a8ff4e9b229ee5e26de631",
+      "alpha_bbox_px": [
+        1,
+        4,
+        159,
+        155
+      ]
+    },
+    "paperclip": {
+      "id": "paperclip",
+      "file": "paperclip.png",
+      "alt": "回形针",
+      "theme": "课堂文具",
+      "tags": [
+        "回形针",
+        "曲别针",
+        "别住讲义"
+      ],
+      "source": "Microsoft Fluent Emoji · Paperclip (Flat)",
+      "original_path": "assets/Paperclip/Flat/paperclip_flat.svg",
+      "original_file": "originals/paperclip_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Paperclip/Flat/paperclip_flat.svg",
+      "source_sha256": "a122cd5080f33fcbb65e33b7e96518a6642f2cf345a1da00fc4413919264138f",
+      "license": "MIT",
+      "sha256": "95e0f5a8dbb3c4edcfe1babc7a65b1621dffee9fd3aa382240755acb4cfff487",
+      "alpha_bbox_px": [
+        1,
+        6,
+        159,
+        154
+      ]
+    },
+    "pushpin": {
+      "id": "pushpin",
+      "file": "pushpin.png",
+      "alt": "图钉",
+      "theme": "课堂文具",
+      "tags": [
+        "图钉",
+        "按钉",
+        "软木板"
+      ],
+      "source": "Microsoft Fluent Emoji · Pushpin (Flat)",
+      "original_path": "assets/Pushpin/Flat/pushpin_flat.svg",
+      "original_file": "originals/pushpin_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Pushpin/Flat/pushpin_flat.svg",
+      "source_sha256": "ed9e3591ed60a8dd25f6cef2c568f862a52bac4aeb1b651e328526c96ddb7117",
+      "license": "MIT",
+      "sha256": "813b89ae5f593643156298199ee0bfaf56f8a08fad36931eae0858095e1fce8e",
+      "alpha_bbox_px": [
+        1,
+        1,
+        158,
+        159
+      ]
+    },
+    "clock": {
+      "id": "clock",
+      "file": "clock.png",
+      "alt": "双铃闹钟",
+      "theme": "日常用品",
+      "tags": [
+        "闹钟",
+        "设闹钟",
+        "闹铃"
+      ],
+      "source": "Microsoft Fluent Emoji · Alarm clock (Flat)",
+      "original_path": "assets/Alarm clock/Flat/alarm_clock_flat.svg",
+      "original_file": "originals/alarm_clock_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Alarm%20clock/Flat/alarm_clock_flat.svg",
+      "source_sha256": "e5356b8830074a3ca21fff8bb74807003ce996645341d46c25e26e06f0385d3b",
+      "license": "MIT",
+      "sha256": "41eb90879b9a44544c7c22689837adf425f4b3aa3fbbdc4f6b4bc9fa39fe6c02",
+      "alpha_bbox_px": [
+        9,
+        1,
+        151,
+        159
+      ]
+    },
+    "laptop": {
+      "id": "laptop",
+      "file": "laptop.png",
+      "alt": "打开的笔记本电脑",
+      "theme": "电脑配件",
+      "tags": [
+        "笔记本电脑",
+        "笔电",
+        "手提电脑"
+      ],
+      "source": "Microsoft Fluent Emoji · Laptop (Flat)",
+      "original_path": "assets/Laptop/Flat/laptop_flat.svg",
+      "original_file": "originals/laptop_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Laptop/Flat/laptop_flat.svg",
+      "source_sha256": "c8fa307ed2c3e7e9e4267cff317caff6f0789a0601dabebde8380a0f0a7671b5",
+      "license": "MIT",
+      "sha256": "22db79a382f6e6a7733bcac965b2232a3995e281f8b99b971963dc5b3a8452fe",
+      "alpha_bbox_px": [
+        1,
+        1,
+        159,
+        159
+      ]
+    },
+    "keyboard": {
+      "id": "keyboard",
+      "file": "keyboard.png",
+      "alt": "电脑键盘",
+      "theme": "电脑配件",
+      "tags": [
+        "键盘",
+        "敲键盘",
+        "键帽"
+      ],
+      "source": "Microsoft Fluent Emoji · Keyboard (Flat)",
+      "original_path": "assets/Keyboard/Flat/keyboard_flat.svg",
+      "original_file": "originals/keyboard_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Keyboard/Flat/keyboard_flat.svg",
+      "source_sha256": "21eb6065c35f9c0fb84180f15b3244a27192d5f56b570257a6ed48bb2394f244",
+      "license": "MIT",
+      "sha256": "d4ddbc4ab1988fc88dd376b2ced2b78dd7629cc4e2241e09ce6bc4d65d16b926",
+      "alpha_bbox_px": [
+        1,
+        25,
+        159,
+        135
+      ]
+    },
+    "mouse": {
+      "id": "mouse",
+      "file": "mouse.png",
+      "alt": "电脑鼠标",
+      "theme": "电脑配件",
+      "tags": [
+        "鼠标",
+        "滚轮",
+        "鼠标垫"
+      ],
+      "source": "Microsoft Fluent Emoji · Computer mouse (Flat)",
+      "original_path": "assets/Computer mouse/Flat/computer_mouse_flat.svg",
+      "original_file": "originals/computer_mouse_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Computer%20mouse/Flat/computer_mouse_flat.svg",
+      "source_sha256": "450a66a5136e6d8cdf5ec17f579053510ae84bd21da97790fa6cebc61ed7e812",
+      "license": "MIT",
+      "sha256": "b991829932109546a52c9246c1d76e5891556877731bfc37d5a685dc0529f05e",
+      "alpha_bbox_px": [
+        27,
+        1,
+        133,
+        159
+      ]
+    },
+    "headphones": {
+      "id": "headphones",
+      "file": "headphones.png",
+      "alt": "头戴式耳机",
+      "theme": "电脑配件",
+      "tags": [
+        "耳机",
+        "头戴式耳机",
+        "戴上耳机"
+      ],
+      "source": "Microsoft Fluent Emoji · Headphone (Flat)",
+      "original_path": "assets/Headphone/Flat/headphone_flat.svg",
+      "original_file": "originals/headphone_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Headphone/Flat/headphone_flat.svg",
+      "source_sha256": "cda2447d8063692b29056d0cb1a2ea38a66d9f6ac787f380bc88c7b30735ca8a",
+      "license": "MIT",
+      "sha256": "ed749521cac2b38e492be9d00f0776212ba595373a587398291b97eace7decb9",
+      "alpha_bbox_px": [
+        11,
+        1,
+        149,
+        159
+      ]
+    },
+    "envelope": {
+      "id": "envelope",
+      "file": "envelope.png",
+      "alt": "信封",
+      "theme": "日常用品",
+      "tags": [
+        "信封",
+        "寄信",
+        "封口"
+      ],
+      "source": "Microsoft Fluent Emoji · Envelope (Flat)",
+      "original_path": "assets/Envelope/Flat/envelope_flat.svg",
+      "original_file": "originals/envelope_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Envelope/Flat/envelope_flat.svg",
+      "source_sha256": "82a8b1c5576caa1c83ca9d1f2e7a340f84f86788969a27ff749811089d33353c",
+      "license": "MIT",
+      "sha256": "21c0e538c92c5a021ae19b7d082a57434431d354d08f7cf17e2b79fe7b112a38",
+      "alpha_bbox_px": [
+        1,
+        21,
+        159,
+        139
+      ]
+    },
+    "cup": {
+      "id": "cup",
+      "file": "cup.png",
+      "alt": "盛着热饮的杯子",
+      "theme": "日常用品",
+      "tags": [
+        "热饮",
+        "咖啡杯",
+        "茶杯"
+      ],
+      "source": "Microsoft Fluent Emoji · Hot beverage (Flat)",
+      "original_path": "assets/Hot beverage/Flat/hot_beverage_flat.svg",
+      "original_file": "originals/hot_beverage_flat.svg",
+      "source_url": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Hot%20beverage/Flat/hot_beverage_flat.svg",
+      "source_sha256": "1fd0ed706ba85841193fffc9d2382c533486e41f7d1b9ec90d8eb6748c397183",
+      "license": "MIT",
+      "sha256": "40c7c13d9d9fa1bae31e92a132211e7a650f6bd75a47c1537fd583b232072fa4",
+      "alpha_bbox_px": [
+        4,
+        1,
+        156,
+        159
+      ]
+    }
+  }
+}

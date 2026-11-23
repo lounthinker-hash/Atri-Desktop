@@ -1,0 +1,149 @@
+name: Publish verified voice model bundle
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+concurrency:
+  group: voice-models-2026-11
+  cancel-in-progress: false
+
+jobs:
+  bundle:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 100
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+    env:
+      TAG: voice-models-2026-11
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Read the installer, lock and licenses at the dispatched commit
+        run: |
+          set -eu
+          for path in tools/fetch_voice_models.py tools/voice-models.lock.json \
+                      tts/models/Qwen3-TTS-12Hz-1.7B-Base/LICENSE tts/voice_lab/rvc/LICENSE; do
+            mkdir -p "$(dirname "$path")"
+            curl --fail --silent --show-error --location --retry 4 \
+              "https://raw.githubusercontent.com/$GH_REPO/$GITHUB_SHA/$path" --output "$path"
+          done
+
+      - name: Fetch and verify both pinned snapshots
+        run: |
+          set -eu
+          mkdir -p "$RUNNER_TEMP/model-root" "$RUNNER_TEMP/model-release"
+          for attempt in 1 2 3; do
+            if python3 tools/fetch_voice_models.py all --root "$RUNNER_TEMP/model-root"; then
+              break
+            fi
+            if [[ "$attempt" == 3 ]]; then exit 1; fi
+            sleep 8
+          done
+          python3 tools/fetch_voice_models.py all --verify-only --root "$RUNNER_TEMP/model-root"
+
+      - name: Package, restore and verify every volume
+        run: |
+          set -eu
+          stage="$RUNNER_TEMP/model-root"
+          out="$RUNNER_TEMP/model-release"
+          qwen='tts/models/Qwen3-TTS-12Hz-1.7B-Base'
+          rvc='tts/voice_lab/assets'
+          install -m 644 "$qwen/LICENSE" "$stage/$qwen/LICENSE"
+          install -m 644 tts/voice_lab/rvc/LICENSE "$stage/$rvc/LICENSE-RVC.txt"
+          install -m 644 "$qwen/LICENSE" "$stage/$rvc/hubert_base/LICENSE-APACHE-2.0.txt"
+          cat > "$out/MODEL-BUNDLE.txt" <<'NOTES'
+          Atri Desktop voice model bundle · 2026-11
+
+          Download every Atri-voice-models.7z.00* part and SHA256SUMS to one directory.
+          Compare each part's SHA-256 using Get-FileHash (PowerShell), or run
+          sha256sum -c SHA256SUMS in that directory. Keep MODEL-BUNDLE.txt there as well.
+          From the Atri Desktop project root, open the first part with 7-Zip:
+            7z x "/path/to/downloads/Atri-voice-models.7z.001"
+          Then check the 16 installed model files offline:
+            python tools/fetch_voice_models.py all --verify-only
+
+          Qwen Team · Qwen3-TTS-12Hz-1.7B-Base · Apache License 2.0
+          https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base/tree/fd4b254389122332181a7c3db7f27e918eec64e3
+          The model and speech tokenizer are installed in tts/models/Qwen3-TTS-12Hz-1.7B-Base/.
+
+          lj1995 / RVC-Project · VoiceConversionWebUI general models · MIT
+          https://huggingface.co/lj1995/VoiceConversionWebUI/tree/e6d0c1a17da07c33557852f9dfa2bd44cc75737d
+          The RVC MIT notice credits liujing04 and 源文雨. Encoder and pretrained
+          generator/discriminator files are installed in tts/voice_lab/assets/.
+          HuBERT was developed by Facebook AI. The HuBERT base model card lists
+          Apache License 2.0: https://huggingface.co/facebook/hubert-base-ls960
+          Model bytes are unchanged from the locked snapshots. See the included licenses.
+          NOTES
+          install -m 644 "$out/MODEL-BUNDLE.txt" "$stage/MODEL-BUNDLE.txt"
+
+          python3 - > "$RUNNER_TEMP/model-files.txt" <<'PY'
+          import json
+          from pathlib import Path
+          lock = json.loads(Path("tools/voice-models.lock.json").read_text())
+          assert {k: len(v["files"]) for k, v in lock.items()} == {"qwen": 11, "rvc": 5}
+          files = [f"{g['directory']}/{f}" for g in lock.values() for f in g["files"]]
+          files.extend(["MODEL-BUNDLE.txt", lock["qwen"]["directory"] + "/LICENSE",
+                        lock["rvc"]["directory"] + "/LICENSE-RVC.txt",
+                        lock["rvc"]["directory"] + "/hubert_base/LICENSE-APACHE-2.0.txt"])
+          print("\n".join(sorted(files)))
+          PY
+          # Removing only the staged archive inputs after packing leaves room for a full restore.
+          (cd "$stage" && 7z a -t7z -mx=0 -ms=off -mtm=off -mta=off -mtc=off -sdel -v1800m \
+            "$out/Atri-voice-models.7z" @"$RUNNER_TEMP/model-files.txt")
+          7z x -y "-o$RUNNER_TEMP/restored-models" "$out/Atri-voice-models.7z.001"
+          (cd "$RUNNER_TEMP/restored-models" && find . -type f -printf '%P\n' | LC_ALL=C sort) \
+            | diff - "$RUNNER_TEMP/model-files.txt"
+          python3 tools/fetch_voice_models.py all --verify-only --root "$RUNNER_TEMP/restored-models"
+          cd "$out"
+          for part in Atri-voice-models.7z.*; do
+            bytes=$(stat -c %s "$part")
+            [[ "$bytes" -gt 0 && "$bytes" -lt 2147483648 ]]
+          done
+          sha256sum Atri-voice-models.7z.* MODEL-BUNDLE.txt > SHA256SUMS
+          sha256sum -c SHA256SUMS
+
+      - name: Upload checked parts and publish the draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/model-release"
+          releases=$(gh api --paginate --slurp "repos/$GH_REPO/releases?per_page=100")
+          existing=$(jq -c --arg tag "$TAG" '[.[][] | select(.tag_name == $tag)] | first // empty' <<<"$releases")
+          if [[ -n "$existing" ]]; then
+            jq -e '.draft == true' <<<"$existing" > /dev/null || {
+              echo "::error::The release is already published. Nothing was changed."; exit 1;
+            }
+            release_id=$(jq -r '.id' <<<"$existing")
+          else
+            release_id=$(gh api --method POST "repos/$GH_REPO/releases" -f tag_name="$TAG" \
+              -f target_commitish="$GITHUB_SHA" -f name="Voice models · November 2026" \
+              -F body=@MODEL-BUNDLE.txt -F draft=true --jq .id)
+          fi
+          api="repos/$GH_REPO/releases/$release_id"
+          files=(Atri-voice-models.7z.* MODEL-BUNDLE.txt SHA256SUMS)
+          gh api "$api/assets?per_page=100" > "$RUNNER_TEMP/existing-assets.json"
+          for file in "${files[@]}"; do
+            sha="sha256:$(sha256sum "$file" | cut -d' ' -f1)"
+            found=$(jq -r --arg n "$file" '.[] | select(.name==$n) | .digest // "unknown"' \
+              "$RUNNER_TEMP/existing-assets.json")
+            if [[ -n "$found" ]]; then
+              [[ "$found" == "$sha" ]] || { echo "::error::Draft asset differs: $file"; exit 1; }
+              continue
+            fi
+            curl --fail --silent --show-error --request POST --header "Authorization: Bearer $GH_TOKEN" \
+              --header 'Content-Type: application/octet-stream' --data-binary "@$file" \
+              "https://uploads.github.com/repos/$GH_REPO/releases/$release_id/assets?name=$file" \
+              | jq -e --arg sha "$sha" '.state == "uploaded" and .digest == $sha' > /dev/null
+          done
+
+          # Require the exact set of remote names and content digests before making the draft public.
+          gh api "$api/assets?per_page=100" --jq '.[] | [.name,.digest] | @tsv' | LC_ALL=C sort > "$RUNNER_TEMP/remote-assets"
+          for file in "${files[@]}"; do printf '%s\tsha256:%s\n' "$file" "$(sha256sum "$file" | cut -d' ' -f1)"; done \
+            | LC_ALL=C sort | diff - "$RUNNER_TEMP/remote-assets"
+          gh api "$api" --jq .draft | grep -qx true
+          gh api --method PATCH "$api" -F draft=false -f make_latest=false --jq .html_url

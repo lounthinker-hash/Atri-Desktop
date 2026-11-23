@@ -1,0 +1,16 @@
+[
+  {"id":"morning","name":"早晨打招呼","hours":[6,10],"contexts":[],"weight":2,"lines":["ATR_b124_010","ATR_b207_029"],"actions":["伸了个懒腰，抬起头来。","整理好衣服，准备开始今天的活动。"]},
+  {"id":"class","name":"复习功课","hours":[7,24],"contexts":["study"],"weight":3,"lines":["ATR_b113_050","ATR_b204_016","ATR_b404_096"],"actions":["翻开笔记，回想刚学到的东西。","在看懂的地方点了点头。"]},
+  {"id":"science","name":"读理科课本","hours":[0,24],"contexts":["study","coding"],"weight":1,"lines":["ATR_b121_032","ATR_b111_033"],"actions":["把课本翻回前面，对照上次记下的知识。","抬起头，像是终于弄懂了。"]},
+  {"id":"testing","name":"研究性能测试","hours":[0,24],"contexts":["coding","game"],"weight":1,"lines":["ATR_b302_015","ATR_b205_012"],"actions":["盯着眼前的结果看了一会儿。","稍稍挺起胸膛，对自己的性能很有信心。"]},
+  {"id":"retry","name":"陪你再试一次","hours":[0,24],"contexts":["coding_error"],"weight":1,"lines":["ATR_b112_073","ATR_b302_047"],"actions":["发现测试没有顺利通过，暂时放下了笔记。","在旁边站好，打算陪你再试一次。"]},
+  {"id":"passed","name":"为通过测试高兴","hours":[0,24],"contexts":["coding_success"],"weight":1,"lines":["ATR_b401_039","ATR_b205_071"],"actions":["注意到测试通过，抬起了头。","得意地挺起胸膛，像是也等这一刻很久了。"]},
+  {"id":"notes","name":"写日志","hours":[0,24],"contexts":["writing"],"weight":2,"lines":["ATR_b113_022","ATR_b201_024"],"actions":["从连衣裙口袋里拿出日志。","低下头，把今天发生的事一件件记下来。"]},
+  {"id":"cook","name":"料理部的练习","hours":[10,21],"contexts":[],"weight":2,"lines":["ATR_b202_004","ATR_b204_073","ATR_b202_068"],"actions":["翻到笔记里水菜萌教过的菜谱。","又看了一遍揉肉、调味和掌握火候的步骤。"]},
+  {"id":"crab","name":"留意海边的螃蟹","hours":[8,20],"contexts":[],"weight":2,"lines":["ATR_b121_014","ATR_b121_025","ATR_b121_026"],"actions":["向海边望过去。","忽然有了精神，像是发现了什么。"]},
+  {"id":"hum","name":"轻轻哼歌","hours":[0,24],"contexts":["music"],"weight":1,"lines":["ATR_b124_001","ATR_b405_160"],"actions":["跟着旋律轻轻晃了晃。","停了一拍，准备开口。"]},
+  {"id":"watch","name":"安静地待在旁边","hours":[0,24],"contexts":["video","game","idle"],"weight":1,"lines":["ATR_b701_022","ATR_b204_080"],"actions":["在旁边找了个舒服的位置。","抬眼看看，安静地陪了一会儿。"]},
+  {"id":"lamps","name":"想起亮灯的教室","hours":[17,23],"contexts":[],"weight":2,"lines":["ATR_b114_004","ATR_b407_100"],"actions":["望着外面慢慢暗下来的天色。","想起教室第一次亮灯时大家的笑容。"]},
+  {"id":"evening_log","name":"整理一天的记录","hours":[19,2],"contexts":["writing"],"weight":3,"lines":["ATR_b201_024","ATR_b113_022"],"actions":["把随身带的日志翻到新的一页。","想了想，又在末尾补上一笔。"]},
+  {"id":"rest","name":"准备休息","hours":[22,7],"contexts":["idle"],"weight":3,"lines":["ATR_b103_013","ATR_b202_034","ATR_b404_025"],"actions":["眨了眨眼睛，收起笔记。","挪到安静的地方，轻声道晚安。"]}
+]

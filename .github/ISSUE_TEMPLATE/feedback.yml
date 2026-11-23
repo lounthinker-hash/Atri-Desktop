@@ -1,0 +1,27 @@
+name: 反馈问题或优化建议
+description: 帮大家复现一个动作、声音、感知或聊天问题，或者讨论改进思路。
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 相关功能
+      options:
+        - 身体动作与表情
+        - 日语语音与朗读
+        - 屏幕识别与走位
+        - 聊天、记忆与日记
+        - 安装与其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 当时发生了什么？
+      description: 请写下操作和观察到的现象；如果是新想法，可以描述希望看到的场景。
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 复现环境或短样本（可选）
+      description: 例如 Windows 版本、显示缩放、人物大小、动作菜单路径或一条自拟测试句。截图可裁到角色窗口。

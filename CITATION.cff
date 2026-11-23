@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Atri Desktop in your own work, please credit lounthinker."
+title: "Atri Desktop"
+type: software
+authors:
+  - name: "lounthinker"
+    email: "lounthinker@gmail.com"
+    website: "https://github.com/lounthinker-hash"
+repository-code: "https://github.com/lounthinker-hash/Atri-Desktop"
+license: MIT

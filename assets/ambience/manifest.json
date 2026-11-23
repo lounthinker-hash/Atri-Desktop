@@ -1,0 +1,951 @@
+{
+  "schema_version": 1,
+  "coordinate_convention": "Bounds [left,top,right,bottom) in pixels, origin at top left, x right, y down.",
+  "reference": {
+    "design_window_px": [
+      421,
+      470
+    ],
+    "actor_logical_height": 390,
+    "sprite": "assets/sprites/d1-p1-f18e483b6.webp",
+    "dress": "d1",
+    "pose": "p1",
+    "sprite_file_canvas_px": [
+      666,
+      1706
+    ],
+    "sprite_draw_rect_at_390": [
+      135,
+      75,
+      287,
+      465
+    ],
+    "sole_points_at_390": {
+      "support_shoe": [
+        217,
+        463
+      ],
+      "raised_shoe": [
+        247,
+        446
+      ]
+    },
+    "reference_art": "核验留档/2026-11-22_原作半透明背景构图.png"
+  },
+  "placement": {
+    "file_paths": "file and preview paths resolve relative to this manifest; source_file and sprite resolve relative to the project root.",
+    "layer_order_back_to_front": [
+      "desktop",
+      "atmosphere",
+      "props_and_actor",
+      "caption"
+    ],
+    "space": "底边中点锚定角色窗口。使用正常站姿的标称逻辑角色高度 H；不要用跳起姿势的缩短高度或发束、手部的形变坐标。背景仅随窗口平移。",
+    "draw_rect_formula": "给定固定人物足点 F=(Fx,Fy) 和标称站姿画布高度 H，h=H/actorHeight，w=h*pngWidth/pngHeight，绘图矩形为 [Fx-footAnchor[0]*w,Fy-footAnchor[1]*h,w,h]（左上角和宽高，逻辑 px）。中号参考 F=(210.5,465)，H=390，得到 [0,0,421,470]。",
+    "footAnchor_definition": "以完整透明 PNG 画布为基准、左上为原点。人物足点为未加形变留边的默认站姿画布底边中点，对应桌面固定足点 (windowWidth/2, windowHeight-5)，与当前 pose 的鞋底或跳跃无关。",
+    "blend": "SourceOver，PNG 为 straight RGBA。建议场景出现完毕时 painter opacity=1；不透明度峰值和柔边均已烘入，切换进度仅乘一次全局 alpha。",
+    "hit_test": "背景不属于人物交互轮廓。",
+    "runtime_integer_registration": "Scene.bounds 按现行公式先取整高，再取整宽和锚点偏移。四个场景使用相同的注册参数。中号固定足点 (210,465)，场景左上 (0,0)，画布 421×470；小号固定足点 (151,355)，场景左上 (0,22)，画布 302×337。坐标均相对人物窗口。"
+  },
+  "mask_model": {
+    "space": "参数单位为 390 档目标矩形内的像素。842×840 PNG 的列/行映到 x∈[0,420]、y∈[0,419]，均含端点。",
+    "raster_sample": "取 source_crop_px 半开区间 RGB，用 Lanczos 缩放到 842×840，赋独立 alpha，放在 842×940 完整 PNG 的 (0,100)。预览以预乘 alpha 将整张 PNG 用 Lanczos 缩到 421×470。",
+    "smoothstep": "S(a,b,t): z=clamp((t-a)/(b-a),0,1); return z*z*(3-2*z).",
+    "normalized_x": "n=abs((x-210)/210)",
+    "edge_curves": "top=40*n**2.4; bottom=419-28*n**2.6",
+    "edges": "edge=S(0,side_fade_px,x)*S(0,side_fade_px,420-x)*S(top,top+top_fade_px,y)*(1-S(bottom-bottom_fade_px-25*n*n,bottom,y))",
+    "focus_relief": "f=1-focus_strength*exp(-0.5*(((x-212)/52)**2+((y+50-170)/61)**2)); this static soft recess protects the head and neckline while retaining scenery.",
+    "alpha": "uint8=round(peak_alpha_byte*edge*f)",
+    "scope": "classroom、coast 使用本节基础模型。dusk 与 flower_field 的透明度另见各自 fade、source_record 和重建脚本。"
+  },
+  "scenes": {
+    "classroom": {
+      "label": "窗边教室",
+      "file": "classroom.png",
+      "sha256": "a5efea154fa14650706d08bf97d92f6d134c5da23583af9dc28ca06d9425a7bb",
+      "source_file": "assets/stage/classroom.webp",
+      "source_sha256": "0874f47f649746369371cb83a1451a7f1eabc651b78c70263455924ab13749fc",
+      "source_canvas_px": [
+        1280,
+        720
+      ],
+      "source_crop_px": [
+        395,
+        63,
+        1050,
+        716
+      ],
+      "file_size_px": [
+        842,
+        940
+      ],
+      "nonzero_alpha_bbox_px": [
+        6,
+        106,
+        836,
+        938
+      ],
+      "rect_at_390": [
+        0,
+        0,
+        421,
+        470
+      ],
+      "painted_region_at_390": [
+        0,
+        50,
+        421,
+        470
+      ],
+      "footAnchor": [
+        0.5,
+        0.9893617021276596
+      ],
+      "actorHeight": 0.8297872340425532,
+      "peak_alpha_byte": 115,
+      "peak_opacity": 0.45098,
+      "fade": {
+        "side_fade_px": 66,
+        "top_fade_px": 72,
+        "bottom_fade_px": 19,
+        "focus_strength": 0.46
+      },
+      "recommended_underlay": "#30343B",
+      "composition": "窗与暖光在左，右侧板面还留一小片斜窗光。课桌和椅腿位于裙边两侧，鞋下是近景地砖。",
+      "landmark_source_px": {
+        "sunlit_window_bbox": [
+          465,
+          180,
+          706,
+          387
+        ],
+        "sunlit_board_bbox": [
+          945,
+          245,
+          1045,
+          380
+        ],
+        "left_desk_bbox": [
+          431,
+          413,
+          607,
+          568
+        ]
+      },
+      "default_period": "dusk",
+      "variants": {
+        "morning": {
+          "file": "time/classroom-morning.png",
+          "sha256": "bdc875d3aaa5244b1cc1540601385acfbdff85e36bc88ca31a6a31bf036f4e54",
+          "source_kind": "原作同机位日景",
+          "lighting": "清晨窗外及树叶透入偏冷的日光，桌面、地面原有亮斑都取自日景。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg005.webp",
+              "sha256": "ca38a857f285e9be6eecb76222be6c615f36b9fccf1f1bef8c7198414993efbf",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005.png",
+              "entry_adler32": "4add9fd8",
+              "stored_offset": 69629090,
+              "stored_length": 1343577,
+              "stored_sha256": "86adf09f11c0c413317e76efecec0324924a41d2f691fb4a2ad348b23da06b12"
+            }
+          ],
+          "source_crop_px": [
+            395,
+            63,
+            1050,
+            716
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "b88db3d8967217b70fb953c56a6a567553bf447b9c2056f8f9490f5759a55147",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        },
+        "dusk": {
+          "file": "time/classroom-dusk.png",
+          "sha256": "049b23f28729715651300c93ca00d4b2a4d577bc0d019ff9950ee67fe65f00b5",
+          "source_kind": "原作夕景与同机位局部调光",
+          "lighting": "沿原图橙色窗格投影留光；后排与右侧地面收深，暖地光集中在左侧窗下。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg005e.webp",
+              "sha256": "d7f24d83f2dd914694a4e5cd5f5ae8c094e439761640e12825619489e0480085",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005e.png",
+              "entry_adler32": "567241a9",
+              "stored_offset": 77489270,
+              "stored_length": 1483267,
+              "stored_sha256": "c265c29ac345ad0596ee4d43601405f77576fdad62859dc05d022bb7516fca14"
+            },
+            {
+              "file": "assets/scenery/bg005n.webp",
+              "sha256": "0a44e4afbacecf3f541800a9a5433a7a2e13ff37d78f0bed51ebb79e637c3613",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005n.png",
+              "entry_adler32": "8e5f3d09",
+              "stored_offset": 78972537,
+              "stored_length": 1021622,
+              "stored_sha256": "bbda07ee3192d223088941eb6ab98ec500af5cb7409ee6005aeded4f0c9ae796"
+            }
+          ],
+          "source_crop_px": [
+            395,
+            63,
+            1050,
+            716
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "b88db3d8967217b70fb953c56a6a567553bf447b9c2056f8f9490f5759a55147",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "lighting_reference": "https://www.bilibili.com/video/BV17jWtzUEnb/?t=10",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        },
+        "blue_hour": {
+          "file": "time/classroom-blue_hour.png",
+          "sha256": "7c5930f423cf84cbf6ee957095f0f08d1271f403797521265f0d72c955dbb3a3",
+          "source_kind": "原作同机位时段混合",
+          "lighting": "窗外树与玻璃尚有冷蓝天光，室内逐渐进入阴影；暖色集中在近窗的地面与桌椅。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg005n2.webp",
+              "sha256": "33be3682de9c6fd6694dce37303b0e16e616caccf0a628a452e107aafb70fb6a",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005n2.png",
+              "entry_adler32": "3c4f7a35",
+              "stored_offset": 79994159,
+              "stored_length": 1391466,
+              "stored_sha256": "ad334b956631324af52820087204c0b85c50a8a5d7901a00c09f143c4522ea3d"
+            },
+            {
+              "file": "assets/scenery/bg005.webp",
+              "sha256": "ca38a857f285e9be6eecb76222be6c615f36b9fccf1f1bef8c7198414993efbf",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005.png",
+              "entry_adler32": "4add9fd8",
+              "stored_offset": 69629090,
+              "stored_length": 1343577,
+              "stored_sha256": "86adf09f11c0c413317e76efecec0324924a41d2f691fb4a2ad348b23da06b12"
+            },
+            {
+              "file": "assets/scenery/bg005n.webp",
+              "sha256": "0a44e4afbacecf3f541800a9a5433a7a2e13ff37d78f0bed51ebb79e637c3613",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005n.png",
+              "entry_adler32": "8e5f3d09",
+              "stored_offset": 78972537,
+              "stored_length": 1021622,
+              "stored_sha256": "bbda07ee3192d223088941eb6ab98ec500af5cb7409ee6005aeded4f0c9ae796"
+            }
+          ],
+          "source_crop_px": [
+            395,
+            63,
+            1050,
+            716
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "b88db3d8967217b70fb953c56a6a567553bf447b9c2056f8f9490f5759a55147",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "lighting_reference": "https://www.bilibili.com/video/BV17jWtzUEnb/?t=10",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        },
+        "night": {
+          "file": "time/classroom-night.png",
+          "sha256": "42f3faba32eb74c139421bbf86177ad3a9f3b106f3b986976aed11283d16f834",
+          "source_kind": "原作同机位亮灯夜景",
+          "lighting": "使用原作天花暖灯、受灯桌椅与黑板，窗外保留原生藏蓝色。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg005n2.webp",
+              "sha256": "33be3682de9c6fd6694dce37303b0e16e616caccf0a628a452e107aafb70fb6a",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg005n2.png",
+              "entry_adler32": "3c4f7a35",
+              "stored_offset": 79994159,
+              "stored_length": 1391466,
+              "stored_sha256": "ad334b956631324af52820087204c0b85c50a8a5d7901a00c09f143c4522ea3d"
+            }
+          ],
+          "source_crop_px": [
+            395,
+            63,
+            1050,
+            716
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "b88db3d8967217b70fb953c56a6a567553bf447b9c2056f8f9490f5759a55147",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        }
+      }
+    },
+    "coast": {
+      "label": "海边草坡",
+      "file": "coast.png",
+      "sha256": "fbe9a77160ac2d0c8b16281c423721359f6d03f276bf4bdc5eb96e0ebb209ddb",
+      "source_file": "assets/scenery/bg007.webp",
+      "source_sha256": "6efec4192bfcc1f7855a71d77813bff417f2d092f9dc8c4479c61ed292440d2a",
+      "source_canvas_px": [
+        1280,
+        720
+      ],
+      "source_crop_px": [
+        145,
+        32,
+        835,
+        720
+      ],
+      "file_size_px": [
+        842,
+        940
+      ],
+      "nonzero_alpha_bbox_px": [
+        6,
+        106,
+        836,
+        938
+      ],
+      "rect_at_390": [
+        0,
+        0,
+        421,
+        470
+      ],
+      "painted_region_at_390": [
+        0,
+        50,
+        421,
+        470
+      ],
+      "footAnchor": [
+        0.5,
+        0.9893617021276596
+      ],
+      "actorHeight": 0.8297872340425532,
+      "peak_alpha_byte": 112,
+      "peak_opacity": 0.43922,
+      "fade": {
+        "side_fade_px": 64,
+        "top_fade_px": 70,
+        "bottom_fade_px": 19,
+        "focus_strength": 0.35
+      },
+      "recommended_underlay": "#E2E6E6",
+      "composition": "海平线与栏杆在躯干两侧延续。树冠在头部右侧，白裙后保留较安静的海面与天空；两鞋下是近景草地石板。",
+      "landmark_source_px": {
+        "visible_horizon_segment": [
+          230,
+          296,
+          512,
+          296
+        ],
+        "visible_railing_segment": [
+          171,
+          361,
+          462,
+          346
+        ],
+        "main_tree_approx_bbox": [
+          585,
+          163,
+          836,
+          414
+        ]
+      },
+      "default_period": "morning",
+      "variants": {
+        "morning": {
+          "file": "coast.png",
+          "sha256": "fbe9a77160ac2d0c8b16281c423721359f6d03f276bf4bdc5eb96e0ebb209ddb",
+          "source_kind": "沿用既有原作日景",
+          "lighting": "清透浅蓝海面、白云、绿色草坡；直接使用既有 PNG。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg007.webp",
+              "sha256": "6efec4192bfcc1f7855a71d77813bff417f2d092f9dc8c4479c61ed292440d2a",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007.png",
+              "entry_adler32": "5f13b1c6",
+              "stored_offset": 92318275,
+              "stored_length": 1520159,
+              "stored_sha256": "f17a0de74d5c982107e5efcf260be1a89f6ec565853439fd0fe6909436eb2217"
+            }
+          ],
+          "source_crop_px": [
+            145,
+            32,
+            835,
+            720
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "4b64971c0647f56a66e060689f2f707309629184e44c08f89bd45644499ab3f8",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        },
+        "dusk": {
+          "file": "time/coast-dusk.png",
+          "sha256": "cbe3d5b2e65e447ad974472bdfa27909ed602d35893aef2f3cea911ad3c5e383",
+          "source_kind": "原作同机位夕景与局部光效补绘",
+          "lighting": "左侧水面转为蓝灰，右肩旁至树下留金色碎光。原作云、树和栏杆保持剪影，左下草坡进入冷灰。",
+          "sources": [
+            {
+              "file": "assets/ambience/sources/bg007e.png",
+              "sha256": "65054da602b9f52a3690714110fd79e8e8f09eb958d6540589d289450136c2f2",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007e.png",
+              "entry_adler32": "6673633d",
+              "stored_offset": 95545895,
+              "stored_length": 1452074,
+              "stored_sha256": "2709c1a749d475a3085c035c147ea55eb03a9d90ed1918df704c12dd7cb64596"
+            },
+            {
+              "file": "assets/scenery/bg007.webp",
+              "sha256": "6efec4192bfcc1f7855a71d77813bff417f2d092f9dc8c4479c61ed292440d2a",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007.png",
+              "entry_adler32": "5f13b1c6",
+              "stored_offset": 92318275,
+              "stored_length": 1520159,
+              "stored_sha256": "f17a0de74d5c982107e5efcf260be1a89f6ec565853439fd0fe6909436eb2217"
+            },
+            {
+              "file": "assets/scenery/bg007n.webp",
+              "sha256": "966ae4a862448ffd8ec4b287bba531e615d04123f0ceee00ad02ba6e46c457f7",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007n.png",
+              "entry_adler32": "90c1996a",
+              "stored_offset": 96997969,
+              "stored_length": 1171466,
+              "stored_sha256": "89b4a74d43092796648e995656712d8b76b8823f370f7a0cd1d238f6d77a9ce0"
+            }
+          ],
+          "source_crop_px": [
+            145,
+            32,
+            835,
+            720
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "4b64971c0647f56a66e060689f2f707309629184e44c08f89bd45644499ab3f8",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "lighting_reference": "https://www.bilibili.com/video/BV1gAbY6HEtm/?t=12",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        },
+        "blue_hour": {
+          "file": "time/coast-blue_hour.png",
+          "sha256": "abf1b9f7d7897e89315b3d13efccbf22c1e824acc17fbe89eb9fa2a0f7fd4e78",
+          "source_kind": "原作同机位混合与局部光效补绘",
+          "lighting": "靛蓝云隙与冷海保留暮光，右方水平小片反光只剩淡紫金；近岸栏杆先暗。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg007n.webp",
+              "sha256": "966ae4a862448ffd8ec4b287bba531e615d04123f0ceee00ad02ba6e46c457f7",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007n.png",
+              "entry_adler32": "90c1996a",
+              "stored_offset": 96997969,
+              "stored_length": 1171466,
+              "stored_sha256": "89b4a74d43092796648e995656712d8b76b8823f370f7a0cd1d238f6d77a9ce0"
+            },
+            {
+              "file": "assets/scenery/bg007.webp",
+              "sha256": "6efec4192bfcc1f7855a71d77813bff417f2d092f9dc8c4479c61ed292440d2a",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007.png",
+              "entry_adler32": "5f13b1c6",
+              "stored_offset": 92318275,
+              "stored_length": 1520159,
+              "stored_sha256": "f17a0de74d5c982107e5efcf260be1a89f6ec565853439fd0fe6909436eb2217"
+            },
+            {
+              "file": "assets/ambience/sources/bg007e.png",
+              "sha256": "65054da602b9f52a3690714110fd79e8e8f09eb958d6540589d289450136c2f2",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007e.png",
+              "entry_adler32": "6673633d",
+              "stored_offset": 95545895,
+              "stored_length": 1452074,
+              "stored_sha256": "2709c1a749d475a3085c035c147ea55eb03a9d90ed1918df704c12dd7cb64596"
+            }
+          ],
+          "source_crop_px": [
+            145,
+            32,
+            835,
+            720
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "4b64971c0647f56a66e060689f2f707309629184e44c08f89bd45644499ab3f8",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "lighting_reference": "https://www.bilibili.com/video/BV1gAbY6HEtm/?t=12",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        },
+        "night": {
+          "file": "time/coast-night.png",
+          "sha256": "2602f503dcaac58ff3be425a88d0947376dafcbc7ef018bb457b5df211e380ce",
+          "source_kind": "原作同机位夜景与远点光补绘",
+          "lighting": "沿用原作星空和靛蓝水面，在远岸附近添三组极小、低强度灯点。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg007n.webp",
+              "sha256": "966ae4a862448ffd8ec4b287bba531e615d04123f0ceee00ad02ba6e46c457f7",
+              "archive": "D:/BaiDu WangPan/ATRI -My Dear Moments-/bgimage.xp3",
+              "entry": "bg007n.png",
+              "entry_adler32": "90c1996a",
+              "stored_offset": 96997969,
+              "stored_length": 1171466,
+              "stored_sha256": "89b4a74d43092796648e995656712d8b76b8823f370f7a0cd1d238f6d77a9ce0"
+            }
+          ],
+          "source_crop_px": [
+            145,
+            32,
+            835,
+            720
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "footAnchor": [
+            0.5,
+            0.9893617021276596
+          ],
+          "actorHeight": 0.8297872340425532,
+          "alpha_sha256": "4b64971c0647f56a66e060689f2f707309629184e44c08f89bd45644499ab3f8",
+          "registration": "原作同机位各画面均为 1280×720。按既有地点的原始裁框和彩色层位置逐像素对齐，alpha 与该地点既有正式 PNG 完全相同。",
+          "render_recipe": "核验留档/背景场景/教室海边时段.py"
+        }
+      }
+    },
+    "dusk": {
+      "label": "海崖灯塔",
+      "file": "dusk.png",
+      "sha256": "4b32526d26501ae3d16f52fa42eaef53241ba094aad011a64c323d77eda09906",
+      "source_file": "assets/scenery/bg011e.webp",
+      "source_sha256": "a8bae9faa8bcbd4f637b4caf1ea0ce585a6a8ac6591954d399fddd41c3df05e1",
+      "source_canvas_px": [
+        1280,
+        720
+      ],
+      "source_crop_px": [
+        420,
+        0,
+        1137,
+        715
+      ],
+      "file_size_px": [
+        842,
+        940
+      ],
+      "nonzero_alpha_bbox_px": [
+        4,
+        107,
+        838,
+        938
+      ],
+      "rect_at_390": [
+        0,
+        0,
+        421,
+        470
+      ],
+      "painted_region_at_390": [
+        0,
+        50,
+        421,
+        470
+      ],
+      "footAnchor": [
+        0.5,
+        0.9893617021276596
+      ],
+      "actorHeight": 0.8297872340425532,
+      "peak_alpha_byte": 212,
+      "peak_opacity": 0.831373,
+      "fade": {
+        "basis": "与 mask_model 相同的 x=0..420、y=0..419 等距采样（含端点）；S 为同一 smoothstep。n=abs((x-210)/210)。本项完整覆盖全局 edge 和 alpha 参数。",
+        "side_fade_px": 62,
+        "top_fade_px": 77,
+        "bottom_fade_px": 24,
+        "focus_strength": 0.2,
+        "boundary": "top=42*n**2.4+7*(1+sin(x/56)); bottom=419-28*n**2.6",
+        "edge": "S(0,62,x)*S(0,62,420-x)*S(top,top+77,y)*(1-S(bottom-24-25*n*n,bottom,y))",
+        "alpha": "light=185+28*exp(-0.5*(((x-84)/102)**2+((y-180)/90)**2)); use round(light*edge*f), with f from mask_model using focus_strength=0.20."
+      },
+      "recommended_underlay": "#30343B",
+      "composition": "左方低空的橙霞映在海面，右方远岸退成淡灰紫，灯塔在霞光前立起；近处草尖仍泛金，右下方背光草叶偏蓝灰，承重鞋落在草地。",
+      "landmark_source_px": {
+        "lighthouse_bbox": [
+          928,
+          177,
+          978,
+          308
+        ],
+        "left_lit_clouds_and_horizon_bbox": [
+          422,
+          225,
+          625,
+          352
+        ],
+        "sunlit_surf_bbox": [
+          1030,
+          320,
+          1131,
+          443
+        ],
+        "foreground_grass_bbox": [
+          475,
+          500,
+          1125,
+          709
+        ]
+      },
+      "processing": "在 sRGB 的 RGB 裁片先用 Pillow ImageEnhance.Color(1.26)，再用 Contrast(1.10)，以 Lanczos 缩放。角色用独立图层。 对前景偏暗草叶与远岸作分区冷色处理，保留受光草尖、云与左侧海面暖光，精确公式见 rebuild_file。",
+      "source_kind": "本机游戏原作背景取景",
+      "default_period": "dusk",
+      "variants": {
+        "morning": {
+          "file": "time/dusk-morning.png",
+          "sha256": "aa4041352126b71f33317393909027ed28e438235e6ecd56fc20148db13fd2bb",
+          "source_kind": "同机位原作分区校光",
+          "lighting": "原作云、海、草三部分分别定色，以青蓝海天与初照的草叶交代清晨。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg011e.webp",
+              "sha256": "a8bae9faa8bcbd4f637b4caf1ea0ce585a6a8ac6591954d399fddd41c3df05e1"
+            }
+          ],
+          "source_crop_px": [
+            420,
+            0,
+            1137,
+            715
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "render_recipe": "核验留档/背景场景/灯塔时段.py"
+        },
+        "dusk": {
+          "file": "dusk.png",
+          "sha256": "4b32526d26501ae3d16f52fa42eaef53241ba094aad011a64c323d77eda09906",
+          "source_kind": "本机原作重新取景与校色",
+          "lighting": "橙色晚霞与左侧低位日照，近岸背光草叶转蓝灰，灯塔后的远岸淡灰紫。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg011e.webp",
+              "sha256": "a8bae9faa8bcbd4f637b4caf1ea0ce585a6a8ac6591954d399fddd41c3df05e1"
+            }
+          ],
+          "source_crop_px": [
+            420,
+            0,
+            1137,
+            715
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "render_recipe": "核验留档/背景场景/制作黄昏.py"
+        },
+        "blue_hour": {
+          "file": "time/dusk-blue_hour.png",
+          "sha256": "0c9490e0a76d0d7970b9aa1a5eebe7269e36effdc9cd8a4e876fad55a5a9e84b",
+          "source_kind": "同机位原作分区校光",
+          "lighting": "冷蓝天顶与低空残留的暖色分开，草与岸线先暗下，海面仍有余辉。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg011e.webp",
+              "sha256": "a8bae9faa8bcbd4f637b4caf1ea0ce585a6a8ac6591954d399fddd41c3df05e1"
+            }
+          ],
+          "source_crop_px": [
+            420,
+            0,
+            1137,
+            715
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "render_recipe": "核验留档/背景场景/灯塔时段.py"
+        },
+        "night": {
+          "file": "time/dusk-night.png",
+          "sha256": "0bb0f4349c6e5e9a288732f5dc479372b39918242c54e542755a5a490274a2c2",
+          "source_kind": "同机位原作校光及灯塔点光",
+          "lighting": "在灯塔原画灯室位置补暖点光，沿下方海面原有波纹绘一束窄反射，近景草影压暗。",
+          "sources": [
+            {
+              "file": "assets/scenery/bg011e.webp",
+              "sha256": "a8bae9faa8bcbd4f637b4caf1ea0ce585a6a8ac6591954d399fddd41c3df05e1"
+            }
+          ],
+          "source_crop_px": [
+            420,
+            0,
+            1137,
+            715
+          ],
+          "file_size_px": [
+            842,
+            940
+          ],
+          "render_recipe": "核验留档/背景场景/灯塔时段.py"
+        }
+      }
+    },
+    "flower_field": {
+      "label": "向日葵花海",
+      "file": "flower_field.png",
+      "sha256": "cd125926f3d901095084c87d09a6906a74f6f3b8b4405ea08a9761814f0f6c61",
+      "source_file": "assets/ambience/sources/sunflower-field-painting.png",
+      "source_sha256": "2abb2a1fd7797f06826c221a6fe5dd68c001ee2e16a25dede860a44969701ae4",
+      "source_canvas_px": [
+        1254,
+        1254
+      ],
+      "source_crop_px": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "file_size_px": [
+        842,
+        940
+      ],
+      "nonzero_alpha_bbox_px": [
+        4,
+        105,
+        838,
+        938
+      ],
+      "rect_at_390": [
+        0,
+        0,
+        421,
+        470
+      ],
+      "painted_region_at_390": [
+        0,
+        50,
+        421,
+        470
+      ],
+      "footAnchor": [
+        0.5,
+        0.9893617021276596
+      ],
+      "actorHeight": 0.8297872340425532,
+      "peak_alpha_byte": 186,
+      "peak_opacity": 0.729412,
+      "recommended_underlay": "#E2E6E6",
+      "composition": "右上暖光穿过葵瓣，成簇的大花在两侧，更靠近画缘的蓝白野花略虚。中景留低对比绿叶，远花缩成轻薄金带。发梢和白袖有连续底色，两鞋下是草地。",
+      "fade": {
+        "recipe_file": "核验留档/背景场景/制作花海.py",
+        "side_fade_px": 62,
+        "top_fade_px": 70,
+        "bottom_fade_px": 24,
+        "focus_strength": 0.24,
+        "sky_alpha_byte": 151,
+        "foreground_alpha_byte": 186
+      },
+      "landmark_source_px": {
+        "left_foreground_sunflower_bbox": [
+          105,
+          520,
+          451,
+          926
+        ],
+        "right_foreground_flower_group_bbox": [
+          765,
+          405,
+          1210,
+          936
+        ],
+        "distant_flower_band_bbox": [
+          162,
+          362,
+          1086,
+          432
+        ],
+        "distant_tree_line_bbox": [
+          56,
+          303,
+          1147,
+          373
+        ],
+        "ground_under_feet_bbox": [
+          505,
+          1045,
+          733,
+          1248
+        ]
+      },
+      "source_kind": "外部摄影经 AI 改绘",
+      "default_period": "dusk",
+      "variants": {
+        "morning": {
+          "file": "time/flower_field-morning.png",
+          "sha256": "809d19d7067d51bb732262e03b5a2a37d7030f48fb5fe12706c1ae10f3ee6584",
+          "source_kind": "同机位底画分区校光",
+          "lighting": "把夕照校为清晨：淡青色天空，树线和远花减饱和，绿叶为冷青绿，花瓣保留柔黄。",
+          "sources": [
+            {
+              "file": "assets/ambience/sources/sunflower-field-painting.png",
+              "sha256": "2abb2a1fd7797f06826c221a6fe5dd68c001ee2e16a25dede860a44969701ae4"
+            }
+          ],
+          "render_recipe": "核验留档/背景场景/花海时段.py",
+          "file_size_px": [
+            842,
+            940
+          ]
+        },
+        "dusk": {
+          "file": "flower_field.png",
+          "sha256": "cd125926f3d901095084c87d09a6906a74f6f3b8b4405ea08a9761814f0f6c61",
+          "source_kind": "外部摄影 AI 改绘底画",
+          "lighting": "改绘底画本身的右上方斜光，琥珀色花瓣与褐色花盘；中央留一段暖暗草地。",
+          "sources": [
+            {
+              "file": "assets/ambience/sources/sunflower-field-painting.png",
+              "sha256": "2abb2a1fd7797f06826c221a6fe5dd68c001ee2e16a25dede860a44969701ae4"
+            }
+          ],
+          "render_recipe": "核验留档/背景场景/制作花海.py",
+          "file_size_px": [
+            842,
+            940
+          ]
+        },
+        "blue_hour": {
+          "file": "time/flower_field-blue_hour.png",
+          "sha256": "201682b2215a8107c531cca8358604930fa94841a95a9b59e542f7ab32e95111",
+          "source_kind": "同机位底画分区校光",
+          "lighting": "以同一树线作遮挡，蓝紫天顶向细窄的桃色地平线过渡；远花受最后一线余光，近叶偏冷。",
+          "sources": [
+            {
+              "file": "assets/ambience/sources/sunflower-field-painting.png",
+              "sha256": "2abb2a1fd7797f06826c221a6fe5dd68c001ee2e16a25dede860a44969701ae4"
+            }
+          ],
+          "render_recipe": "核验留档/背景场景/花海时段.py",
+          "file_size_px": [
+            842,
+            940
+          ]
+        },
+        "night": {
+          "file": "time/flower_field-night.png",
+          "sha256": "224151a43878dd426b98c2618de16ead5f47a39bda08cc869b00397626ee69c6",
+          "source_kind": "同机位底画分区校光并绘制点光",
+          "lighting": "靛青夜空，暗部转蓝绿，以少量星点和两侧草丛间的微弱萤光拉出距离。点光位置避开人物、鞋和头发。",
+          "sources": [
+            {
+              "file": "assets/ambience/sources/sunflower-field-painting.png",
+              "sha256": "2abb2a1fd7797f06826c221a6fe5dd68c001ee2e16a25dede860a44969701ae4"
+            }
+          ],
+          "render_recipe": "核验留档/背景场景/花海时段.py",
+          "file_size_px": [
+            842,
+            940
+          ]
+        }
+      }
+    }
+  },
+  "time_of_day": {
+    "order": [
+      "morning",
+      "dusk",
+      "blue_hour",
+      "night"
+    ],
+    "clock": "device_local_wall_clock",
+    "selection": "按设备本地 24 小时钟，从 start_local 含起，到下一个分界不含止。午夜属于前日晚间；白天使用早的画面。地点选择与时段选择独立。",
+    "periods": {
+      "morning": {
+        "label": "早",
+        "start_local": "05:00"
+      },
+      "dusk": {
+        "label": "黄昏",
+        "start_local": "16:30"
+      },
+      "blue_hour": {
+        "label": "蓝调",
+        "start_local": "18:30"
+      },
+      "night": {
+        "label": "晚",
+        "start_local": "19:30"
+      }
+    },
+    "variant_paths": "file 相对本清单所在目录。每种时段提供完整 straight-RGBA 场景图；footAnchor、actorHeight 和文件尺寸由场景继承。来源记录中 sources[].file、source_file、render_recipe 相对项目根。",
+    "fallback": "变体不可用时，使用本地点的 file、footAnchor 和 actorHeight。"
+  }
+}

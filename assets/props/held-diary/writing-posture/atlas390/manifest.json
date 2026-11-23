@@ -1,0 +1,146 @@
+{
+  "id": "d1-chest-writing-390",
+  "version": 1,
+  "fps": 24,
+  "logicalActorHeight": 390,
+  "rgbaCanvas": [
+    203,
+    390
+  ],
+  "footAnchorPx": [
+    101.5,
+    390
+  ],
+  "nativePaddedCanvas": [
+    890,
+    1706
+  ],
+  "nativeUnpaddedActorOriginPx": [
+    112,
+    0
+  ],
+  "origin": "左上原点，逻辑像素。角色足点为未形变原画底边中点。贴回其他高度时，所有尺寸、偏移统一乘 H/390。",
+  "upperRectXYWH": [
+    0,
+    0,
+    203,
+    262
+  ],
+  "lower": {
+    "file": "lower.webp",
+    "rectXYWH": [
+      0,
+      262,
+      203,
+      128
+    ],
+    "sha256": "d3aeebbcef47f226a5237a9418a9abdf6c830faa5d5eb09d281596bf5d961326"
+  },
+  "clips": {
+    "reach": {
+      "frameCount": 17,
+      "columns": 8,
+      "cellSize": [
+        203,
+        262
+      ],
+      "pages": {
+        "blank": {
+          "file": "reach-blank.webp",
+          "sha256": "23e8aa89acd86345382a5a29f480ba87f49c4afba174ba32baa08ce08ea8fc33"
+        },
+        "sparse": {
+          "file": "reach-sparse.webp",
+          "sha256": "0508fb138126e5f5a821b5b7c652ff55b2effebde373525726009bc248b0dcd7"
+        },
+        "filled": {
+          "file": "reach-filled.webp",
+          "sha256": "87b13f0b218f610e95f93910bbd010a1f5c4c6a51ba64a6baff9c6f0d34d4679"
+        }
+      }
+    },
+    "write": {
+      "frameCount": 102,
+      "columns": 8,
+      "cellSize": [
+        203,
+        262
+      ],
+      "pages": {
+        "blank": {
+          "file": "write-blank.webp",
+          "sha256": "1de2201bb7ef59acb5f1c896bbee957f1730e2f891c02941e222ab84c760bc5b"
+        },
+        "sparse": {
+          "file": "write-sparse.webp",
+          "sha256": "cf698bd19aa61145b1549840cbb5d5fcdfa0caff94cc644c2607c6415c2ef0c8"
+        },
+        "filled": {
+          "file": "write-filled.webp",
+          "sha256": "c8e65462ed8865b446b193b103513808aa88c59ec087d1af5f16ed0767635668"
+        }
+      }
+    },
+    "return": {
+      "frameCount": 17,
+      "columns": 8,
+      "cellSize": [
+        203,
+        262
+      ],
+      "pages": {
+        "blank": {
+          "file": "return-blank.webp",
+          "sha256": "0312c8cdef3e684f2615c151f55fe6c9ef50a2264fc723fd63567a9d83c1d9e3"
+        },
+        "sparse": {
+          "file": "return-sparse.webp",
+          "sha256": "1a5861ea9393ffc2c20b329e4e844192637c551b94e5caab43710320ccd42e93"
+        },
+        "filled": {
+          "file": "return-filled.webp",
+          "sha256": "ff12c72313f62d15267f00807664e9189cbf7fe4e3448d128fe1d5f4fc4b6095"
+        }
+      }
+    },
+    "turn_to_pen": {
+      "frameCount": 15,
+      "columns": 8,
+      "cellSize": [
+        203,
+        262
+      ],
+      "pages": {
+        "blank": {
+          "file": "turn_to_pen-blank.webp",
+          "sha256": "a2f5ab0c8841f3fe2da23cf52f813452b0b20c7809219856365bb1ac32282a98"
+        },
+        "sparse": {
+          "file": "turn_to_pen-sparse.webp",
+          "sha256": "3d63245b3355b3c3155c8bfe565e58f536dc85575b07a3e06cef60572f69e7e2"
+        },
+        "filled": {
+          "file": "turn_to_pen-filled.webp",
+          "sha256": "2aa1b8b8006d1edcc76468e1eed58caca277e800409ef161cf0175b28b3378de"
+        }
+      }
+    }
+  },
+  "selection": "从主清单 clips[stage].frames 的索引取同编号格。按原日志已打开的页态选 blank、sparse 或 filled。",
+  "draw": "在透明画布上画 lower 与本帧的整块上片。格子相对图集为 [(i % columns)*cellWidth, (i // columns)*cellHeight, cellWidth, cellHeight]；不要将完整上片叠在仍有另一对手的原人物上。",
+  "inputs": {
+    "manifest.json": "e273b2e74c6175b71ed0bdcf7cb589f9ef6e2837d570e92cfb39db375fa09045",
+    "head/manifest.json": "0d1480f1a2655b1c84a5fb3bb3661230f13d45a231cf6cbe24cfa10337287274",
+    "arms/manifest.json": "87ad854340356b84ef9d866292f53335f4ae103de770d01bcc67dc7e652e6870",
+    "../pen-write/write.json": "9f93f7b9788eca6d01d0ceb45c85a6253a570ff2598e0015c2f1a0da6eb602b4",
+    "../action-hand/write/performance.json": "33ec210ee81a905d84eb1a67961263b0f45231458f513457a431b0a2edc539c6",
+    "preview.py": "53ae82a8c3045189ef42d758a9686f09486b991b7605a1bc347e1db2fe4e471b",
+    "head/compose.py": "6be0bc32488b5287ab3a824ea3192a480f4421a7bae56cd782b7c519c41f152b",
+    "arms/composite.py": "9b71f243c34023f03c6760cfc9169dd55f86e5783a2dd8f51896c4e5235a277c"
+  },
+  "checks": {
+    "lowerIdenticalInEveryFrame": true,
+    "decodeCompare": "对所有原速渲染格，将 WebP 解码、拼回上下片后与局部图层合成结果逐像素比较预乘 RGBA。",
+    "wholeFramesCompared": 453
+  }
+}

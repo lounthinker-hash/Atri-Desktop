@@ -1,0 +1,448 @@
+{
+  "sourceGame": "ATRI -My Dear Moments-",
+  "copyright": "© Aniplex Inc. All rights reserved.",
+  "terms": "https://aniplex-exe.com/guidelines/",
+  "assets": {
+    "curious": {
+      "id": "curious",
+      "file": "curious.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "e2a5343a46cefb22dbdc751ff70f95d9d83b64d4fb5d27b5ff7e799b3c02048c",
+      "source_sprite": "../../../../sprites/d1-p1-458fe011a.webp",
+      "source_sprite_sha256": "14e1564d43cba82fe648dbf18da3bc1e1707823579de2635bbf62023c26363c9",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        67,
+        312,
+        800
+      ],
+      "crop_px": [
+        83,
+        110,
+        237,
+        264
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        812,
+        835,
+        858
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "bashful": {
+      "id": "bashful",
+      "file": "bashful.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "017ac128ab7b90e5aba4bf6aa4dab3a39e2d1efeac8aa1ad7ff532925fef7131",
+      "source_sprite": "../../../../sprites/d1-p1-09da6317d.webp",
+      "source_sprite_sha256": "7baaee62194b4a0e192cac6bab901c63d7dedbd1fdf73938d6fba13125fd055d",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        2,
+        312,
+        800
+      ],
+      "crop_px": [
+        94,
+        116,
+        236,
+        258
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        801,
+        820,
+        843,
+        866
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "startled": {
+      "id": "startled",
+      "file": "startled.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "42d92d77e413c45f1f68113ad386730f96aaa7a3847b7626cf35adfa49fbbb63",
+      "source_sprite": "../../../../sprites/d1-p1-b60c111de.webp",
+      "source_sprite_sha256": "e8dc857dae591745f223f6e6bb66ebf34fb2d1388148d5525a8215f89573beb9",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        67,
+        312,
+        800
+      ],
+      "crop_px": [
+        86,
+        108,
+        241,
+        264
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        823,
+        846,
+        869
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "relieved": {
+      "id": "relieved",
+      "file": "relieved.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "ce2238786f0b0769f4a43a99cb93ed21206b94819e6b62e119cf894b7389ac31",
+      "source_sprite": "../../../../sprites/d1-p1-5bb001c7e.webp",
+      "source_sprite_sha256": "0ba535f229efe3894da15d3e17300cd8b513488d581d8af914febedc12639c86",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        67,
+        312,
+        800
+      ],
+      "crop_px": [
+        82,
+        109,
+        242,
+        270
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        811,
+        832,
+        855
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "sleepy": {
+      "id": "sleepy",
+      "file": "sleepy.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "939622aacf511b20204c82b962b928f5053f76f575ed22ffbe8ef319c9c354a1",
+      "source_sprite": "../../../../sprites/d1-p1-cc880f97a.webp",
+      "source_sprite_sha256": "b4b33cc5f04b0edcc2438f1649253d49036adefa7d48c82bf24318849155521b",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        67,
+        312,
+        800
+      ],
+      "crop_px": [
+        97,
+        116,
+        236,
+        256
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        815,
+        838,
+        861
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "cheering": {
+      "id": "cheering",
+      "file": "cheering.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "8f9e6905a6ba5cb837ea298573a23d499769597da06cda4ca4a3e0fe1468e311",
+      "source_sprite": "../../../../sprites/d1-p2-b8e4f691c.webp",
+      "source_sprite_sha256": "35bbdcb2a1f2043886e1fe404d12d5715148397d3a892d2835a35779ae3c63b1",
+      "source_sprite_size_px": [
+        336,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        6,
+        336,
+        800
+      ],
+      "crop_px": [
+        65,
+        83,
+        265,
+        284
+      ],
+      "pose": "p2",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        877,
+        695,
+        806,
+        829,
+        852
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "protesting": {
+      "id": "protesting",
+      "file": "protesting.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "6a5900cb9dbf5a9927e6c2c81d6ee4451b24bff114fd82ec4a1ae77272b9af0e",
+      "source_sprite": "../../../../sprites/d1-p2-934fc2e68.webp",
+      "source_sprite_sha256": "7aa3349faf4c218b12b7e55a859a3f66d2f1a6afa9cfc21b47b52db1208998c6",
+      "source_sprite_size_px": [
+        717,
+        1706
+      ],
+      "source_alpha_bbox_px": [
+        4,
+        18,
+        713,
+        1702
+      ],
+      "crop_px": [
+        186,
+        238,
+        510,
+        562
+      ],
+      "pose": "p2",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        877,
+        695,
+        807,
+        830,
+        853
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "teary": {
+      "id": "teary",
+      "file": "teary.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "d8cacae803a784a93411dcf71db8b648b0d12c774b92ffb94caa55b9ad4df8d4",
+      "source_sprite": "../../../../sprites/d1-p1-04adf692f.webp",
+      "source_sprite_sha256": "e8783874490cdb2d5b1662466fad750e2ec3d86cc0a13d2b381ddeb4a561654e",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        67,
+        312,
+        800
+      ],
+      "crop_px": [
+        91,
+        118,
+        230,
+        257
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        801,
+        816,
+        891,
+        862
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "chewing": {
+      "id": "chewing",
+      "file": "chewing.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "55390d34ebc12bac968c8ac0bbbe673a6d40a4e4693e28024040e4e39be07a42",
+      "source_sprite": "../../../../sprites/d1-p1-729100504.webp",
+      "source_sprite_sha256": "6cba3bf53fe5a628c22897cdc1b816b4c2ddb26587a2a414f65c6fa3c592f99c",
+      "source_sprite_size_px": [
+        312,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        0,
+        67,
+        312,
+        800
+      ],
+      "crop_px": [
+        77,
+        104,
+        244,
+        271
+      ],
+      "pose": "p1",
+      "dress": "d1",
+      "part_ids": [
+        694,
+        715,
+        695,
+        822,
+        845,
+        868
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    },
+    "playful": {
+      "id": "playful",
+      "file": "playful.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "fcf3143765d34c3eb61574fec3f6e830dd2ee0213baa227612d8a4fe0ea37821",
+      "source_sprite": "../../../../sprites/d1-p3-041c26455.webp",
+      "source_sprite_sha256": "8c5fdd84f98d12c97981b815d1573f3fdb7170d442c2e6edd526f2681184d653",
+      "source_sprite_size_px": [
+        661,
+        800
+      ],
+      "source_alpha_bbox_px": [
+        2,
+        0,
+        661,
+        793
+      ],
+      "crop_px": [
+        289,
+        39,
+        468,
+        219
+      ],
+      "pose": "p3",
+      "dress": "d1",
+      "part_ids": [
+        1611,
+        1706,
+        1633,
+        1654,
+        1677
+      ],
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘"
+    }
+  }
+}

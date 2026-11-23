@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "canvasPx": [
+    432,
+    348
+  ],
+  "pivotPx": [
+    180,
+    276
+  ],
+  "atlas": "ink.png",
+  "tileCount": 21,
+  "cellSize": [
+    80,
+    60
+  ],
+  "frames": [
+    {
+      "closingIndex": 0,
+      "openingIndex": 11,
+      "angleDegrees": 180,
+      "bookFiles": {
+        "blank": "open-blank.png",
+        "sparse": "open-sparse.png",
+        "filled": "open-filled.png"
+      },
+      "atlasRow": 0,
+      "originalTextMedianRegistrationErrorPx": 0.0,
+      "openToBookAffine": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "bookRect": [
+        221,
+        143,
+        283,
+        186
+      ]
+    },
+    {
+      "closingIndex": 1,
+      "openingIndex": 10,
+      "angleDegrees": 169,
+      "bookFiles": {
+        "blank": "angle-169.png",
+        "sparse": "sparse-angle-169.png",
+        "filled": "filled-angle-169.png"
+      },
+      "atlasRow": 1,
+      "originalTextMedianRegistrationErrorPx": 0.43,
+      "openToBookAffine": [
+        [
+          0.9977028,
+          -0.0032461,
+          1.3162899
+        ],
+        [
+          0.0021108,
+          0.9998177,
+          -0.3502792
+        ]
+      ],
+      "bookRect": [
+        221,
+        143,
+        283,
+        186
+      ]
+    },
+    {
+      "closingIndex": 2,
+      "openingIndex": 9,
+      "angleDegrees": 153,
+      "bookFiles": {
+        "blank": "angle-153.png",
+        "sparse": "sparse-angle-153.png",
+        "filled": "filled-angle-153.png"
+      },
+      "atlasRow": 2,
+      "originalTextMedianRegistrationErrorPx": 0.539,
+      "openToBookAffine": [
+        [
+          0.9867593,
+          -0.019517,
+          7.7538412
+        ],
+        [
+          0.0102664,
+          0.9974408,
+          -1.1160198
+        ]
+      ],
+      "bookRect": [
+        222,
+        144,
+        284,
+        187
+      ]
+    },
+    {
+      "closingIndex": 3,
+      "openingIndex": 8,
+      "angleDegrees": 132,
+      "bookFiles": {
+        "blank": "angle-132.png",
+        "sparse": "sparse-angle-132.png",
+        "filled": "filled-angle-132.png"
+      },
+      "atlasRow": 3,
+      "originalTextMedianRegistrationErrorPx": 0.592,
+      "openToBookAffine": [
+        [
+          0.9620974,
+          -0.0562598,
+          22.2876727
+        ],
+        [
+          0.0307507,
+          0.9927647,
+          -3.5314225
+        ]
+      ],
+      "bookRect": [
+        225,
+        146,
+        286,
+        189
+      ]
+    },
+    {
+      "closingIndex": 4,
+      "openingIndex": 7,
+      "angleDegrees": 111,
+      "bookFiles": {
+        "blank": "angle-111.png",
+        "sparse": "sparse-angle-111.png",
+        "filled": "filled-angle-111.png"
+      },
+      "atlasRow": 4,
+      "originalTextMedianRegistrationErrorPx": 0.561,
+      "openToBookAffine": [
+        [
+          0.9290149,
+          -0.1050948,
+          41.6897269
+        ],
+        [
+          0.0574329,
+          0.9865288,
+          -6.5998976
+        ]
+      ],
+      "bookRect": [
+        229,
+        149,
+        288,
+        191
+      ]
+    },
+    {
+      "closingIndex": 5,
+      "openingIndex": 6,
+      "angleDegrees": 97,
+      "bookFiles": {
+        "blank": "angle-097.png",
+        "sparse": "sparse-angle-097.png",
+        "filled": "filled-angle-097.png"
+      },
+      "atlasRow": 5,
+      "originalTextMedianRegistrationErrorPx": 0.599,
+      "openToBookAffine": [
+        [
+          0.9044499,
+          -0.1413999,
+          56.1066982
+        ],
+        [
+          0.0773162,
+          0.9818451,
+          -8.8795902
+        ]
+      ],
+      "bookRect": [
+        232,
+        151,
+        289,
+        193
+      ]
+    },
+    {
+      "closingIndex": 6,
+      "openingIndex": 5,
+      "angleDegrees": 83,
+      "bookFiles": {
+        "blank": "angle-083.png",
+        "sparse": "sparse-angle-083.png",
+        "filled": "filled-angle-083.png"
+      },
+      "atlasRow": 6,
+      "originalTextMedianRegistrationErrorPx": 0.571,
+      "openToBookAffine": [
+        [
+          0.8791304,
+          -0.1786917,
+          70.931326
+        ],
+        [
+          0.0976797,
+          0.9770081,
+          -11.2033864
+        ]
+      ],
+      "bookRect": [
+        235,
+        153,
+        291,
+        195
+      ]
+    },
+    {
+      "closingIndex": 7,
+      "openingIndex": 4,
+      "angleDegrees": 70,
+      "bookFiles": {
+        "blank": "angle-070.png",
+        "sparse": "sparse-angle-070.png",
+        "filled": "filled-angle-070.png"
+      },
+      "atlasRow": 7,
+      "originalTextMedianRegistrationErrorPx": 0.591,
+      "openToBookAffine": [
+        [
+          0.8565196,
+          -0.2125655,
+          84.2897006
+        ],
+        [
+          0.1164076,
+          0.9726784,
+          -13.3881992
+        ]
+      ],
+      "bookRect": [
+        256,
+        155,
+        292,
+        197
+      ]
+    },
+    {
+      "closingIndex": 8,
+      "openingIndex": 3,
+      "angleDegrees": 52,
+      "bookFiles": {
+        "blank": "angle-052.png",
+        "sparse": "sparse-angle-052.png",
+        "filled": "filled-angle-052.png"
+      },
+      "atlasRow": null,
+      "originalTextMedianRegistrationErrorPx": 0.555,
+      "openToBookAffine": [
+        [
+          0.8287665,
+          -0.2556181,
+          100.9624629
+        ],
+        [
+          0.1381026,
+          0.9675462,
+          -15.6209327
+        ]
+      ]
+    },
+    {
+      "closingIndex": 9,
+      "openingIndex": 2,
+      "angleDegrees": 32,
+      "bookFiles": {
+        "blank": "angle-032.png",
+        "sparse": "sparse-angle-032.png",
+        "filled": "filled-angle-032.png"
+      },
+      "atlasRow": null
+    },
+    {
+      "closingIndex": 10,
+      "openingIndex": 1,
+      "angleDegrees": 14,
+      "bookFiles": {
+        "blank": "angle-014.png",
+        "sparse": "sparse-angle-014.png",
+        "filled": "filled-angle-014.png"
+      },
+      "atlasRow": null
+    },
+    {
+      "closingIndex": 11,
+      "openingIndex": 0,
+      "angleDegrees": 0,
+      "bookFiles": {
+        "blank": "closed.png",
+        "sparse": "closed.png",
+        "filled": "closed.png"
+      },
+      "atlasRow": null
+    }
+  ],
+  "bookManifest": "../../book/book.json",
+  "sourceInk": "../../pen-write/write.json",
+  "drawing": "Freeze ink_tile (0..20) and the source page. For closingIndex j select the underlying blank/sparse/filled frame from bookManifest. If atlasRow is an integer, copy [ink_tile*80, atlasRow*60, width, height] to bookRect. Rect is [left,top,right,bottom), width=right-left, height=bottom-top. Draw onto the 432x348 book before the front supporting fingers and before any pocket mask. Null atlasRow means fully occluded. Ink tile 0 is empty. All PNG paths relative to their own manifest.",
+  "registration": "Original right-page writing in the filled vs sparse book tiles provides common landmarks, fitted by a subpixel affine. The exposed right page and the leather occluder are sampled from the original blank book tile. The angle labels are the earlier desk artwork's authored values. At 180 degrees ink alpha is identical to the pen-write atlas for every tile."
+}

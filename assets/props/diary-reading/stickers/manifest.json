@@ -1,0 +1,1988 @@
+{
+  "schemaVersion": 2,
+  "fileBase": "file、sourceFile、licenseFile 和逐项 provenanceFile 相对此清单；provenanceKey 指向该来源清单的 assets 键。scriptCue.record 为相对项目根目录的归档定位。",
+  "provenanceFile": "../marginalia/sources.json",
+  "selection": {
+    "defaultIds": [],
+    "maxPerDay": null,
+    "unit": "paragraph",
+    "rule": "整日可无配图。逐段从有当日依据的主题中选，可跨段使用多枚。聊天依据仅表示双方聊到该物。第三人的情绪、假设、否定及尚未发生的计划，不作已经发生的经历。",
+    "basisKinds": {
+      "observed": "亚托莉当日亲眼见到对象或亲历对应天气。",
+      "performed": "对应动作由亚托莉实际做过。",
+      "conversation_topic": "当日对话或该段明确记载双方聊过这个具体话题。",
+      "self_reported_feeling": "亚托莉对自身感受的陈述，含当日实际表达出的反应。"
+    },
+    "fields": {
+      "keywords": "简中匹配词，提供候选线索；结合该段及 basis 判断。",
+      "tags": "馆藏主题标签，可供检索。",
+      "basis": "一种或多种可用的当日事实依据，取值见 basisKinds。",
+      "sources": "可选的当日活动 source 精确键，空数组表示未指定。",
+      "source": "图像出处的人类可读说明。",
+      "artOrigin": "game_sprite、game_item、original_drawing 或 fluent_flat。",
+      "constraints": "个别图的附加匹配条件。",
+      "evidenceMode": "现有桌面选择器读取的匹配模式。observed 对应亲见，activity 对应实做，emotion 对应自身感受，topic 用于可按多种依据配图的物件。完整适用依据见 basis。"
+    }
+  },
+  "layout": {
+    "scene": "b402.ks/*start",
+    "canvas": [
+      1280,
+      720
+    ],
+    "coordinates": "原版舞台左上角为原点，向右、向下为正。矩形依次为 x、y、宽、高，使用底板的等比缩放与居中偏移。",
+    "marginRectXYWH": [
+      52,
+      110,
+      164,
+      490
+    ],
+    "messageRectXYWH": [
+      265,
+      47,
+      890,
+      637
+    ],
+    "layer": "绘制区限于原版 b402 舞台左侧。贴纸对应的正文段落与随阅读位置的展示由读本处理。"
+  },
+  "assets": {
+    "paper_boat": {
+      "id": "paper_boat",
+      "file": "paper/paper_boat.png",
+      "alt": "一只蓝底白帆折痕的小纸船",
+      "label": "一只蓝底白帆折痕的小纸船",
+      "topic": "paper_boat",
+      "theme": "折过纸船、见过纸船，或当天聊起折纸船。",
+      "tags": [
+        "纸船",
+        "小纸船"
+      ],
+      "keywords": [
+        "纸船",
+        "小纸船",
+        "折纸船"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "paper_boat",
+      "sha256": "5c7e3a34c9467fc2ed112fbcd7f058af496b6322184a1078b3379e4b9506354d",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/paper_boat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "paper_crane": {
+      "id": "paper_crane",
+      "file": "paper/paper_crane.png",
+      "alt": "一只展开双翼的折纸鹤，灰线勾出纸面的折痕",
+      "label": "一只展开双翼的折纸鹤，灰线勾出纸面的折痕",
+      "topic": "paper_crane",
+      "theme": "折过或看见纸鹤，或当天谈到千纸鹤。",
+      "tags": [
+        "纸鹤",
+        "千纸鹤"
+      ],
+      "keywords": [
+        "纸鹤",
+        "千纸鹤",
+        "折纸鹤"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘的中性白纸线稿。折线以灰阶区分，不给日记里的纸张指定颜色。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "paper_crane",
+      "sha256": "e6eebbe5c926f98c67b0cf83695f964b30885295756c8ed13758dd6162feede2",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/paper_crane.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "colorTreatment": "neutral_ink"
+    },
+    "pressed_leaf": {
+      "id": "pressed_leaf",
+      "file": "paper/pressed_leaf.png",
+      "alt": "一片金褐色的叶子，叶脉清晰，叶柄朝左下",
+      "label": "一片金褐色的叶子，叶脉清晰，叶柄朝左下",
+      "topic": "pressed_leaf",
+      "theme": "见到、捡过、夹存树叶，或聊起一片叶子。",
+      "tags": [
+        "叶子",
+        "落叶"
+      ],
+      "keywords": [
+        "叶子",
+        "落叶",
+        "捡树叶",
+        "夹树叶",
+        "压叶标本"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "pressed_leaf",
+      "sha256": "1f4dcfecbf8862b4181cface458dcc4c2a019668af0256d475f50a8a193b5636",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/pressed_leaf.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "bookmark": {
+      "id": "bookmark",
+      "file": "paper/bookmark.png",
+      "alt": "一枚绿色长书签，顶端系着珊瑚红的流苏",
+      "label": "一枚绿色长书签，顶端系着珊瑚红的流苏",
+      "topic": "bookmark",
+      "theme": "做过、收到或聊到书签。",
+      "tags": [
+        "书签",
+        "流苏书签"
+      ],
+      "keywords": [
+        "书签",
+        "流苏书签",
+        "做书签",
+        "夹书签"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "bookmark",
+      "sha256": "22ee2654af9ec94ef63019f87253fa5aa4b882ee3af8d610e6026cb4e9f13e02",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/bookmark.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "pinwheel": {
+      "id": "pinwheel",
+      "file": "paper/pinwheel.png",
+      "alt": "四片不同朝向的折纸风车，下接一根木柄",
+      "label": "四片不同朝向的折纸风车，下接一根木柄",
+      "topic": "pinwheel",
+      "theme": "做过、转过纸风车，或当天谈起这个小玩具。",
+      "tags": [
+        "纸风车",
+        "折风车"
+      ],
+      "keywords": [
+        "纸风车",
+        "折风车",
+        "做风车",
+        "小风车"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "pinwheel",
+      "sha256": "257e431f93148f56b3f6b75a476666c403098ceb39e8eb5b2e1b94bf417f3bcf",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/pinwheel.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "paper_plane": {
+      "id": "paper_plane",
+      "file": "paper/paper_plane.png",
+      "alt": "一架尖头朝右上方的蓝白折纸飞机",
+      "label": "一架尖头朝右上方的蓝白折纸飞机",
+      "topic": "paper_plane",
+      "theme": "折过、放飞过纸飞机，或谈起折纸飞机。",
+      "tags": [
+        "纸飞机",
+        "折飞机"
+      ],
+      "keywords": [
+        "纸飞机",
+        "折飞机",
+        "叠飞机"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "paper_plane",
+      "sha256": "e1a46a6101814b4dedbd45e67e875689f17d676f06fd21af5a789594a370402f",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/paper_plane.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "pressed_daisy": {
+      "id": "pressed_daisy",
+      "file": "paper/pressed_daisy.png",
+      "alt": "一朵奶白色的小雏菊，花心金黄，弯茎上有两片叶子",
+      "label": "一朵奶白色的小雏菊，花心金黄，弯茎上有两片叶子",
+      "topic": "pressed_daisy",
+      "theme": "亲手压花、看见雏菊，或当天聊到雏菊和压花。",
+      "tags": [
+        "雏菊",
+        "小雏菊"
+      ],
+      "keywords": [
+        "雏菊",
+        "小雏菊",
+        "压花",
+        "雏菊标本"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "provenanceFile": "paper/sources.json",
+      "provenanceKey": "pressed_daisy",
+      "sha256": "e2cb11ffcccd0b1901d0ecd1bd55e282a1b5588455cef149ea19b74bea4908a7",
+      "artOrigin": "original_drawing",
+      "sourceFile": "paper/source/pressed_daisy.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "reading": {
+      "id": "reading",
+      "file": "../marginalia/reading.png",
+      "alt": "一本摊开的横线本，右页夹着红书签",
+      "label": "一本摊开的横线本，右页夹着红书签",
+      "topic": "reading",
+      "theme": "当天确实翻书或读了几页",
+      "source": "桌面版美术为日记页边自绘的 160 × 160 线稿。",
+      "provenanceKey": "reading",
+      "provenanceFile": "../marginalia/sources.json",
+      "sha256": "67fa437b1847756ef24a686cc2918499af65a23471c7374a4f207933ea6c655c",
+      "artOrigin": "original_drawing",
+      "tags": [
+        "阅读",
+        "翻书"
+      ],
+      "keywords": [
+        "读书",
+        "看书",
+        "翻书",
+        "翻开书",
+        "读了几页",
+        "读了一会"
+      ],
+      "basis": [
+        "performed"
+      ],
+      "sources": [
+        "activity/class/read",
+        "activity/science/read",
+        "activity/class/turn_page"
+      ],
+      "evidenceMode": "activity"
+    },
+    "pencil": {
+      "id": "pencil",
+      "file": "desk/pencil.png",
+      "alt": "削尖的铅笔",
+      "label": "削尖的铅笔",
+      "topic": "pencil",
+      "theme": "课堂文具",
+      "tags": [
+        "铅笔",
+        "削铅笔",
+        "铅笔尖"
+      ],
+      "keywords": [
+        "铅笔",
+        "削铅笔",
+        "铅笔尖"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Pencil (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "pencil",
+      "sha256": "28dbb0464563cbbe170d60f33c52aa5955c2ae44f2974e73943f67ef0837a18f",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Pencil/Flat/pencil_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/pencil_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "ruler": {
+      "id": "ruler",
+      "file": "desk/ruler.png",
+      "alt": "三角尺",
+      "label": "三角尺",
+      "topic": "ruler",
+      "theme": "课堂文具",
+      "tags": [
+        "三角尺",
+        "三角板",
+        "直角尺"
+      ],
+      "keywords": [
+        "三角尺",
+        "三角板",
+        "直角尺"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Triangular ruler (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "ruler",
+      "sha256": "c76eb5e9c9067354b342b6c74516963a0e4c8eb9ef5e8b3b2119f7d81933c909",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Triangular%20ruler/Flat/triangular_ruler_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/triangular_ruler_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "scissors": {
+      "id": "scissors",
+      "file": "desk/scissors.png",
+      "alt": "剪刀",
+      "label": "剪刀",
+      "topic": "scissors",
+      "theme": "课堂文具",
+      "tags": [
+        "剪刀",
+        "裁纸剪",
+        "剪纸"
+      ],
+      "keywords": [
+        "剪刀",
+        "裁纸剪",
+        "剪纸"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Scissors (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "scissors",
+      "sha256": "52a844965fb46216ebe89d061d01ff284f5eb7d9f2a8ff4e9b229ee5e26de631",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Scissors/Flat/scissors_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/scissors_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "paperclip": {
+      "id": "paperclip",
+      "file": "desk/paperclip.png",
+      "alt": "回形针",
+      "label": "回形针",
+      "topic": "paperclip",
+      "theme": "课堂文具",
+      "tags": [
+        "回形针",
+        "曲别针",
+        "别住讲义"
+      ],
+      "keywords": [
+        "回形针",
+        "曲别针",
+        "别住讲义"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Paperclip (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "paperclip",
+      "sha256": "95e0f5a8dbb3c4edcfe1babc7a65b1621dffee9fd3aa382240755acb4cfff487",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Paperclip/Flat/paperclip_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/paperclip_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "pushpin": {
+      "id": "pushpin",
+      "file": "desk/pushpin.png",
+      "alt": "图钉",
+      "label": "图钉",
+      "topic": "pushpin",
+      "theme": "课堂文具",
+      "tags": [
+        "图钉",
+        "按钉",
+        "软木板"
+      ],
+      "keywords": [
+        "图钉",
+        "按钉",
+        "大头图钉"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Pushpin (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "pushpin",
+      "sha256": "813b89ae5f593643156298199ee0bfaf56f8a08fad36931eae0858095e1fce8e",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Pushpin/Flat/pushpin_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/pushpin_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "clock": {
+      "id": "clock",
+      "file": "desk/clock.png",
+      "alt": "双铃闹钟",
+      "label": "双铃闹钟",
+      "topic": "clock",
+      "theme": "日常用品",
+      "tags": [
+        "闹钟",
+        "设闹钟",
+        "闹铃"
+      ],
+      "keywords": [
+        "闹钟",
+        "设闹钟",
+        "闹铃"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Alarm clock (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "clock",
+      "sha256": "41eb90879b9a44544c7c22689837adf425f4b3aa3fbbdc4f6b4bc9fa39fe6c02",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Alarm%20clock/Flat/alarm_clock_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/alarm_clock_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "laptop": {
+      "id": "laptop",
+      "file": "desk/laptop.png",
+      "alt": "打开的笔记本电脑",
+      "label": "打开的笔记本电脑",
+      "topic": "laptop",
+      "theme": "电脑配件",
+      "tags": [
+        "笔记本电脑",
+        "笔电",
+        "手提电脑"
+      ],
+      "keywords": [
+        "笔记本电脑",
+        "笔电",
+        "手提电脑",
+        "笔记本计算机"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Laptop (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "laptop",
+      "sha256": "22db79a382f6e6a7733bcac965b2232a3995e281f8b99b971963dc5b3a8452fe",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Laptop/Flat/laptop_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/laptop_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "keyboard": {
+      "id": "keyboard",
+      "file": "desk/keyboard.png",
+      "alt": "电脑键盘",
+      "label": "电脑键盘",
+      "topic": "keyboard",
+      "theme": "电脑配件",
+      "tags": [
+        "键盘",
+        "敲键盘",
+        "键帽"
+      ],
+      "keywords": [
+        "键盘",
+        "敲键盘",
+        "键帽"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Keyboard (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "keyboard",
+      "sha256": "d4ddbc4ab1988fc88dd376b2ced2b78dd7629cc4e2241e09ce6bc4d65d16b926",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Keyboard/Flat/keyboard_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/keyboard_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "mouse": {
+      "id": "mouse",
+      "file": "desk/mouse.png",
+      "alt": "电脑鼠标",
+      "label": "电脑鼠标",
+      "topic": "mouse",
+      "theme": "电脑配件",
+      "tags": [
+        "鼠标",
+        "滚轮",
+        "鼠标垫"
+      ],
+      "keywords": [
+        "鼠标",
+        "鼠标滚轮"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Computer mouse (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "mouse",
+      "sha256": "b991829932109546a52c9246c1d76e5891556877731bfc37d5a685dc0529f05e",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Computer%20mouse/Flat/computer_mouse_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/computer_mouse_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "headphones": {
+      "id": "headphones",
+      "file": "desk/headphones.png",
+      "alt": "头戴式耳机",
+      "label": "头戴式耳机",
+      "topic": "headphones",
+      "theme": "电脑配件",
+      "tags": [
+        "耳机",
+        "头戴式耳机",
+        "戴上耳机"
+      ],
+      "keywords": [
+        "耳机",
+        "头戴式耳机",
+        "戴上耳机"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Headphone (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "headphones",
+      "sha256": "ed749521cac2b38e492be9d00f0776212ba595373a587398291b97eace7decb9",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Headphone/Flat/headphone_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/headphone_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "envelope": {
+      "id": "envelope",
+      "file": "desk/envelope.png",
+      "alt": "信封",
+      "label": "信封",
+      "topic": "envelope",
+      "theme": "日常用品",
+      "tags": [
+        "信封",
+        "寄信",
+        "封口"
+      ],
+      "keywords": [
+        "信封",
+        "封信封",
+        "装进信封"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Envelope (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "envelope",
+      "sha256": "21c0e538c92c5a021ae19b7d082a57434431d354d08f7cf17e2b79fe7b112a38",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Envelope/Flat/envelope_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/envelope_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "cup": {
+      "id": "cup",
+      "file": "desk/cup.png",
+      "alt": "盛着热饮的杯子",
+      "label": "盛着热饮的杯子",
+      "topic": "cup",
+      "theme": "日常用品",
+      "tags": [
+        "热饮",
+        "咖啡杯",
+        "茶杯"
+      ],
+      "keywords": [
+        "热饮",
+        "咖啡杯",
+        "茶杯"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Hot beverage (Flat)",
+      "provenanceFile": "desk/sources.json",
+      "provenanceKey": "cup",
+      "sha256": "40c7c13d9d9fa1bae31e92a132211e7a650f6bd75a47c1537fd583b232072fa4",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "desk/LICENSE.txt",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Hot%20beverage/Flat/hot_beverage_flat.svg",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sourceFile": "desk/originals/hot_beverage_flat.svg",
+      "evidenceMode": "topic"
+    },
+    "sea_wave": {
+      "id": "sea_wave",
+      "file": "coast/sea_wave.png",
+      "alt": "一卷带着浅色泡沫的蓝色海浪",
+      "label": "一卷带着浅色泡沫的蓝色海浪",
+      "topic": "sea_wave",
+      "theme": "海浪拍岸、观察潮水",
+      "tags": [
+        "海浪",
+        "潮水",
+        "浪花",
+        "海潮"
+      ],
+      "keywords": [
+        "海浪",
+        "潮水",
+        "浪花",
+        "海潮"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Water wave / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "sea_wave",
+      "sha256": "a25ca03e317a1fec29a4a40d98b3e4c36bc9425a86eea8be73c2e25bfa904337",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Water%20wave/Flat/water_wave_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "seashell": {
+      "id": "seashell",
+      "file": "coast/seashell.png",
+      "alt": "一枚盘旋的海螺壳",
+      "label": "一枚盘旋的海螺壳",
+      "topic": "seashell",
+      "theme": "当天见到或聊起海螺与拾贝",
+      "tags": [
+        "海螺",
+        "贝壳",
+        "拾贝",
+        "螺壳"
+      ],
+      "keywords": [
+        "海螺",
+        "贝壳",
+        "拾贝",
+        "螺壳"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Spiral shell / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "seashell",
+      "sha256": "73ca69cbca7f14f1adbc855cace89764b74fe13ef8b9dbf574b8c922d99025e7",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Spiral%20shell/Flat/spiral_shell_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "tropical_fish": {
+      "id": "tropical_fish",
+      "file": "coast/tropical_fish.png",
+      "alt": "一条摆开尾鳍的热带鱼",
+      "label": "一条摆开尾鳍的热带鱼",
+      "topic": "tropical_fish",
+      "theme": "观察或谈论水里的热带鱼",
+      "tags": [
+        "热带鱼",
+        "小鱼",
+        "游鱼"
+      ],
+      "keywords": [
+        "热带鱼",
+        "彩色小鱼",
+        "热带观赏鱼"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Tropical fish / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "tropical_fish",
+      "sha256": "e4de3074726e2b7d719495207e082c0e297183411b36865a95ac9a0c2e456653",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Tropical%20fish/Flat/tropical_fish_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "sailboat": {
+      "id": "sailboat",
+      "file": "coast/sailboat.png",
+      "alt": "一艘扬起船帆的小帆船",
+      "label": "一艘扬起船帆的小帆船",
+      "topic": "sailboat",
+      "theme": "当天遇见或谈到真正的帆船",
+      "tags": [
+        "帆船",
+        "扬帆",
+        "船帆"
+      ],
+      "keywords": [
+        "帆船",
+        "扬帆",
+        "船帆"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Sailboat / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "sailboat",
+      "sha256": "847fd6873d2ed2e9d4a6d89a2f7f0c0be6d7a1a22171ad987d7b33ca6988475a",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Sailboat/Flat/sailboat_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "anchor": {
+      "id": "anchor",
+      "file": "coast/anchor.png",
+      "alt": "一枚双爪船锚",
+      "label": "一枚双爪船锚",
+      "topic": "anchor",
+      "theme": "码头、停泊或当天聊到船锚",
+      "tags": [
+        "船锚",
+        "锚链",
+        "抛锚",
+        "下锚"
+      ],
+      "keywords": [
+        "船锚",
+        "锚链",
+        "下锚",
+        "起锚"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Anchor / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "anchor",
+      "sha256": "00806f1754fa6e291783236e9b4de374c7ca1a578971698c22abf06544fd76c6",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Anchor/Flat/anchor_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "dolphin": {
+      "id": "dolphin",
+      "file": "coast/dolphin.png",
+      "alt": "一只跃起的海豚",
+      "label": "一只跃起的海豚",
+      "topic": "dolphin",
+      "theme": "当天看到或谈论海豚",
+      "tags": [
+        "海豚",
+        "宽吻海豚"
+      ],
+      "keywords": [
+        "海豚",
+        "宽吻海豚"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Dolphin / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "dolphin",
+      "sha256": "5dff3979540df7d2ad2b8891685dfa48dd3d2d0595a628a84e772611dd4829b3",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Dolphin/Flat/dolphin_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "jellyfish": {
+      "id": "jellyfish",
+      "file": "coast/jellyfish.png",
+      "alt": "一只拖着长触手的水母",
+      "label": "一只拖着长触手的水母",
+      "topic": "jellyfish",
+      "theme": "观察或聊到水母的触手与游动",
+      "tags": [
+        "水母",
+        "海蜇"
+      ],
+      "keywords": [
+        "水母",
+        "海蜇"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Jellyfish / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "jellyfish",
+      "sha256": "babcc30d486ce97b125e7228f756e4d600bd24f7831f41c3999acf7127f7fced",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Jellyfish/Flat/jellyfish_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "sunshine": {
+      "id": "sunshine",
+      "file": "coast/sunshine.png",
+      "alt": "一轮向四面伸出光芒的太阳",
+      "label": "一轮向四面伸出光芒的太阳",
+      "topic": "sunshine",
+      "theme": "当天有阳光，或谈起晒太阳",
+      "tags": [
+        "晴天",
+        "太阳",
+        "阳光",
+        "放晴"
+      ],
+      "keywords": [
+        "晴天",
+        "太阳",
+        "阳光",
+        "放晴"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Sun / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "sunshine",
+      "sha256": "fe92f5f443f419d146970efb7c16443d137add239ae97d3c3f49746e36357594",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Sun/Flat/sun_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "cloud": {
+      "id": "cloud",
+      "file": "coast/cloud.png",
+      "alt": "一朵圆滚滚的云",
+      "label": "一朵圆滚滚的云",
+      "topic": "cloud",
+      "theme": "当日观察到的云团或阴天",
+      "tags": [
+        "云朵",
+        "白云",
+        "阴天",
+        "云层"
+      ],
+      "keywords": [
+        "云朵",
+        "白云",
+        "阴天",
+        "云层"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Cloud / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "cloud",
+      "sha256": "fda6a4d28e73f57aae36cc6b7f85af70a4d9fe859edecd77e4d0849e36606ec1",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Cloud/Flat/cloud_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "rain_umbrella": {
+      "id": "rain_umbrella",
+      "file": "coast/rain_umbrella.png",
+      "alt": "一把挡住雨点的伞",
+      "label": "一把挡住雨点的伞",
+      "topic": "rain_umbrella",
+      "theme": "当天遇雨、撑伞或聊起淋雨",
+      "tags": [
+        "下雨",
+        "雨伞",
+        "雨点",
+        "撑伞"
+      ],
+      "keywords": [
+        "下雨",
+        "雨伞",
+        "雨点",
+        "撑伞"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Umbrella with rain drops / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "rain_umbrella",
+      "sha256": "6bf1691676028187e1dd8542b382b41ad0dedbfcc92c52f36f7792b8ffd8db0d",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Umbrella%20with%20rain%20drops/Flat/umbrella_with_rain_drops_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "rainbow": {
+      "id": "rainbow",
+      "file": "coast/rainbow.png",
+      "alt": "一道多色小彩虹",
+      "label": "一道多色小彩虹",
+      "topic": "rainbow",
+      "theme": "雨后看到彩虹，或当天谈论彩虹",
+      "tags": [
+        "彩虹",
+        "雨后彩虹"
+      ],
+      "keywords": [
+        "彩虹",
+        "雨后彩虹"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Rainbow / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "rainbow",
+      "sha256": "3242dea2c24bea23f4e02bc5690b2eef33226bfd31452a8efe19988a539663f3",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Rainbow/Flat/rainbow_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "crescent_moon": {
+      "id": "crescent_moon",
+      "file": "coast/crescent_moon.png",
+      "alt": "一弯新月",
+      "label": "一弯新月",
+      "topic": "crescent_moon",
+      "theme": "当晚看月亮，或聊到弯月",
+      "tags": [
+        "月牙",
+        "弯月",
+        "月亮",
+        "新月"
+      ],
+      "keywords": [
+        "月牙",
+        "弯月",
+        "一弯月亮",
+        "新月"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Crescent moon / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "crescent_moon",
+      "sha256": "833607cb5c7f56866d5bf48b37c0ac89f4dd50fbdf2209da049d0841098bcdc7",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Crescent%20moon/Flat/crescent_moon_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "snowflake": {
+      "id": "snowflake",
+      "file": "coast/snowflake.png",
+      "alt": "一片有六枝的雪花",
+      "label": "一片有六枝的雪花",
+      "topic": "snowflake",
+      "theme": "当天遇雪，或聊到雪花的形状",
+      "tags": [
+        "雪花",
+        "下雪",
+        "飘雪"
+      ],
+      "keywords": [
+        "雪花",
+        "下雪",
+        "飘雪"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Snowflake / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "snowflake",
+      "sha256": "1914e977d9875386c8f1025f5983d50228442494c3df943ac51a002055857dee",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Snowflake/Flat/snowflake_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "wind": {
+      "id": "wind",
+      "file": "coast/wind.png",
+      "alt": "一团向外卷起的小风，旁边飞着几缕气流",
+      "label": "一团向外卷起的小风，旁边飞着几缕气流",
+      "topic": "wind",
+      "theme": "当日刮风，或谈起海风吹动的东西",
+      "tags": [
+        "刮风",
+        "海风",
+        "阵风",
+        "起风"
+      ],
+      "keywords": [
+        "刮风",
+        "海风",
+        "阵风",
+        "起风"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Dashing away / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "wind",
+      "sha256": "42390bad56d5bf0aa64356f9d9b93fda4ff8cb9a0824449638ce666908ac51e3",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Dashing%20away/Flat/dashing_away_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "lightning": {
+      "id": "lightning",
+      "file": "coast/lightning.png",
+      "alt": "一道折线状的闪电",
+      "label": "一道折线状的闪电",
+      "topic": "lightning",
+      "theme": "当天听雷见闪，或聊起雷雨",
+      "tags": [
+        "闪电",
+        "雷电",
+        "雷雨",
+        "打雷"
+      ],
+      "keywords": [
+        "闪电",
+        "雷电",
+        "雷雨",
+        "打雷"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · High voltage / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "lightning",
+      "sha256": "5f16e798aecda0244647d72bcd194ef81887ca17da876c93dc046fb0f8a51ea8",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/High%20voltage/Flat/high_voltage_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "island": {
+      "id": "island",
+      "file": "coast/island.png",
+      "alt": "一座长着棕榈树的小岛",
+      "label": "一座长着棕榈树的小岛",
+      "topic": "island",
+      "theme": "当天看到、画过或谈论海岛",
+      "tags": [
+        "海岛",
+        "岛屿",
+        "小岛"
+      ],
+      "keywords": [
+        "海岛",
+        "岛屿",
+        "小岛"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Desert island / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "island",
+      "sha256": "261afed76a72ec80f661fb4bd975d42771cf97cd8991f8bbcccdddec5e835e6b",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Desert%20island/Flat/desert_island_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "shooting_star": {
+      "id": "shooting_star",
+      "file": "coast/shooting_star.png",
+      "alt": "紫色夜空里，一颗星拖着金色的尾巴",
+      "label": "紫色夜空里，一颗星拖着金色的尾巴",
+      "topic": "shooting_star",
+      "theme": "当晚看到流星或聊起观星",
+      "tags": [
+        "流星",
+        "流星雨"
+      ],
+      "keywords": [
+        "流星",
+        "流星雨"
+      ],
+      "sources": [],
+      "source": "Microsoft Fluent Emoji · Shooting star / Flat（MIT）",
+      "provenanceFile": "coast/sources.json",
+      "provenanceKey": "shooting_star",
+      "sha256": "c44c217d1e6d6b6e856a83bfd63a8fdfaa64ffde2181ae7a8c5a04a39331b9b9",
+      "artOrigin": "fluent_flat",
+      "license": "MIT",
+      "licenseFile": "coast/LICENSE",
+      "sourceUrl": "https://github.com/microsoft/fluentui-emoji/blob/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/assets/Shooting%20star/Flat/shooting_star_flat.svg",
+      "basis": [
+        "observed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic"
+    },
+    "proud": {
+      "id": "proud",
+      "file": "../marginalia/proud.png",
+      "alt": "白色水手领的亚托莉歪头露出得意的表情",
+      "label": "白色水手领的亚托莉歪头露出得意的表情",
+      "topic": "proud",
+      "theme": "亚托莉自己为当日做成的事感到得意",
+      "provenanceKey": "proud",
+      "provenanceFile": "../marginalia/sources.json",
+      "sha256": "d74895bb4b9fa06949c3f54c5b02847c59ba57071bfb5fc856740cdfb3d50247",
+      "artOrigin": "game_sprite",
+      "tags": [
+        "得意",
+        "白裙表情"
+      ],
+      "keywords": [
+        "得意",
+        "自豪",
+        "有点小骄傲"
+      ],
+      "basis": [
+        "self_reported_feeling"
+      ],
+      "sources": [
+        "activity/testing/proud",
+        "activity/passed/proud"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "curious": {
+      "id": "curious",
+      "file": "faces/curious.png",
+      "alt": "白色水手领的亚托莉好奇地问。双眼睁开，眉稍抬，嘴唇微张。",
+      "label": "好奇地问",
+      "topic": "curious",
+      "theme": "揪着衣角想弄明白一件事",
+      "tags": [
+        "好奇",
+        "疑问",
+        "为何"
+      ],
+      "keywords": [
+        "好奇",
+        "起了好奇心",
+        "想弄明白",
+        "忍不住想问"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "curious",
+      "sha256": "e2a5343a46cefb22dbdc751ff70f95d9d83b64d4fb5d27b5ff7e799b3c02048c",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "bashful": {
+      "id": "bashful",
+      "file": "faces/bashful.png",
+      "alt": "白色水手领的亚托莉害羞得说不出话。目光低垂，双颊泛红，嘴小幅张开。",
+      "label": "害羞得说不出话",
+      "topic": "bashful",
+      "theme": "红着脸支支吾吾",
+      "tags": [
+        "害羞",
+        "脸红",
+        "支支吾吾"
+      ],
+      "keywords": [
+        "害羞",
+        "羞红了脸",
+        "脸红",
+        "不好意思地低下头"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "bashful",
+      "sha256": "017ac128ab7b90e5aba4bf6aa4dab3a39e2d1efeac8aa1ad7ff532925fef7131",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "startled": {
+      "id": "startled",
+      "file": "faces/startled.png",
+      "alt": "白色水手领的亚托莉吓得愣住。两只眼睛睁成浅色圆圈，嘴呈小圆形。",
+      "label": "吓得愣住",
+      "topic": "startled",
+      "theme": "突然惊住",
+      "tags": [
+        "受惊",
+        "惊讶",
+        "愣住"
+      ],
+      "keywords": [
+        "吓了一跳",
+        "吃了一惊",
+        "受惊",
+        "惊讶",
+        "吓得愣住"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "startled",
+      "sha256": "42d92d77e413c45f1f68113ad386730f96aaa7a3847b7626cf35adfa49fbbb63",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "relieved": {
+      "id": "relieved",
+      "file": "faces/relieved.png",
+      "alt": "白色水手领的亚托莉受惊后呼出一口气。双眼闭合，眉间放松，嘴微张呼气。",
+      "label": "受惊后呼出一口气",
+      "topic": "relieved",
+      "theme": "受惊后缓一缓",
+      "tags": [
+        "松口气",
+        "呼气",
+        "放松"
+      ],
+      "keywords": [
+        "松了口气",
+        "松了一口气",
+        "松口气",
+        "放下心来",
+        "如释重负"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "relieved",
+      "sha256": "ce2238786f0b0769f4a43a99cb93ed21206b94819e6b62e119cf894b7389ac31",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "sleepy": {
+      "id": "sleepy",
+      "file": "faces/sleepy.png",
+      "alt": "白色水手领的亚托莉打了个盹。眼睑垂成两条短横线，嘴唇略分开。",
+      "label": "打了个盹",
+      "topic": "sleepy",
+      "theme": "困倦的小憩",
+      "tags": [
+        "困倦",
+        "打盹",
+        "小睡"
+      ],
+      "keywords": [
+        "打盹",
+        "打了个盹",
+        "小睡",
+        "犯困",
+        "困得睁不开眼",
+        "困倦"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "sleepy",
+      "sha256": "939622aacf511b20204c82b962b928f5053f76f575ed22ffbe8ef319c9c354a1",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "performed",
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "cheering": {
+      "id": "cheering",
+      "file": "faces/cheering.png",
+      "alt": "白色水手领的亚托莉高举双臂欢呼。双眼弯起，张口笑，双袖从脸侧向上举。",
+      "label": "高举双臂欢呼",
+      "topic": "cheering",
+      "theme": "听到好消息",
+      "tags": [
+        "开心",
+        "欢呼",
+        "太好了"
+      ],
+      "keywords": [
+        "欢呼",
+        "举起双手欢呼",
+        "高兴得举起手",
+        "开心得跳起来"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "cheering",
+      "sha256": "8f9e6905a6ba5cb837ea298573a23d499769597da06cda4ca4a3e0fe1468e311",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "performed",
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "protesting": {
+      "id": "protesting",
+      "file": "faces/protesting.png",
+      "alt": "白色水手领的亚托莉举起双臂抗议。双眉向内压低，眼睛睁开，张口说话；两侧可见抬起的袖子。",
+      "label": "举起双臂抗议",
+      "topic": "protesting",
+      "theme": "认真阻止一件事",
+      "tags": [
+        "抗议",
+        "阻止",
+        "不行"
+      ],
+      "keywords": [
+        "抗议",
+        "大声阻止",
+        "喊停"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "protesting",
+      "sha256": "6a5900cb9dbf5a9927e6c2c81d6ee4451b24bff114fd82ec4a1ae77272b9af0e",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "performed",
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "teary": {
+      "id": "teary",
+      "file": "faces/teary.png",
+      "alt": "白色水手领的亚托莉委屈得快哭出来。眼睛泛红含泪，眉心上扬，嘴角向下。",
+      "label": "委屈得快哭出来",
+      "topic": "teary",
+      "theme": "哭诉自己的失误",
+      "tags": [
+        "委屈",
+        "难过",
+        "哭泣"
+      ],
+      "keywords": [
+        "委屈",
+        "眼泪打转",
+        "泪汪汪",
+        "哭了出来",
+        "快哭了"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "teary",
+      "sha256": "d8cacae803a784a93411dcf71db8b648b0d12c774b92ffb94caa55b9ad4df8d4",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "chewing": {
+      "id": "chewing",
+      "file": "faces/chewing.png",
+      "alt": "白色水手领的亚托莉眯着眼咀嚼。上眼睑压平，嘴缩成一小点，正面朝前。",
+      "label": "眯着眼咀嚼",
+      "topic": "chewing",
+      "theme": "吃东西时的表情",
+      "tags": [
+        "咀嚼",
+        "吃东西",
+        "尝味"
+      ],
+      "keywords": [
+        "咀嚼",
+        "嚼了嚼",
+        "嚼着",
+        "尝了一口",
+        "吃了一口"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "chewing",
+      "sha256": "55390d34ebc12bac968c8ac0bbbe673a6d40a4e4693e28024040e4e39be07a42",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "performed"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "activity",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "playful": {
+      "id": "playful",
+      "file": "faces/playful.png",
+      "alt": "白色水手领的亚托莉露出俏皮的笑。侧身歪头，眼睛弯起，轻轻抿嘴。",
+      "label": "露出俏皮的笑",
+      "topic": "playful",
+      "theme": "犯了小错后的反应",
+      "tags": [
+        "俏皮",
+        "吐舌",
+        "轻笑"
+      ],
+      "keywords": [
+        "俏皮地笑",
+        "轻笑",
+        "吐了吐舌头",
+        "调皮地笑",
+        "吐舌"
+      ],
+      "sources": [],
+      "provenanceFile": "faces/sources.json",
+      "provenanceKey": "playful",
+      "sha256": "fcf3143765d34c3eb61574fec3f6e830dd2ee0213baa227612d8a4fe0ea37821",
+      "artOrigin": "game_sprite",
+      "basis": [
+        "performed",
+        "self_reported_feeling"
+      ],
+      "constraints": {
+        "subject": "atri_self"
+      },
+      "evidenceMode": "emotion",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "crab": {
+      "id": "crab",
+      "file": "../marginalia/crab.png",
+      "alt": "一只举着双钳的小螃蟹",
+      "label": "一只举着双钳的小螃蟹",
+      "topic": "crab",
+      "theme": "当天亲眼遇见或观察螃蟹",
+      "provenanceKey": "crab",
+      "provenanceFile": "../marginalia/sources.json",
+      "sha256": "40fa9675a9801619b1dbee3f5fa6b011eb16b8d3081110b0c4a2dcd20ee57243",
+      "artOrigin": "game_item",
+      "tags": [
+        "小蟹",
+        "海边观察"
+      ],
+      "keywords": [
+        "螃蟹",
+        "小蟹",
+        "小螃蟹",
+        "寄居蟹"
+      ],
+      "basis": [
+        "observed"
+      ],
+      "sources": [
+        "activity/crab/inspect"
+      ],
+      "evidenceMode": "observed",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "submarine": {
+      "id": "submarine",
+      "file": "game/submarine.png",
+      "alt": "一艘银色小潜艇，艇首装着探照灯",
+      "label": "一艘银色小潜艇，艇首装着探照灯",
+      "topic": "submarine",
+      "theme": "当天看到、画过或谈论小潜艇",
+      "tags": [
+        "潜水艇",
+        "潜艇",
+        "潜航器"
+      ],
+      "keywords": [
+        "潜水艇",
+        "潜艇",
+        "潜航器"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "submarine",
+      "sha256": "d451d0eb275ee608693dbe083264409bab8896eee69e999e3798eec0c3c49991",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "photo_album": {
+      "id": "photo_album",
+      "file": "game/photo_album.png",
+      "alt": "一本摊开的绿色相册，左右页都贴着照片",
+      "label": "一本摊开的绿色相册，左右页都贴着照片",
+      "topic": "photo_album",
+      "theme": "当天翻看相册或聊到收存照片",
+      "tags": [
+        "相册",
+        "影集",
+        "照相簿"
+      ],
+      "keywords": [
+        "相册",
+        "影集",
+        "照相簿"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "photo_album",
+      "sha256": "cdbe52fb01f88fdbff95b6ed430104ffc6186f39e343be5a62973eea5ad754e9",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "steak_plate": {
+      "id": "steak_plate",
+      "file": "game/steak_plate.png",
+      "alt": "一盘浇酱肉排，旁边配有西兰花和胡萝卜",
+      "label": "一盘浇酱肉排，旁边配有西兰花和胡萝卜",
+      "topic": "steak_plate",
+      "theme": "当天吃到、制作或谈论浇酱肉排",
+      "tags": [
+        "肉排",
+        "浇酱肉排",
+        "汉堡排"
+      ],
+      "keywords": [
+        "肉排",
+        "浇酱肉排",
+        "汉堡排"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "steak_plate",
+      "sha256": "415ab0371182ee003ab21689a11342e7d576b7d9c5b8ad3c1076203421b394f4",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "brown_loafers": {
+      "id": "brown_loafers",
+      "file": "game/brown_loafers.png",
+      "alt": "一双棕色皮鞋，鞋面横着两道搭边",
+      "label": "一双棕色皮鞋，鞋面横着两道搭边",
+      "topic": "brown_loafers",
+      "theme": "当天穿上、挑选或聊到棕色皮鞋",
+      "tags": [
+        "棕色皮鞋",
+        "乐福鞋",
+        "棕皮鞋"
+      ],
+      "keywords": [
+        "棕色皮鞋",
+        "乐福鞋",
+        "棕皮鞋"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "brown_loafers",
+      "sha256": "126e46a5062e40e5286f5ea31c4532c577958424e8c0c1e4fff339c88ae38caf",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "strap_sandals": {
+      "id": "strap_sandals",
+      "file": "game/strap_sandals.png",
+      "alt": "一双棕色交叉搭带凉鞋，脚踝处有金属扣",
+      "label": "一双棕色交叉搭带凉鞋，脚踝处有金属扣",
+      "topic": "strap_sandals",
+      "theme": "当天穿凉鞋或聊到这类搭带鞋",
+      "tags": [
+        "凉鞋",
+        "搭带凉鞋"
+      ],
+      "keywords": [
+        "凉鞋",
+        "搭带凉鞋"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "strap_sandals",
+      "sha256": "69c232b5ebe5d4e017eefb28549ed3980a5b5b07d34f2f48fc41e673b62bcaf3",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "yes_pillow": {
+      "id": "yes_pillow",
+      "file": "game/yes_pillow.png",
+      "alt": "一个印着粉色 YES 字样的软抱枕",
+      "label": "一个印着粉色 YES 字样的软抱枕",
+      "topic": "yes_pillow",
+      "theme": "当日提到这只 YES / NO 抱枕或做了抱枕相关的事",
+      "tags": [
+        "YES抱枕",
+        "YES枕",
+        "YES／NO抱枕",
+        "YES/NO抱枕"
+      ],
+      "keywords": [
+        "YES抱枕",
+        "YES 抱枕",
+        "YES枕",
+        "YES／NO抱枕",
+        "YES/NO抱枕",
+        "写着YES的抱枕",
+        "印着 YES 的抱枕"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "yes_pillow",
+      "sha256": "d29b2b03d570d165e0b3cb9df2010be5b33d29d6b3e77ab595b775283b3017c3",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "july_calendar": {
+      "id": "july_calendar",
+      "file": "game/july_calendar.png",
+      "alt": "七月月历的一角，青蓝色圆圈里标着 7",
+      "label": "七月月历的一角，青蓝色圆圈里标着 7",
+      "topic": "july_calendar",
+      "theme": "仅用于明确提到七月月历、查看七月日期的内容",
+      "tags": [
+        "七月台历",
+        "七月月历",
+        "七月日历",
+        "7月日历",
+        "7月台历"
+      ],
+      "keywords": [
+        "七月台历",
+        "七月的台历",
+        "七月月历",
+        "七月日历",
+        "七月份的台历",
+        "7月日历",
+        "7月台历"
+      ],
+      "sources": [],
+      "provenanceFile": "game/sources.json",
+      "provenanceKey": "july_calendar",
+      "sha256": "fc3518be1da640af3f9723565234eac8564729e1490fddf2bf0ff822586dd6a8",
+      "artOrigin": "game_item",
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "constraints": {
+        "depictedMonth": 7,
+        "anyOf": [
+          "entry_month_matches_depicted_month_and_paragraph_is_about_a_calendar",
+          "paragraph_explicitly_names_july_calendar"
+        ]
+      },
+      "evidenceMode": "topic",
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    }
+  },
+  "assetCount": 56,
+  "groups": {
+    "白裙亚托莉": [
+      "proud",
+      "curious",
+      "bashful",
+      "startled",
+      "relieved",
+      "sleepy",
+      "cheering",
+      "protesting",
+      "teary",
+      "chewing",
+      "playful"
+    ],
+    "原作物件": [
+      "crab",
+      "submarine",
+      "photo_album",
+      "steak_plate",
+      "brown_loafers",
+      "strap_sandals",
+      "yes_pillow",
+      "july_calendar"
+    ],
+    "折纸与纪念": [
+      "paper_boat",
+      "paper_crane",
+      "pressed_leaf",
+      "bookmark",
+      "pinwheel",
+      "paper_plane",
+      "pressed_daisy"
+    ],
+    "课堂与电脑": [
+      "reading",
+      "pencil",
+      "ruler",
+      "scissors",
+      "paperclip",
+      "pushpin",
+      "clock",
+      "laptop",
+      "keyboard",
+      "mouse",
+      "headphones",
+      "envelope",
+      "cup"
+    ],
+    "海边与天气": [
+      "sea_wave",
+      "seashell",
+      "tropical_fish",
+      "sailboat",
+      "anchor",
+      "dolphin",
+      "jellyfish",
+      "sunshine",
+      "cloud",
+      "rain_umbrella",
+      "rainbow",
+      "crescent_moon",
+      "snowflake",
+      "wind",
+      "lightning",
+      "island",
+      "shooting_star"
+    ]
+  }
+}

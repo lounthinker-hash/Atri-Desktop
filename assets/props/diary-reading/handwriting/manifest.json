@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "scope": "NovelPage 日期首行和正文",
+  "file": "Xiaolai-Regular.ttf",
+  "family": "Xiaolai",
+  "displayNameZhCN": "小赖字体",
+  "style": "Regular",
+  "weight": 400,
+  "releaseTag": "v3.126",
+  "sha256": "e2f68daf0e72777a8cf58bc83de1b98634b251e537ddbfca24b0ae50d1802da2",
+  "bytes": 22220806,
+  "license": "SIL Open Font License 1.1",
+  "licenseFile": "OFL.txt",
+  "source": "https://github.com/lxgw/kose-font/releases/tag/v3.126",
+  "download": "https://github.com/lxgw/kose-font/releases/download/v3.126/Xiaolai-Regular.ttf",
+  "upstreamLicense": "https://github.com/lxgw/kose-font/blob/v3.126/OFL.txt",
+  "distribution": "保留上游完整字体及版权、许可文件，一同随软件分发。",
+  "qt": "QFontDatabase.addApplicationFont(本清单目录 / file) 后，applicationFontFamilies(id) 在本机返回 [Xiaolai]。",
+  "readerLayout": "../manifest.json",
+  "messageRectXYWH": [265, 47, 890, 637],
+  "sourceCanvas": [1280, 720]
+}

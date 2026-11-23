@@ -1,0 +1,3315 @@
+{
+  "version": 1,
+  "actor": "d1/p1",
+  "actor_size_px": [
+    666,
+    1706
+  ],
+  "fps": 24,
+  "coordinate_system": "Unpadded d1/p1 native pixels; image origins at upper left, half-open atlas rectangles. Subtract the crop origin only for a cropped render.",
+  "sources": {
+    "sleeve": "fgimage.xp3: アトリ/tatr01_m_715.tlg (d1 p1); assets/sprites/d1-p1-f18e483b6.webp, original sleeve pixels reprojected as a two-link garment.",
+    "rest_body": "fgimage.xp3: アトリ/tatr01_m_877.tlg (d1 p2); assets/sprites/d1-p2-4607d8bac.webp shifted (-1,0) to p1 for rear hair and dress under the moving arm.",
+    "fingers": "vol1.xp3: ev008bl.png, Adler32 cc211c73, native 3840x2160. Original shoe grip cut at ROI [785,540,1025,777]; individual fingers reposed, resized and color matched."
+  },
+  "rest_patch": {
+    "actor_rect_px": [
+      405,
+      515,
+      666,
+      1125
+    ],
+    "erase": "rest-arm-erase.png",
+    "restore": "rest-side-restore.png"
+  },
+  "atlases": {
+    "sleeve": "sleeve-atlas.png",
+    "back_finger": "back-atlas.png",
+    "front_finger": "front-atlas.png"
+  },
+  "order": [
+    "p1, destination-out rest-arm-erase and original holding-hand erase",
+    "rest-side-restore, gripping back palm",
+    "registered book bed and original holding front fingers",
+    "active sleeve",
+    "active back finger",
+    "turning paper only",
+    "active front finger"
+  ],
+  "notes": "For original_rest, use untouched viewer-right arm and no right-arm layers. The left supporting hand remains in its established hold. Exact rest at both clip ends. The active right index and thumb pinch on turn samples 3..15, open on samples 16..17, then release the leaf beyond the spine. The page completes its descent by inertia. The wrist is already masked behind the blue cuff edge.",
+  "shared_rig": "arm_rig.py: reach_pose(t, goal) -> (wrist, lift, angle_deg); arm_at(wrist,lift,angle_deg) -> (tight native RGBA sleeve, actor_xy). Positive angles are screen-clockwise. At rest draw original actor. A working rotation of 0 points fingers to viewer left. The skin/palm starts at the wrist. Reuse the same erase/restore when targeting a pen.",
+  "stages": {
+    "reach": [
+      {
+        "stage": "reach",
+        "index": 0,
+        "original_rest": true,
+        "wrist_px": [
+          627.0,
+          980.0
+        ],
+        "angle_deg": -145.0,
+        "lift": 0.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": null,
+        "back_finger": null,
+        "front_finger": null
+      },
+      {
+        "stage": "reach",
+        "index": 1,
+        "original_rest": false,
+        "wrist_px": [
+          622.444,
+          977.004
+        ],
+        "angle_deg": -143.372,
+        "lift": 0.01123,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            2,
+            215,
+            488
+          ],
+          "actor_xy_px": [
+            427,
+            525
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            2,
+            40,
+            38
+          ],
+          "actor_xy_px": [
+            613,
+            953
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            2,
+            54,
+            52
+          ],
+          "actor_xy_px": [
+            604,
+            957
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 2,
+        "original_rest": false,
+        "wrist_px": [
+          609.57,
+          968.568
+        ],
+        "angle_deg": -138.77,
+        "lift": 0.04297,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            2,
+            632,
+            478
+          ],
+          "actor_xy_px": [
+            428,
+            526
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            2,
+            140,
+            44
+          ],
+          "actor_xy_px": [
+            601,
+            943
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            2,
+            134,
+            53
+          ],
+          "actor_xy_px": [
+            590,
+            950
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 3,
+        "original_rest": false,
+        "wrist_px": [
+          589.565,
+          955.709
+        ],
+        "angle_deg": -131.619,
+        "lift": 0.09229,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            2,
+            1046,
+            464
+          ],
+          "actor_xy_px": [
+            428,
+            526
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            2,
+            239,
+            50
+          ],
+          "actor_xy_px": [
+            583,
+            928
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            2,
+            211,
+            56
+          ],
+          "actor_xy_px": [
+            568,
+            938
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 4,
+        "original_rest": false,
+        "wrist_px": [
+          563.619,
+          939.92
+        ],
+        "angle_deg": -122.344,
+        "lift": 0.15625,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            2,
+            1452,
+            445
+          ],
+          "actor_xy_px": [
+            429,
+            527
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            2,
+            336,
+            58
+          ],
+          "actor_xy_px": [
+            559,
+            909
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            2,
+            291,
+            62
+          ],
+          "actor_xy_px": [
+            540,
+            920
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 5,
+        "original_rest": false,
+        "wrist_px": [
+          532.918,
+          923.318
+        ],
+        "angle_deg": -111.37,
+        "lift": 0.23193,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            2,
+            1855,
+            424
+          ],
+          "actor_xy_px": [
+            430,
+            527
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            2,
+            429,
+            67
+          ],
+          "actor_xy_px": [
+            533,
+            891
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            2,
+            371,
+            69
+          ],
+          "actor_xy_px": [
+            508,
+            901
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 6,
+        "original_rest": false,
+        "wrist_px": [
+          498.653,
+          908.496
+        ],
+        "angle_deg": -99.121,
+        "lift": 0.31641,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            2,
+            2291,
+            404
+          ],
+          "actor_xy_px": [
+            404,
+            528
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            2,
+            522,
+            71
+          ],
+          "actor_xy_px": [
+            502,
+            877
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            2,
+            449,
+            72
+          ],
+          "actor_xy_px": [
+            472,
+            886
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 7,
+        "original_rest": false,
+        "wrist_px": [
+          462.01,
+          898.055
+        ],
+        "angle_deg": -86.023,
+        "lift": 0.40674,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            496,
+            164,
+            882
+          ],
+          "actor_xy_px": [
+            374,
+            529
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            2,
+            635,
+            55
+          ],
+          "actor_xy_px": [
+            457,
+            887
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            2,
+            512,
+            54
+          ],
+          "actor_xy_px": [
+            435,
+            896
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 8,
+        "original_rest": false,
+        "wrist_px": [
+          424.179,
+          893.948
+        ],
+        "angle_deg": -72.5,
+        "lift": 0.5,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            496,
+            616,
+            874
+          ],
+          "actor_xy_px": [
+            345,
+            530
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            2,
+            748,
+            51
+          ],
+          "actor_xy_px": [
+            409,
+            891
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            2,
+            595,
+            47
+          ],
+          "actor_xy_px": [
+            390,
+            899
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 9,
+        "original_rest": false,
+        "wrist_px": [
+          386.349,
+          896.916
+        ],
+        "angle_deg": -58.977,
+        "lift": 0.59326,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            496,
+            1071,
+            873
+          ],
+          "actor_xy_px": [
+            317,
+            533
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            75,
+            50,
+            116
+          ],
+          "actor_xy_px": [
+            361,
+            903
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            76,
+            48,
+            122
+          ],
+          "actor_xy_px": [
+            341,
+            898
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 10,
+        "original_rest": false,
+        "wrist_px": [
+          349.706,
+          906.255
+        ],
+        "angle_deg": -45.879,
+        "lift": 0.68359,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            496,
+            1525,
+            884
+          ],
+          "actor_xy_px": [
+            289,
+            535
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            75,
+            157,
+            109
+          ],
+          "actor_xy_px": [
+            315,
+            918
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            76,
+            133,
+            127
+          ],
+          "actor_xy_px": [
+            295,
+            898
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 11,
+        "original_rest": false,
+        "wrist_px": [
+          315.441,
+          920.046
+        ],
+        "angle_deg": -33.63,
+        "lift": 0.76807,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            496,
+            1976,
+            903
+          ],
+          "actor_xy_px": [
+            264,
+            538
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            75,
+            264,
+            106
+          ],
+          "actor_xy_px": [
+            272,
+            931
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            76,
+            216,
+            128
+          ],
+          "actor_xy_px": [
+            254,
+            903
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 12,
+        "original_rest": false,
+        "wrist_px": [
+          284.74,
+          935.724
+        ],
+        "angle_deg": -22.656,
+        "lift": 0.84375,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            496,
+            2424,
+            924
+          ],
+          "actor_xy_px": [
+            241,
+            541
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            75,
+            369,
+            102
+          ],
+          "actor_xy_px": [
+            235,
+            945
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            76,
+            300,
+            126
+          ],
+          "actor_xy_px": [
+            219,
+            912
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 13,
+        "original_rest": false,
+        "wrist_px": [
+          258.794,
+          950.732
+        ],
+        "angle_deg": -13.381,
+        "lift": 0.90771,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            990,
+            290,
+            1439
+          ],
+          "actor_xy_px": [
+            221,
+            543
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            75,
+            475,
+            97
+          ],
+          "actor_xy_px": [
+            205,
+            959
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            76,
+            385,
+            123
+          ],
+          "actor_xy_px": [
+            189,
+            921
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 14,
+        "original_rest": false,
+        "wrist_px": [
+          238.789,
+          962.989
+        ],
+        "angle_deg": -6.23,
+        "lift": 0.95703,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            990,
+            728,
+            1453
+          ],
+          "actor_xy_px": [
+            204,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            75,
+            579,
+            99
+          ],
+          "actor_xy_px": [
+            183,
+            966
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            76,
+            468,
+            121
+          ],
+          "actor_xy_px": [
+            168,
+            929
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 15,
+        "original_rest": false,
+        "wrist_px": [
+          225.915,
+          971.037
+        ],
+        "angle_deg": -1.628,
+        "lift": 0.98877,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            990,
+            1159,
+            1461
+          ],
+          "actor_xy_px": [
+            192,
+            548
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            75,
+            686,
+            106
+          ],
+          "actor_xy_px": [
+            167,
+            969
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            76,
+            549,
+            124
+          ],
+          "actor_xy_px": [
+            155,
+            935
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "index": 16,
+        "original_rest": false,
+        "wrist_px": [
+          221.359,
+          973.897
+        ],
+        "angle_deg": -0.0,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            990,
+            1589,
+            1465
+          ],
+          "actor_xy_px": [
+            188,
+            547
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            75,
+            788,
+            108
+          ],
+          "actor_xy_px": [
+            162,
+            971
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            76,
+            629,
+            126
+          ],
+          "actor_xy_px": [
+            150,
+            936
+          ]
+        }
+      }
+    ],
+    "turn": [
+      {
+        "stage": "turn",
+        "index": 0,
+        "original_rest": false,
+        "wrist_px": [
+          221.359,
+          973.897
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            990,
+            1589,
+            1465
+          ],
+          "actor_xy_px": [
+            188,
+            547
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            75,
+            788,
+            108
+          ],
+          "actor_xy_px": [
+            162,
+            971
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            76,
+            629,
+            126
+          ],
+          "actor_xy_px": [
+            150,
+            936
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 1,
+        "original_rest": false,
+        "wrist_px": [
+          217.989,
+          978.045
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 0.25926,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            990,
+            2019,
+            1469
+          ],
+          "actor_xy_px": [
+            184,
+            547
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            148,
+            87,
+            186
+          ],
+          "actor_xy_px": [
+            155,
+            970
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            150,
+            76,
+            199
+          ],
+          "actor_xy_px": [
+            147,
+            941
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 2,
+        "original_rest": false,
+        "wrist_px": [
+          211.729,
+          985.748
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 0.74074,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            990,
+            2449,
+            1476
+          ],
+          "actor_xy_px": [
+            176,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            148,
+            196,
+            194
+          ],
+          "actor_xy_px": [
+            143,
+            970
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            150,
+            154,
+            198
+          ],
+          "actor_xy_px": [
+            142,
+            950
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 3,
+        "original_rest": false,
+        "wrist_px": [
+          208.359,
+          989.897
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            1484,
+            302,
+            1974
+          ],
+          "actor_xy_px": [
+            172,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            148,
+            300,
+            198
+          ],
+          "actor_xy_px": [
+            137,
+            970
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            150,
+            233,
+            198
+          ],
+          "actor_xy_px": [
+            139,
+            954
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 4,
+        "original_rest": false,
+        "wrist_px": [
+          207.63,
+          986.98
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            1484,
+            733,
+            1972
+          ],
+          "actor_xy_px": [
+            171,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            148,
+            402,
+            198
+          ],
+          "actor_xy_px": [
+            136,
+            967
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            150,
+            312,
+            198
+          ],
+          "actor_xy_px": [
+            138,
+            951
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 5,
+        "original_rest": false,
+        "wrist_px": [
+          206.172,
+          981.877
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            1484,
+            1164,
+            1967
+          ],
+          "actor_xy_px": [
+            171,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            148,
+            502,
+            198
+          ],
+          "actor_xy_px": [
+            134,
+            962
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            150,
+            389,
+            198
+          ],
+          "actor_xy_px": [
+            137,
+            946
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 6,
+        "original_rest": false,
+        "wrist_px": [
+          203.985,
+          975.315
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            1484,
+            1595,
+            1961
+          ],
+          "actor_xy_px": [
+            170,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            148,
+            602,
+            199
+          ],
+          "actor_xy_px": [
+            132,
+            955
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            150,
+            470,
+            198
+          ],
+          "actor_xy_px": [
+            134,
+            940
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 7,
+        "original_rest": false,
+        "wrist_px": [
+          199.61,
+          967.296
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            1484,
+            2029,
+            1955
+          ],
+          "actor_xy_px": [
+            167,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            148,
+            699,
+            198
+          ],
+          "actor_xy_px": [
+            128,
+            947
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            150,
+            549,
+            198
+          ],
+          "actor_xy_px": [
+            130,
+            932
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 8,
+        "original_rest": false,
+        "wrist_px": [
+          193.049,
+          958.547
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            1484,
+            2463,
+            1947
+          ],
+          "actor_xy_px": [
+            163,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            148,
+            799,
+            198
+          ],
+          "actor_xy_px": [
+            121,
+            938
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            150,
+            626,
+            198
+          ],
+          "actor_xy_px": [
+            124,
+            923
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 9,
+        "original_rest": false,
+        "wrist_px": [
+          185.029,
+          950.527
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            1978,
+            319,
+            2435
+          ],
+          "actor_xy_px": [
+            156,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            221,
+            90,
+            271
+          ],
+          "actor_xy_px": [
+            113,
+            930
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            224,
+            74,
+            272
+          ],
+          "actor_xy_px": [
+            115,
+            915
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 10,
+        "original_rest": false,
+        "wrist_px": [
+          174.822,
+          943.237
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            1978,
+            756,
+            2429
+          ],
+          "actor_xy_px": [
+            148,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            221,
+            190,
+            271
+          ],
+          "actor_xy_px": [
+            103,
+            923
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            224,
+            152,
+            271
+          ],
+          "actor_xy_px": [
+            105,
+            908
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 11,
+        "original_rest": false,
+        "wrist_px": [
+          163.886,
+          936.675
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            1978,
+            1195,
+            2423
+          ],
+          "actor_xy_px": [
+            138,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            221,
+            290,
+            270
+          ],
+          "actor_xy_px": [
+            92,
+            917
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            224,
+            231,
+            271
+          ],
+          "actor_xy_px": [
+            94,
+            901
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 12,
+        "original_rest": false,
+        "wrist_px": [
+          150.763,
+          932.301
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            1978,
+            1637,
+            2420
+          ],
+          "actor_xy_px": [
+            125,
+            544
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            221,
+            391,
+            271
+          ],
+          "actor_xy_px": [
+            79,
+            912
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            224,
+            310,
+            271
+          ],
+          "actor_xy_px": [
+            81,
+            897
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 13,
+        "original_rest": false,
+        "wrist_px": [
+          136.911,
+          930.114
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            1978,
+            2080,
+            2419
+          ],
+          "actor_xy_px": [
+            111,
+            543
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            221,
+            493,
+            271
+          ],
+          "actor_xy_px": [
+            65,
+            910
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            224,
+            389,
+            271
+          ],
+          "actor_xy_px": [
+            67,
+            895
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 14,
+        "original_rest": false,
+        "wrist_px": [
+          122.33,
+          928.656
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            1978,
+            2525,
+            2419
+          ],
+          "actor_xy_px": [
+            96,
+            541
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            221,
+            593,
+            270
+          ],
+          "actor_xy_px": [
+            51,
+            909
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            224,
+            468,
+            272
+          ],
+          "actor_xy_px": [
+            53,
+            893
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 15,
+        "original_rest": false,
+        "wrist_px": [
+          108.478,
+          927.926
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 1.0,
+        "on_page": true,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            2472,
+            390,
+            2912
+          ],
+          "actor_xy_px": [
+            80,
+            540
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            221,
+            696,
+            271
+          ],
+          "actor_xy_px": [
+            37,
+            908
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            224,
+            547,
+            272
+          ],
+          "actor_xy_px": [
+            39,
+            892
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 16,
+        "original_rest": false,
+        "wrist_px": [
+          97.121,
+          927.149
+        ],
+        "angle_deg": -0.778,
+        "lift": 1.0,
+        "pinch": 0.74074,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            2472,
+            832,
+            2911
+          ],
+          "actor_xy_px": [
+            68,
+            539
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            221,
+            795,
+            266
+          ],
+          "actor_xy_px": [
+            29,
+            912
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            224,
+            627,
+            272
+          ],
+          "actor_xy_px": [
+            27,
+            891
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 17,
+        "original_rest": false,
+        "wrist_px": [
+          85.924,
+          927.891
+        ],
+        "angle_deg": -2.222,
+        "lift": 1.0,
+        "pinch": 0.25926,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            2472,
+            1275,
+            2912
+          ],
+          "actor_xy_px": [
+            54,
+            537
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            294,
+            83,
+            328
+          ],
+          "actor_xy_px": [
+            24,
+            923
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            298,
+            76,
+            346
+          ],
+          "actor_xy_px": [
+            15,
+            892
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 18,
+        "original_rest": false,
+        "wrist_px": [
+          76.025,
+          929.301
+        ],
+        "angle_deg": -3.0,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            2472,
+            1718,
+            2911
+          ],
+          "actor_xy_px": [
+            39,
+            535
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            294,
+            186,
+            323
+          ],
+          "actor_xy_px": [
+            18,
+            929
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            298,
+            155,
+            346
+          ],
+          "actor_xy_px": [
+            4,
+            893
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 19,
+        "original_rest": false,
+        "wrist_px": [
+          77.744,
+          928.501
+        ],
+        "angle_deg": -2.962,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            2472,
+            2145,
+            2911
+          ],
+          "actor_xy_px": [
+            43,
+            536
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            294,
+            286,
+            324
+          ],
+          "actor_xy_px": [
+            19,
+            928
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            298,
+            235,
+            346
+          ],
+          "actor_xy_px": [
+            6,
+            892
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 20,
+        "original_rest": false,
+        "wrist_px": [
+          82.584,
+          926.271
+        ],
+        "angle_deg": -2.854,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            2472,
+            2568,
+            2910
+          ],
+          "actor_xy_px": [
+            50,
+            537
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            294,
+            383,
+            323
+          ],
+          "actor_xy_px": [
+            24,
+            926
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            298,
+            313,
+            346
+          ],
+          "actor_xy_px": [
+            11,
+            890
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 21,
+        "original_rest": false,
+        "wrist_px": [
+          90.062,
+          922.993
+        ],
+        "angle_deg": -2.688,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            2966,
+            408,
+            3402
+          ],
+          "actor_xy_px": [
+            61,
+            538
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            294,
+            480,
+            324
+          ],
+          "actor_xy_px": [
+            32,
+            922
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            298,
+            392,
+            347
+          ],
+          "actor_xy_px": [
+            18,
+            886
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 22,
+        "original_rest": false,
+        "wrist_px": [
+          99.7,
+          919.353
+        ],
+        "angle_deg": -2.474,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            2966,
+            827,
+            3398
+          ],
+          "actor_xy_px": [
+            73,
+            540
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            294,
+            579,
+            324
+          ],
+          "actor_xy_px": [
+            42,
+            918
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            298,
+            469,
+            347
+          ],
+          "actor_xy_px": [
+            28,
+            882
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 23,
+        "original_rest": false,
+        "wrist_px": [
+          111.018,
+          916.411
+        ],
+        "angle_deg": -2.222,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            2966,
+            1244,
+            3396
+          ],
+          "actor_xy_px": [
+            87,
+            541
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            294,
+            680,
+            324
+          ],
+          "actor_xy_px": [
+            52,
+            915
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            298,
+            549,
+            347
+          ],
+          "actor_xy_px": [
+            39,
+            879
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 24,
+        "original_rest": false,
+        "wrist_px": [
+          123.536,
+          915.455
+        ],
+        "angle_deg": -1.944,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            2966,
+            1660,
+            3394
+          ],
+          "actor_xy_px": [
+            101,
+            542
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            294,
+            779,
+            324
+          ],
+          "actor_xy_px": [
+            65,
+            914
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            298,
+            627,
+            348
+          ],
+          "actor_xy_px": [
+            52,
+            877
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 25,
+        "original_rest": false,
+        "wrist_px": [
+          136.774,
+          917.649
+        ],
+        "angle_deg": -1.65,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            2966,
+            2077,
+            3396
+          ],
+          "actor_xy_px": [
+            114,
+            543
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            367,
+            72,
+            398
+          ],
+          "actor_xy_px": [
+            78,
+            916
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            372,
+            74,
+            422
+          ],
+          "actor_xy_px": [
+            65,
+            879
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 26,
+        "original_rest": false,
+        "wrist_px": [
+          150.251,
+          923.61
+        ],
+        "angle_deg": -1.35,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            2966,
+            2495,
+            3400
+          ],
+          "actor_xy_px": [
+            127,
+            544
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            367,
+            175,
+            398
+          ],
+          "actor_xy_px": [
+            91,
+            922
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            372,
+            153,
+            422
+          ],
+          "actor_xy_px": [
+            79,
+            885
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 27,
+        "original_rest": false,
+        "wrist_px": [
+          163.489,
+          933.126
+        ],
+        "angle_deg": -1.056,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            3460,
+            336,
+            3902
+          ],
+          "actor_xy_px": [
+            138,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            367,
+            277,
+            398
+          ],
+          "actor_xy_px": [
+            104,
+            931
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            372,
+            233,
+            422
+          ],
+          "actor_xy_px": [
+            92,
+            895
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 28,
+        "original_rest": false,
+        "wrist_px": [
+          176.006,
+          945.155
+        ],
+        "angle_deg": -0.778,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            3460,
+            756,
+            3913
+          ],
+          "actor_xy_px": [
+            148,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            367,
+            380,
+            399
+          ],
+          "actor_xy_px": [
+            117,
+            943
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            372,
+            313,
+            421
+          ],
+          "actor_xy_px": [
+            104,
+            908
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 29,
+        "original_rest": false,
+        "wrist_px": [
+          187.324,
+          958.108
+        ],
+        "angle_deg": -0.526,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            3460,
+            1178,
+            3923
+          ],
+          "actor_xy_px": [
+            157,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            367,
+            484,
+            400
+          ],
+          "actor_xy_px": [
+            128,
+            955
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            372,
+            391,
+            421
+          ],
+          "actor_xy_px": [
+            116,
+            921
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 30,
+        "original_rest": false,
+        "wrist_px": [
+          196.963,
+          970.274
+        ],
+        "angle_deg": -0.312,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            3460,
+            1601,
+            3933
+          ],
+          "actor_xy_px": [
+            164,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            367,
+            586,
+            400
+          ],
+          "actor_xy_px": [
+            138,
+            967
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            372,
+            470,
+            421
+          ],
+          "actor_xy_px": [
+            126,
+            933
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 31,
+        "original_rest": false,
+        "wrist_px": [
+          204.441,
+          980.168
+        ],
+        "angle_deg": -0.146,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            3460,
+            2025,
+            3941
+          ],
+          "actor_xy_px": [
+            170,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            367,
+            690,
+            400
+          ],
+          "actor_xy_px": [
+            145,
+            977
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            372,
+            549,
+            421
+          ],
+          "actor_xy_px": [
+            133,
+            943
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 32,
+        "original_rest": false,
+        "wrist_px": [
+          209.28,
+          986.679
+        ],
+        "angle_deg": -0.038,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            3460,
+            2451,
+            3947
+          ],
+          "actor_xy_px": [
+            173,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            367,
+            793,
+            401
+          ],
+          "actor_xy_px": [
+            150,
+            983
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            372,
+            630,
+            422
+          ],
+          "actor_xy_px": [
+            138,
+            949
+          ]
+        }
+      },
+      {
+        "stage": "turn",
+        "index": 33,
+        "original_rest": false,
+        "wrist_px": [
+          211.0,
+          989.0
+        ],
+        "angle_deg": 0.0,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            3954,
+            300,
+            4443
+          ],
+          "actor_xy_px": [
+            174,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            440,
+            86,
+            473
+          ],
+          "actor_xy_px": [
+            152,
+            986
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            446,
+            76,
+            495
+          ],
+          "actor_xy_px": [
+            140,
+            952
+          ]
+        }
+      }
+    ],
+    "return": [
+      {
+        "stage": "return",
+        "index": 0,
+        "original_rest": false,
+        "wrist_px": [
+          211.0,
+          989.0
+        ],
+        "angle_deg": -0.0,
+        "lift": 1.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            3954,
+            300,
+            4443
+          ],
+          "actor_xy_px": [
+            174,
+            545
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            440,
+            86,
+            473
+          ],
+          "actor_xy_px": [
+            152,
+            986
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            446,
+            76,
+            495
+          ],
+          "actor_xy_px": [
+            140,
+            952
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 1,
+        "original_rest": false,
+        "wrist_px": [
+          215.672,
+          985.971
+        ],
+        "angle_deg": -1.628,
+        "lift": 0.98877,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            3954,
+            727,
+            4439
+          ],
+          "actor_xy_px": [
+            179,
+            546
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            440,
+            185,
+            471
+          ],
+          "actor_xy_px": [
+            157,
+            984
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            446,
+            155,
+            495
+          ],
+          "actor_xy_px": [
+            144,
+            949
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 2,
+        "original_rest": false,
+        "wrist_px": [
+          228.875,
+          977.443
+        ],
+        "angle_deg": -6.23,
+        "lift": 0.95703,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            3954,
+            1155,
+            4428
+          ],
+          "actor_xy_px": [
+            192,
+            547
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            440,
+            280,
+            465
+          ],
+          "actor_xy_px": [
+            173,
+            980
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            446,
+            231,
+            491
+          ],
+          "actor_xy_px": [
+            158,
+            943
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 3,
+        "original_rest": false,
+        "wrist_px": [
+          249.391,
+          964.442
+        ],
+        "angle_deg": -13.381,
+        "lift": 0.90771,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            3954,
+            1582,
+            4415
+          ],
+          "actor_xy_px": [
+            211,
+            544
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            440,
+            374,
+            462
+          ],
+          "actor_xy_px": [
+            196,
+            973
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            446,
+            306,
+            493
+          ],
+          "actor_xy_px": [
+            180,
+            934
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 4,
+        "original_rest": false,
+        "wrist_px": [
+          276.0,
+          948.468
+        ],
+        "angle_deg": -22.656,
+        "lift": 0.84375,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            3954,
+            1999,
+            4395
+          ],
+          "actor_xy_px": [
+            232,
+            541
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            440,
+            469,
+            467
+          ],
+          "actor_xy_px": [
+            227,
+            958
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            446,
+            379,
+            496
+          ],
+          "actor_xy_px": [
+            210,
+            924
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 5,
+        "original_rest": false,
+        "wrist_px": [
+          307.484,
+          931.647
+        ],
+        "angle_deg": -33.63,
+        "lift": 0.76807,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            3954,
+            2410,
+            4371
+          ],
+          "actor_xy_px": [
+            256,
+            539
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            440,
+            565,
+            470
+          ],
+          "actor_xy_px": [
+            265,
+            943
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            446,
+            453,
+            498
+          ],
+          "actor_xy_px": [
+            246,
+            915
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 6,
+        "original_rest": false,
+        "wrist_px": [
+          342.625,
+          916.58
+        ],
+        "angle_deg": -45.879,
+        "lift": 0.68359,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            4448,
+            239,
+            4845
+          ],
+          "actor_xy_px": [
+            282,
+            536
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            440,
+            663,
+            473
+          ],
+          "actor_xy_px": [
+            308,
+            929
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            446,
+            527,
+            496
+          ],
+          "actor_xy_px": [
+            288,
+            909
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 7,
+        "original_rest": false,
+        "wrist_px": [
+          380.203,
+          905.876
+        ],
+        "angle_deg": -58.977,
+        "lift": 0.59326,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            4448,
+            645,
+            4834
+          ],
+          "actor_xy_px": [
+            310,
+            533
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            440,
+            758,
+            482
+          ],
+          "actor_xy_px": [
+            355,
+            911
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            446,
+            601,
+            493
+          ],
+          "actor_xy_px": [
+            335,
+            907
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 8,
+        "original_rest": false,
+        "wrist_px": [
+          419.0,
+          901.5
+        ],
+        "angle_deg": -72.5,
+        "lift": 0.5,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            4448,
+            1048,
+            4833
+          ],
+          "actor_xy_px": [
+            340,
+            531
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            2,
+            513,
+            41,
+            562
+          ],
+          "actor_xy_px": [
+            404,
+            898
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            2,
+            520,
+            43,
+            565
+          ],
+          "actor_xy_px": [
+            385,
+            906
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 9,
+        "original_rest": false,
+        "wrist_px": [
+          457.797,
+          904.198
+        ],
+        "angle_deg": -86.023,
+        "lift": 0.40674,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            4448,
+            1456,
+            4841
+          ],
+          "actor_xy_px": [
+            370,
+            529
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            103,
+            513,
+            130,
+            567
+          ],
+          "actor_xy_px": [
+            453,
+            893
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            81,
+            520,
+            117,
+            573
+          ],
+          "actor_xy_px": [
+            431,
+            901
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 10,
+        "original_rest": false,
+        "wrist_px": [
+          495.375,
+          913.275
+        ],
+        "angle_deg": -99.121,
+        "lift": 0.31641,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1722,
+            4448,
+            1863,
+            4855
+          ],
+          "actor_xy_px": [
+            400,
+            528
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            204,
+            513,
+            219,
+            582
+          ],
+          "actor_xy_px": [
+            499,
+            882
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            160,
+            520,
+            211,
+            590
+          ],
+          "actor_xy_px": [
+            469,
+            891
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 11,
+        "original_rest": false,
+        "wrist_px": [
+          530.516,
+          926.821
+        ],
+        "angle_deg": -111.37,
+        "lift": 0.23193,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2152,
+            4448,
+            2283,
+            4874
+          ],
+          "actor_xy_px": [
+            430,
+            527
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            305,
+            513,
+            328,
+            578
+          ],
+          "actor_xy_px": [
+            531,
+            895
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            239,
+            520,
+            292,
+            586
+          ],
+          "actor_xy_px": [
+            506,
+            905
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 12,
+        "original_rest": false,
+        "wrist_px": [
+          562.0,
+          942.28
+        ],
+        "angle_deg": -122.344,
+        "lift": 0.15625,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            2,
+            4942,
+            160,
+            5387
+          ],
+          "actor_xy_px": [
+            429,
+            527
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            406,
+            513,
+            437,
+            573
+          ],
+          "actor_xy_px": [
+            558,
+            911
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            318,
+            520,
+            369,
+            581
+          ],
+          "actor_xy_px": [
+            539,
+            922
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 13,
+        "original_rest": false,
+        "wrist_px": [
+          588.609,
+          957.103
+        ],
+        "angle_deg": -131.619,
+        "lift": 0.09229,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            432,
+            4942,
+            615,
+            5405
+          ],
+          "actor_xy_px": [
+            428,
+            526
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            507,
+            513,
+            542,
+            563
+          ],
+          "actor_xy_px": [
+            582,
+            929
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            397,
+            520,
+            447,
+            574
+          ],
+          "actor_xy_px": [
+            568,
+            939
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 14,
+        "original_rest": false,
+        "wrist_px": [
+          609.125,
+          969.217
+        ],
+        "angle_deg": -138.77,
+        "lift": 0.04297,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            862,
+            4942,
+            1062,
+            5419
+          ],
+          "actor_xy_px": [
+            428,
+            526
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            608,
+            513,
+            645,
+            556
+          ],
+          "actor_xy_px": [
+            601,
+            943
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            476,
+            520,
+            528,
+            572
+          ],
+          "actor_xy_px": [
+            590,
+            950
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 15,
+        "original_rest": false,
+        "wrist_px": [
+          622.328,
+          977.173
+        ],
+        "angle_deg": -143.372,
+        "lift": 0.01123,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": {
+          "atlas_rect_px": [
+            1292,
+            4942,
+            1505,
+            5428
+          ],
+          "actor_xy_px": [
+            427,
+            525
+          ]
+        },
+        "back_finger": {
+          "atlas_rect_px": [
+            709,
+            513,
+            747,
+            549
+          ],
+          "actor_xy_px": [
+            613,
+            953
+          ]
+        },
+        "front_finger": {
+          "atlas_rect_px": [
+            555,
+            520,
+            607,
+            570
+          ],
+          "actor_xy_px": [
+            604,
+            957
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "index": 16,
+        "original_rest": true,
+        "wrist_px": [
+          627.0,
+          980.0
+        ],
+        "angle_deg": -145.0,
+        "lift": 0.0,
+        "pinch": 0.0,
+        "on_page": false,
+        "sleeve": null,
+        "back_finger": null,
+        "front_finger": null
+      }
+    ]
+  }
+}

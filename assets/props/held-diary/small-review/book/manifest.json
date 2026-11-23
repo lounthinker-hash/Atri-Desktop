@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "id": "d1-p1-diary-support-depth",
+  "actor": "d1/p1",
+  "actorCanvasPx": [666, 1706],
+  "logicalActorHeight": 280,
+  "observedDevicePixelRatio": 1.5,
+  "observedPhysicalActorHeight": 420,
+  "handRectActorPx": [0, 907, 154, 1030],
+  "spineActorPx": [34, 991],
+  "spineBookPx": [180, 276],
+  "coordinateSpace": "d1/p1 未加边原画左上原点，x 向右，y 向下。图集裁框均使用半开区间。主线实测用 hip；已在 chest 写姿时整组沿用该帧 bookShiftFromHipPx。",
+  "layers": {
+    "grip_back": {"file":"support-back.png","size":[154,123],"source":["../../grip-back.png","../../writing-posture/arms/support-contact-back.png"],"meaning":"原托掌和书脊下的指腹承重；托掌先于书绘制。"},
+    "grip_front": {"file":"support-front.png","size":[154,123],"source":["../../grip-back.png"],"meaning":"单枚近指绕过脊底压住纸边。原托手最低一枚指节抠出、缩放、旋转到同一脊点，见 build.py。"},
+    "rest_hand_erase": {"source":"../../rest-hand-erase.png","meaning":"去掉原站姿手指。实时人物已持有托书侧蓝袖，按现有身体变换保留。"},
+    "workingArm": {"source":"../../action-hand/write/performance.json","pen":"../../pen-write/write.json","meaning":"活动手的后指、笔杆、近指、袖口沿用该帧原 RGBA 及腕锚。每个手腕只有一道袖口。"}
+  },
+  "provenance": "后掌与新近指的皮肤纹理来自 vol1.xp3!ev008bl.png 中亚托莉握鞋跟的手。既有桌面手部登记见 ../../manifest.json 的 hand_source/registration。后层沿用胸前执笔套件的脊下指腹补画。主体蓝袖取实时白裙 d1，未烘入这两张图。",
+  "order": {
+    "openOrClose": ["d1 已擦原摊手、保留托书袖口", "grip_back", "已登记的原本角度", "当格封面遮挡后的冻结墨", "grip_front"],
+    "writeOrLift": ["已修补的实时身体", "grip_back", "原页底", "当前或冻结墨格", "grip_front", "工作手后指", "活动笔", "笔套口前缘（仅 loop_in_front 且未 stowed）", "工作手前指", "工作袖口"],
+    "workingPen": "write[0..4] 及 [98..101] 使用含笔的原底页。5..17 与 85..97 笔杆穿过套口，套口局部压笔，其余取笔、触纸和提腕阶段完整笔杆位于工作手前后指间。",
+    "leafTurn": "沿用原页床、翻动纸。后手指按纸片本身的 alpha 封住，工作前指画在纸面前。替换的固定托手后层在书后，固定近指在书前。",
+    "stow": "取当时已合/正合的书格。入袋遮罩只乘书层及书上剩余墨迹的 alpha，再绘仍露于袖外的近指；托手离开时用实时 grasp。"
+  },
+  "integration": {
+    "static": "PropRenderer.grip_geometry 的两个 hand 项和 DiaryPerformance.layer 的两个 support 项均指向本清单的同一对 PNG，矩形沿用旧手。调图后更新相应缓存键。",
+    "correctedLocalReader": "source.py",
+    "function": "local_layer(posture, stage, index, page='blank', fixed_ink=None, height=420, start=None) -> PIL.Image RGBA",
+    "boundsActorPx": [-110,478,675,1130],
+    "regularWrite": "明确替换固定手两层即可保留主线 register_working_arm 与原动作层。读取器也可离屏合成 reach/write/return/turn_to_pen 的原生工作层。",
+    "interrupt": "nib_lift 的中间 1..9 格从 source.local_layer('hip','lift',k,ctx.page,ctx.ink_tile,physicalHeight,ctx.start) 只读重画。若生成运行时缓存，将新 back/front 的 SHA 与原 lift、书、笔版本共同纳入缓存键。旧 desktop/renderer/diary-contact.zip 中的 RGB 已含旧蓝条，直接重叠新近指无法还原纸面。",
+    "chest": "读取器沿用已交 chest 袖与书位，只画一次当前后掌、指腹和近指，旧 support-contact-front 不再次叠加。",
+    "timing": "材质修订接受当前 clip、local_frame、page、inkTile 和同一书脊变换。笔离纸与收回的时间、身体演出和表情均由主线原时序提供。"
+  },
+  "checks": "checks.json",
+  "verify": "verify.py",
+  "sourceBuild": "build.py",
+  "detail": "support-depth.png",
+  "secondStrokeContact": {"localFrame":51,"anchors":"frame51.json","comparison":"frame51.png","postureManifest":"../../writing-posture/manifest.json"}
+}

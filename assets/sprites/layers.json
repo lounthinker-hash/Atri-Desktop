@@ -1,0 +1,1787 @@
+{
+  "source": "fgimage.xp3",
+  "size": "m",
+  "order": "back-to-front",
+  "poses": {
+    "p1": "tatr01",
+    "p2": "tatr01",
+    "p3": "tatr02",
+    "p4": "tatr03"
+  },
+  "sets": {
+    "tatr01": {
+      "canvas": {
+        "height": 2161,
+        "width": 1523
+      },
+      "layers": [
+        {
+          "layer_id": 694,
+          "key": "私服/ベース",
+          "left": 458,
+          "top": 1176,
+          "width": 493,
+          "height": 659,
+          "opacity": 255,
+          "file": "layers/tatr01_694.png"
+        },
+        {
+          "layer_id": 715,
+          "key": "私服/手1",
+          "left": 354,
+          "top": 430,
+          "width": 666,
+          "height": 939,
+          "opacity": 255,
+          "file": "layers/tatr01_715.png"
+        },
+        {
+          "layer_id": 877,
+          "key": "私服/手2",
+          "left": 353,
+          "top": 299,
+          "width": 717,
+          "height": 1072,
+          "opacity": 255,
+          "file": "layers/tatr01_877.png"
+        },
+        {
+          "layer_id": 695,
+          "key": "足/足1",
+          "left": 648,
+          "top": 1755,
+          "width": 255,
+          "height": 236,
+          "opacity": 255,
+          "file": "layers/tatr01_695.png"
+        },
+        {
+          "layer_id": 712,
+          "key": "足/足2",
+          "left": 648,
+          "top": 1755,
+          "width": 245,
+          "height": 221,
+          "opacity": 255,
+          "file": "layers/tatr01_712.png"
+        },
+        {
+          "layer_id": 696,
+          "key": "足/足3",
+          "left": 648,
+          "top": 1755,
+          "width": 253,
+          "height": 229,
+          "opacity": 255,
+          "file": "layers/tatr01_696.png"
+        },
+        {
+          "layer_id": 801,
+          "key": "頬/頬1",
+          "left": 606,
+          "top": 679,
+          "width": 189,
+          "height": 67,
+          "opacity": 255,
+          "file": "layers/tatr01_801.png"
+        },
+        {
+          "layer_id": 804,
+          "key": "口/口1",
+          "left": 693,
+          "top": 709,
+          "width": 16,
+          "height": 35,
+          "opacity": 255,
+          "file": "layers/tatr01_804.png"
+        },
+        {
+          "layer_id": 805,
+          "key": "口/口2",
+          "left": 684,
+          "top": 709,
+          "width": 38,
+          "height": 34,
+          "opacity": 255,
+          "file": "layers/tatr01_805.png"
+        },
+        {
+          "layer_id": 806,
+          "key": "口/口3",
+          "left": 622,
+          "top": 646,
+          "width": 100,
+          "height": 111,
+          "opacity": 255,
+          "file": "layers/tatr01_806.png"
+        },
+        {
+          "layer_id": 807,
+          "key": "口/口4",
+          "left": 618,
+          "top": 642,
+          "width": 105,
+          "height": 116,
+          "opacity": 255,
+          "file": "layers/tatr01_807.png"
+        },
+        {
+          "layer_id": 808,
+          "key": "口/口5",
+          "left": 690,
+          "top": 709,
+          "width": 31,
+          "height": 36,
+          "opacity": 255,
+          "file": "layers/tatr01_808.png"
+        },
+        {
+          "layer_id": 809,
+          "key": "口/口6",
+          "left": 691,
+          "top": 709,
+          "width": 21,
+          "height": 36,
+          "opacity": 255,
+          "file": "layers/tatr01_809.png"
+        },
+        {
+          "layer_id": 810,
+          "key": "口/口7",
+          "left": 687,
+          "top": 709,
+          "width": 31,
+          "height": 36,
+          "opacity": 255,
+          "file": "layers/tatr01_810.png"
+        },
+        {
+          "layer_id": 811,
+          "key": "口/口8",
+          "left": 690,
+          "top": 709,
+          "width": 25,
+          "height": 41,
+          "opacity": 255,
+          "file": "layers/tatr01_811.png"
+        },
+        {
+          "layer_id": 812,
+          "key": "口/口9",
+          "left": 693,
+          "top": 709,
+          "width": 17,
+          "height": 38,
+          "opacity": 255,
+          "file": "layers/tatr01_812.png"
+        },
+        {
+          "layer_id": 813,
+          "key": "口/口a",
+          "left": 657,
+          "top": 709,
+          "width": 67,
+          "height": 45,
+          "opacity": 255,
+          "file": "layers/tatr01_813.png"
+        },
+        {
+          "layer_id": 814,
+          "key": "口/口b",
+          "left": 684,
+          "top": 708,
+          "width": 40,
+          "height": 37,
+          "opacity": 255,
+          "file": "layers/tatr01_814.png"
+        },
+        {
+          "layer_id": 815,
+          "key": "口/口c",
+          "left": 691,
+          "top": 710,
+          "width": 24,
+          "height": 46,
+          "opacity": 255,
+          "file": "layers/tatr01_815.png"
+        },
+        {
+          "layer_id": 816,
+          "key": "口/口d",
+          "left": 678,
+          "top": 708,
+          "width": 52,
+          "height": 41,
+          "opacity": 255,
+          "file": "layers/tatr01_816.png"
+        },
+        {
+          "layer_id": 817,
+          "key": "口/口e",
+          "left": 693,
+          "top": 709,
+          "width": 16,
+          "height": 35,
+          "opacity": 255,
+          "file": "layers/tatr01_817.png"
+        },
+        {
+          "layer_id": 818,
+          "key": "口/口f",
+          "left": 375,
+          "top": 285,
+          "width": 334,
+          "height": 464,
+          "opacity": 255,
+          "file": "layers/tatr01_818.png"
+        },
+        {
+          "layer_id": 819,
+          "key": "口/口g",
+          "left": 690,
+          "top": 709,
+          "width": 25,
+          "height": 38,
+          "opacity": 255,
+          "file": "layers/tatr01_819.png"
+        },
+        {
+          "layer_id": 820,
+          "key": "口/口h",
+          "left": 375,
+          "top": 285,
+          "width": 390,
+          "height": 466,
+          "opacity": 255,
+          "file": "layers/tatr01_820.png"
+        },
+        {
+          "layer_id": 821,
+          "key": "口/口i",
+          "left": 693,
+          "top": 709,
+          "width": 16,
+          "height": 35,
+          "opacity": 255,
+          "file": "layers/tatr01_821.png"
+        },
+        {
+          "layer_id": 822,
+          "key": "口/口j",
+          "left": 694,
+          "top": 709,
+          "width": 14,
+          "height": 36,
+          "opacity": 255,
+          "file": "layers/tatr01_822.png"
+        },
+        {
+          "layer_id": 823,
+          "key": "口/口k",
+          "left": 693,
+          "top": 729,
+          "width": 17,
+          "height": 17,
+          "opacity": 255,
+          "file": "layers/tatr01_823.png"
+        },
+        {
+          "layer_id": 824,
+          "key": "口/口l",
+          "left": 684,
+          "top": 701,
+          "width": 73,
+          "height": 46,
+          "opacity": 255,
+          "file": "layers/tatr01_824.png"
+        },
+        {
+          "layer_id": 827,
+          "key": "目/目1",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_827.png"
+        },
+        {
+          "layer_id": 828,
+          "key": "目/目2",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_828.png"
+        },
+        {
+          "layer_id": 829,
+          "key": "目/目3",
+          "left": 630,
+          "top": 654,
+          "width": 143,
+          "height": 46,
+          "opacity": 255,
+          "file": "layers/tatr01_829.png"
+        },
+        {
+          "layer_id": 830,
+          "key": "目/目4",
+          "left": 625,
+          "top": 656,
+          "width": 155,
+          "height": 53,
+          "opacity": 255,
+          "file": "layers/tatr01_830.png"
+        },
+        {
+          "layer_id": 831,
+          "key": "目/目5",
+          "left": 626,
+          "top": 657,
+          "width": 154,
+          "height": 52,
+          "opacity": 255,
+          "file": "layers/tatr01_831.png"
+        },
+        {
+          "layer_id": 832,
+          "key": "目/目6",
+          "left": 635,
+          "top": 658,
+          "width": 141,
+          "height": 51,
+          "opacity": 255,
+          "file": "layers/tatr01_832.png"
+        },
+        {
+          "layer_id": 833,
+          "key": "目/目7",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_833.png"
+        },
+        {
+          "layer_id": 834,
+          "key": "目/目8",
+          "left": 626,
+          "top": 655,
+          "width": 153,
+          "height": 55,
+          "opacity": 255,
+          "file": "layers/tatr01_834.png"
+        },
+        {
+          "layer_id": 835,
+          "key": "目/目9",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_835.png"
+        },
+        {
+          "layer_id": 836,
+          "key": "目/目a",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 56,
+          "opacity": 255,
+          "file": "layers/tatr01_836.png"
+        },
+        {
+          "layer_id": 837,
+          "key": "目/目b",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_837.png"
+        },
+        {
+          "layer_id": 838,
+          "key": "目/目c",
+          "left": 633,
+          "top": 657,
+          "width": 141,
+          "height": 44,
+          "opacity": 255,
+          "file": "layers/tatr01_838.png"
+        },
+        {
+          "layer_id": 891,
+          "key": "目/目d",
+          "left": 626,
+          "top": 665,
+          "width": 156,
+          "height": 110,
+          "opacity": 255,
+          "file": "layers/tatr01_891.png"
+        },
+        {
+          "layer_id": 840,
+          "key": "目/目e",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_840.png"
+        },
+        {
+          "layer_id": 841,
+          "key": "目/目f",
+          "left": 625,
+          "top": 656,
+          "width": 153,
+          "height": 53,
+          "opacity": 255,
+          "file": "layers/tatr01_841.png"
+        },
+        {
+          "layer_id": 842,
+          "key": "目/目g",
+          "left": 632,
+          "top": 657,
+          "width": 142,
+          "height": 49,
+          "opacity": 255,
+          "file": "layers/tatr01_842.png"
+        },
+        {
+          "layer_id": 843,
+          "key": "目/目h",
+          "left": 626,
+          "top": 656,
+          "width": 152,
+          "height": 62,
+          "opacity": 255,
+          "file": "layers/tatr01_843.png"
+        },
+        {
+          "layer_id": 844,
+          "key": "目/目i",
+          "left": 625,
+          "top": 655,
+          "width": 155,
+          "height": 54,
+          "opacity": 255,
+          "file": "layers/tatr01_844.png"
+        },
+        {
+          "layer_id": 845,
+          "key": "目/目j",
+          "left": 630,
+          "top": 647,
+          "width": 143,
+          "height": 63,
+          "opacity": 255,
+          "file": "layers/tatr01_845.png"
+        },
+        {
+          "layer_id": 846,
+          "key": "目/目k",
+          "left": 645,
+          "top": 665,
+          "width": 115,
+          "height": 47,
+          "opacity": 255,
+          "file": "layers/tatr01_846.png"
+        },
+        {
+          "layer_id": 847,
+          "key": "目/目l",
+          "left": 635,
+          "top": 658,
+          "width": 141,
+          "height": 58,
+          "opacity": 255,
+          "file": "layers/tatr01_847.png"
+        },
+        {
+          "layer_id": 850,
+          "key": "眉/眉1",
+          "left": 619,
+          "top": 635,
+          "width": 166,
+          "height": 19,
+          "opacity": 255,
+          "file": "layers/tatr01_850.png"
+        },
+        {
+          "layer_id": 851,
+          "key": "眉/眉2",
+          "left": 617,
+          "top": 630,
+          "width": 167,
+          "height": 19,
+          "opacity": 255,
+          "file": "layers/tatr01_851.png"
+        },
+        {
+          "layer_id": 852,
+          "key": "眉/眉3",
+          "left": 622,
+          "top": 639,
+          "width": 159,
+          "height": 18,
+          "opacity": 255,
+          "file": "layers/tatr01_852.png"
+        },
+        {
+          "layer_id": 853,
+          "key": "眉/眉4",
+          "left": 621,
+          "top": 643,
+          "width": 161,
+          "height": 29,
+          "opacity": 255,
+          "file": "layers/tatr01_853.png"
+        },
+        {
+          "layer_id": 854,
+          "key": "眉/眉5",
+          "left": 617,
+          "top": 650,
+          "width": 171,
+          "height": 22,
+          "opacity": 255,
+          "file": "layers/tatr01_854.png"
+        },
+        {
+          "layer_id": 855,
+          "key": "眉/眉6",
+          "left": 616,
+          "top": 627,
+          "width": 160,
+          "height": 37,
+          "opacity": 255,
+          "file": "layers/tatr01_855.png"
+        },
+        {
+          "layer_id": 856,
+          "key": "眉/眉7",
+          "left": 617,
+          "top": 633,
+          "width": 169,
+          "height": 31,
+          "opacity": 255,
+          "file": "layers/tatr01_856.png"
+        },
+        {
+          "layer_id": 857,
+          "key": "眉/眉8",
+          "left": 620,
+          "top": 627,
+          "width": 159,
+          "height": 23,
+          "opacity": 255,
+          "file": "layers/tatr01_857.png"
+        },
+        {
+          "layer_id": 858,
+          "key": "眉/眉9",
+          "left": 620,
+          "top": 629,
+          "width": 160,
+          "height": 23,
+          "opacity": 255,
+          "file": "layers/tatr01_858.png"
+        },
+        {
+          "layer_id": 859,
+          "key": "眉/眉a",
+          "left": 616,
+          "top": 624,
+          "width": 167,
+          "height": 37,
+          "opacity": 255,
+          "file": "layers/tatr01_859.png"
+        },
+        {
+          "layer_id": 860,
+          "key": "眉/眉b",
+          "left": 627,
+          "top": 633,
+          "width": 149,
+          "height": 32,
+          "opacity": 255,
+          "file": "layers/tatr01_860.png"
+        },
+        {
+          "layer_id": 861,
+          "key": "眉/眉c",
+          "left": 621,
+          "top": 640,
+          "width": 164,
+          "height": 23,
+          "opacity": 255,
+          "file": "layers/tatr01_861.png"
+        },
+        {
+          "layer_id": 862,
+          "key": "眉/眉d",
+          "left": 623,
+          "top": 638,
+          "width": 164,
+          "height": 45,
+          "opacity": 255,
+          "file": "layers/tatr01_862.png"
+        },
+        {
+          "layer_id": 863,
+          "key": "眉/眉e",
+          "left": 620,
+          "top": 641,
+          "width": 166,
+          "height": 19,
+          "opacity": 255,
+          "file": "layers/tatr01_863.png"
+        },
+        {
+          "layer_id": 864,
+          "key": "眉/眉f",
+          "left": 619,
+          "top": 637,
+          "width": 172,
+          "height": 34,
+          "opacity": 255,
+          "file": "layers/tatr01_864.png"
+        },
+        {
+          "layer_id": 865,
+          "key": "眉/眉g",
+          "left": 627,
+          "top": 640,
+          "width": 145,
+          "height": 23,
+          "opacity": 255,
+          "file": "layers/tatr01_865.png"
+        },
+        {
+          "layer_id": 866,
+          "key": "眉/眉h",
+          "left": 620,
+          "top": 637,
+          "width": 166,
+          "height": 29,
+          "opacity": 255,
+          "file": "layers/tatr01_866.png"
+        },
+        {
+          "layer_id": 867,
+          "key": "眉/眉i",
+          "left": 619,
+          "top": 635,
+          "width": 166,
+          "height": 19,
+          "opacity": 255,
+          "file": "layers/tatr01_867.png"
+        },
+        {
+          "layer_id": 868,
+          "key": "眉/眉j",
+          "left": 628,
+          "top": 621,
+          "width": 149,
+          "height": 16,
+          "opacity": 255,
+          "file": "layers/tatr01_868.png"
+        },
+        {
+          "layer_id": 869,
+          "key": "眉/眉k",
+          "left": 627,
+          "top": 642,
+          "width": 147,
+          "height": 24,
+          "opacity": 255,
+          "file": "layers/tatr01_869.png"
+        }
+      ],
+      "dress": {
+        "d1/base": "私服/ベース",
+        "d1/p1": "私服/手1",
+        "d1/p2": "私服/手2",
+        "d2/base": "水着/水着",
+        "d2/p1": "水着/手1",
+        "d2/p2": "水着/手2",
+        "d3/base": "下着/下着",
+        "d3/p1": "下着/手1",
+        "d3/p2": "下着/手2",
+        "d4/base": "ドロワーズ/ドロワーズ",
+        "d4/p1": "ドロワーズ/手1",
+        "d4/p2": "ドロワーズ/手2"
+      },
+      "faceNames": {
+        "目1": "目/目1",
+        "目2": "目/目2",
+        "目3": "目/目3",
+        "目4": "目/目4",
+        "目5": "目/目5",
+        "目6": "目/目6",
+        "目7": "目/目7",
+        "目8": "目/目8",
+        "目9": "目/目9",
+        "目a": "目/目a",
+        "目b": "目/目b",
+        "目c": "目/目c",
+        "目d": "目/目d",
+        "目e": "目/目e",
+        "目f": "目/目f",
+        "目g": "目/目g",
+        "目h": "目/目h",
+        "目i": "目/目i",
+        "目j": "目/目j",
+        "目k": "目/目k",
+        "目l": "目/目l",
+        "口1": "口/口1",
+        "口2": "口/口2",
+        "口3": "口/口3",
+        "口4": "口/口4",
+        "口5": "口/口5",
+        "口6": "口/口6",
+        "口7": "口/口7",
+        "口8": "口/口8",
+        "口9": "口/口9",
+        "口a": "口/口a",
+        "口b": "口/口b",
+        "口c": "口/口c",
+        "口d": "口/口d",
+        "口e": "口/口e",
+        "口f": "口/口f",
+        "口g": "口/口g",
+        "口h": "口/口h",
+        "口i": "口/口i",
+        "口j": "口/口j",
+        "口k": "口/口k",
+        "口l": "口/口l",
+        "眉1": "眉/眉1",
+        "眉2": "眉/眉2",
+        "眉3": "眉/眉3",
+        "眉4": "眉/眉4",
+        "眉5": "眉/眉5",
+        "眉6": "眉/眉6",
+        "眉7": "眉/眉7",
+        "眉8": "眉/眉8",
+        "眉9": "眉/眉9",
+        "眉a": "眉/眉a",
+        "眉b": "眉/眉b",
+        "眉c": "眉/眉c",
+        "眉d": "眉/眉d",
+        "眉e": "眉/眉e",
+        "眉f": "眉/眉f",
+        "眉g": "眉/眉g",
+        "眉h": "眉/眉h",
+        "眉i": "眉/眉i",
+        "眉j": "眉/眉j",
+        "眉k": "眉/眉k",
+        "眉l": "眉/眉l",
+        "足1": "足/足1",
+        "足2": "足/足2",
+        "足3": "足/足3",
+        "頬0": "dummy",
+        "頬1": "頬/頬1"
+      },
+      "aliases": {
+        "f1": [
+          "眉1",
+          "目1",
+          "口1",
+          "足1",
+          "頬0"
+        ],
+        "f2": [
+          "眉2",
+          "目2",
+          "口2",
+          "足1",
+          "頬0"
+        ],
+        "f3": [
+          "眉3",
+          "目3",
+          "口3",
+          "足1",
+          "頬0"
+        ],
+        "f4": [
+          "眉4",
+          "目4",
+          "口4",
+          "足1",
+          "頬0"
+        ],
+        "f5": [
+          "眉5",
+          "目5",
+          "口5",
+          "足1",
+          "頬0"
+        ],
+        "f6": [
+          "眉6",
+          "目6",
+          "口6",
+          "足1",
+          "頬0"
+        ],
+        "f7": [
+          "眉7",
+          "目7",
+          "口7",
+          "足1",
+          "頬0"
+        ],
+        "f8": [
+          "眉8",
+          "目8",
+          "口8",
+          "足1",
+          "頬0"
+        ],
+        "f9": [
+          "眉9",
+          "目9",
+          "口9",
+          "足1",
+          "頬0"
+        ],
+        "fa": [
+          "眉a",
+          "目a",
+          "口a",
+          "足1",
+          "頬0"
+        ],
+        "fb": [
+          "眉b",
+          "目b",
+          "口b",
+          "足1",
+          "頬0"
+        ],
+        "fc": [
+          "眉c",
+          "目c",
+          "口c",
+          "足1",
+          "頬0"
+        ],
+        "fd": [
+          "眉d",
+          "目d",
+          "口d",
+          "足1",
+          "頬0"
+        ],
+        "fe": [
+          "眉e",
+          "目e",
+          "口e",
+          "足1",
+          "頬0"
+        ],
+        "ff": [
+          "眉f",
+          "目f",
+          "口f",
+          "足1",
+          "頬0"
+        ],
+        "fg": [
+          "眉g",
+          "目g",
+          "口g",
+          "足1",
+          "頬0"
+        ],
+        "fh": [
+          "眉h",
+          "目h",
+          "口h",
+          "足1",
+          "頬0"
+        ],
+        "fi": [
+          "眉i",
+          "目i",
+          "口i",
+          "足1",
+          "頬0"
+        ],
+        "fj": [
+          "眉j",
+          "目j",
+          "口j",
+          "足1",
+          "頬0"
+        ],
+        "fk": [
+          "眉k",
+          "目k",
+          "口k",
+          "足1",
+          "頬0"
+        ],
+        "fl": [
+          "眉l",
+          "目l",
+          "口l",
+          "足1",
+          "頬0"
+        ]
+      }
+    },
+    "tatr02": {
+      "canvas": {
+        "height": 1979,
+        "width": 1392
+      },
+      "layers": [
+        {
+          "layer_id": 1611,
+          "key": "私服/私服",
+          "left": 223,
+          "top": 387,
+          "width": 1076,
+          "height": 1395,
+          "opacity": 255,
+          "file": "layers/tatr02_1611.png"
+        },
+        {
+          "layer_id": 1706,
+          "key": "足/足1",
+          "left": 80,
+          "top": 1404,
+          "width": 631,
+          "height": 452,
+          "opacity": 255,
+          "file": "layers/tatr02_1706.png"
+        },
+        {
+          "layer_id": 1708,
+          "key": "足/足2",
+          "left": 76,
+          "top": 1400,
+          "width": 637,
+          "height": 468,
+          "opacity": 255,
+          "file": "layers/tatr02_1708.png"
+        },
+        {
+          "layer_id": 1628,
+          "key": "眉/眉1",
+          "left": 687,
+          "top": 561,
+          "width": 155,
+          "height": 50,
+          "opacity": 255,
+          "file": "layers/tatr02_1628.png"
+        },
+        {
+          "layer_id": 1629,
+          "key": "眉/眉2",
+          "left": 687,
+          "top": 561,
+          "width": 155,
+          "height": 50,
+          "opacity": 255,
+          "file": "layers/tatr02_1629.png"
+        },
+        {
+          "layer_id": 1630,
+          "key": "眉/眉3",
+          "left": 687,
+          "top": 561,
+          "width": 153,
+          "height": 50,
+          "opacity": 255,
+          "file": "layers/tatr02_1630.png"
+        },
+        {
+          "layer_id": 1631,
+          "key": "眉/眉4",
+          "left": 686,
+          "top": 560,
+          "width": 142,
+          "height": 51,
+          "opacity": 255,
+          "file": "layers/tatr02_1631.png"
+        },
+        {
+          "layer_id": 1632,
+          "key": "眉/眉5",
+          "left": 686,
+          "top": 560,
+          "width": 142,
+          "height": 51,
+          "opacity": 255,
+          "file": "layers/tatr02_1632.png"
+        },
+        {
+          "layer_id": 1633,
+          "key": "眉/眉6",
+          "left": 693,
+          "top": 574,
+          "width": 142,
+          "height": 63,
+          "opacity": 255,
+          "file": "layers/tatr02_1633.png"
+        },
+        {
+          "layer_id": 1634,
+          "key": "眉/眉7",
+          "left": 694,
+          "top": 566,
+          "width": 152,
+          "height": 61,
+          "opacity": 255,
+          "file": "layers/tatr02_1634.png"
+        },
+        {
+          "layer_id": 1635,
+          "key": "眉/眉8",
+          "left": 684,
+          "top": 554,
+          "width": 160,
+          "height": 58,
+          "opacity": 255,
+          "file": "layers/tatr02_1635.png"
+        },
+        {
+          "layer_id": 1636,
+          "key": "眉/眉9",
+          "left": 687,
+          "top": 561,
+          "width": 155,
+          "height": 50,
+          "opacity": 255,
+          "file": "layers/tatr02_1636.png"
+        },
+        {
+          "layer_id": 1637,
+          "key": "眉/眉a",
+          "left": 687,
+          "top": 561,
+          "width": 155,
+          "height": 50,
+          "opacity": 255,
+          "file": "layers/tatr02_1637.png"
+        },
+        {
+          "layer_id": 1638,
+          "key": "眉/眉b",
+          "left": 679,
+          "top": 555,
+          "width": 152,
+          "height": 53,
+          "opacity": 255,
+          "file": "layers/tatr02_1638.png"
+        },
+        {
+          "layer_id": 1639,
+          "key": "眉/眉c",
+          "left": 688,
+          "top": 571,
+          "width": 152,
+          "height": 56,
+          "opacity": 255,
+          "file": "layers/tatr02_1639.png"
+        },
+        {
+          "layer_id": 1641,
+          "key": "眉/眉e",
+          "left": 689,
+          "top": 568,
+          "width": 154,
+          "height": 49,
+          "opacity": 255,
+          "file": "layers/tatr02_1641.png"
+        },
+        {
+          "layer_id": 1642,
+          "key": "眉/眉f",
+          "left": 690,
+          "top": 574,
+          "width": 157,
+          "height": 57,
+          "opacity": 255,
+          "file": "layers/tatr02_1642.png"
+        },
+        {
+          "layer_id": 1643,
+          "key": "眉/眉g",
+          "left": 693,
+          "top": 569,
+          "width": 134,
+          "height": 52,
+          "opacity": 255,
+          "file": "layers/tatr02_1643.png"
+        },
+        {
+          "layer_id": 1644,
+          "key": "眉/眉h",
+          "left": 691,
+          "top": 569,
+          "width": 151,
+          "height": 53,
+          "opacity": 255,
+          "file": "layers/tatr02_1644.png"
+        },
+        {
+          "layer_id": 1645,
+          "key": "眉/眉i",
+          "left": 687,
+          "top": 561,
+          "width": 155,
+          "height": 50,
+          "opacity": 255,
+          "file": "layers/tatr02_1645.png"
+        },
+        {
+          "layer_id": 1646,
+          "key": "眉/眉j",
+          "left": 687,
+          "top": 560,
+          "width": 151,
+          "height": 51,
+          "opacity": 255,
+          "file": "layers/tatr02_1646.png"
+        },
+        {
+          "layer_id": 1647,
+          "key": "眉/眉k",
+          "left": 695,
+          "top": 569,
+          "width": 136,
+          "height": 55,
+          "opacity": 255,
+          "file": "layers/tatr02_1647.png"
+        },
+        {
+          "layer_id": 1652,
+          "key": "目/目1",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1652.png"
+        },
+        {
+          "layer_id": 1653,
+          "key": "目/目2",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1653.png"
+        },
+        {
+          "layer_id": 1654,
+          "key": "目/目3",
+          "left": 709,
+          "top": 590,
+          "width": 131,
+          "height": 83,
+          "opacity": 255,
+          "file": "layers/tatr02_1654.png"
+        },
+        {
+          "layer_id": 1655,
+          "key": "目/目4",
+          "left": 701,
+          "top": 585,
+          "width": 144,
+          "height": 81,
+          "opacity": 255,
+          "file": "layers/tatr02_1655.png"
+        },
+        {
+          "layer_id": 1656,
+          "key": "目/目5",
+          "left": 701,
+          "top": 585,
+          "width": 144,
+          "height": 81,
+          "opacity": 255,
+          "file": "layers/tatr02_1656.png"
+        },
+        {
+          "layer_id": 1657,
+          "key": "目/目6",
+          "left": 711,
+          "top": 591,
+          "width": 124,
+          "height": 76,
+          "opacity": 255,
+          "file": "layers/tatr02_1657.png"
+        },
+        {
+          "layer_id": 1658,
+          "key": "目/目7",
+          "left": 693,
+          "top": 582,
+          "width": 152,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1658.png"
+        },
+        {
+          "layer_id": 1659,
+          "key": "目/目8",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1659.png"
+        },
+        {
+          "layer_id": 1660,
+          "key": "目/目9",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1660.png"
+        },
+        {
+          "layer_id": 1661,
+          "key": "目/目a",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1661.png"
+        },
+        {
+          "layer_id": 1662,
+          "key": "目/目b",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1662.png"
+        },
+        {
+          "layer_id": 1663,
+          "key": "目/目c",
+          "left": 708,
+          "top": 591,
+          "width": 130,
+          "height": 69,
+          "opacity": 255,
+          "file": "layers/tatr02_1663.png"
+        },
+        {
+          "layer_id": 1665,
+          "key": "目/目e",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1665.png"
+        },
+        {
+          "layer_id": 1666,
+          "key": "目/目f",
+          "left": 706,
+          "top": 586,
+          "width": 140,
+          "height": 83,
+          "opacity": 255,
+          "file": "layers/tatr02_1666.png"
+        },
+        {
+          "layer_id": 1667,
+          "key": "目/目g",
+          "left": 709,
+          "top": 593,
+          "width": 129,
+          "height": 72,
+          "opacity": 255,
+          "file": "layers/tatr02_1667.png"
+        },
+        {
+          "layer_id": 1668,
+          "key": "目/目h",
+          "left": 705,
+          "top": 586,
+          "width": 141,
+          "height": 99,
+          "opacity": 255,
+          "file": "layers/tatr02_1668.png"
+        },
+        {
+          "layer_id": 1669,
+          "key": "目/目i",
+          "left": 700,
+          "top": 582,
+          "width": 145,
+          "height": 84,
+          "opacity": 255,
+          "file": "layers/tatr02_1669.png"
+        },
+        {
+          "layer_id": 1670,
+          "key": "目/目j",
+          "left": 705,
+          "top": 587,
+          "width": 135,
+          "height": 79,
+          "opacity": 255,
+          "file": "layers/tatr02_1670.png"
+        },
+        {
+          "layer_id": 1671,
+          "key": "目/目k",
+          "left": 719,
+          "top": 599,
+          "width": 109,
+          "height": 70,
+          "opacity": 255,
+          "file": "layers/tatr02_1671.png"
+        },
+        {
+          "layer_id": 1676,
+          "key": "口/口1",
+          "left": 759,
+          "top": 653,
+          "width": 23,
+          "height": 33,
+          "opacity": 255,
+          "file": "layers/tatr02_1676.png"
+        },
+        {
+          "layer_id": 1677,
+          "key": "口/口2",
+          "left": 759,
+          "top": 653,
+          "width": 39,
+          "height": 34,
+          "opacity": 255,
+          "file": "layers/tatr02_1677.png"
+        },
+        {
+          "layer_id": 1699,
+          "key": "口/口3",
+          "left": 760,
+          "top": 649,
+          "width": 42,
+          "height": 48,
+          "opacity": 255,
+          "file": "layers/tatr02_1699.png"
+        },
+        {
+          "layer_id": 1700,
+          "key": "口/口4",
+          "left": 760,
+          "top": 651,
+          "width": 40,
+          "height": 46,
+          "opacity": 255,
+          "file": "layers/tatr02_1700.png"
+        },
+        {
+          "layer_id": 1680,
+          "key": "口/口5",
+          "left": 760,
+          "top": 654,
+          "width": 33,
+          "height": 35,
+          "opacity": 255,
+          "file": "layers/tatr02_1680.png"
+        },
+        {
+          "layer_id": 1681,
+          "key": "口/口6",
+          "left": 763,
+          "top": 656,
+          "width": 29,
+          "height": 33,
+          "opacity": 255,
+          "file": "layers/tatr02_1681.png"
+        },
+        {
+          "layer_id": 1701,
+          "key": "口/口7",
+          "left": 759,
+          "top": 653,
+          "width": 33,
+          "height": 36,
+          "opacity": 255,
+          "file": "layers/tatr02_1701.png"
+        },
+        {
+          "layer_id": 1702,
+          "key": "口/口8",
+          "left": 759,
+          "top": 653,
+          "width": 34,
+          "height": 41,
+          "opacity": 255,
+          "file": "layers/tatr02_1702.png"
+        },
+        {
+          "layer_id": 1703,
+          "key": "口/口9",
+          "left": 760,
+          "top": 653,
+          "width": 26,
+          "height": 35,
+          "opacity": 255,
+          "file": "layers/tatr02_1703.png"
+        },
+        {
+          "layer_id": 1704,
+          "key": "口/口a",
+          "left": 759,
+          "top": 653,
+          "width": 40,
+          "height": 39,
+          "opacity": 255,
+          "file": "layers/tatr02_1704.png"
+        },
+        {
+          "layer_id": 1686,
+          "key": "口/口b",
+          "left": 759,
+          "top": 551,
+          "width": 78,
+          "height": 136,
+          "opacity": 255,
+          "file": "layers/tatr02_1686.png"
+        },
+        {
+          "layer_id": 1687,
+          "key": "口/口c",
+          "left": 762,
+          "top": 650,
+          "width": 32,
+          "height": 43,
+          "opacity": 255,
+          "file": "layers/tatr02_1687.png"
+        },
+        {
+          "layer_id": 1689,
+          "key": "口/口e",
+          "left": 759,
+          "top": 653,
+          "width": 23,
+          "height": 33,
+          "opacity": 255,
+          "file": "layers/tatr02_1689.png"
+        },
+        {
+          "layer_id": 1690,
+          "key": "口/口f",
+          "left": 759,
+          "top": 653,
+          "width": 28,
+          "height": 37,
+          "opacity": 255,
+          "file": "layers/tatr02_1690.png"
+        },
+        {
+          "layer_id": 1691,
+          "key": "口/口g",
+          "left": 760,
+          "top": 653,
+          "width": 31,
+          "height": 36,
+          "opacity": 255,
+          "file": "layers/tatr02_1691.png"
+        },
+        {
+          "layer_id": 1692,
+          "key": "口/口h",
+          "left": 710,
+          "top": 649,
+          "width": 83,
+          "height": 44,
+          "opacity": 255,
+          "file": "layers/tatr02_1692.png"
+        },
+        {
+          "layer_id": 1693,
+          "key": "口/口i",
+          "left": 759,
+          "top": 653,
+          "width": 23,
+          "height": 33,
+          "opacity": 255,
+          "file": "layers/tatr02_1693.png"
+        },
+        {
+          "layer_id": 1694,
+          "key": "口/口j",
+          "left": 759,
+          "top": 653,
+          "width": 23,
+          "height": 33,
+          "opacity": 255,
+          "file": "layers/tatr02_1694.png"
+        },
+        {
+          "layer_id": 1695,
+          "key": "口/口k",
+          "left": 772,
+          "top": 671,
+          "width": 16,
+          "height": 17,
+          "opacity": 255,
+          "file": "layers/tatr02_1695.png"
+        },
+        {
+          "layer_id": 1696,
+          "key": "口/口l",
+          "left": 763,
+          "top": 656,
+          "width": 36,
+          "height": 34,
+          "opacity": 255,
+          "file": "layers/tatr02_1696.png"
+        }
+      ],
+      "dress": {
+        "d1/p3": "私服/私服",
+        "d2/p3": "水着/水着",
+        "d3/p3": "下着/下着",
+        "d4/p3": "ドロワーズ/ドロワーズ"
+      },
+      "faceNames": {
+        "目1": "目/目1",
+        "目2": "目/目2",
+        "目3": "目/目3",
+        "目4": "目/目4",
+        "目5": "目/目5",
+        "目6": "目/目6",
+        "目7": "目/目7",
+        "目8": "目/目8",
+        "目9": "目/目9",
+        "目a": "目/目a",
+        "目b": "目/目b",
+        "目c": "目/目c",
+        "目d": "目/目d",
+        "目e": "目/目e",
+        "目f": "目/目f",
+        "目g": "目/目g",
+        "目h": "目/目h",
+        "目i": "目/目i",
+        "目j": "目/目j",
+        "目k": "目/目k",
+        "目l": "目/目l",
+        "口1": "口/口1",
+        "口2": "口/口2",
+        "口3": "口/口3",
+        "口4": "口/口4",
+        "口5": "口/口5",
+        "口6": "口/口6",
+        "口7": "口/口7",
+        "口8": "口/口8",
+        "口9": "口/口9",
+        "口a": "口/口a",
+        "口b": "口/口b",
+        "口c": "口/口c",
+        "口d": "口/口d",
+        "口e": "口/口e",
+        "口f": "口/口f",
+        "口g": "口/口g",
+        "口h": "口/口h",
+        "口i": "口/口i",
+        "口j": "口/口j",
+        "口k": "口/口k",
+        "口l": "口/口l",
+        "眉1": "眉/眉1",
+        "眉2": "眉/眉2",
+        "眉3": "眉/眉3",
+        "眉4": "眉/眉4",
+        "眉5": "眉/眉5",
+        "眉6": "眉/眉6",
+        "眉7": "眉/眉7",
+        "眉8": "眉/眉8",
+        "眉9": "眉/眉9",
+        "眉a": "眉/眉a",
+        "眉b": "眉/眉b",
+        "眉c": "眉/眉c",
+        "眉d": "眉/眉d",
+        "眉e": "眉/眉e",
+        "眉f": "眉/眉f",
+        "眉g": "眉/眉g",
+        "眉h": "眉/眉h",
+        "眉i": "眉/眉i",
+        "眉j": "眉/眉j",
+        "眉k": "眉/眉k",
+        "眉l": "眉/眉l",
+        "足1": "足/足1",
+        "足2": "足/足2",
+        "足3": "足/足3"
+      },
+      "aliases": {
+        "f1": [
+          "眉1",
+          "目1",
+          "口1",
+          "足1"
+        ],
+        "f2": [
+          "眉2",
+          "目2",
+          "口2",
+          "足1"
+        ],
+        "f3": [
+          "眉3",
+          "目3",
+          "口3",
+          "足1"
+        ],
+        "f4": [
+          "眉4",
+          "目4",
+          "口4",
+          "足1"
+        ],
+        "f5": [
+          "眉5",
+          "目5",
+          "口5",
+          "足1"
+        ],
+        "f6": [
+          "眉6",
+          "目6",
+          "口6",
+          "足1"
+        ],
+        "f7": [
+          "眉7",
+          "目7",
+          "口7",
+          "足1"
+        ],
+        "f8": [
+          "眉8",
+          "目8",
+          "口8",
+          "足1"
+        ],
+        "f9": [
+          "眉9",
+          "目9",
+          "口9",
+          "足1"
+        ],
+        "fa": [
+          "眉a",
+          "目a",
+          "口a",
+          "足1"
+        ],
+        "fb": [
+          "眉b",
+          "目b",
+          "口b",
+          "足1"
+        ],
+        "fc": [
+          "眉c",
+          "目c",
+          "口c",
+          "足1"
+        ],
+        "fd": [
+          "眉d",
+          "目d",
+          "口d",
+          "足1"
+        ],
+        "fe": [
+          "眉e",
+          "目e",
+          "口e",
+          "足1"
+        ],
+        "ff": [
+          "眉f",
+          "目f",
+          "口f",
+          "足1"
+        ],
+        "fg": [
+          "眉g",
+          "目g",
+          "口g",
+          "足1"
+        ],
+        "fh": [
+          "眉h",
+          "目h",
+          "口h",
+          "足1"
+        ],
+        "fi": [
+          "眉i",
+          "目i",
+          "口i",
+          "足1"
+        ],
+        "fj": [
+          "眉j",
+          "目j",
+          "口j",
+          "足1"
+        ],
+        "fk": [
+          "眉k",
+          "目k",
+          "口k",
+          "足1"
+        ],
+        "fl": [
+          "眉l",
+          "目l",
+          "口l",
+          "足1"
+        ]
+      }
+    },
+    "tatr03": {
+      "canvas": {
+        "height": 1979,
+        "width": 878
+      },
+      "layers": [
+        {
+          "layer_id": 231,
+          "key": "ベース",
+          "left": 89,
+          "top": 350,
+          "width": 665,
+          "height": 1499,
+          "opacity": 255,
+          "file": "layers/tatr03_231.png"
+        }
+      ],
+      "dress": {
+        "d1/p4": "ベース"
+      },
+      "faceNames": {},
+      "aliases": {}
+    }
+  }
+}

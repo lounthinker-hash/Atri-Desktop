@@ -1,0 +1,227 @@
+{
+  "assets": {
+    "paper_boat": {
+      "id": "paper_boat",
+      "file": "paper_boat.png",
+      "name": "纸船",
+      "alt": "一只蓝底白帆折痕的小纸船",
+      "theme": "折过纸船、见过纸船，或当天聊起折纸船。",
+      "keywords": [
+        "纸船",
+        "小纸船",
+        "折纸船"
+      ],
+      "tags": [
+        "纸船",
+        "小纸船"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "sourceFile": "source/paper_boat.svg",
+      "sha256": "5c7e3a34c9467fc2ed112fbcd7f058af496b6322184a1078b3379e4b9506354d",
+      "alphaBounds": [
+        4,
+        32,
+        155,
+        129
+      ]
+    },
+    "paper_crane": {
+      "id": "paper_crane",
+      "file": "paper_crane.png",
+      "name": "纸鹤",
+      "alt": "一只展开双翼的折纸鹤，灰线勾出纸面的折痕",
+      "theme": "折过或看见纸鹤，或当天谈到千纸鹤。",
+      "keywords": [
+        "纸鹤",
+        "千纸鹤",
+        "折纸鹤"
+      ],
+      "tags": [
+        "纸鹤",
+        "千纸鹤"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘的中性白纸线稿。折线以灰阶区分，不给日记里的纸张指定颜色。",
+      "sourceFile": "source/paper_crane.svg",
+      "sha256": "e6eebbe5c926f98c67b0cf83695f964b30885295756c8ed13758dd6162feede2",
+      "alphaBounds": [
+        3,
+        12,
+        157,
+        147
+      ],
+      "colorTreatment": "neutral_ink"
+    },
+    "pressed_leaf": {
+      "id": "pressed_leaf",
+      "file": "pressed_leaf.png",
+      "name": "拾来的叶子",
+      "alt": "一片金褐色的叶子，叶脉清晰，叶柄朝左下",
+      "theme": "见到、捡过、夹存树叶，或聊起一片叶子。",
+      "keywords": [
+        "叶子",
+        "落叶",
+        "捡树叶",
+        "夹树叶",
+        "压叶标本"
+      ],
+      "tags": [
+        "叶子",
+        "落叶"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "sourceFile": "source/pressed_leaf.svg",
+      "sha256": "1f4dcfecbf8862b4181cface458dcc4c2a019668af0256d475f50a8a193b5636",
+      "alphaBounds": [
+        13,
+        5,
+        141,
+        147
+      ]
+    },
+    "bookmark": {
+      "id": "bookmark",
+      "file": "bookmark.png",
+      "name": "流苏书签",
+      "alt": "一枚绿色长书签，顶端系着珊瑚红的流苏",
+      "theme": "做过、收到或聊到书签。",
+      "keywords": [
+        "书签",
+        "流苏书签",
+        "做书签",
+        "夹书签"
+      ],
+      "tags": [
+        "书签",
+        "流苏书签"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "sourceFile": "source/bookmark.svg",
+      "sha256": "22ee2654af9ec94ef63019f87253fa5aa4b882ee3af8d610e6026cb4e9f13e02",
+      "alphaBounds": [
+        24,
+        10,
+        129,
+        149
+      ]
+    },
+    "pinwheel": {
+      "id": "pinwheel",
+      "file": "pinwheel.png",
+      "name": "纸风车",
+      "alt": "四片不同朝向的折纸风车，下接一根木柄",
+      "theme": "做过、转过纸风车，或当天谈起这个小玩具。",
+      "keywords": [
+        "纸风车",
+        "折风车",
+        "做风车",
+        "小风车"
+      ],
+      "tags": [
+        "纸风车",
+        "折风车"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "sourceFile": "source/pinwheel.svg",
+      "sha256": "257e431f93148f56b3f6b75a476666c403098ceb39e8eb5b2e1b94bf417f3bcf",
+      "alphaBounds": [
+        12,
+        13,
+        149,
+        151
+      ]
+    },
+    "paper_plane": {
+      "id": "paper_plane",
+      "file": "paper_plane.png",
+      "name": "纸飞机",
+      "alt": "一架尖头朝右上方的蓝白折纸飞机",
+      "theme": "折过、放飞过纸飞机，或谈起折纸飞机。",
+      "keywords": [
+        "纸飞机",
+        "折飞机",
+        "叠飞机"
+      ],
+      "tags": [
+        "纸飞机",
+        "折飞机"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "sourceFile": "source/paper_plane.svg",
+      "sha256": "e1a46a6101814b4dedbd45e67e875689f17d676f06fd21af5a789594a370402f",
+      "alphaBounds": [
+        4,
+        19,
+        152,
+        140
+      ]
+    },
+    "pressed_daisy": {
+      "id": "pressed_daisy",
+      "file": "pressed_daisy.png",
+      "name": "小雏菊",
+      "alt": "一朵奶白色的小雏菊，花心金黄，弯茎上有两片叶子",
+      "theme": "亲手压花、看见雏菊，或当天聊到雏菊和压花。",
+      "keywords": [
+        "雏菊",
+        "小雏菊",
+        "压花",
+        "雏菊标本"
+      ],
+      "tags": [
+        "雏菊",
+        "小雏菊"
+      ],
+      "basis": [
+        "observed",
+        "performed",
+        "conversation_topic"
+      ],
+      "sources": [],
+      "source": "桌面日记原画组自绘，折面、线条与色块见随附矢量原稿。",
+      "sourceFile": "source/pressed_daisy.svg",
+      "sha256": "e2cb11ffcccd0b1901d0ecd1bd55e282a1b5588455cef149ea19b74bea4908a7",
+      "alphaBounds": [
+        28,
+        12,
+        121,
+        150
+      ]
+    }
+  }
+}

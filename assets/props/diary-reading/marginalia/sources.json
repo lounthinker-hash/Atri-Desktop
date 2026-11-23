@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "unit": "PNG pixel coordinates, origin top left; nonzero-alpha bounds are [left,top,right,bottom).",
+  "intent": "Small marginal stickers for entries that mention the pictured event. Source facts and desktop art treatments below.",
+  "display_test_px": [
+    26,
+    32,
+    40,
+    45
+  ],
+  "assets": {
+    "reading": {
+      "file": "reading.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        4,
+        19,
+        156,
+        142
+      ],
+      "sha256": "67fa437b1847756ef24a686cc2918499af65a23471c7374a4f207933ea6c655c",
+      "art_origin": "New original desktop illustration, drawn as two ruled leaves with a red bookmark. No third-party icon or game pixels.",
+      "label": "阅读或翻书",
+      "source_design_canvas_px": [
+        160,
+        160
+      ]
+    },
+    "proud": {
+      "file": "proud.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        0,
+        0,
+        160,
+        160
+      ],
+      "sha256": "d74895bb4b9fa06949c3f54c5b02847c59ba57071bfb5fc856740cdfb3d50247",
+      "source_archive": "fgimage.xp3",
+      "source_sprite_id": "d1-p3-2bf0a4125",
+      "source_crop_px": [
+        525,
+        54,
+        895,
+        424
+      ],
+      "source_pose": "p3",
+      "source_dress": "d1",
+      "source": "ATRI -My Dear Moments- · d1 白裙表情立绘",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    },
+    "crab": {
+      "file": "crab.png",
+      "size_px": [
+        160,
+        160
+      ],
+      "alpha_bbox_px": [
+        1,
+        21,
+        159,
+        139
+      ],
+      "sha256": "40fa9675a9801619b1dbee3f5fa6b011eb16b8d3081110b0c4a2dcd20ee57243",
+      "source_archive": "bgimage.xp3",
+      "source_entry": "item/item042.png",
+      "source_sha256": "f62634c571db7d456372db02f6abb9c430ab393d62586bcc05b7ef2d5783210b",
+      "source_crop_px": [
+        16,
+        97,
+        472,
+        429
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画",
+      "copyright": "© Aniplex Inc. All rights reserved.",
+      "terms": "https://aniplex-exe.com/guidelines/"
+    }
+  },
+  "rights_note": "The reading illustration is original to Atri Desktop. The proud and crab stickers use in-game images under the linked ANIPLEX.EXE guidelines for personal, noncommercial use."
+}

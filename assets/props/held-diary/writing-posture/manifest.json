@@ -1,0 +1,7540 @@
+{
+  "schemaVersion": 1,
+  "id": "d1-p1-chest-writing",
+  "dress": "d1",
+  "pose": "p1",
+  "fps": 24,
+  "actorCanvas": [
+    666,
+    1706
+  ],
+  "paddedCanvas": [
+    890,
+    1706
+  ],
+  "nativeActorOriginInPadded": [
+    112,
+    0
+  ],
+  "footAnchorInPadded": [
+    445,
+    1706
+  ],
+  "coordinates": "左上原点，x 向右，y 向下。双瞳、肩、肘、腕、书脊、笔尖都使用未加留边的 d1/p1 666×1706 坐标。补画的三分之四低头局部以掩膜替换，其余图层有各自的 alpha。",
+  "files": {
+    "sourceActor": "../../../sprites/d1-p1-f18e483b6.webp",
+    "head": "head/manifest.json",
+    "arms": "arms/manifest.json",
+    "pen": "../pen-write/write.json",
+    "hand": "../action-hand/write/performance.json",
+    "readyToDraw390": "atlas390/manifest.json",
+    "sample": "preview.py",
+    "preview": "previews/writing-390.webp",
+    "contactSheet": "previews/face-and-pen.png",
+    "checks": "previews/verification.json",
+    "atlasDescription": "atlas390/manifest.json 以同一摄像机渲染三种纸面、两种进入方式和收势。"
+  },
+  "clips": {
+    "reach": {
+      "fps": 24,
+      "frames": [
+        {
+          "headFrame": 0,
+          "armsFrame": 0,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            34,
+            991
+          ],
+          "supportWristActorPx": [
+            75.0,
+            959.0
+          ],
+          "workingWristActorPx": [
+            627.0,
+            980.0
+          ],
+          "supportElbowActorPx": [
+            169.0,
+            768.0
+          ],
+          "workingElbowActorPx": [
+            518.0,
+            784.084
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              308.0,
+              405.0
+            ],
+            [
+              391.0,
+              403.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 0,
+          "armsFrame": 1,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            36,
+            989
+          ],
+          "supportWristActorPx": [
+            77.0,
+            957.0
+          ],
+          "workingWristActorPx": [
+            624.488,
+            973.656
+          ],
+          "supportElbowActorPx": [
+            168.708,
+            769.123
+          ],
+          "workingElbowActorPx": [
+            518.08,
+            780.042
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              308.0,
+              405.0
+            ],
+            [
+              391.0,
+              403.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 1,
+          "armsFrame": 2,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            41,
+            982
+          ],
+          "supportWristActorPx": [
+            82.0,
+            950.0
+          ],
+          "workingWristActorPx": [
+            616.736,
+            954.41
+          ],
+          "supportElbowActorPx": [
+            167.883,
+            772.297
+          ],
+          "workingElbowActorPx": [
+            517.997,
+            767.955
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              305.38,
+              406.69
+            ],
+            [
+              387.0,
+              404.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 1,
+          "armsFrame": 3,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            49,
+            972
+          ],
+          "supportWristActorPx": [
+            90.0,
+            940.0
+          ],
+          "workingWristActorPx": [
+            604.922,
+            925.631
+          ],
+          "supportElbowActorPx": [
+            166.601,
+            777.229
+          ],
+          "workingElbowActorPx": [
+            517.992,
+            749.957
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              305.38,
+              406.69
+            ],
+            [
+              387.0,
+              404.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 2,
+          "armsFrame": 4,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            59,
+            959
+          ],
+          "supportWristActorPx": [
+            100.0,
+            927.0
+          ],
+          "workingWristActorPx": [
+            589.223,
+            889.164
+          ],
+          "supportElbowActorPx": [
+            164.938,
+            783.625
+          ],
+          "workingElbowActorPx": [
+            517.867,
+            727.456
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              302.75,
+              408.38
+            ],
+            [
+              383.0,
+              406.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 4,
+          "armsFrame": 5,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            71,
+            945
+          ],
+          "supportWristActorPx": [
+            112.0,
+            913.0
+          ],
+          "workingWristActorPx": [
+            570.815,
+            849.477
+          ],
+          "supportElbowActorPx": [
+            162.97,
+            791.193
+          ],
+          "workingElbowActorPx": [
+            517.995,
+            703.323
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              297.5,
+              411.75
+            ],
+            [
+              375.0,
+              410.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 5,
+          "armsFrame": 6,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            85,
+            928
+          ],
+          "supportWristActorPx": [
+            126.0,
+            896.0
+          ],
+          "workingWristActorPx": [
+            550.876,
+            807.515
+          ],
+          "supportElbowActorPx": [
+            160.773,
+            799.641
+          ],
+          "workingElbowActorPx": [
+            518.713,
+            678.963
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              294.88,
+              413.44
+            ],
+            [
+              371.0,
+              411.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 7,
+          "armsFrame": 7,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            99,
+            912
+          ],
+          "supportWristActorPx": [
+            140.0,
+            880.0
+          ],
+          "workingWristActorPx": [
+            528.583,
+            770.23
+          ],
+          "supportElbowActorPx": [
+            158.425,
+            808.674
+          ],
+          "workingElbowActorPx": [
+            519.807,
+            659.182
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              289.62,
+              416.81
+            ],
+            [
+              363.0,
+              415.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 8,
+          "armsFrame": 8,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            114,
+            896
+          ],
+          "supportWristActorPx": [
+            155.0,
+            864.0
+          ],
+          "workingWristActorPx": [
+            506.113,
+            738.928
+          ],
+          "supportElbowActorPx": [
+            156.0,
+            818.0
+          ],
+          "workingElbowActorPx": [
+            522.004,
+            646.175
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              287.0,
+              418.5
+            ],
+            [
+              359.0,
+              417.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 9,
+          "armsFrame": 9,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            130,
+            881
+          ],
+          "supportWristActorPx": [
+            171.0,
+            849.0
+          ],
+          "workingWristActorPx": [
+            484.643,
+            715.701
+          ],
+          "supportElbowActorPx": [
+            153.575,
+            827.326
+          ],
+          "workingElbowActorPx": [
+            525.172,
+            642.169
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              284.38,
+              420.19
+            ],
+            [
+              355.0,
+              418.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 11,
+          "armsFrame": 10,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            144,
+            867
+          ],
+          "supportWristActorPx": [
+            185.0,
+            835.0
+          ],
+          "workingWristActorPx": [
+            462.35,
+            700.196
+          ],
+          "supportElbowActorPx": [
+            151.227,
+            836.359
+          ],
+          "workingElbowActorPx": [
+            528.055,
+            647.694
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              279.12,
+              423.56
+            ],
+            [
+              347.0,
+              422.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 12,
+          "armsFrame": 11,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            158,
+            856
+          ],
+          "supportWristActorPx": [
+            199.0,
+            824.0
+          ],
+          "workingWristActorPx": [
+            442.411,
+            692.847
+          ],
+          "supportElbowActorPx": [
+            149.03,
+            844.807
+          ],
+          "workingElbowActorPx": [
+            530.182,
+            660.643
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              276.5,
+              425.25
+            ],
+            [
+              343.0,
+              424.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 14,
+          "armsFrame": 12,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            170,
+            845
+          ],
+          "supportWristActorPx": [
+            211.0,
+            813.0
+          ],
+          "workingWristActorPx": [
+            424.004,
+            688.44
+          ],
+          "supportElbowActorPx": [
+            147.062,
+            852.375
+          ],
+          "workingElbowActorPx": [
+            530.68,
+            676.576
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              271.25,
+              428.62
+            ],
+            [
+              335.0,
+              427.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 15,
+          "armsFrame": 13,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            180,
+            837
+          ],
+          "supportWristActorPx": [
+            221.0,
+            805.0
+          ],
+          "workingWristActorPx": [
+            408.304,
+            687.77
+          ],
+          "supportElbowActorPx": [
+            145.399,
+            858.771
+          ],
+          "workingElbowActorPx": [
+            529.872,
+            692.491
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              268.62,
+              430.31
+            ],
+            [
+              331.0,
+              429.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 15,
+          "armsFrame": 14,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            188,
+            831
+          ],
+          "supportWristActorPx": [
+            229.0,
+            799.0
+          ],
+          "workingWristActorPx": [
+            396.49,
+            688.106
+          ],
+          "supportElbowActorPx": [
+            144.117,
+            863.703
+          ],
+          "workingElbowActorPx": [
+            528.595,
+            705.353
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              268.62,
+              430.31
+            ],
+            [
+              331.0,
+              429.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 15,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            193,
+            826
+          ],
+          "supportWristActorPx": [
+            234.0,
+            794.0
+          ],
+          "workingWristActorPx": [
+            388.739,
+            687.345
+          ],
+          "supportElbowActorPx": [
+            143.292,
+            866.877
+          ],
+          "workingElbowActorPx": [
+            527.473,
+            713.653
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 16,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        }
+      ]
+    },
+    "write": {
+      "fps": 24,
+      "frames": [
+        {
+          "headFrame": 16,
+          "armsFrame": 0,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 1,
+          "propFrame": 1,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 2,
+          "propFrame": 2,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 3,
+          "propFrame": 3,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 4,
+          "propFrame": 4,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": [
+            317.743,
+            703.54
+          ],
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 5,
+          "propFrame": 5,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            385.917,
+            685.991
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            526.767,
+            716.055
+          ],
+          "tipActorPx": [
+            338.679,
+            829.696
+          ],
+          "gripActorPx": [
+            317.433,
+            701.674
+          ],
+          "gazeTargetActorPx": [
+            338.679,
+            829.696
+          ],
+          "eyeOffsetActorPx": [
+            2.976,
+            1.302
+          ],
+          "pupilsActorPx": [
+            [
+              268.976,
+              433.302
+            ],
+            [
+              329.976,
+              432.302
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 6,
+          "propFrame": 6,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            385.055,
+            680.798
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            525.936,
+            714.451
+          ],
+          "tipActorPx": [
+            337.818,
+            824.504
+          ],
+          "gripActorPx": [
+            316.571,
+            696.482
+          ],
+          "gazeTargetActorPx": [
+            337.818,
+            824.504
+          ],
+          "eyeOffsetActorPx": [
+            4.107,
+            1.797
+          ],
+          "pupilsActorPx": [
+            [
+              270.107,
+              433.797
+            ],
+            [
+              331.107,
+              432.797
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 7,
+          "propFrame": 7,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            383.742,
+            672.884
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            524.63,
+            712.084
+          ],
+          "tipActorPx": [
+            336.505,
+            816.589
+          ],
+          "gripActorPx": [
+            315.258,
+            688.567
+          ],
+          "gazeTargetActorPx": [
+            336.505,
+            816.589
+          ],
+          "eyeOffsetActorPx": [
+            4.537,
+            1.985
+          ],
+          "pupilsActorPx": [
+            [
+              270.537,
+              433.985
+            ],
+            [
+              331.537,
+              432.985
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 8,
+          "propFrame": 8,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            382.077,
+            662.851
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            522.897,
+            709.234
+          ],
+          "tipActorPx": [
+            334.84,
+            806.556
+          ],
+          "gripActorPx": [
+            313.593,
+            678.535
+          ],
+          "gazeTargetActorPx": [
+            334.84,
+            806.556
+          ],
+          "eyeOffsetActorPx": [
+            4.7,
+            2.056
+          ],
+          "pupilsActorPx": [
+            [
+              270.7,
+              434.056
+            ],
+            [
+              331.7,
+              433.056
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 9,
+          "propFrame": 9,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            380.161,
+            651.306
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            520.774,
+            706.194
+          ],
+          "tipActorPx": [
+            332.924,
+            795.011
+          ],
+          "gripActorPx": [
+            311.677,
+            666.989
+          ],
+          "gazeTargetActorPx": [
+            332.924,
+            795.011
+          ],
+          "eyeOffsetActorPx": [
+            4.762,
+            2.083
+          ],
+          "pupilsActorPx": [
+            [
+              270.762,
+              434.083
+            ],
+            [
+              331.762,
+              433.083
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 10,
+          "propFrame": 10,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            378.094,
+            638.853
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            518.281,
+            703.254
+          ],
+          "tipActorPx": [
+            330.857,
+            782.559
+          ],
+          "gripActorPx": [
+            309.61,
+            654.537
+          ],
+          "gazeTargetActorPx": [
+            330.857,
+            782.559
+          ],
+          "eyeOffsetActorPx": [
+            4.786,
+            2.094
+          ],
+          "pupilsActorPx": [
+            [
+              270.786,
+              434.094
+            ],
+            [
+              331.786,
+              433.094
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 11,
+          "propFrame": 11,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            375.978,
+            626.099
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            515.424,
+            700.673
+          ],
+          "tipActorPx": [
+            328.74,
+            769.804
+          ],
+          "gripActorPx": [
+            307.494,
+            641.783
+          ],
+          "gazeTargetActorPx": [
+            328.74,
+            769.804
+          ],
+          "eyeOffsetActorPx": [
+            4.795,
+            2.098
+          ],
+          "pupilsActorPx": [
+            [
+              270.795,
+              434.098
+            ],
+            [
+              331.795,
+              433.098
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 12,
+          "propFrame": 12,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            373.911,
+            613.647
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            512.212,
+            698.636
+          ],
+          "tipActorPx": [
+            326.673,
+            757.352
+          ],
+          "gripActorPx": [
+            305.427,
+            629.331
+          ],
+          "gazeTargetActorPx": [
+            326.673,
+            757.352
+          ],
+          "eyeOffsetActorPx": [
+            4.798,
+            1.578
+          ],
+          "pupilsActorPx": [
+            [
+              270.798,
+              433.578
+            ],
+            [
+              331.798,
+              432.578
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 13,
+          "propFrame": 13,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            371.995,
+            602.101
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            508.703,
+            697.199
+          ],
+          "tipActorPx": [
+            324.757,
+            745.807
+          ],
+          "gripActorPx": [
+            303.511,
+            617.785
+          ],
+          "gazeTargetActorPx": [
+            324.757,
+            745.807
+          ],
+          "eyeOffsetActorPx": [
+            4.799,
+            0.793
+          ],
+          "pupilsActorPx": [
+            [
+              270.799,
+              432.793
+            ],
+            [
+              331.799,
+              431.793
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 14,
+          "propFrame": 14,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            370.33,
+            592.069
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            505.098,
+            696.273
+          ],
+          "tipActorPx": [
+            323.093,
+            735.774
+          ],
+          "gripActorPx": [
+            301.847,
+            607.753
+          ],
+          "gazeTargetActorPx": [
+            323.093,
+            735.774
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -0.015
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              431.985
+            ],
+            [
+              331.8,
+              430.985
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 15,
+          "propFrame": 15,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            369.017,
+            584.154
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            501.806,
+            695.699
+          ],
+          "tipActorPx": [
+            321.779,
+            727.859
+          ],
+          "gripActorPx": [
+            300.533,
+            599.838
+          ],
+          "gazeTargetActorPx": [
+            321.779,
+            727.859
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -0.725
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              431.275
+            ],
+            [
+              331.8,
+              430.275
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 16,
+          "propFrame": 16,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            368.155,
+            578.961
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            499.403,
+            695.36
+          ],
+          "tipActorPx": [
+            320.917,
+            722.666
+          ],
+          "gripActorPx": [
+            299.671,
+            594.645
+          ],
+          "gazeTargetActorPx": [
+            320.917,
+            722.666
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.258
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.742
+            ],
+            [
+              331.8,
+              429.742
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 17,
+          "propFrame": 17,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            367.845,
+            577.096
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            500.239,
+            694.762
+          ],
+          "tipActorPx": [
+            320.608,
+            720.801
+          ],
+          "gripActorPx": [
+            299.361,
+            592.78
+          ],
+          "gazeTargetActorPx": [
+            320.608,
+            720.801
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.556
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.444
+            ],
+            [
+              331.8,
+              429.444
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 18,
+          "propFrame": 18,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            370.775,
+            578.195
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            501.04,
+            694.66
+          ],
+          "tipActorPx": [
+            320.01,
+            719.01
+          ],
+          "gripActorPx": [
+            302.226,
+            593.592
+          ],
+          "gazeTargetActorPx": [
+            320.01,
+            719.01
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.707
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.293
+            ],
+            [
+              331.8,
+              429.293
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 19,
+          "propFrame": 19,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            376.78,
+            582.422
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            506.267,
+            692.675
+          ],
+          "tipActorPx": [
+            317.243,
+            715.063
+          ],
+          "gripActorPx": [
+            308.064,
+            597.056
+          ],
+          "gazeTargetActorPx": [
+            317.243,
+            715.063
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.765
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.235
+            ],
+            [
+              331.8,
+              429.235
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 20,
+          "propFrame": 20,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            381.041,
+            591.542
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            511.749,
+            691.025
+          ],
+          "tipActorPx": [
+            310.62,
+            711.407
+          ],
+          "gripActorPx": [
+            312.101,
+            605.082
+          ],
+          "gazeTargetActorPx": [
+            310.62,
+            711.407
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.787
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.213
+            ],
+            [
+              331.8,
+              429.213
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 21,
+          "propFrame": 21,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            380.077,
+            606.246
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            514.449,
+            692.252
+          ],
+          "tipActorPx": [
+            299.651,
+            709.891
+          ],
+          "gripActorPx": [
+            310.899,
+            618.507
+          ],
+          "gazeTargetActorPx": [
+            299.651,
+            709.891
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.795
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.205
+            ],
+            [
+              331.8,
+              429.205
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 22,
+          "propFrame": 22,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            373.175,
+            625.267
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            513.42,
+            698.064
+          ],
+          "tipActorPx": [
+            285.707,
+            711.133
+          ],
+          "gripActorPx": [
+            303.776,
+            636.214
+          ],
+          "gazeTargetActorPx": [
+            285.707,
+            711.133
+          ],
+          "eyeOffsetActorPx": [
+            4.327,
+            -1.798
+          ],
+          "pupilsActorPx": [
+            [
+              270.327,
+              430.202
+            ],
+            [
+              331.327,
+              429.202
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 23,
+          "propFrame": 23,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            361.854,
+            644.869
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            508.463,
+            708.201
+          ],
+          "tipActorPx": [
+            271.419,
+            713.857
+          ],
+          "gripActorPx": [
+            292.276,
+            654.614
+          ],
+          "gazeTargetActorPx": [
+            271.419,
+            713.857
+          ],
+          "eyeOffsetActorPx": [
+            3.173,
+            -1.799
+          ],
+          "pupilsActorPx": [
+            [
+              269.173,
+              430.201
+            ],
+            [
+              330.173,
+              429.201
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 24,
+          "propFrame": 24,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            349.596,
+            660.99
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            501.952,
+            717.576
+          ],
+          "tipActorPx": [
+            259.482,
+            716.581
+          ],
+          "gripActorPx": [
+            279.933,
+            670.103
+          ],
+          "gazeTargetActorPx": [
+            259.482,
+            716.581
+          ],
+          "eyeOffsetActorPx": [
+            1.921,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              267.921,
+              430.2
+            ],
+            [
+              328.921,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 25,
+          "propFrame": 25,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            340.205,
+            671.24
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            496.73,
+            723.938
+          ],
+          "tipActorPx": [
+            251.7,
+            718.569
+          ],
+          "gripActorPx": [
+            270.564,
+            680.519
+          ],
+          "gazeTargetActorPx": [
+            251.7,
+            718.569
+          ],
+          "eyeOffsetActorPx": [
+            0.914,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              266.914,
+              430.2
+            ],
+            [
+              327.914,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 26,
+          "propFrame": 26,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            336.357,
+            674.153
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            494.219,
+            726.577
+          ],
+          "tipActorPx": [
+            248.95,
+            719.286
+          ],
+          "gripActorPx": [
+            266.824,
+            684.208
+          ],
+          "gazeTargetActorPx": [
+            248.95,
+            719.286
+          ],
+          "eyeOffsetActorPx": [
+            0.344,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              266.344,
+              430.2
+            ],
+            [
+              327.344,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 27,
+          "propFrame": 27,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            336.014,
+            675.848
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.613,
+            728.706
+          ],
+          "tipActorPx": [
+            248.95,
+            721.906
+          ],
+          "gripActorPx": [
+            266.603,
+            686.716
+          ],
+          "gazeTargetActorPx": [
+            248.95,
+            721.906
+          ],
+          "eyeOffsetActorPx": [
+            0.127,
+            -1.706
+          ],
+          "pupilsActorPx": [
+            [
+              266.127,
+              430.294
+            ],
+            [
+              327.127,
+              429.294
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 28,
+          "propFrame": 28,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            335.772,
+            680.907
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.197,
+            730.394
+          ],
+          "tipActorPx": [
+            248.95,
+            727.487
+          ],
+          "gripActorPx": [
+            266.431,
+            692.211
+          ],
+          "gazeTargetActorPx": [
+            248.95,
+            727.487
+          ],
+          "eyeOffsetActorPx": [
+            0.045,
+            -1.386
+          ],
+          "pupilsActorPx": [
+            [
+              266.045,
+              430.614
+            ],
+            [
+              327.045,
+              429.614
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 29,
+          "propFrame": 29,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            335.494,
+            683.923
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.264,
+            731.316
+          ],
+          "tipActorPx": [
+            248.95,
+            730.951
+          ],
+          "gripActorPx": [
+            266.209,
+            695.566
+          ],
+          "gazeTargetActorPx": [
+            248.95,
+            730.951
+          ],
+          "eyeOffsetActorPx": [
+            0.014,
+            -1.088
+          ],
+          "pupilsActorPx": [
+            [
+              266.014,
+              430.912
+            ],
+            [
+              327.014,
+              429.912
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 30,
+          "propFrame": 30,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            335.02,
+            684.374
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.172,
+            732.093
+          ],
+          "tipActorPx": [
+            248.989,
+            732.047
+          ],
+          "gripActorPx": [
+            265.809,
+            696.452
+          ],
+          "gazeTargetActorPx": [
+            248.989,
+            732.047
+          ],
+          "eyeOffsetActorPx": [
+            0.004,
+            -0.92
+          ],
+          "pupilsActorPx": [
+            [
+              266.004,
+              431.08
+            ],
+            [
+              327.004,
+              430.08
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 31,
+          "propFrame": 31,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            334.322,
+            686.257
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.996,
+            733.005
+          ],
+          "tipActorPx": [
+            249.09,
+            735.1
+          ],
+          "gripActorPx": [
+            265.269,
+            699.209
+          ],
+          "gazeTargetActorPx": [
+            249.09,
+            735.1
+          ],
+          "eyeOffsetActorPx": [
+            0.008,
+            -0.7
+          ],
+          "pupilsActorPx": [
+            [
+              266.008,
+              431.3
+            ],
+            [
+              327.008,
+              430.3
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 32,
+          "propFrame": 32,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            333.533,
+            689.333
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.734,
+            733.922
+          ],
+          "tipActorPx": [
+            249.215,
+            739.68
+          ],
+          "gripActorPx": [
+            264.718,
+            703.491
+          ],
+          "gazeTargetActorPx": [
+            249.215,
+            739.68
+          ],
+          "eyeOffsetActorPx": [
+            0.018,
+            -0.384
+          ],
+          "pupilsActorPx": [
+            [
+              266.018,
+              431.616
+            ],
+            [
+              327.018,
+              430.616
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 33,
+          "propFrame": 33,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.843,
+            693.404
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.585,
+            735.224
+          ],
+          "tipActorPx": [
+            249.289,
+            745.042
+          ],
+          "gripActorPx": [
+            264.256,
+            708.628
+          ],
+          "gazeTargetActorPx": [
+            249.289,
+            745.042
+          ],
+          "eyeOffsetActorPx": [
+            0.026,
+            0.009
+          ],
+          "pupilsActorPx": [
+            [
+              266.026,
+              432.009
+            ],
+            [
+              327.026,
+              431.009
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 34,
+          "propFrame": 34,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.449,
+            697.953
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.629,
+            736.732
+          ],
+          "tipActorPx": [
+            249.217,
+            750.139
+          ],
+          "gripActorPx": [
+            263.965,
+            713.637
+          ],
+          "gazeTargetActorPx": [
+            249.217,
+            750.139
+          ],
+          "eyeOffsetActorPx": [
+            0.025,
+            0.417
+          ],
+          "pupilsActorPx": [
+            [
+              266.025,
+              432.417
+            ],
+            [
+              327.025,
+              431.417
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 35,
+          "propFrame": 35,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.53,
+            702.591
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.959,
+            738.306
+          ],
+          "tipActorPx": [
+            248.922,
+            753.907
+          ],
+          "gripActorPx": [
+            263.87,
+            717.486
+          ],
+          "gazeTargetActorPx": [
+            248.922,
+            753.907
+          ],
+          "eyeOffsetActorPx": [
+            0.004,
+            0.764
+          ],
+          "pupilsActorPx": [
+            [
+              266.004,
+              432.764
+            ],
+            [
+              327.004,
+              431.764
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 36,
+          "propFrame": 36,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.769,
+            706.181
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.368,
+            739.674
+          ],
+          "tipActorPx": [
+            248.397,
+            755.704
+          ],
+          "gripActorPx": [
+            263.78,
+            719.465
+          ],
+          "gazeTargetActorPx": [
+            248.397,
+            755.704
+          ],
+          "eyeOffsetActorPx": [
+            -0.04,
+            0.987
+          ],
+          "pupilsActorPx": [
+            [
+              265.96,
+              432.987
+            ],
+            [
+              326.96,
+              431.987
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 37,
+          "propFrame": 37,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            331.489,
+            708.252
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.061,
+            741.025
+          ],
+          "tipActorPx": [
+            245.885,
+            754.889
+          ],
+          "gripActorPx": [
+            262.059,
+            718.995
+          ],
+          "gazeTargetActorPx": [
+            245.885,
+            754.889
+          ],
+          "eyeOffsetActorPx": [
+            -0.227,
+            1.03
+          ],
+          "pupilsActorPx": [
+            [
+              265.773,
+              433.03
+            ],
+            [
+              326.773,
+              432.03
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 38,
+          "propFrame": 38,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            330.737,
+            710.297
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.006,
+            742.157
+          ],
+          "tipActorPx": [
+            243.534,
+            753.043
+          ],
+          "gripActorPx": [
+            260.871,
+            717.696
+          ],
+          "gazeTargetActorPx": [
+            243.534,
+            753.043
+          ],
+          "eyeOffsetActorPx": [
+            -0.459,
+            0.953
+          ],
+          "pupilsActorPx": [
+            [
+              265.541,
+              432.953
+            ],
+            [
+              326.541,
+              431.953
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 39,
+          "propFrame": 39,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            331.33,
+            712.847
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.265,
+            743.043
+          ],
+          "tipActorPx": [
+            242.753,
+            752.386
+          ],
+          "gripActorPx": [
+            261.236,
+            717.625
+          ],
+          "gazeTargetActorPx": [
+            242.753,
+            752.386
+          ],
+          "eyeOffsetActorPx": [
+            -0.601,
+            0.89
+          ],
+          "pupilsActorPx": [
+            [
+              265.399,
+              432.89
+            ],
+            [
+              326.399,
+              431.89
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 40,
+          "propFrame": 40,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.213,
+            710.478
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.47,
+            742.634
+          ],
+          "tipActorPx": [
+            242.375,
+            747.624
+          ],
+          "gripActorPx": [
+            262.022,
+            713.508
+          ],
+          "gazeTargetActorPx": [
+            242.375,
+            747.624
+          ],
+          "eyeOffsetActorPx": [
+            -0.68,
+            0.624
+          ],
+          "pupilsActorPx": [
+            [
+              265.32,
+              432.624
+            ],
+            [
+              326.32,
+              431.624
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 41,
+          "propFrame": 41,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.704,
+            705.537
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.605,
+            741.667
+          ],
+          "tipActorPx": [
+            241.674,
+            740.424
+          ],
+          "gripActorPx": [
+            262.463,
+            706.991
+          ],
+          "gazeTargetActorPx": [
+            241.674,
+            740.424
+          ],
+          "eyeOffsetActorPx": [
+            -0.758,
+            0.157
+          ],
+          "pupilsActorPx": [
+            [
+              265.242,
+              432.157
+            ],
+            [
+              326.242,
+              431.157
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 42,
+          "propFrame": 42,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.994,
+            703.698
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.746,
+            740.882
+          ],
+          "tipActorPx": [
+            241.295,
+            737.03
+          ],
+          "gripActorPx": [
+            262.738,
+            704.013
+          ],
+          "gazeTargetActorPx": [
+            241.295,
+            737.03
+          ],
+          "eyeOffsetActorPx": [
+            -0.814,
+            -0.193
+          ],
+          "pupilsActorPx": [
+            [
+              265.186,
+              431.807
+            ],
+            [
+              326.186,
+              430.807
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 43,
+          "propFrame": 43,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            332.513,
+            702.08
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            492.379,
+            740.026
+          ],
+          "tipActorPx": [
+            240.579,
+            734.82
+          ],
+          "gripActorPx": [
+            262.256,
+            701.957
+          ],
+          "gazeTargetActorPx": [
+            240.579,
+            734.82
+          ],
+          "eyeOffsetActorPx": [
+            -0.883,
+            -0.438
+          ],
+          "pupilsActorPx": [
+            [
+              265.117,
+              431.562
+            ],
+            [
+              326.117,
+              430.562
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 44,
+          "propFrame": 44,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            331.52,
+            699.673
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.754,
+            739.446
+          ],
+          "tipActorPx": [
+            239.406,
+            732.676
+          ],
+          "gripActorPx": [
+            261.264,
+            699.932
+          ],
+          "gazeTargetActorPx": [
+            239.406,
+            732.676
+          ],
+          "eyeOffsetActorPx": [
+            -0.99,
+            -0.641
+          ],
+          "pupilsActorPx": [
+            [
+              265.01,
+              431.359
+            ],
+            [
+              326.01,
+              430.359
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 45,
+          "propFrame": 45,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            330.879,
+            698.265
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            491.21,
+            739.082
+          ],
+          "tipActorPx": [
+            238.657,
+            732.033
+          ],
+          "gripActorPx": [
+            260.631,
+            699.367
+          ],
+          "gazeTargetActorPx": [
+            238.657,
+            732.033
+          ],
+          "eyeOffsetActorPx": [
+            -1.082,
+            -0.75
+          ],
+          "pupilsActorPx": [
+            [
+              264.918,
+              431.25
+            ],
+            [
+              325.918,
+              430.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 46,
+          "propFrame": 46,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            330.467,
+            699.762
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            490.841,
+            739.276
+          ],
+          "tipActorPx": [
+            238.222,
+            734.346
+          ],
+          "gripActorPx": [
+            260.237,
+            701.707
+          ],
+          "gazeTargetActorPx": [
+            238.222,
+            734.346
+          ],
+          "eyeOffsetActorPx": [
+            -1.146,
+            -0.674
+          ],
+          "pupilsActorPx": [
+            [
+              264.854,
+              431.326
+            ],
+            [
+              325.854,
+              430.326
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 47,
+          "propFrame": 47,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            330.247,
+            701.817
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            490.699,
+            739.662
+          ],
+          "tipActorPx": [
+            238.015,
+            736.784
+          ],
+          "gripActorPx": [
+            260.029,
+            704.145
+          ],
+          "gazeTargetActorPx": [
+            238.015,
+            736.784
+          ],
+          "eyeOffsetActorPx": [
+            -1.185,
+            -0.521
+          ],
+          "pupilsActorPx": [
+            [
+              264.815,
+              431.479
+            ],
+            [
+              325.815,
+              430.479
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 48,
+          "propFrame": 48,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            329.681,
+            705.244
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            490.61,
+            740.797
+          ],
+          "tipActorPx": [
+            237.081,
+            739.115
+          ],
+          "gripActorPx": [
+            259.439,
+            706.711
+          ],
+          "gazeTargetActorPx": [
+            237.081,
+            739.115
+          ],
+          "eyeOffsetActorPx": [
+            -1.263,
+            -0.345
+          ],
+          "pupilsActorPx": [
+            [
+              264.737,
+              431.655
+            ],
+            [
+              325.737,
+              430.655
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 49,
+          "propFrame": 49,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            327.053,
+            712.262
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            489.815,
+            743.308
+          ],
+          "tipActorPx": [
+            233.64,
+            743.619
+          ],
+          "gripActorPx": [
+            256.798,
+            711.781
+          ],
+          "gazeTargetActorPx": [
+            233.64,
+            743.619
+          ],
+          "eyeOffsetActorPx": [
+            -1.528,
+            -0.049
+          ],
+          "pupilsActorPx": [
+            [
+              264.472,
+              431.951
+            ],
+            [
+              325.472,
+              430.951
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 50,
+          "propFrame": 50,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            323.447,
+            718.234
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            488.461,
+            745.968
+          ],
+          "tipActorPx": [
+            229.166,
+            746.831
+          ],
+          "gripActorPx": [
+            253.237,
+            715.677
+          ],
+          "gazeTargetActorPx": [
+            229.166,
+            746.831
+          ],
+          "eyeOffsetActorPx": [
+            -1.933,
+            0.227
+          ],
+          "pupilsActorPx": [
+            [
+              264.067,
+              432.227
+            ],
+            [
+              325.067,
+              431.227
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 51,
+          "propFrame": 51,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            322.008,
+            720.924
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            487.623,
+            747.925
+          ],
+          "tipActorPx": [
+            227.079,
+            747.72
+          ],
+          "gripActorPx": [
+            251.854,
+            717.124
+          ],
+          "gazeTargetActorPx": [
+            227.079,
+            747.72
+          ],
+          "eyeOffsetActorPx": [
+            -2.23,
+            0.377
+          ],
+          "pupilsActorPx": [
+            [
+              263.77,
+              432.377
+            ],
+            [
+              324.77,
+              431.377
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 52,
+          "propFrame": 52,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            324.082,
+            714.45
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            487.663,
+            746.87
+          ],
+          "tipActorPx": [
+            228.697,
+            740.369
+          ],
+          "gripActorPx": [
+            253.956,
+            710.171
+          ],
+          "gazeTargetActorPx": [
+            228.697,
+            740.369
+          ],
+          "eyeOffsetActorPx": [
+            -2.232,
+            0.06
+          ],
+          "pupilsActorPx": [
+            [
+              263.768,
+              432.06
+            ],
+            [
+              324.768,
+              431.06
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 53,
+          "propFrame": 53,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            331.167,
+            702.51
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            490.079,
+            742.974
+          ],
+          "tipActorPx": [
+            235.372,
+            727.671
+          ],
+          "gripActorPx": [
+            261.066,
+            697.842
+          ],
+          "gazeTargetActorPx": [
+            235.372,
+            727.671
+          ],
+          "eyeOffsetActorPx": [
+            -1.778,
+            -0.706
+          ],
+          "pupilsActorPx": [
+            [
+              264.222,
+              431.294
+            ],
+            [
+              325.222,
+              430.294
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 54,
+          "propFrame": 54,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            340.001,
+            694.529
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            494.333,
+            737.961
+          ],
+          "tipActorPx": [
+            243.855,
+            719.108
+          ],
+          "gripActorPx": [
+            269.917,
+            689.6
+          ],
+          "gazeTargetActorPx": [
+            243.855,
+            719.108
+          ],
+          "eyeOffsetActorPx": [
+            -1.026,
+            -1.384
+          ],
+          "pupilsActorPx": [
+            [
+              264.974,
+              430.616
+            ],
+            [
+              325.974,
+              429.616
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 55,
+          "propFrame": 55,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            343.912,
+            692.137
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            496.869,
+            735.057
+          ],
+          "tipActorPx": [
+            247.492,
+            716.37
+          ],
+          "gripActorPx": [
+            273.835,
+            687.113
+          ],
+          "gazeTargetActorPx": [
+            247.492,
+            716.37
+          ],
+          "eyeOffsetActorPx": [
+            -0.493,
+            -1.642
+          ],
+          "pupilsActorPx": [
+            [
+              265.507,
+              430.358
+            ],
+            [
+              326.507,
+              429.358
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 56,
+          "propFrame": 56,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            344.16,
+            692.164
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            498.517,
+            733.566
+          ],
+          "tipActorPx": [
+            247.492,
+            716.37
+          ],
+          "gripActorPx": [
+            274.07,
+            687.326
+          ],
+          "gazeTargetActorPx": [
+            247.492,
+            716.37
+          ],
+          "eyeOffsetActorPx": [
+            -0.29,
+            -1.74
+          ],
+          "pupilsActorPx": [
+            [
+              265.71,
+              430.26
+            ],
+            [
+              326.71,
+              429.26
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 57,
+          "propFrame": 57,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            344.386,
+            691.823
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            499.318,
+            732.912
+          ],
+          "tipActorPx": [
+            247.492,
+            716.37
+          ],
+          "gripActorPx": [
+            274.263,
+            687.503
+          ],
+          "gazeTargetActorPx": [
+            247.492,
+            716.37
+          ],
+          "eyeOffsetActorPx": [
+            -0.213,
+            -1.777
+          ],
+          "pupilsActorPx": [
+            [
+              265.787,
+              430.223
+            ],
+            [
+              326.787,
+              429.223
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 58,
+          "propFrame": 58,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            344.51,
+            691.104
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            499.386,
+            732.684
+          ],
+          "tipActorPx": [
+            247.492,
+            716.37
+          ],
+          "gripActorPx": [
+            274.342,
+            687.577
+          ],
+          "gazeTargetActorPx": [
+            247.492,
+            716.37
+          ],
+          "eyeOffsetActorPx": [
+            -0.184,
+            -1.791
+          ],
+          "pupilsActorPx": [
+            [
+              265.816,
+              430.209
+            ],
+            [
+              326.816,
+              429.209
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 59,
+          "propFrame": 59,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            344.088,
+            691.438
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            499.237,
+            732.781
+          ],
+          "tipActorPx": [
+            247.492,
+            718.142
+          ],
+          "gripActorPx": [
+            273.876,
+            688.922
+          ],
+          "gazeTargetActorPx": [
+            247.492,
+            718.142
+          ],
+          "eyeOffsetActorPx": [
+            -0.173,
+            -1.797
+          ],
+          "pupilsActorPx": [
+            [
+              265.827,
+              430.203
+            ],
+            [
+              326.827,
+              429.203
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 60,
+          "propFrame": 60,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            345.769,
+            692.406
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            500.11,
+            732.485
+          ],
+          "tipActorPx": [
+            250.328,
+            721.305
+          ],
+          "gripActorPx": [
+            275.525,
+            691.056
+          ],
+          "gazeTargetActorPx": [
+            250.328,
+            721.305
+          ],
+          "eyeOffsetActorPx": [
+            0.025,
+            -1.735
+          ],
+          "pupilsActorPx": [
+            [
+              266.025,
+              430.265
+            ],
+            [
+              327.025,
+              429.265
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 61,
+          "propFrame": 61,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            349.464,
+            697.76
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            502.098,
+            732.877
+          ],
+          "tipActorPx": [
+            255.593,
+            729.942
+          ],
+          "gripActorPx": [
+            279.211,
+            698.443
+          ],
+          "gazeTargetActorPx": [
+            255.593,
+            729.942
+          ],
+          "eyeOffsetActorPx": [
+            0.459,
+            -1.272
+          ],
+          "pupilsActorPx": [
+            [
+              266.459,
+              430.728
+            ],
+            [
+              327.459,
+              429.728
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 62,
+          "propFrame": 62,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            350.61,
+            700.592
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            503.144,
+            733.216
+          ],
+          "tipActorPx": [
+            258.428,
+            736.784
+          ],
+          "gripActorPx": [
+            280.443,
+            704.145
+          ],
+          "gazeTargetActorPx": [
+            258.428,
+            736.784
+          ],
+          "eyeOffsetActorPx": [
+            0.817,
+            -0.749
+          ],
+          "pupilsActorPx": [
+            [
+              266.817,
+              431.251
+            ],
+            [
+              327.817,
+              430.251
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 63,
+          "propFrame": 63,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            351.748,
+            697.131
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            504.374,
+            732.384
+          ],
+          "tipActorPx": [
+            261.923,
+            738.738
+          ],
+          "gripActorPx": [
+            281.913,
+            704.823
+          ],
+          "gazeTargetActorPx": [
+            261.923,
+            738.738
+          ],
+          "eyeOffsetActorPx": [
+            1.192,
+            -0.45
+          ],
+          "pupilsActorPx": [
+            [
+              267.192,
+              431.55
+            ],
+            [
+              328.192,
+              430.55
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 64,
+          "propFrame": 64,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            353.617,
+            696.62
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            505.506,
+            731.936
+          ],
+          "tipActorPx": [
+            266.722,
+            744.084
+          ],
+          "gripActorPx": [
+            284.447,
+            708.931
+          ],
+          "gazeTargetActorPx": [
+            266.722,
+            744.084
+          ],
+          "eyeOffsetActorPx": [
+            1.662,
+            -0.065
+          ],
+          "pupilsActorPx": [
+            [
+              267.662,
+              431.935
+            ],
+            [
+              328.662,
+              430.935
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 65,
+          "propFrame": 65,
+          "paperContact": true,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            353.291,
+            696.459
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            505.448,
+            731.428
+          ],
+          "tipActorPx": [
+            267.906,
+            746.626
+          ],
+          "gripActorPx": [
+            284.544,
+            710.945
+          ],
+          "gazeTargetActorPx": [
+            267.906,
+            746.626
+          ],
+          "eyeOffsetActorPx": [
+            1.921,
+            0.21
+          ],
+          "pupilsActorPx": [
+            [
+              267.921,
+              432.21
+            ],
+            [
+              328.921,
+              431.21
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 66,
+          "propFrame": 66,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            353.593,
+            694.869
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            505.856,
+            730.753
+          ],
+          "tipActorPx": [
+            268.068,
+            744.879
+          ],
+          "gripActorPx": [
+            284.825,
+            709.254
+          ],
+          "gazeTargetActorPx": [
+            268.068,
+            744.879
+          ],
+          "eyeOffsetActorPx": [
+            2.03,
+            0.226
+          ],
+          "pupilsActorPx": [
+            [
+              268.03,
+              432.226
+            ],
+            [
+              329.03,
+              431.226
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 67,
+          "propFrame": 67,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            354.367,
+            691.101
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            505.957,
+            729.652
+          ],
+          "tipActorPx": [
+            268.473,
+            740.694
+          ],
+          "gripActorPx": [
+            285.543,
+            705.218
+          ],
+          "gazeTargetActorPx": [
+            268.473,
+            740.694
+          ],
+          "eyeOffsetActorPx": [
+            2.1,
+            0.02
+          ],
+          "pupilsActorPx": [
+            [
+              268.1,
+              432.02
+            ],
+            [
+              329.1,
+              431.02
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 68,
+          "propFrame": 68,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            355.409,
+            686.659
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            506.244,
+            728.154
+          ],
+          "tipActorPx": [
+            269.0,
+            735.654
+          ],
+          "gripActorPx": [
+            286.507,
+            700.391
+          ],
+          "gazeTargetActorPx": [
+            269.0,
+            735.654
+          ],
+          "eyeOffsetActorPx": [
+            2.162,
+            -0.315
+          ],
+          "pupilsActorPx": [
+            [
+              268.162,
+              431.685
+            ],
+            [
+              329.162,
+              430.685
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 69,
+          "propFrame": 69,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            356.516,
+            683.046
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            506.643,
+            726.563
+          ],
+          "tipActorPx": [
+            269.526,
+            731.343
+          ],
+          "gripActorPx": [
+            287.526,
+            696.33
+          ],
+          "gazeTargetActorPx": [
+            269.526,
+            731.343
+          ],
+          "eyeOffsetActorPx": [
+            2.221,
+            -0.662
+          ],
+          "pupilsActorPx": [
+            [
+              268.221,
+              431.338
+            ],
+            [
+              329.221,
+              430.338
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 70,
+          "propFrame": 70,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            357.563,
+            681.237
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            507.146,
+            725.321
+          ],
+          "tipActorPx": [
+            269.931,
+            728.424
+          ],
+          "gripActorPx": [
+            288.414,
+            693.664
+          ],
+          "gazeTargetActorPx": [
+            269.931,
+            728.424
+          ],
+          "eyeOffsetActorPx": [
+            2.272,
+            -0.942
+          ],
+          "pupilsActorPx": [
+            [
+              268.272,
+              431.058
+            ],
+            [
+              329.272,
+              430.058
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 71,
+          "propFrame": 71,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            358.571,
+            681.589
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            507.789,
+            724.684
+          ],
+          "tipActorPx": [
+            270.093,
+            727.014
+          ],
+          "gripActorPx": [
+            289.18,
+            692.582
+          ],
+          "gazeTargetActorPx": [
+            270.093,
+            727.014
+          ],
+          "eyeOffsetActorPx": [
+            2.302,
+            -1.12
+          ],
+          "pupilsActorPx": [
+            [
+              268.302,
+              430.88
+            ],
+            [
+              329.302,
+              429.88
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 72,
+          "propFrame": 72,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            360.463,
+            680.16
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            508.805,
+            723.612
+          ],
+          "tipActorPx": [
+            270.627,
+            725.171
+          ],
+          "gripActorPx": [
+            290.847,
+            689.628
+          ],
+          "gazeTargetActorPx": [
+            270.627,
+            725.171
+          ],
+          "eyeOffsetActorPx": [
+            2.35,
+            -1.281
+          ],
+          "pupilsActorPx": [
+            [
+              268.35,
+              430.719
+            ],
+            [
+              329.35,
+              429.719
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 73,
+          "propFrame": 73,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            363.994,
+            673.293
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            510.398,
+            721.08
+          ],
+          "tipActorPx": [
+            272.291,
+            721.043
+          ],
+          "gripActorPx": [
+            294.231,
+            681.604
+          ],
+          "gazeTargetActorPx": [
+            272.291,
+            721.043
+          ],
+          "eyeOffsetActorPx": [
+            2.481,
+            -1.552
+          ],
+          "pupilsActorPx": [
+            [
+              268.481,
+              430.448
+            ],
+            [
+              329.481,
+              429.448
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 74,
+          "propFrame": 74,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            368.745,
+            662.152
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            512.515,
+            716.963
+          ],
+          "tipActorPx": [
+            275.284,
+            715.805
+          ],
+          "gripActorPx": [
+            298.922,
+            669.949
+          ],
+          "gazeTargetActorPx": [
+            275.284,
+            715.805
+          ],
+          "eyeOffsetActorPx": [
+            2.735,
+            -1.706
+          ],
+          "pupilsActorPx": [
+            [
+              268.735,
+              430.294
+            ],
+            [
+              329.735,
+              429.294
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 75,
+          "propFrame": 75,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            373.924,
+            647.839
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            514.894,
+            711.33
+          ],
+          "tipActorPx": [
+            279.738,
+            710.611
+          ],
+          "gripActorPx": [
+            304.148,
+            656.043
+          ],
+          "gazeTargetActorPx": [
+            279.738,
+            710.611
+          ],
+          "eyeOffsetActorPx": [
+            3.136,
+            -1.764
+          ],
+          "pupilsActorPx": [
+            [
+              269.136,
+              430.236
+            ],
+            [
+              330.136,
+              429.236
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 76,
+          "propFrame": 76,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            378.843,
+            632.143
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            517.343,
+            704.714
+          ],
+          "tipActorPx": [
+            285.54,
+            706.394
+          ],
+          "gripActorPx": [
+            309.193,
+            641.361
+          ],
+          "gazeTargetActorPx": [
+            285.54,
+            706.394
+          ],
+          "eyeOffsetActorPx": [
+            3.684,
+            -1.786
+          ],
+          "pupilsActorPx": [
+            [
+              269.684,
+              430.214
+            ],
+            [
+              330.684,
+              429.214
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 77,
+          "propFrame": 77,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            383.025,
+            617.063
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            519.332,
+            698.885
+          ],
+          "tipActorPx": [
+            292.286,
+            703.843
+          ],
+          "gripActorPx": [
+            313.529,
+            627.373
+          ],
+          "gazeTargetActorPx": [
+            292.286,
+            703.843
+          ],
+          "eyeOffsetActorPx": [
+            4.352,
+            -1.795
+          ],
+          "pupilsActorPx": [
+            [
+              270.352,
+              430.205
+            ],
+            [
+              331.352,
+              429.205
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 78,
+          "propFrame": 78,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            385.649,
+            603.728
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            520.412,
+            694.491
+          ],
+          "tipActorPx": [
+            299.339,
+            703.308
+          ],
+          "gripActorPx": [
+            316.327,
+            615.154
+          ],
+          "gazeTargetActorPx": [
+            299.339,
+            703.308
+          ],
+          "eyeOffsetActorPx": [
+            4.63,
+            -1.798
+          ],
+          "pupilsActorPx": [
+            [
+              270.63,
+              430.202
+            ],
+            [
+              331.63,
+              429.202
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 79,
+          "propFrame": 79,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.128,
+            592.916
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            520.008,
+            691.849
+          ],
+          "tipActorPx": [
+            305.988,
+            704.761
+          ],
+          "gripActorPx": [
+            316.995,
+            605.428
+          ],
+          "gazeTargetActorPx": [
+            305.988,
+            704.761
+          ],
+          "eyeOffsetActorPx": [
+            4.735,
+            -1.799
+          ],
+          "pupilsActorPx": [
+            [
+              270.735,
+              430.201
+            ],
+            [
+              331.735,
+              429.201
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 80,
+          "propFrame": 80,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            384.307,
+            584.967
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            517.555,
+            691.167
+          ],
+          "tipActorPx": [
+            311.617,
+            707.783
+          ],
+          "gripActorPx": [
+            315.363,
+            598.485
+          ],
+          "gazeTargetActorPx": [
+            311.617,
+            707.783
+          ],
+          "eyeOffsetActorPx": [
+            4.775,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              270.775,
+              430.2
+            ],
+            [
+              331.775,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 81,
+          "propFrame": 81,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            380.556,
+            579.891
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            513.306,
+            691.721
+          ],
+          "tipActorPx": [
+            315.855,
+            711.761
+          ],
+          "gripActorPx": [
+            311.788,
+            594.28
+          ],
+          "gazeTargetActorPx": [
+            315.855,
+            711.761
+          ],
+          "eyeOffsetActorPx": [
+            4.791,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              270.791,
+              430.2
+            ],
+            [
+              331.791,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 82,
+          "propFrame": 82,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            375.751,
+            577.353
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            508.274,
+            692.753
+          ],
+          "tipActorPx": [
+            318.634,
+            715.904
+          ],
+          "gripActorPx": [
+            307.131,
+            592.427
+          ],
+          "gazeTargetActorPx": [
+            318.634,
+            715.904
+          ],
+          "eyeOffsetActorPx": [
+            4.796,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              270.796,
+              430.2
+            ],
+            [
+              331.796,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 83,
+          "propFrame": 83,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            371.106,
+            576.653
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            503.608,
+            693.848
+          ],
+          "tipActorPx": [
+            320.137,
+            719.219
+          ],
+          "gripActorPx": [
+            302.585,
+            592.175
+          ],
+          "gazeTargetActorPx": [
+            320.137,
+            719.219
+          ],
+          "eyeOffsetActorPx": [
+            4.799,
+            -1.8
+          ],
+          "pupilsActorPx": [
+            [
+              270.799,
+              430.2
+            ],
+            [
+              331.799,
+              429.2
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 84,
+          "propFrame": 84,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            367.845,
+            577.096
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            500.239,
+            694.762
+          ],
+          "tipActorPx": [
+            320.608,
+            720.801
+          ],
+          "gripActorPx": [
+            299.361,
+            592.78
+          ],
+          "gazeTargetActorPx": [
+            320.608,
+            720.801
+          ],
+          "eyeOffsetActorPx": [
+            4.799,
+            -1.762
+          ],
+          "pupilsActorPx": [
+            [
+              270.799,
+              430.238
+            ],
+            [
+              331.799,
+              429.238
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 85,
+          "propFrame": 85,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            368.155,
+            578.961
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            499.403,
+            695.36
+          ],
+          "tipActorPx": [
+            320.917,
+            722.666
+          ],
+          "gripActorPx": [
+            299.671,
+            594.645
+          ],
+          "gazeTargetActorPx": [
+            320.917,
+            722.666
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.652
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.348
+            ],
+            [
+              331.8,
+              429.348
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 86,
+          "propFrame": 86,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            369.017,
+            584.154
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            501.806,
+            695.699
+          ],
+          "tipActorPx": [
+            321.779,
+            727.859
+          ],
+          "gripActorPx": [
+            300.533,
+            599.838
+          ],
+          "gazeTargetActorPx": [
+            321.779,
+            727.859
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -1.347
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              430.653
+            ],
+            [
+              331.8,
+              429.653
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 87,
+          "propFrame": 87,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            370.33,
+            592.069
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            505.098,
+            696.273
+          ],
+          "tipActorPx": [
+            323.093,
+            735.774
+          ],
+          "gripActorPx": [
+            301.847,
+            607.753
+          ],
+          "gazeTargetActorPx": [
+            323.093,
+            735.774
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -0.828
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              431.172
+            ],
+            [
+              331.8,
+              430.172
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 88,
+          "propFrame": 88,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            371.995,
+            602.101
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            508.703,
+            697.199
+          ],
+          "tipActorPx": [
+            324.757,
+            745.807
+          ],
+          "gripActorPx": [
+            303.511,
+            617.785
+          ],
+          "gazeTargetActorPx": [
+            324.757,
+            745.807
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            -0.121
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              431.879
+            ],
+            [
+              331.8,
+              430.879
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 89,
+          "propFrame": 89,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            373.911,
+            613.647
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            512.212,
+            698.636
+          ],
+          "tipActorPx": [
+            326.673,
+            757.352
+          ],
+          "gripActorPx": [
+            305.427,
+            629.331
+          ],
+          "gazeTargetActorPx": [
+            326.673,
+            757.352
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            0.734
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              432.734
+            ],
+            [
+              331.8,
+              431.734
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 90,
+          "propFrame": 90,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            375.978,
+            626.099
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            515.424,
+            700.673
+          ],
+          "tipActorPx": [
+            328.74,
+            769.804
+          ],
+          "gripActorPx": [
+            307.494,
+            641.783
+          ],
+          "gazeTargetActorPx": [
+            328.74,
+            769.804
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            1.581
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              433.581
+            ],
+            [
+              331.8,
+              432.581
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 91,
+          "propFrame": 91,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            378.094,
+            638.853
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            518.281,
+            703.254
+          ],
+          "tipActorPx": [
+            330.857,
+            782.559
+          ],
+          "gripActorPx": [
+            309.61,
+            654.537
+          ],
+          "gazeTargetActorPx": [
+            330.857,
+            782.559
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            1.903
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              433.903
+            ],
+            [
+              331.8,
+              432.903
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 92,
+          "propFrame": 92,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            380.161,
+            651.306
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            520.774,
+            706.194
+          ],
+          "tipActorPx": [
+            332.924,
+            795.011
+          ],
+          "gripActorPx": [
+            311.677,
+            666.989
+          ],
+          "gazeTargetActorPx": [
+            332.924,
+            795.011
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            2.025
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              434.025
+            ],
+            [
+              331.8,
+              433.025
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 93,
+          "propFrame": 93,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            382.077,
+            662.851
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            522.897,
+            709.234
+          ],
+          "tipActorPx": [
+            334.84,
+            806.556
+          ],
+          "gripActorPx": [
+            313.593,
+            678.535
+          ],
+          "gazeTargetActorPx": [
+            334.84,
+            806.556
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            2.072
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              434.072
+            ],
+            [
+              331.8,
+              433.072
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 94,
+          "propFrame": 94,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            383.742,
+            672.884
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            524.63,
+            712.084
+          ],
+          "tipActorPx": [
+            336.505,
+            816.589
+          ],
+          "gripActorPx": [
+            315.258,
+            688.567
+          ],
+          "gazeTargetActorPx": [
+            336.505,
+            816.589
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            2.089
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              434.089
+            ],
+            [
+              331.8,
+              433.089
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 95,
+          "propFrame": 95,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            385.055,
+            680.798
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            525.936,
+            714.451
+          ],
+          "tipActorPx": [
+            337.818,
+            824.504
+          ],
+          "gripActorPx": [
+            316.571,
+            696.482
+          ],
+          "gazeTargetActorPx": [
+            337.818,
+            824.504
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            2.096
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              434.096
+            ],
+            [
+              331.8,
+              433.096
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 96,
+          "propFrame": 96,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            385.917,
+            685.991
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            526.767,
+            716.055
+          ],
+          "tipActorPx": [
+            338.679,
+            829.696
+          ],
+          "gripActorPx": [
+            317.433,
+            701.674
+          ],
+          "gazeTargetActorPx": [
+            338.679,
+            829.696
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            2.098
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              434.098
+            ],
+            [
+              331.8,
+              433.098
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 97,
+          "propFrame": 97,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": [
+            338.989,
+            831.562
+          ],
+          "gripActorPx": [
+            317.743,
+            703.54
+          ],
+          "gazeTargetActorPx": [
+            338.989,
+            831.562
+          ],
+          "eyeOffsetActorPx": [
+            4.8,
+            2.099
+          ],
+          "pupilsActorPx": [
+            [
+              270.8,
+              434.099
+            ],
+            [
+              331.8,
+              433.099
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 98,
+          "propFrame": 98,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            1.824,
+            0.798
+          ],
+          "pupilsActorPx": [
+            [
+              267.824,
+              432.798
+            ],
+            [
+              328.824,
+              431.798
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 99,
+          "propFrame": 99,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.693,
+            0.303
+          ],
+          "pupilsActorPx": [
+            [
+              266.693,
+              432.303
+            ],
+            [
+              327.693,
+              431.303
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 100,
+          "propFrame": 100,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 101,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        }
+      ]
+    },
+    "return": {
+      "fps": 24,
+      "frames": [
+        {
+          "headFrame": 16,
+          "armsFrame": 0,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 1,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            193,
+            826
+          ],
+          "supportWristActorPx": [
+            234.0,
+            794.0
+          ],
+          "workingWristActorPx": [
+            388.739,
+            687.345
+          ],
+          "supportElbowActorPx": [
+            143.292,
+            866.877
+          ],
+          "workingElbowActorPx": [
+            527.473,
+            713.653
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 15,
+          "armsFrame": 2,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            188,
+            831
+          ],
+          "supportWristActorPx": [
+            229.0,
+            799.0
+          ],
+          "workingWristActorPx": [
+            396.49,
+            688.106
+          ],
+          "supportElbowActorPx": [
+            144.117,
+            863.703
+          ],
+          "workingElbowActorPx": [
+            528.595,
+            705.353
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              268.62,
+              430.31
+            ],
+            [
+              331.0,
+              429.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 15,
+          "armsFrame": 3,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            180,
+            837
+          ],
+          "supportWristActorPx": [
+            221.0,
+            805.0
+          ],
+          "workingWristActorPx": [
+            408.304,
+            687.77
+          ],
+          "supportElbowActorPx": [
+            145.399,
+            858.771
+          ],
+          "workingElbowActorPx": [
+            529.872,
+            692.491
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              268.62,
+              430.31
+            ],
+            [
+              331.0,
+              429.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 14,
+          "armsFrame": 4,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            170,
+            845
+          ],
+          "supportWristActorPx": [
+            211.0,
+            813.0
+          ],
+          "workingWristActorPx": [
+            424.004,
+            688.44
+          ],
+          "supportElbowActorPx": [
+            147.062,
+            852.375
+          ],
+          "workingElbowActorPx": [
+            530.68,
+            676.576
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              271.25,
+              428.62
+            ],
+            [
+              335.0,
+              427.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 12,
+          "armsFrame": 5,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            158,
+            856
+          ],
+          "supportWristActorPx": [
+            199.0,
+            824.0
+          ],
+          "workingWristActorPx": [
+            442.411,
+            692.847
+          ],
+          "supportElbowActorPx": [
+            149.03,
+            844.807
+          ],
+          "workingElbowActorPx": [
+            530.182,
+            660.643
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              276.5,
+              425.25
+            ],
+            [
+              343.0,
+              424.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 11,
+          "armsFrame": 6,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            144,
+            867
+          ],
+          "supportWristActorPx": [
+            185.0,
+            835.0
+          ],
+          "workingWristActorPx": [
+            462.35,
+            700.196
+          ],
+          "supportElbowActorPx": [
+            151.227,
+            836.359
+          ],
+          "workingElbowActorPx": [
+            528.055,
+            647.694
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              279.12,
+              423.56
+            ],
+            [
+              347.0,
+              422.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 9,
+          "armsFrame": 7,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            130,
+            881
+          ],
+          "supportWristActorPx": [
+            171.0,
+            849.0
+          ],
+          "workingWristActorPx": [
+            484.643,
+            715.701
+          ],
+          "supportElbowActorPx": [
+            153.575,
+            827.326
+          ],
+          "workingElbowActorPx": [
+            525.172,
+            642.169
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              284.38,
+              420.19
+            ],
+            [
+              355.0,
+              418.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 8,
+          "armsFrame": 8,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            114,
+            896
+          ],
+          "supportWristActorPx": [
+            155.0,
+            864.0
+          ],
+          "workingWristActorPx": [
+            506.113,
+            738.928
+          ],
+          "supportElbowActorPx": [
+            156.0,
+            818.0
+          ],
+          "workingElbowActorPx": [
+            522.004,
+            646.175
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              287.0,
+              418.5
+            ],
+            [
+              359.0,
+              417.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 7,
+          "armsFrame": 9,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            99,
+            912
+          ],
+          "supportWristActorPx": [
+            140.0,
+            880.0
+          ],
+          "workingWristActorPx": [
+            528.583,
+            770.23
+          ],
+          "supportElbowActorPx": [
+            158.425,
+            808.674
+          ],
+          "workingElbowActorPx": [
+            519.807,
+            659.182
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              289.62,
+              416.81
+            ],
+            [
+              363.0,
+              415.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 5,
+          "armsFrame": 10,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            85,
+            928
+          ],
+          "supportWristActorPx": [
+            126.0,
+            896.0
+          ],
+          "workingWristActorPx": [
+            550.876,
+            807.515
+          ],
+          "supportElbowActorPx": [
+            160.773,
+            799.641
+          ],
+          "workingElbowActorPx": [
+            518.713,
+            678.963
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              294.88,
+              413.44
+            ],
+            [
+              371.0,
+              411.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 4,
+          "armsFrame": 11,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            71,
+            945
+          ],
+          "supportWristActorPx": [
+            112.0,
+            913.0
+          ],
+          "workingWristActorPx": [
+            570.815,
+            849.477
+          ],
+          "supportElbowActorPx": [
+            162.97,
+            791.193
+          ],
+          "workingElbowActorPx": [
+            517.995,
+            703.323
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              297.5,
+              411.75
+            ],
+            [
+              375.0,
+              410.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 2,
+          "armsFrame": 12,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            59,
+            959
+          ],
+          "supportWristActorPx": [
+            100.0,
+            927.0
+          ],
+          "workingWristActorPx": [
+            589.223,
+            889.164
+          ],
+          "supportElbowActorPx": [
+            164.938,
+            783.625
+          ],
+          "workingElbowActorPx": [
+            517.867,
+            727.456
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              302.75,
+              408.38
+            ],
+            [
+              383.0,
+              406.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 1,
+          "armsFrame": 13,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            49,
+            972
+          ],
+          "supportWristActorPx": [
+            90.0,
+            940.0
+          ],
+          "workingWristActorPx": [
+            604.922,
+            925.631
+          ],
+          "supportElbowActorPx": [
+            166.601,
+            777.229
+          ],
+          "workingElbowActorPx": [
+            517.992,
+            749.957
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              305.38,
+              406.69
+            ],
+            [
+              387.0,
+              404.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 1,
+          "armsFrame": 14,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            41,
+            982
+          ],
+          "supportWristActorPx": [
+            82.0,
+            950.0
+          ],
+          "workingWristActorPx": [
+            616.736,
+            954.41
+          ],
+          "supportElbowActorPx": [
+            167.883,
+            772.297
+          ],
+          "workingElbowActorPx": [
+            517.997,
+            767.955
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              305.38,
+              406.69
+            ],
+            [
+              387.0,
+              404.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 0,
+          "armsFrame": 15,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            36,
+            989
+          ],
+          "supportWristActorPx": [
+            77.0,
+            957.0
+          ],
+          "workingWristActorPx": [
+            624.488,
+            973.656
+          ],
+          "supportElbowActorPx": [
+            168.708,
+            769.123
+          ],
+          "workingElbowActorPx": [
+            518.08,
+            780.042
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              308.0,
+              405.0
+            ],
+            [
+              391.0,
+              403.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 0,
+          "armsFrame": 16,
+          "propFrame": 101,
+          "paperContact": false,
+          "spineActorPx": [
+            34,
+            991
+          ],
+          "supportWristActorPx": [
+            75.0,
+            959.0
+          ],
+          "workingWristActorPx": [
+            627.0,
+            980.0
+          ],
+          "supportElbowActorPx": [
+            169.0,
+            768.0
+          ],
+          "workingElbowActorPx": [
+            518.0,
+            784.084
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              308.0,
+              405.0
+            ],
+            [
+              391.0,
+              403.0
+            ]
+          ]
+        }
+      ]
+    },
+    "turn_to_pen": {
+      "fps": 24,
+      "frames": [
+        {
+          "headFrame": 0,
+          "armsFrame": 0,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            34,
+            991
+          ],
+          "supportWristActorPx": [
+            75.0,
+            959.0
+          ],
+          "workingWristActorPx": [
+            211.0,
+            989.0
+          ],
+          "supportElbowActorPx": [
+            169.0,
+            768.0
+          ],
+          "workingElbowActorPx": [
+            404.28,
+            803.851
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              308.0,
+              405.0
+            ],
+            [
+              391.0,
+              403.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 0,
+          "armsFrame": 1,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            36,
+            988
+          ],
+          "supportWristActorPx": [
+            77.0,
+            956.0
+          ],
+          "workingWristActorPx": [
+            213.207,
+            983.114
+          ],
+          "supportElbowActorPx": [
+            168.621,
+            769.458
+          ],
+          "workingElbowActorPx": [
+            401.887,
+            814.551
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              308.0,
+              405.0
+            ],
+            [
+              391.0,
+              403.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 1,
+          "armsFrame": 2,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            43,
+            980
+          ],
+          "supportWristActorPx": [
+            84.0,
+            948.0
+          ],
+          "workingWristActorPx": [
+            220.788,
+            967.051
+          ],
+          "supportElbowActorPx": [
+            167.56,
+            773.539
+          ],
+          "workingElbowActorPx": [
+            420.741,
+            813.211
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              305.38,
+              406.69
+            ],
+            [
+              387.0,
+              404.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 2,
+          "armsFrame": 3,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            53,
+            967
+          ],
+          "supportWristActorPx": [
+            94.0,
+            935.0
+          ],
+          "workingWristActorPx": [
+            231.68,
+            941.793
+          ],
+          "supportElbowActorPx": [
+            165.93,
+            779.808
+          ],
+          "workingElbowActorPx": [
+            440.43,
+            807.008
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              302.75,
+              408.38
+            ],
+            [
+              383.0,
+              406.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 3,
+          "armsFrame": 4,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            66,
+            951
+          ],
+          "supportWristActorPx": [
+            107.0,
+            919.0
+          ],
+          "workingWristActorPx": [
+            245.82,
+            910.541
+          ],
+          "supportElbowActorPx": [
+            163.845,
+            787.825
+          ],
+          "workingElbowActorPx": [
+            449.039,
+            791.563
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              300.12,
+              410.06
+            ],
+            [
+              379.0,
+              408.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 5,
+          "armsFrame": 5,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            81,
+            933
+          ],
+          "supportWristActorPx": [
+            122.0,
+            901.0
+          ],
+          "workingWristActorPx": [
+            262.148,
+            875.737
+          ],
+          "supportElbowActorPx": [
+            161.42,
+            797.155
+          ],
+          "workingElbowActorPx": [
+            459.26,
+            775.758
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              294.88,
+              413.44
+            ],
+            [
+              371.0,
+              411.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 6,
+          "armsFrame": 6,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            97,
+            914
+          ],
+          "supportWristActorPx": [
+            138.0,
+            882.0
+          ],
+          "workingWristActorPx": [
+            279.599,
+            839.917
+          ],
+          "supportElbowActorPx": [
+            158.767,
+            807.359
+          ],
+          "workingElbowActorPx": [
+            469.148,
+            760.375
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              292.25,
+              415.12
+            ],
+            [
+              367.0,
+              413.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 8,
+          "armsFrame": 7,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            114,
+            896
+          ],
+          "supportWristActorPx": [
+            155.0,
+            864.0
+          ],
+          "workingWristActorPx": [
+            298.113,
+            806.428
+          ],
+          "supportElbowActorPx": [
+            156.0,
+            818.0
+          ],
+          "workingElbowActorPx": [
+            479.597,
+            747.215
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              287.0,
+              418.5
+            ],
+            [
+              359.0,
+              417.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 10,
+          "armsFrame": 8,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            132,
+            879
+          ],
+          "supportWristActorPx": [
+            173.0,
+            847.0
+          ],
+          "workingWristActorPx": [
+            317.627,
+            776.154
+          ],
+          "supportElbowActorPx": [
+            153.233,
+            828.641
+          ],
+          "workingElbowActorPx": [
+            490.372,
+            736.45
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              281.75,
+              421.88
+            ],
+            [
+              351.0,
+              420.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 11,
+          "armsFrame": 9,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            148,
+            864
+          ],
+          "supportWristActorPx": [
+            189.0,
+            832.0
+          ],
+          "workingWristActorPx": [
+            335.079,
+            750.394
+          ],
+          "supportElbowActorPx": [
+            150.58,
+            838.845
+          ],
+          "workingElbowActorPx": [
+            500.112,
+            728.738
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": null,
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              279.12,
+              423.56
+            ],
+            [
+              347.0,
+              422.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 13,
+          "armsFrame": 10,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            163,
+            851
+          ],
+          "supportWristActorPx": [
+            204.0,
+            819.0
+          ],
+          "workingWristActorPx": [
+            351.406,
+            728.982
+          ],
+          "supportElbowActorPx": [
+            148.155,
+            848.175
+          ],
+          "workingElbowActorPx": [
+            509.015,
+            723.341
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              273.88,
+              426.94
+            ],
+            [
+              339.0,
+              425.75
+            ]
+          ]
+        },
+        {
+          "headFrame": 14,
+          "armsFrame": 11,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            176,
+            840
+          ],
+          "supportWristActorPx": [
+            217.0,
+            808.0
+          ],
+          "workingWristActorPx": [
+            365.547,
+            711.564
+          ],
+          "supportElbowActorPx": [
+            146.07,
+            856.192
+          ],
+          "workingElbowActorPx": [
+            516.513,
+            719.837
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              271.25,
+              428.62
+            ],
+            [
+              335.0,
+              427.5
+            ]
+          ]
+        },
+        {
+          "headFrame": 15,
+          "armsFrame": 12,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            186,
+            832
+          ],
+          "supportWristActorPx": [
+            227.0,
+            800.0
+          ],
+          "workingWristActorPx": [
+            376.439,
+            698.88
+          ],
+          "supportElbowActorPx": [
+            144.44,
+            862.461
+          ],
+          "workingElbowActorPx": [
+            522.176,
+            717.897
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              268.62,
+              430.31
+            ],
+            [
+              331.0,
+              429.25
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 13,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            193,
+            827
+          ],
+          "supportWristActorPx": [
+            234.0,
+            795.0
+          ],
+          "workingWristActorPx": [
+            384.019,
+            690.911
+          ],
+          "supportElbowActorPx": [
+            143.379,
+            866.542
+          ],
+          "workingElbowActorPx": [
+            525.859,
+            716.867
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        },
+        {
+          "headFrame": 16,
+          "armsFrame": 14,
+          "propFrame": 0,
+          "paperContact": false,
+          "spineActorPx": [
+            195,
+            825
+          ],
+          "supportWristActorPx": [
+            236.0,
+            793.0
+          ],
+          "workingWristActorPx": [
+            386.227,
+            687.856
+          ],
+          "supportElbowActorPx": [
+            143.0,
+            868.0
+          ],
+          "workingElbowActorPx": [
+            527.062,
+            716.64
+          ],
+          "tipActorPx": null,
+          "gripActorPx": null,
+          "gazeTargetActorPx": [
+            249.0,
+            742.0
+          ],
+          "eyeOffsetActorPx": [
+            0.0,
+            0.0
+          ],
+          "pupilsActorPx": [
+            [
+              266.0,
+              432.0
+            ],
+            [
+              327.0,
+              431.0
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "sequences": {
+    "standalone": [
+      "reach",
+      "write",
+      "return"
+    ],
+    "afterPageTurn": [
+      "turn_to_pen[1:]",
+      "write",
+      "return"
+    ],
+    "pageStates": [
+      "blank",
+      "sparse",
+      "filled"
+    ]
+  },
+  "anchors": {
+    "restSpineActorPx": [
+      34,
+      991
+    ],
+    "writingSpineActorPx": [
+      195,
+      825
+    ],
+    "spineBookPx": [
+      180,
+      276
+    ],
+    "pupilsDuringWritingActorPx": [
+      [
+        266.0,
+        432.0
+      ],
+      [
+        327.0,
+        431.0
+      ]
+    ],
+    "fixedShouldersActorPx": {
+      "support": [
+        257,
+        533
+      ],
+      "working": [
+        450,
+        548
+      ]
+    },
+    "perFrame": "对 clips[stage].frames[i] 读取 head.frames[headFrame].pupilsActorPx 以及 arms.stages[stage][armsFrame] 的 spineActorPx、rigidOffsetActorPx、supportWristActorPx、supportElbowActorPx、workingWristActorPx、workingElbowActorPx、tipActorPx、gripActorPx 和 paperContact。",
+    "pageTarget": "gazeTargetActorPx 指向实际游离笔尖，仍在笔套内时保持注视右页落笔区。逐帧控制值与实际两只眼的可见像素分别见 clips 与 previews/verification.json。"
+  },
+  "playback": {
+    "entry": "已托本时从 reach[0] 开始；翻页刚松指时从 turn_to_pen[1] 进入。按 24fps 升书和低头，write 首帧前就位。",
+    "writing": "保持低头睁眼，取笔、落在右页、短停、再写、提笔回套。保留持久笔迹和原作开书状态。",
+    "exit": "return 逐帧放下书、抬头到正常脸。由当前帧中断时保留当前头部/托本权重并沿同段回收。",
+    "precomposed": "atlas390/manifest.json 提供透明上下两片，文件可只读。它已包含人物、笔、纸和手；在该剪辑的时间段作为独立 d1/p1 帧替换。静态下片可共享。选择 blank / sparse / filled 即可。",
+    "native": "需要原像质量或保留已有表情时，依次擦除旧袖、修躯干、应用 head/compose.py 的部分替换、画当前双手书笔，再施加整身形变。原手臂与新袖不得重复绘制。"
+  },
+  "provenance": "身体、衣鞋、书页、托掌由现有原作 d1/p1 与 item039 系列等素材组成，沿用原日志美术合同。低头新视角为 ImageGen 辅助补绘，头部过渡、抬书、弯肘和书写属桌面原画。各组成件及原始剧本/源料见 head、arms 与既有手笔清单。",
+  "gaze": {
+    "referencePointActorPx": [
+      249,
+      742
+    ],
+    "unit": "未形变 d1 原像素",
+    "behavior": "眼睑与眉毛沿低头原画固定；在纸上写、提笔、回套三个过程中，瞳心小幅跟随实际笔尖。每帧 eyeOffsetActorPx 给出已平滑的目标偏移。无游离笔时逐帧回到纸页落笔区。",
+    "note": "逐帧 pupilsActorPx 是局部眼球变形的目标控制点。实际亚像素插值以 head/compose.py 与 390 实帧为准。"
+  }
+}

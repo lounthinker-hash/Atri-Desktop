@@ -1,0 +1,3546 @@
+[
+  {
+    "frame": 0,
+    "file": "weight-step/00.webp",
+    "stage_travel_x": 0.0,
+    "upper_offset": [
+      0.0,
+      0.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          66.6,
+          282.5
+        ],
+        "ankle": [
+          73.0,
+          358.0
+        ],
+        "hip": [
+          64.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            82.75,
+            388.5
+          ],
+          "world": [
+            82.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.0,
+          281.0
+        ],
+        "ankle": [
+          113.5,
+          347.0
+        ],
+        "hip": [
+          91.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            109.0,
+            374.0
+          ],
+          "world": [
+            109.0,
+            374.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 14.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 0.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 1,
+    "file": "weight-step/01.webp",
+    "stage_travel_x": 0.404,
+    "upper_offset": [
+      -1.229,
+      1.178
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          65.986,
+          283.269
+        ],
+        "ankle": [
+          72.5,
+          358.0
+        ],
+        "hip": [
+          63.271,
+          212.178
+        ],
+        "sole": {
+          "point": [
+            82.25,
+            388.5
+          ],
+          "world": [
+            82.654,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.547,
+          280.596
+        ],
+        "ankle": [
+          113.5,
+          346.0
+        ],
+        "hip": [
+          90.271,
+          212.178
+        ],
+        "sole": {
+          "point": [
+            109.0,
+            373.0
+          ],
+          "world": [
+            109.404,
+            373.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 15.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 33.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 2,
+    "file": "weight-step/02.webp",
+    "stage_travel_x": 0.878,
+    "upper_offset": [
+      -2.343,
+      2.131
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          65.428,
+          283.906
+        ],
+        "ankle": [
+          72.0,
+          358.0
+        ],
+        "hip": [
+          62.157,
+          213.131
+        ],
+        "sole": {
+          "point": [
+            81.75,
+            388.5
+          ],
+          "world": [
+            82.628,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          94.248,
+          280.122
+        ],
+        "ankle": [
+          113.5,
+          344.5
+        ],
+        "hip": [
+          89.157,
+          213.131
+        ],
+        "sole": {
+          "point": [
+            109.0,
+            371.5
+          ],
+          "world": [
+            109.878,
+            371.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 17.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 66.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 3,
+    "file": "weight-step/03.webp",
+    "stage_travel_x": 1.413,
+    "upper_offset": [
+      -3.286,
+      2.768
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          64.957,
+          284.34
+        ],
+        "ankle": [
+          71.5,
+          358.0
+        ],
+        "hip": [
+          61.214,
+          213.768
+        ],
+        "sole": {
+          "point": [
+            81.25,
+            388.5
+          ],
+          "world": [
+            82.663,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          95.074,
+          279.587
+        ],
+        "ankle": [
+          114.0,
+          343.5
+        ],
+        "hip": [
+          88.214,
+          213.768
+        ],
+        "sole": {
+          "point": [
+            109.5,
+            370.5
+          ],
+          "world": [
+            110.913,
+            370.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 18.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 100.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 4,
+    "file": "weight-step/04.webp",
+    "stage_travel_x": 2.0,
+    "upper_offset": [
+      -4.0,
+      3.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          64.6,
+          284.5
+        ],
+        "ankle": [
+          71.0,
+          358.0
+        ],
+        "hip": [
+          60.5,
+          214.0
+        ],
+        "sole": {
+          "point": [
+            80.75,
+            388.5
+          ],
+          "world": [
+            82.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          96.0,
+          279.0
+        ],
+        "ankle": [
+          114.5,
+          342.5
+        ],
+        "hip": [
+          87.5,
+          214.0
+        ],
+        "sole": {
+          "point": [
+            110.0,
+            369.5
+          ],
+          "world": [
+            112.0,
+            369.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 19.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 133.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 5,
+    "file": "weight-step/05.webp",
+    "stage_travel_x": 2.653,
+    "upper_offset": [
+      -4.58,
+      2.792
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          64.342,
+          284.396
+        ],
+        "ankle": [
+          70.5,
+          358.0
+        ],
+        "hip": [
+          59.92,
+          213.792
+        ],
+        "sole": {
+          "point": [
+            80.25,
+            388.5
+          ],
+          "world": [
+            82.903,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          97.346,
+          278.193
+        ],
+        "ankle": [
+          115.0,
+          341.5
+        ],
+        "hip": [
+          86.92,
+          213.792
+        ],
+        "sole": {
+          "point": [
+            110.5,
+            368.5
+          ],
+          "world": [
+            113.153,
+            368.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 20.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 166.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 6,
+    "file": "weight-step/06.webp",
+    "stage_travel_x": 3.387,
+    "upper_offset": [
+      -5.122,
+      2.296
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          64.135,
+          284.148
+        ],
+        "ankle": [
+          69.5,
+          358.0
+        ],
+        "hip": [
+          59.378,
+          213.296
+        ],
+        "sole": {
+          "point": [
+            79.25,
+            388.5
+          ],
+          "world": [
+            82.637,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          99.159,
+          277.153
+        ],
+        "ankle": [
+          116.5,
+          340.0
+        ],
+        "hip": [
+          86.378,
+          213.296
+        ],
+        "sole": {
+          "point": [
+            112.0,
+            367.0
+          ],
+          "world": [
+            115.387,
+            367.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 21.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 200.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 7,
+    "file": "weight-step/07.webp",
+    "stage_travel_x": 4.194,
+    "upper_offset": [
+      -5.575,
+      1.704
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          63.957,
+          283.852
+        ],
+        "ankle": [
+          69.0,
+          358.0
+        ],
+        "hip": [
+          58.925,
+          212.704
+        ],
+        "sole": {
+          "point": [
+            78.75,
+            388.5
+          ],
+          "world": [
+            82.944,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          101.0,
+          276.115
+        ],
+        "ankle": [
+          117.5,
+          339.0
+        ],
+        "hip": [
+          85.925,
+          212.704
+        ],
+        "sole": {
+          "point": [
+            113.0,
+            366.0
+          ],
+          "world": [
+            117.194,
+            366.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 22.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 233.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 8,
+    "file": "weight-step/08.webp",
+    "stage_travel_x": 5.067,
+    "upper_offset": [
+      -5.885,
+      1.208
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          63.786,
+          283.604
+        ],
+        "ankle": [
+          68.0,
+          358.0
+        ],
+        "hip": [
+          58.615,
+          212.208
+        ],
+        "sole": {
+          "point": [
+            77.75,
+            388.5
+          ],
+          "world": [
+            82.817,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          102.427,
+          275.318
+        ],
+        "ankle": [
+          118.5,
+          338.0
+        ],
+        "hip": [
+          85.615,
+          212.208
+        ],
+        "sole": {
+          "point": [
+            114.0,
+            365.0
+          ],
+          "world": [
+            119.067,
+            365.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 23.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 266.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 9,
+    "file": "weight-step/09.webp",
+    "stage_travel_x": 6.0,
+    "upper_offset": [
+      -6.0,
+      1.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          63.6,
+          283.5
+        ],
+        "ankle": [
+          67.0,
+          358.0
+        ],
+        "hip": [
+          58.5,
+          212.0
+        ],
+        "sole": {
+          "point": [
+            76.75,
+            388.5
+          ],
+          "world": [
+            82.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          103.0,
+          275.0
+        ],
+        "ankle": [
+          119.5,
+          337.5
+        ],
+        "hip": [
+          85.5,
+          212.0
+        ],
+        "sole": {
+          "point": [
+            115.0,
+            364.5
+          ],
+          "world": [
+            121.0,
+            364.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 24.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 300.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 10,
+    "file": "weight-step/10.webp",
+    "stage_travel_x": 7.042,
+    "upper_offset": [
+      -5.762,
+      1.068
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          63.42,
+          283.604
+        ],
+        "ankle": [
+          66.0,
+          358.0
+        ],
+        "hip": [
+          58.738,
+          212.068
+        ],
+        "sole": {
+          "point": [
+            75.75,
+            388.5
+          ],
+          "world": [
+            82.792,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          102.953,
+          276.352
+        ],
+        "ankle": [
+          120.0,
+          340.0
+        ],
+        "hip": [
+          85.738,
+          212.068
+        ],
+        "sole": {
+          "point": [
+            115.5,
+            367.0
+          ],
+          "world": [
+            122.542,
+            367.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 21.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 333.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 11,
+    "file": "weight-step/11.webp",
+    "stage_travel_x": 8.215,
+    "upper_offset": [
+      -5.126,
+      1.245
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          63.259,
+          283.852
+        ],
+        "ankle": [
+          65.0,
+          358.0
+        ],
+        "hip": [
+          59.374,
+          212.245
+        ],
+        "sole": {
+          "point": [
+            74.75,
+            388.5
+          ],
+          "world": [
+            82.965,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          102.818,
+          279.576
+        ],
+        "ankle": [
+          120.5,
+          346.0
+        ],
+        "hip": [
+          86.374,
+          212.245
+        ],
+        "sole": {
+          "point": [
+            116.0,
+            373.0
+          ],
+          "world": [
+            124.215,
+            373.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 15.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 366.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 12,
+    "file": "weight-step/12.webp",
+    "stage_travel_x": 9.467,
+    "upper_offset": [
+      -4.21,
+      1.487
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          63.088,
+          284.148
+        ],
+        "ankle": [
+          63.5,
+          358.0
+        ],
+        "hip": [
+          60.29,
+          212.487
+        ],
+        "sole": {
+          "point": [
+            73.25,
+            388.5
+          ],
+          "world": [
+            82.717,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          102.607,
+          283.424
+        ],
+        "ankle": [
+          120.5,
+          353.0
+        ],
+        "hip": [
+          87.29,
+          212.487
+        ],
+        "sole": {
+          "point": [
+            116.0,
+            380.0
+          ],
+          "world": [
+            125.467,
+            380.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 8.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 400.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 13,
+    "file": "weight-step/13.webp",
+    "stage_travel_x": 10.745,
+    "upper_offset": [
+      -3.129,
+      1.753
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          62.879,
+          284.396
+        ],
+        "ankle": [
+          62.5,
+          358.0
+        ],
+        "hip": [
+          61.371,
+          212.753
+        ],
+        "sole": {
+          "point": [
+            72.25,
+            388.5
+          ],
+          "world": [
+            82.995,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          102.331,
+          286.648
+        ],
+        "ankle": [
+          120.5,
+          359.0
+        ],
+        "hip": [
+          88.371,
+          212.753
+        ],
+        "sole": {
+          "point": [
+            116.0,
+            386.0
+          ],
+          "world": [
+            126.745,
+            386.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 2.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 433.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 14,
+    "file": "weight-step/14.webp",
+    "stage_travel_x": 12.0,
+    "upper_offset": [
+      -2.0,
+      2.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          62.6,
+          284.5
+        ],
+        "ankle": [
+          61.0,
+          358.0
+        ],
+        "hip": [
+          62.5,
+          213.0
+        ],
+        "sole": {
+          "point": [
+            70.75,
+            388.5
+          ],
+          "world": [
+            82.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          102.0,
+          288.0
+        ],
+        "ankle": [
+          119.5,
+          361.5
+        ],
+        "hip": [
+          89.5,
+          213.0
+        ],
+        "sole": {
+          "point": [
+            115.0,
+            388.5
+          ],
+          "world": [
+            127.0,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 466.667,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 15,
+    "file": "weight-step/15.webp",
+    "stage_travel_x": 13.236,
+    "upper_offset": [
+      -0.426,
+      2.282
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          61.95,
+          284.5
+        ],
+        "ankle": [
+          60.0,
+          358.0
+        ],
+        "hip": [
+          64.074,
+          213.282
+        ],
+        "sole": {
+          "point": [
+            69.75,
+            388.5
+          ],
+          "world": [
+            82.986,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          101.228,
+          288.0
+        ],
+        "ankle": [
+          118.5,
+          361.5
+        ],
+        "hip": [
+          91.074,
+          213.282
+        ],
+        "sole": {
+          "point": [
+            114.0,
+            388.5
+          ],
+          "world": [
+            127.236,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 500.0,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 16,
+    "file": "weight-step/16.webp",
+    "stage_travel_x": 14.488,
+    "upper_offset": [
+      1.668,
+      2.612
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          60.939,
+          284.5
+        ],
+        "ankle": [
+          58.5,
+          358.0
+        ],
+        "hip": [
+          66.168,
+          213.612
+        ],
+        "sole": {
+          "point": [
+            68.25,
+            388.5
+          ],
+          "world": [
+            82.738,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          99.878,
+          288.0
+        ],
+        "ankle": [
+          117.0,
+          361.5
+        ],
+        "hip": [
+          93.168,
+          213.612
+        ],
+        "sole": {
+          "point": [
+            112.5,
+            388.5
+          ],
+          "world": [
+            126.988,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 533.333,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 17,
+    "file": "weight-step/17.webp",
+    "stage_travel_x": 15.745,
+    "upper_offset": [
+      3.678,
+      2.886
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          60.008,
+          284.5
+        ],
+        "ankle": [
+          57.5,
+          358.0
+        ],
+        "hip": [
+          68.178,
+          213.886
+        ],
+        "sole": {
+          "point": [
+            67.25,
+            388.5
+          ],
+          "world": [
+            82.995,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          98.34,
+          288.0
+        ],
+        "ankle": [
+          116.0,
+          361.5
+        ],
+        "hip": [
+          95.178,
+          213.886
+        ],
+        "sole": {
+          "point": [
+            111.5,
+            388.5
+          ],
+          "world": [
+            127.245,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 566.667,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 18,
+    "file": "weight-step/18.webp",
+    "stage_travel_x": 17.0,
+    "upper_offset": [
+      5.0,
+      3.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          59.6,
+          284.5
+        ],
+        "ankle": [
+          56.0,
+          358.0
+        ],
+        "hip": [
+          69.5,
+          214.0
+        ],
+        "sole": {
+          "point": [
+            65.75,
+            388.5
+          ],
+          "world": [
+            82.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            82.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          97.0,
+          288.0
+        ],
+        "ankle": [
+          114.5,
+          361.5
+        ],
+        "hip": [
+          96.5,
+          214.0
+        ],
+        "sole": {
+          "point": [
+            110.0,
+            388.5
+          ],
+          "world": [
+            127.0,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 600.0,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 19,
+    "file": "weight-step/19.webp",
+    "stage_travel_x": 18.211,
+    "upper_offset": [
+      5.75,
+      2.644
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          60.5,
+          283.603
+        ],
+        "ankle": [
+          55.5,
+          356.5
+        ],
+        "hip": [
+          70.25,
+          213.644
+        ],
+        "sole": {
+          "point": [
+            65.25,
+            387.0
+          ],
+          "world": [
+            83.461,
+            387.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 1.5
+        }
+      },
+      "right": {
+        "knee": [
+          95.938,
+          287.602
+        ],
+        "ankle": [
+          113.5,
+          361.5
+        ],
+        "hip": [
+          97.25,
+          213.644
+        ],
+        "sole": {
+          "point": [
+            109.0,
+            388.5
+          ],
+          "world": [
+            127.211,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 633.333,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 20,
+    "file": "weight-step/20.webp",
+    "stage_travel_x": 19.396,
+    "upper_offset": [
+      6.389,
+      1.8
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          62.667,
+          281.525
+        ],
+        "ankle": [
+          57.0,
+          353.5
+        ],
+        "hip": [
+          70.889,
+          212.8
+        ],
+        "sole": {
+          "point": [
+            66.75,
+            384.0
+          ],
+          "world": [
+            86.146,
+            384.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 4.5
+        }
+      },
+      "right": {
+        "knee": [
+          94.944,
+          286.688
+        ],
+        "ankle": [
+          112.0,
+          361.5
+        ],
+        "hip": [
+          97.889,
+          212.8
+        ],
+        "sole": {
+          "point": [
+            107.5,
+            388.5
+          ],
+          "world": [
+            126.896,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 666.667,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 21,
+    "file": "weight-step/21.webp",
+    "stage_travel_x": 20.633,
+    "upper_offset": [
+      6.833,
+      0.806
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          65.3,
+          279.184
+        ],
+        "ankle": [
+          59.0,
+          350.0
+        ],
+        "hip": [
+          71.333,
+          211.806
+        ],
+        "sole": {
+          "point": [
+            68.75,
+            380.5
+          ],
+          "world": [
+            89.383,
+            380.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 8.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.979,
+          285.68
+        ],
+        "ankle": [
+          111.0,
+          361.5
+        ],
+        "hip": [
+          98.333,
+          211.806
+        ],
+        "sole": {
+          "point": [
+            106.5,
+            388.5
+          ],
+          "world": [
+            127.133,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 700.0,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 22,
+    "file": "weight-step/22.webp",
+    "stage_travel_x": 22.0,
+    "upper_offset": [
+      7.0,
+      0.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          67.6,
+          277.5
+        ],
+        "ankle": [
+          61.0,
+          347.0
+        ],
+        "hip": [
+          71.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            70.75,
+            377.5
+          ],
+          "world": [
+            92.75,
+            377.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 11.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.0,
+          285.0
+        ],
+        "ankle": [
+          109.5,
+          361.5
+        ],
+        "hip": [
+          98.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            105.0,
+            388.5
+          ],
+          "world": [
+            127.0,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 733.333,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 23,
+    "file": "weight-step/23.webp",
+    "stage_travel_x": 23.621,
+    "upper_offset": [
+      6.811,
+      -0.65
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          69.674,
+          276.441
+        ],
+        "ankle": [
+          64.0,
+          345.0
+        ],
+        "hip": [
+          71.311,
+          210.35
+        ],
+        "sole": {
+          "point": [
+            73.75,
+            375.5
+          ],
+          "world": [
+            97.371,
+            375.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 13.0
+        }
+      },
+      "right": {
+        "knee": [
+          91.98,
+          284.633
+        ],
+        "ankle": [
+          108.0,
+          361.5
+        ],
+        "hip": [
+          98.311,
+          210.35
+        ],
+        "sole": {
+          "point": [
+            103.5,
+            388.5
+          ],
+          "world": [
+            127.121,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 766.667,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 24,
+    "file": "weight-step/24.webp",
+    "stage_travel_x": 25.448,
+    "upper_offset": [
+      6.329,
+      -1.3
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          71.848,
+          275.475
+        ],
+        "ankle": [
+          69.0,
+          343.0
+        ],
+        "hip": [
+          70.829,
+          209.7
+        ],
+        "sole": {
+          "point": [
+            78.75,
+            373.5
+          ],
+          "world": [
+            104.198,
+            373.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 15.0
+        }
+      },
+      "right": {
+        "knee": [
+          90.946,
+          284.312
+        ],
+        "ankle": [
+          106.0,
+          361.5
+        ],
+        "hip": [
+          97.829,
+          209.7
+        ],
+        "sole": {
+          "point": [
+            101.5,
+            388.5
+          ],
+          "world": [
+            126.948,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 800.0,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 25,
+    "file": "weight-step/25.webp",
+    "stage_travel_x": 27.301,
+    "upper_offset": [
+      5.683,
+      -1.8
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          73.648,
+          274.772
+        ],
+        "ankle": [
+          74.0,
+          341.5
+        ],
+        "hip": [
+          70.183,
+          209.2
+        ],
+        "sole": {
+          "point": [
+            83.75,
+            372.0
+          ],
+          "world": [
+            111.051,
+            372.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 16.5
+        }
+      },
+      "right": {
+        "knee": [
+          89.94,
+          284.086
+        ],
+        "ankle": [
+          104.0,
+          361.5
+        ],
+        "hip": [
+          97.183,
+          209.2
+        ],
+        "sole": {
+          "point": [
+            99.5,
+            388.5
+          ],
+          "world": [
+            126.801,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 833.333,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 26,
+    "file": "weight-step/26.webp",
+    "stage_travel_x": 29.0,
+    "upper_offset": [
+      5.0,
+      -2.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          74.6,
+          274.5
+        ],
+        "ankle": [
+          78.0,
+          341.0
+        ],
+        "hip": [
+          69.5,
+          209.0
+        ],
+        "sole": {
+          "point": [
+            87.75,
+            371.5
+          ],
+          "world": [
+            116.75,
+            371.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 17.0
+        }
+      },
+      "right": {
+        "knee": [
+          89.0,
+          284.0
+        ],
+        "ankle": [
+          102.5,
+          361.5
+        ],
+        "hip": [
+          96.5,
+          209.0
+        ],
+        "sole": {
+          "point": [
+            98.0,
+            388.5
+          ],
+          "world": [
+            127.0,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 866.667,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 27,
+    "file": "weight-step/27.webp",
+    "stage_travel_x": 30.517,
+    "upper_offset": [
+      4.237,
+      -1.644
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          74.941,
+          275.852
+        ],
+        "ankle": [
+          82.0,
+          343.0
+        ],
+        "hip": [
+          68.737,
+          209.356
+        ],
+        "sole": {
+          "point": [
+            91.75,
+            373.5
+          ],
+          "world": [
+            122.267,
+            373.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 15.0
+        }
+      },
+      "right": {
+        "knee": [
+          88.136,
+          284.416
+        ],
+        "ankle": [
+          101.0,
+          361.5
+        ],
+        "hip": [
+          95.737,
+          209.356
+        ],
+        "sole": {
+          "point": [
+            96.5,
+            388.5
+          ],
+          "world": [
+            127.017,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 900.0,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 28,
+    "file": "weight-step/28.webp",
+    "stage_travel_x": 31.956,
+    "upper_offset": [
+      3.301,
+      -0.771
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          75.218,
+          279.076
+        ],
+        "ankle": [
+          86.0,
+          347.0
+        ],
+        "hip": [
+          67.801,
+          210.229
+        ],
+        "sole": {
+          "point": [
+            95.75,
+            377.5
+          ],
+          "world": [
+            127.706,
+            377.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 11.0
+        }
+      },
+      "right": {
+        "knee": [
+          87.321,
+          285.408
+        ],
+        "ankle": [
+          99.5,
+          361.5
+        ],
+        "hip": [
+          94.801,
+          210.229
+        ],
+        "sole": {
+          "point": [
+            95.0,
+            388.5
+          ],
+          "world": [
+            126.956,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 933.333,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 29,
+    "file": "weight-step/29.webp",
+    "stage_travel_x": 33.337,
+    "upper_offset": [
+      2.247,
+      0.323
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          75.426,
+          282.924
+        ],
+        "ankle": [
+          89.5,
+          352.0
+        ],
+        "hip": [
+          66.747,
+          211.323
+        ],
+        "sole": {
+          "point": [
+            99.25,
+            382.5
+          ],
+          "world": [
+            132.587,
+            382.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 6.0
+        }
+      },
+      "right": {
+        "knee": [
+          86.536,
+          286.592
+        ],
+        "ankle": [
+          98.0,
+          361.5
+        ],
+        "hip": [
+          93.747,
+          211.323
+        ],
+        "sole": {
+          "point": [
+            93.5,
+            388.5
+          ],
+          "world": [
+            126.837,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 966.667,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 30,
+    "file": "weight-step/30.webp",
+    "stage_travel_x": 34.678,
+    "upper_offset": [
+      1.129,
+      1.345
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          75.555,
+          286.148
+        ],
+        "ankle": [
+          92.0,
+          356.0
+        ],
+        "hip": [
+          65.629,
+          212.345
+        ],
+        "sole": {
+          "point": [
+            101.75,
+            386.5
+          ],
+          "world": [
+            136.428,
+            386.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 2.0
+        }
+      },
+      "right": {
+        "knee": [
+          85.768,
+          287.584
+        ],
+        "ankle": [
+          97.0,
+          361.5
+        ],
+        "hip": [
+          92.629,
+          212.345
+        ],
+        "sole": {
+          "point": [
+            92.5,
+            388.5
+          ],
+          "world": [
+            127.178,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1000.0,
+    "support": [
+      "right"
+    ]
+  },
+  {
+    "frame": 31,
+    "file": "weight-step/31.webp",
+    "stage_travel_x": 36.0,
+    "upper_offset": [
+      0.0,
+      2.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          75.6,
+          287.5
+        ],
+        "ankle": [
+          92.0,
+          358.0
+        ],
+        "hip": [
+          64.5,
+          213.0
+        ],
+        "sole": {
+          "point": [
+            101.75,
+            388.5
+          ],
+          "world": [
+            137.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          85.0,
+          288.0
+        ],
+        "ankle": [
+          95.5,
+          361.5
+        ],
+        "hip": [
+          91.5,
+          213.0
+        ],
+        "sole": {
+          "point": [
+            91.0,
+            388.5
+          ],
+          "world": [
+            127.0,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1033.333,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 32,
+    "file": "weight-step/32.webp",
+    "stage_travel_x": 37.288,
+    "upper_offset": [
+      -1.331,
+      2.366
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          75.514,
+          287.3
+        ],
+        "ankle": [
+          90.5,
+          358.0
+        ],
+        "hip": [
+          63.169,
+          213.366
+        ],
+        "sole": {
+          "point": [
+            100.25,
+            388.5
+          ],
+          "world": [
+            137.538,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          84.096,
+          287.927
+        ],
+        "ankle": [
+          94.0,
+          361.5
+        ],
+        "hip": [
+          90.169,
+          213.366
+        ],
+        "sole": {
+          "point": [
+            89.5,
+            388.5
+          ],
+          "world": [
+            126.788,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1066.667,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 33,
+    "file": "weight-step/33.webp",
+    "stage_travel_x": 38.534,
+    "upper_offset": [
+      -2.85,
+      2.687
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          75.287,
+          286.8
+        ],
+        "ankle": [
+          89.5,
+          358.0
+        ],
+        "hip": [
+          61.65,
+          213.687
+        ],
+        "sole": {
+          "point": [
+            99.25,
+            388.5
+          ],
+          "world": [
+            137.784,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          83.113,
+          287.722
+        ],
+        "ankle": [
+          93.0,
+          361.5
+        ],
+        "hip": [
+          88.65,
+          213.687
+        ],
+        "sole": {
+          "point": [
+            88.5,
+            388.5
+          ],
+          "world": [
+            127.034,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1100.0,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 34,
+    "file": "weight-step/34.webp",
+    "stage_travel_x": 39.763,
+    "upper_offset": [
+      -4.194,
+      2.914
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          74.967,
+          286.15
+        ],
+        "ankle": [
+          88.0,
+          358.0
+        ],
+        "hip": [
+          60.306,
+          213.914
+        ],
+        "sole": {
+          "point": [
+            97.75,
+            388.5
+          ],
+          "world": [
+            137.513,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          82.324,
+          287.406
+        ],
+        "ankle": [
+          91.5,
+          361.5
+        ],
+        "hip": [
+          87.306,
+          213.914
+        ],
+        "sole": {
+          "point": [
+            87.0,
+            388.5
+          ],
+          "world": [
+            126.763,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1133.333,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 35,
+    "file": "weight-step/35.webp",
+    "stage_travel_x": 41.0,
+    "upper_offset": [
+      -5.0,
+      3.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          74.6,
+          285.5
+        ],
+        "ankle": [
+          87.0,
+          358.0
+        ],
+        "hip": [
+          59.5,
+          214.0
+        ],
+        "sole": {
+          "point": [
+            96.75,
+            388.5
+          ],
+          "world": [
+            137.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          82.0,
+          287.0
+        ],
+        "ankle": [
+          90.5,
+          361.5
+        ],
+        "hip": [
+          86.5,
+          214.0
+        ],
+        "sole": {
+          "point": [
+            86.0,
+            388.5
+          ],
+          "world": [
+            127.0,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            127.0,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1166.667,
+    "support": [
+      "left",
+      "right"
+    ]
+  },
+  {
+    "frame": 36,
+    "file": "weight-step/36.webp",
+    "stage_travel_x": 42.276,
+    "upper_offset": [
+      -5.391,
+      2.602
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          74.061,
+          284.694
+        ],
+        "ankle": [
+          85.5,
+          358.0
+        ],
+        "hip": [
+          59.109,
+          213.602
+        ],
+        "sole": {
+          "point": [
+            95.25,
+            388.5
+          ],
+          "world": [
+            137.526,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          82.375,
+          285.583
+        ],
+        "ankle": [
+          90.5,
+          359.5
+        ],
+        "hip": [
+          86.109,
+          213.602
+        ],
+        "sole": {
+          "point": [
+            86.0,
+            386.5
+          ],
+          "world": [
+            128.276,
+            386.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 2.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1200.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 37,
+    "file": "weight-step/37.webp",
+    "stage_travel_x": 43.569,
+    "upper_offset": [
+      -5.708,
+      1.688
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          73.287,
+          283.7
+        ],
+        "ankle": [
+          84.5,
+          358.0
+        ],
+        "hip": [
+          58.792,
+          212.688
+        ],
+        "sole": {
+          "point": [
+            94.25,
+            388.5
+          ],
+          "world": [
+            137.819,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          83.333,
+          283.0
+        ],
+        "ankle": [
+          92.5,
+          355.5
+        ],
+        "hip": [
+          85.792,
+          212.688
+        ],
+        "sole": {
+          "point": [
+            88.0,
+            382.5
+          ],
+          "world": [
+            131.569,
+            382.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 6.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1233.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 38,
+    "file": "weight-step/38.webp",
+    "stage_travel_x": 44.828,
+    "upper_offset": [
+      -5.922,
+      0.68
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          72.42,
+          282.856
+        ],
+        "ankle": [
+          83.0,
+          358.0
+        ],
+        "hip": [
+          58.578,
+          211.68
+        ],
+        "sole": {
+          "point": [
+            92.75,
+            388.5
+          ],
+          "world": [
+            137.578,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          84.625,
+          280.417
+        ],
+        "ankle": [
+          95.5,
+          350.5
+        ],
+        "hip": [
+          85.578,
+          211.68
+        ],
+        "sole": {
+          "point": [
+            91.0,
+            377.5
+          ],
+          "world": [
+            135.828,
+            377.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 11.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1266.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 39,
+    "file": "weight-step/39.webp",
+    "stage_travel_x": 46.0,
+    "upper_offset": [
+      -6.0,
+      0.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          71.6,
+          282.5
+        ],
+        "ankle": [
+          82.0,
+          358.0
+        ],
+        "hip": [
+          58.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            91.75,
+            388.5
+          ],
+          "world": [
+            137.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          86.0,
+          279.0
+        ],
+        "ankle": [
+          98.5,
+          347.5
+        ],
+        "hip": [
+          85.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            94.0,
+            374.5
+          ],
+          "world": [
+            140.0,
+            374.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 14.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1300.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 40,
+    "file": "weight-step/40.webp",
+    "stage_travel_x": 47.042,
+    "upper_offset": [
+      -5.672,
+      -0.367
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          70.822,
+          282.5
+        ],
+        "ankle": [
+          81.0,
+          358.0
+        ],
+        "hip": [
+          58.828,
+          210.633
+        ],
+        "sole": {
+          "point": [
+            90.75,
+            388.5
+          ],
+          "world": [
+            137.792,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          88.0,
+          278.594
+        ],
+        "ankle": [
+          101.5,
+          345.5
+        ],
+        "hip": [
+          85.828,
+          210.633
+        ],
+        "sole": {
+          "point": [
+            97.0,
+            372.5
+          ],
+          "world": [
+            144.042,
+            372.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 16.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1333.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 41,
+    "file": "weight-step/41.webp",
+    "stage_travel_x": 48.0,
+    "upper_offset": [
+      -4.875,
+      -0.688
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          70.025,
+          282.5
+        ],
+        "ankle": [
+          80.0,
+          358.0
+        ],
+        "hip": [
+          59.625,
+          210.312
+        ],
+        "sole": {
+          "point": [
+            89.75,
+            388.5
+          ],
+          "world": [
+            137.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          90.667,
+          278.278
+        ],
+        "ankle": [
+          105.0,
+          344.0
+        ],
+        "hip": [
+          86.625,
+          210.312
+        ],
+        "sole": {
+          "point": [
+            100.5,
+            371.0
+          ],
+          "world": [
+            148.5,
+            371.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 17.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1366.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 42,
+    "file": "weight-step/42.webp",
+    "stage_travel_x": 48.958,
+    "upper_offset": [
+      -3.891,
+      -0.914
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          69.266,
+          282.5
+        ],
+        "ankle": [
+          79.0,
+          358.0
+        ],
+        "hip": [
+          60.609,
+          210.086
+        ],
+        "sole": {
+          "point": [
+            88.75,
+            388.5
+          ],
+          "world": [
+            137.708,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.0,
+          278.073
+        ],
+        "ankle": [
+          108.0,
+          343.0
+        ],
+        "hip": [
+          87.609,
+          210.086
+        ],
+        "sole": {
+          "point": [
+            103.5,
+            370.0
+          ],
+          "world": [
+            152.458,
+            370.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 18.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1400.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 43,
+    "file": "weight-step/43.webp",
+    "stage_travel_x": 50.0,
+    "upper_offset": [
+      -3.0,
+      -1.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          68.6,
+          282.5
+        ],
+        "ankle": [
+          78.0,
+          358.0
+        ],
+        "hip": [
+          61.5,
+          210.0
+        ],
+        "sole": {
+          "point": [
+            87.75,
+            388.5
+          ],
+          "world": [
+            137.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          94.0,
+          278.0
+        ],
+        "ankle": [
+          110.5,
+          342.5
+        ],
+        "hip": [
+          88.5,
+          210.0
+        ],
+        "sole": {
+          "point": [
+            106.0,
+            369.5
+          ],
+          "world": [
+            156.0,
+            369.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 19.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1433.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 44,
+    "file": "weight-step/44.webp",
+    "stage_travel_x": 51.148,
+    "upper_offset": [
+      -2.25,
+      -0.938
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          68.02,
+          282.5
+        ],
+        "ankle": [
+          77.0,
+          358.0
+        ],
+        "hip": [
+          62.25,
+          210.062
+        ],
+        "sole": {
+          "point": [
+            86.75,
+            388.5
+          ],
+          "world": [
+            137.898,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.984,
+          278.234
+        ],
+        "ankle": [
+          112.0,
+          343.0
+        ],
+        "hip": [
+          89.25,
+          210.062
+        ],
+        "sole": {
+          "point": [
+            107.5,
+            370.0
+          ],
+          "world": [
+            158.648,
+            370.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 18.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1466.667,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 45,
+    "file": "weight-step/45.webp",
+    "stage_travel_x": 52.368,
+    "upper_offset": [
+      -1.5,
+      -0.75
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          67.487,
+          282.5
+        ],
+        "ankle": [
+          75.5,
+          358.0
+        ],
+        "hip": [
+          63.0,
+          210.25
+        ],
+        "sole": {
+          "point": [
+            85.25,
+            388.5
+          ],
+          "world": [
+            137.618,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.875,
+          278.875
+        ],
+        "ankle": [
+          113.0,
+          343.5
+        ],
+        "hip": [
+          90.0,
+          210.25
+        ],
+        "sole": {
+          "point": [
+            108.5,
+            370.5
+          ],
+          "world": [
+            160.868,
+            370.5
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 18.0
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1500.0,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 46,
+    "file": "weight-step/46.webp",
+    "stage_travel_x": 53.654,
+    "upper_offset": [
+      -0.75,
+      -0.438
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          67.011,
+          282.5
+        ],
+        "ankle": [
+          74.5,
+          358.0
+        ],
+        "hip": [
+          63.75,
+          210.562
+        ],
+        "sole": {
+          "point": [
+            84.25,
+            388.5
+          ],
+          "world": [
+            137.904,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.578,
+          279.828
+        ],
+        "ankle": [
+          113.5,
+          345.0
+        ],
+        "hip": [
+          90.75,
+          210.562
+        ],
+        "sole": {
+          "point": [
+            109.0,
+            372.0
+          ],
+          "world": [
+            162.654,
+            372.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 16.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1533.333,
+    "support": [
+      "left"
+    ]
+  },
+  {
+    "frame": 47,
+    "file": "weight-step/47.webp",
+    "stage_travel_x": 55.0,
+    "upper_offset": [
+      0.0,
+      0.0
+    ],
+    "legs": {
+      "left": {
+        "knee": [
+          66.6,
+          282.5
+        ],
+        "ankle": [
+          73.0,
+          358.0
+        ],
+        "hip": [
+          64.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            82.75,
+            388.5
+          ],
+          "world": [
+            137.75,
+            388.5
+          ],
+          "contact": true,
+          "support_target_world": [
+            137.75,
+            388.5
+          ],
+          "clearance": 0.0
+        }
+      },
+      "right": {
+        "knee": [
+          93.0,
+          281.0
+        ],
+        "ankle": [
+          113.5,
+          347.0
+        ],
+        "hip": [
+          91.5,
+          211.0
+        ],
+        "sole": {
+          "point": [
+            109.0,
+            374.0
+          ],
+          "world": [
+            164.0,
+            374.0
+          ],
+          "contact": false,
+          "support_target_world": null,
+          "clearance": 14.5
+        }
+      }
+    },
+    "visual_path": "lower",
+    "t_ms": 1566.667,
+    "support": [
+      "left"
+    ]
+  }
+]

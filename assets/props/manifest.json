@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "source": {
+    "title": "ATRI -My Dear Moments-",
+    "archive": "bgimage.xp3",
+    "checksum": "下列 source.adler32 是原始 PNG 整个文件的 Adler32（8 位十六进制），已与 XP3 条目校验值核对。",
+    "processing": "取原图所有 alpha > 0 像素的包围盒，按原比例裁切、预乘透明度后用 Lanczos 缩小，转回直通 alpha 的 RGBA PNG。保留纸页、细书签绳、笔套及套内的笔。"
+  },
+  "coordinates": {
+    "file_paths": "各状态的 file 和 previews 内路径均相对于本 manifest 目录。reference_sprite 是项目根目录相对路径，仅供预览复核。",
+    "bounds": "像素矩形 [left,top,right,bottom)，原点在左上，阈值 alpha > 0。",
+    "anchors": "UV 原点在左上，u 向右、v 向下。actor_anchor_uv 以完整未加形变留边的立绘画布为基准；pivot_uv 以导出道具整张 PNG 为基准。",
+    "display": "display_px_by_actor_height 的键为立绘逻辑高度，值为 [宽,高] 逻辑像素。其他高度令 w=round(width_at_390 * H / 390)，h=round(w * file_height / file_width)。正值取最近整数，半数向上。",
+    "placement": "立绘画布左上角为 (X,Y)，逻辑宽高为 (W,H)。目标点为 (X+round(W*u),Y+round(H*v))。道具左上角等于目标点减去 (round(w*pivot_u),round(h*pivot_v))。使用 desktop_atri.pyw 的形变后 rect 时，未加边的画布原点为 rect 左上加 (pad/DPR,pad/DPR)，宽高取 original.size / DPR。",
+    "compositing": "两种道具都先于人物绘制，袖口、手指和鞋保持在前。预览按静止正面位置排布；若角色手臂在动作中移位，持物接触点需要由身体动画同步提供。"
+  },
+  "reference": {
+    "dress": "d1",
+    "pose": "p1",
+    "sprite_id": "d1-p1-f18e483b6",
+    "reference_sprite": "assets/sprites/d1-p1-f18e483b6.webp",
+    "canvas_px": [
+      666,
+      1706
+    ],
+    "pose_review": "现有 d1：p1 两手自然下垂，p2 举手张指，p3 两臂外展，p4 背身且双手在身后相扣。缺少夹书、压页、执笔和捧蟹手形。预览只确认手边或脚边陈列。"
+  },
+  "props": {
+    "diary": {
+      "label": "随身日志",
+      "routine_ids": [
+        "notes",
+        "evening_log"
+      ],
+      "placement": {
+        "dress": "d1",
+        "pose": "p1",
+        "actor_anchor_uv": [
+          0.045,
+          0.56
+        ],
+        "layer": "behind_actor",
+        "description": "观众左侧，自然垂手的指尖旁。"
+      },
+      "states": {
+        "closed": {
+          "label": "合起",
+          "file": "diary-closed.png",
+          "source": {
+            "archive_entry": "item/item039a.png",
+            "decoded_png": "item039a.png",
+            "canvas_px": [
+              1280,
+              1392
+            ],
+            "alpha_bbox_px": [
+              30,
+              313,
+              1280,
+              1305
+            ],
+            "adler32": "32ebe0cb"
+          },
+          "file_size_px": [
+            288,
+            229
+          ],
+          "alpha_bbox_px": [
+            0,
+            0,
+            288,
+            229
+          ],
+          "sha256": "fa388123b49de42a49720514354d7fa2559aeb26785bac456ebbb8b162af113e",
+          "width_at_390": 48,
+          "display_px_by_actor_height": {
+            "280": [
+              34,
+              27
+            ],
+            "390": [
+              48,
+              38
+            ],
+            "520": [
+              64,
+              51
+            ]
+          },
+          "pivot_uv": [
+            0.91,
+            0.3
+          ]
+        },
+        "open_blank": {
+          "label": "空白页",
+          "file": "diary-open-blank.png",
+          "source": {
+            "archive_entry": "item/item039b.png",
+            "decoded_png": "item039b.png",
+            "canvas_px": [
+              1280,
+              960
+            ],
+            "alpha_bbox_px": [
+              160,
+              93,
+              1143,
+              872
+            ],
+            "adler32": "c6677be2"
+          },
+          "file_size_px": [
+            360,
+            285
+          ],
+          "alpha_bbox_px": [
+            0,
+            0,
+            360,
+            285
+          ],
+          "sha256": "7d9bc51be77d44f97ed098783ef3208a43b63e2e2fd68c98f64d65eee46405f7",
+          "width_at_390": 60,
+          "display_px_by_actor_height": {
+            "280": [
+              43,
+              34
+            ],
+            "390": [
+              60,
+              48
+            ],
+            "520": [
+              80,
+              63
+            ]
+          },
+          "pivot_uv": [
+            0.93,
+            0.43
+          ]
+        },
+        "open_sparse": {
+          "label": "少量书写",
+          "file": "diary-open-sparse.png",
+          "source": {
+            "archive_entry": "item/item039c.png",
+            "decoded_png": "item039c.png",
+            "canvas_px": [
+              4032,
+              3024
+            ],
+            "alpha_bbox_px": [
+              506,
+              296,
+              3600,
+              2745
+            ],
+            "adler32": "be283be1"
+          },
+          "file_size_px": [
+            360,
+            285
+          ],
+          "alpha_bbox_px": [
+            0,
+            0,
+            360,
+            285
+          ],
+          "sha256": "cfb9496f3c112811d5f94a13da1e31a4c2abdffa34d4adf78647505581f04bbe",
+          "width_at_390": 60,
+          "display_px_by_actor_height": {
+            "280": [
+              43,
+              34
+            ],
+            "390": [
+              60,
+              48
+            ],
+            "520": [
+              80,
+              63
+            ]
+          },
+          "pivot_uv": [
+            0.93,
+            0.43
+          ]
+        },
+        "open_filled": {
+          "label": "多行书写",
+          "file": "diary-open-filled.png",
+          "source": {
+            "archive_entry": "item/item039d.png",
+            "decoded_png": "item039d.png",
+            "canvas_px": [
+              4032,
+              3024
+            ],
+            "alpha_bbox_px": [
+              506,
+              296,
+              3600,
+              2745
+            ],
+            "adler32": "5a6268e0"
+          },
+          "file_size_px": [
+            360,
+            285
+          ],
+          "alpha_bbox_px": [
+            0,
+            0,
+            360,
+            285
+          ],
+          "sha256": "b60769b8142247e613376837be1a1109e64a09ebddeb07bfbbd2e6898ac4c15b",
+          "width_at_390": 60,
+          "display_px_by_actor_height": {
+            "280": [
+              43,
+              34
+            ],
+            "390": [
+              60,
+              48
+            ],
+            "520": [
+              80,
+              63
+            ]
+          },
+          "pivot_uv": [
+            0.93,
+            0.43
+          ]
+        }
+      },
+      "held_variant_manifest": "held-diary/manifest.json"
+    },
+    "crab": {
+      "label": "小螃蟹",
+      "routine_ids": [
+        "crab"
+      ],
+      "placement": {
+        "dress": "d1",
+        "pose": "p1",
+        "actor_anchor_uv": [
+          0.96,
+          0.9975
+        ],
+        "layer": "behind_actor",
+        "description": "观众右侧，鞋旁地面。"
+      },
+      "states": {
+        "idle": {
+          "label": "小螃蟹",
+          "file": "crab-idle.png",
+          "source": {
+            "archive_entry": "item/item042.png",
+            "decoded_png": "item042.png",
+            "canvas_px": [
+              500,
+              500
+            ],
+            "alpha_bbox_px": [
+              16,
+              97,
+              472,
+              429
+            ],
+            "adler32": "6fd4e828"
+          },
+          "file_size_px": [
+            228,
+            166
+          ],
+          "alpha_bbox_px": [
+            0,
+            0,
+            228,
+            166
+          ],
+          "sha256": "a23d66c592b753b1ce6b6aba3d6ea1805e86951e8d62ef61029e1cc21c036efa",
+          "width_at_390": 38,
+          "display_px_by_actor_height": {
+            "280": [
+              27,
+              20
+            ],
+            "390": [
+              38,
+              28
+            ],
+            "520": [
+              51,
+              37
+            ]
+          },
+          "pivot_uv": [
+            0.5,
+            1.0
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "d1-p1-interrupt-from-diary-stroke",
+  "actor": "d1/p1",
+  "fps": 24,
+  "frameCount": 54,
+  "writeStartByClip": {"write": 17, "joined": 65},
+  "writeContactLocalInclusive": [[29, 39], [47, 51], [62, 65]],
+  "pageKeys": ["blank", "sparse", "filled"],
+  "postures": {
+    "hip": "取证时桌面实际使用的手臂与道具坐标。沿用当前身体、脸部和托书变换。",
+    "chest": "已交付的胸前低头写姿。沿用胸前版原有的头部与衣袖修补，再绘道具层。"
+  },
+  "coordinates": {
+    "actorCanvasPx": [666, 1706],
+    "origin": "未加边 d1/p1 的左上角；x 向右，y 向下。锚点为原画像素，atlas rect 为半开区间。",
+    "layerBoundsActorPx": [-110, 478, 675, 1130],
+    "layerSizeAt390Px": [179, 149],
+    "bookSpinePx": [180, 276],
+    "hipSpineActorPx": [34, 991],
+    "chestSpineDuringLiftActorPx": [195, 825],
+    "bookPxToActorPx": 0.729059829059829,
+    "workingShoulderArtActorPx": [450, 548],
+    "hipRuntimeTransformShoulderActorPx": [453, 563],
+    "restWristActorPx": [627, 980],
+    "liftAnchors": "lift/manifest.json → starts[写字局部帧].frames[过渡局部帧].anchors[hip 或 chest]。spineActorPx、wristActorPx、elbowActorPx、gripActorPx、tipActorPx 分别对应书脊、活动腕、肘、握杆处、笔尖。",
+    "tailAnchors": "hip 见 ../action-hand/write/performance.json 的 stages；chest 见 ../writing-posture/manifest.json 的 clips。笔入套后，活动手的笔尖与握点可为 null。"
+  },
+  "timeline": [
+    {"outputInclusive": [0, 10], "stage": "lift", "sourceFirst": 0, "meaning": "0 保留中断当帧；1 起先提笔再收腕；10 与现有 write[75] 同姿。"},
+    {"outputInclusive": [11, 36], "stage": "write", "sourceFirst": 76, "meaning": "76–84 收向笔套，85–97 插笔，98–101 松指。"},
+    {"outputInclusive": [37, 53], "stage": "return", "sourceFirst": 0, "meaning": "0 承接松手端点，1–16 放下工作臂。仅 16 恢复原版身侧手臂。"}
+  ],
+  "files": {
+    "playback": "playback.py",
+    "lift": "lift/manifest.json",
+    "renderer": "render/source.py",
+    "closing": "closing/manifest.json",
+    "hand": "../action-hand/write/performance.json",
+    "bookAndInk": "../pen-write/write.json",
+    "chestPosture": "../writing-posture/manifest.json",
+    "preview": "previews/three-strokes-390.webp",
+    "contactSheet": "previews/entry-33ms.png",
+    "verification": "checks.json",
+    "verify": "verify.py"
+  },
+  "capture": "用上一实际绘制的 (clip, index, page) 调用 playback.capture，并保留姿态。20 个触纸入口逐个对应已显示的墨格。局部 43、56、69 带原演出停顿，不能用整段经过秒数反推入口。同一中断继续现有进度。",
+  "paint": "playback.local_layer(ctx, k, height) 返回局部透明 RGBA。作为原动作层传入既有书脊与肩的变换；只绘一次手和本子。0 可直接保持上一实际显示层。底身的侧臂按当帧 original_rest 擦除和修补，保留已显示的握持与托书位置，直至 return[16]。身体、眼神与屏幕目标接续由主线控制。",
+  "ink": "固定 capture.page 及 capture.ink_tile 到收手结束。尾段继续使用中断的墨格，包括笔已回套的页。归还仍打开的本子后由持书层接续合封；整段保留当前纸面和书脊。",
+  "closing": "沿用原版三种页底、各 12 个封面开度。在对应底页上画 playback.closing_ink(ctx, opening_index)，再叠托手前指与入袋遮罩。opening_index 沿用 book.json 的 11 全开至 0 合严；70° 遮住部分笔画，52° 及以下全部遮住。",
+  "repair": "playback.repair_native(ctx,k) 给出相同局部原点上的原像素擦除与补衣。已在原身体处理过的修补只应用一次。",
+  "timing": "24 fps，首帧取已画出的中断帧。第 53 格起点约 2.208 秒，整张曝光表 2.250 秒。若主线从已有局部帧相位继续计时可提前出现第 1 格。监测目标与身体看向目标的时机由主线控制。",
+  "source": "原作日志与笔取自 bgimage.xp3!item/item039b.png 等；托书指层源自 vol1.xp3!ev008bl。执笔手与蓝袖为既有白裙桌面原画。此包以真实中断帧与既有第三笔提笔段的手、袖纹理配准补成中间画，末笔末端沿用原帧。"
+}

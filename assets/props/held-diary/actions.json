@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "dress": "d1",
+  "pose": "p1",
+  "fps": 24,
+  "actorCanvas": [
+    666,
+    1706
+  ],
+  "coordinates": "未形变的 d1/p1 完整立绘。左上原点，x 向右，y 向下，位置均为原像像素；图集裁框为半开区间。所有下列路径相对此清单。",
+  "support": {
+    "source": "manifest.json",
+    "spineActorPx": [
+      34,
+      991
+    ],
+    "spineBookPx": [
+      180,
+      276
+    ],
+    "bookPixelToActorPixel": 0.729059829059829
+  },
+  "workingWrist": {
+    "restPx": [
+      627,
+      980
+    ],
+    "pageReleaseToReachPenPx": [
+      211.0,
+      989.0
+    ],
+    "penPickupPx": [
+      225.227,
+      853.856
+    ],
+    "perFrameKey": "wrist_px",
+    "note": "腕锚取自活动腕，不等于固定托书手的书脊点。每一帧的两侧手指与活动袖共用该帧腕点。"
+  },
+  "pageTurn": {
+    "hand": "action-hand/turn/turn.json",
+    "paper": "page-turn/page.json",
+    "sequence": [
+      "stages.reach",
+      "stages.turn",
+      "stages.return"
+    ],
+    "counts": [
+      17,
+      34,
+      17
+    ],
+    "paperStream": "motion_24fps.frames",
+    "pinch": [
+      3,
+      15
+    ],
+    "openingFingers": [
+      16,
+      17
+    ],
+    "freeLeafFrom": 18,
+    "layerNote": "托书底层按首批持书接口。活动纸的 bed、leaf 合成并保留托手在前。活动后指在接触、松指时由当前 leaf 的 alpha 遮住，前指压在纸上，近腕截口已按袖缘遮好。静止端按 original_rest 使用未经替换的右臂。"
+  },
+  "penWrite": {
+    "smallReviewManifest": "small-review/manifest.json",
+    "interruptManifest": "write-interrupt/manifest.json",
+    "postureManifest": "writing-posture/manifest.json",
+    "hand": "action-hand/write/performance.json",
+    "object": "pen-write/write.json",
+    "sequence": [
+      "stages.reach",
+      "stages.write",
+      "stages.return"
+    ],
+    "counts": [
+      17,
+      102,
+      17
+    ],
+    "paperContactInclusive": [
+      [
+        29,
+        39
+      ],
+      [
+        47,
+        51
+      ],
+      [
+        62,
+        65
+      ]
+    ],
+    "layerNote": "书与持久墨迹、固定托手前层、活动后指、已取出的笔、需要时的套口前缘、活动前指、活动腕的袖口。stowed=true 使用原作带笔书并跳过活动笔，离纸期间使用上一墨格。最后保留字迹。"
+  },
+  "directHandoff": {
+    "sequence": [
+      "pageTurn.hand:stages.reach",
+      "pageTurn.hand:stages.turn",
+      "penWrite.hand:stages.turn_to_pen[1:]",
+      "penWrite.hand:stages.write",
+      "penWrite.hand:stages.return"
+    ],
+    "count": 184,
+    "description": "单页落下并松指后，手腕从书角移至笔套接杆。直接衔接不经历先垂手再抬手。两动作亦可单独收手回到既有姿态。"
+  },
+  "previews": {
+    "combined": "../previews/diary-turn-to-write-390.webp",
+    "pageTurn": "../previews/diary-one-page-390.webp",
+    "penWrite": "../previews/diary-pen-390.webp",
+    "detail": "../previews/diary-page-pen-contact.png",
+    "actorHeight": 390,
+    "scene": "固定机位美术合成；原画尺寸的局部放大取自左侧同帧。预览中的重复停顿帧可能由 WebP 合并，时长保持。"
+  },
+  "provenance": "纸面与笔出自 bgimage.xp3 的 item039b/c；托手与翻页指形由 vol1.xp3 的 ev008bl 重组。执笔的远掌、食指、拇指为本次参照白裙皮肤与袖缘新绘。捻页、取笔、写「小」、回套与转场为桌面新作。",
+  "verification": {
+    "maxWristToMaterialGripErrorActorPx": 0.0012,
+    "wristAndNibAt390": "../previews/write-wrist-390/contact.json",
+    "minimumWorkingFarNearFingerAlphaAtPenGrip": [
+      255,
+      255
+    ],
+    "pagePinchOnBothSidesFrames": [
+      3,
+      15
+    ],
+    "joinedWristErrorActorPx": 0,
+    "writeChecks": "pen-write/verify.py",
+    "previewDurationsMs": [
+      7667,
+      2833,
+      5667
+    ]
+  }
+}

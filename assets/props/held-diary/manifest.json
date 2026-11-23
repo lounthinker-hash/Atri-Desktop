@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "id": "d1-p1-held-diary",
+  "dress": "d1",
+  "pose": "p1",
+  "coordinate_system": "Reference points use the full unpadded d1/p1 sprite in source pixels, origin top left, x right, y down. Rectangles are half-open. Relative paths resolve from this manifest.",
+  "actor": {
+    "file": "../../sprites/d1-p1-f18e483b6.webp",
+    "canvas_px": [
+      666,
+      1706
+    ]
+  },
+  "hand_source": {
+    "entry": "ev008bl.png",
+    "decoded_png": "%TEMP%/atri_read_work/cg/ev008bl.png",
+    "source_canvas_px": [
+      3840,
+      2160
+    ],
+    "adler32": "cc211c73",
+    "source_roi_px": [
+      793,
+      548,
+      1008,
+      765
+    ],
+    "registration": "Source (x,y) -> actor (78 + .36*(x-1000) + .12*(y-667), 960 - .12*(x-1000) + .36*(y-667)).",
+    "edit": "取亚托莉夹住鞋跟时的手；沿指缝抠去鞋与事件背景，略调暖肤色，以 d1/p1 自身袖缘连接到腕部。手形出自原作，持日志组合和开合中间角度为桌面版重组。",
+    "archive": "vol1.xp3"
+  },
+  "book_manifest": "book/book.json",
+  "contact": {
+    "landmark": "书脊下端压在下方手指上，上方弯指扣在书面。",
+    "actor_px": [
+      34,
+      991
+    ],
+    "actor_uv": [
+      0.05105105105105105,
+      0.5808909730363423
+    ],
+    "book_px": [
+      180,
+      276
+    ],
+    "at_390": {
+      "actor_local_px": [
+        8,
+        227
+      ],
+      "book_local_px": [
+        30,
+        46
+      ],
+      "book_top_left_relative_to_actor_rounded_px": [
+        -22,
+        181
+      ],
+      "book_tile_px": [
+        72,
+        58
+      ]
+    }
+  },
+  "hand_rect_actor_px": [
+    0,
+    907,
+    154,
+    1030
+  ],
+  "layers": {
+    "rest_hand_erase": {
+      "file": "rest-hand-erase.png",
+      "mode": "L",
+      "file_size_px": [
+        154,
+        123
+      ],
+      "nonzero_bbox_px": [
+        0,
+        28,
+        91,
+        89
+      ],
+      "sha256": "1d8b5d07e8258a37d68b25298527766587967fbe97b487361e11daa29451f4df"
+    },
+    "grip_back": {
+      "file": "grip-back.png",
+      "mode": "RGBA",
+      "file_size_px": [
+        154,
+        123
+      ],
+      "nonzero_bbox_px": [
+        4,
+        21,
+        88,
+        93
+      ],
+      "sha256": "97b03a065a785642c261a0bb0ba951011129f0ff0c28cadf13d7fd1f6064590a"
+    },
+    "grip_front": {
+      "file": "grip-front.png",
+      "mode": "RGBA",
+      "file_size_px": [
+        154,
+        123
+      ],
+      "nonzero_bbox_px": [
+        4,
+        21,
+        135,
+        117
+      ],
+      "sha256": "90c456dad9b02fde37233996d50c18b6378eea3e5feb6ea615b8e3264103acbe"
+    }
+  },
+  "render_order": [
+    "actor with rest_hand_erase applied",
+    "grip_back",
+    "one registered book frame",
+    "grip_front"
+  ],
+  "integration": [
+    "只在 d1/p1 的持书阶段选择本套，与首批手边展示二选一。清除遮罩为 L 模式：在未形变的动态立绘对应矩形执行 destination-out，以白色区域移除原先伸开的手指。黑色区域保留。不要擦除桌面、背景或其他人物层。",
+    "后掌、书体和前指/袖缘共用同一手部局部变换。按手部矩形定位两张手图，把书的 book_px 对齐 actor_px。书格可超出原立绘左边界，须留出绘图区。不向书和手指分别施加头发或衣摆的材料形变。身体动作移动时，三个层都跟随同一只手。",
+    "book/book.json 的 opening_frames_by_state 与 closing_frames_by_state 包含首尾，逐帧替换同一书格。空白/少字/多字共用同一脊点。人物表情与书无关。退出持书或姿势不符时一起释放三层和消除遮罩。螃蟹仍使用 ../manifest.json 的独立可选地面分支。"
+  ],
+  "capabilities": {
+    "holds_spine": true,
+    "opens_closes_cover": true,
+    "original_written_states": true,
+    "handheld_pen": false,
+    "hand_turning_individual_page": false,
+    "note": "本清单只描述基础托书；额外的单页、持笔演出见 actions_manifest。"
+  },
+  "previews": {
+    "animation": "../previews/held-diary-390.webp",
+    "keyframes": "../previews/held-diary-contact.png",
+    "fps": 20,
+    "frames": 88,
+    "actor_height": 390,
+    "contents": "固定机位：合起、展开、眨眼、原作少字/多字图、带字合拢。右栏是同帧像素放大；使用项目已有表情与风动模块，仅用静止身体通道检查贴手。"
+  },
+  "verification": {
+    "script": "verify.py",
+    "commands": [],
+    "notes": "默认只读检查全部书体、手层、真实书脊与后指接触、前指和袖的像素交叠以及动图时序。--render 用当前项目的表情和风动重绘本套预览后再校验。"
+  },
+  "motion_references": [
+    {
+      "url": "https://www.bilibili.com/video/BV1NWM86mERF/?t=13",
+      "range_s": [
+        13,
+        15
+      ],
+      "use": "肩、花茎接触处较稳，外侧发束回摆。"
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1t34VzqEqU/?t=1",
+      "range_s": [
+        1,
+        1.7
+      ],
+      "use": "围巾边的手保持位置，眼睛闭合再睁开。"
+    }
+  ],
+  "actions_manifest": "actions.json"
+}

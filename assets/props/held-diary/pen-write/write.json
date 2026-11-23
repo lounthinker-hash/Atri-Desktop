@@ -1,0 +1,2186 @@
+{
+  "id": "d1-p1-diary-pen-writing",
+  "local_space": "432×348 book tile, origin top left; x right, y down. Fractional points are by design. 6 tile px = 1 logical px at actor height 390.",
+  "book_size": [
+    432,
+    348
+  ],
+  "spine": [
+    180,
+    276
+  ],
+  "pages": {
+    "blank": "page-blank-empty-loop.png",
+    "sparse": "page-sparse-empty-loop.png",
+    "filled": "page-filled-empty-loop.png"
+  },
+  "original_stowed_pages": {
+    "blank": "../book/open-blank.png",
+    "sparse": "../book/open-sparse.png",
+    "filled": "../book/open-filled.png"
+  },
+  "loop_front": "loop-front.png",
+  "pen": {
+    "file": "pen-writing-tip.png",
+    "size": [
+      69,
+      248
+    ],
+    "tip": [
+      59.5,
+      243.0
+    ],
+    "tail": [
+      20.5,
+      8.0
+    ],
+    "stowed_crop_on_book": [
+      318,
+      42,
+      387,
+      290
+    ],
+    "stowed_tilt_from_up_degrees": -9.42278,
+    "writing_tilt_from_up_degrees": 30,
+    "grip_local_writing": [
+      50.659,
+      189.729
+    ],
+    "grip_local_pickup": [
+      30.358,
+      67.402
+    ],
+    "writing_tilt_note": "Nominal only: use frames[i].rotation_cw together with stowed_tilt_from_up_degrees. During paper contact, tilt varies smoothly about the registered nib."
+  },
+  "ink": {
+    "atlas": "ink-atlas.png",
+    "book_rect": [
+      216,
+      139,
+      288,
+      188
+    ],
+    "tile_size": [
+      72,
+      49
+    ],
+    "columns": 8,
+    "tile_count": 21,
+    "stroke_semantics": "桌面版新写的小字「小」，共三次独立落纸。运行写入演出使用空白右页；少字和满页净版保留原作字迹，供独立阅读或已写页使用。",
+    "stroke_segments": {
+      "1": [
+        29,
+        39
+      ],
+      "2": [
+        47,
+        51
+      ],
+      "3": [
+        62,
+        65
+      ]
+    },
+    "source_rect_formula": "left=(k%columns)*tile_width; top=(k//columns)*tile_height. Copy this tile to book_rect.left/top. Tile already includes all earlier marks; do not stack successive tiles."
+  },
+  "timeline": {
+    "fps": 24,
+    "count": 102,
+    "duration_seconds": 4.25,
+    "book_layer_order": [
+      "empty-loop page (or original_stowed_page for stowed=true)",
+      "current persistent ink tile",
+      "one transformed pen only if stowed=false",
+      "loop-front if loop_in_front=true and stowed=false"
+    ],
+    "hand_registration": "barrel_contact=true 时让主实现绘制的握笔指腹在 grip 附近夹住笔杆，后方手指先画、笔后再画前方指尖。barrel_contact=false 时笔已由笔套约束，人物接近/松开时可自行补前后帧。",
+    "rigid_transform": "rotation_cw is clockwise in y-down space. For any pen-local p, book-space position = frame.tip + R(rotation_cw)*(p-pen.tip). The pen may extend above the book tile during withdrawal; avoid clipping to the page. Drawing the complete arm/pen on the sprite or stage uses this same transform.",
+    "registration_note": "书脊和书格的位置与既有持书循环完全相同。stowed=true 用原作带笔开本，加当前 ink_tile；其余帧使用净版、墨层和一支移动的笔。",
+    "wrist_elbow_motion": "Three contacts are unchanged in timing and ink location. In-air intervals lift away from the sheet. Barrel pitch and wrist pitch vary separately; the elbow rounds and settles slightly behind the wrist. Each frame supplies the actual pen grip/nib coordinates."
+  },
+  "provenance": {
+    "archive": "bgimage.xp3",
+    "blank": "item/item039b.png",
+    "sparse": "item/item039c.png",
+    "filled": "item/item039d.png",
+    "book_local_sources": {
+      "blank": {
+        "path": "../book/open-blank.png",
+        "sha256": "f45e11cb99cbdcca9768ff53d774d2f0913b78f749ae777c47aa3aa3c919b9e4"
+      },
+      "sparse": {
+        "path": "../book/open-sparse.png",
+        "sha256": "b035e43ffed14e46a766e6448b3c4541dc08a337004b7782d610ef4959f39ccc"
+      },
+      "filled": {
+        "path": "../book/open-filled.png",
+        "sha256": "fa7f5df56838abb336fa3332f1275c336afce150c719a5c5d1fa791dfacee1a2"
+      }
+    },
+    "source_edits": "从空白页原画抠取笔夹、笔杆与原有金属锥状笔尖。笔套原本遮住的杆身采用同一笔下方真实木纹/高光补全。银色连接片和棕色套面保留原作，在套口补暗部以呈现抽空状态。笔从套中抽出到落纸、留墨与回套均为桌面新编动作。原画尖端没有可辨的钢笔分叉笔舌。",
+    "page_edits": "从已校验的 432×348 开本格移去套外笔杆，保留书皮、原纸页、套面、连接片与书签绳。三种空套底稿逐像素保留笔套区域之外的纸面。",
+    "source_adler32": {
+      "item/item039b.png": "c6677be2",
+      "item/item039c.png": "be283be1",
+      "item/item039d.png": "5a6268e0"
+    },
+    "nib_revision": "Desktop retouch on the existing tapered metal end of item039b: darkened the last eight source rows to suggest a wet nib, plus a single antialiased contact pixel. The original barrel, clip and cone artwork remain in use."
+  },
+  "verification": {
+    "script": "verify.py",
+    "contact_sheet": "pen-contact-sheet.png",
+    "desktop_390": "../../previews/write-wrist-390/contact.json"
+  },
+  "file_sha256": {
+    "ink-atlas.png": "870284358fa450b22039ec79cc70509991da1c5eb1a6f5e5215dd093cf940989",
+    "loop-front.png": "9f4072470a54c030794f4e1e58d0344c3f913eb57c5d857c6ff2bd861a354ac5",
+    "page-blank-empty-loop.png": "1618e753adb6fafd79b3b1f5c5a3e1b608ca6f8546a8b2581e7507ebb864b4f9",
+    "page-filled-empty-loop.png": "2abb24360c0ec9a5e702fd3229b2526212ec4afda1a969762daa39414f419ec8",
+    "page-sparse-empty-loop.png": "05cf5591a63fc74da4351789700ae793763e091b37c08955a6c5aedf99024e2d",
+    "pen-contact-sheet.png": "658386752bb6fcf79900387bfbb80c3ac1b51eed6678d5613f4392f49d855ff0",
+    "pen.png": "22865b42da4002ebb78dd94b2b5e32351b272d7a98c5cb44c751df032c5324ba",
+    "pen-writing-tip.png": "0744c8a248a0141a6a7ec882e13416f3950eecbcf50a8aaf4ba14298d5c33d82"
+  },
+  "frames": [
+    {
+      "i": 0,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 1,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 2,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 3,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 4,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 5,
+      "phase": "withdraw",
+      "tip": [
+        377.075,
+        282.441
+      ],
+      "grip": [
+        347.933,
+        106.843
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 6,
+      "phase": "withdraw",
+      "tip": [
+        375.893,
+        275.319
+      ],
+      "grip": [
+        346.751,
+        99.721
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 7,
+      "phase": "withdraw",
+      "tip": [
+        374.092,
+        264.463
+      ],
+      "grip": [
+        344.95,
+        88.865
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 8,
+      "phase": "withdraw",
+      "tip": [
+        371.808,
+        250.702
+      ],
+      "grip": [
+        342.666,
+        75.104
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 9,
+      "phase": "withdraw",
+      "tip": [
+        369.18,
+        234.866
+      ],
+      "grip": [
+        340.038,
+        59.268
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 10,
+      "phase": "withdraw",
+      "tip": [
+        366.345,
+        217.786
+      ],
+      "grip": [
+        337.203,
+        42.188
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 11,
+      "phase": "withdraw",
+      "tip": [
+        363.442,
+        200.292
+      ],
+      "grip": [
+        334.3,
+        24.694
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 12,
+      "phase": "withdraw",
+      "tip": [
+        360.607,
+        183.212
+      ],
+      "grip": [
+        331.465,
+        7.614
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 13,
+      "phase": "withdraw",
+      "tip": [
+        357.979,
+        167.376
+      ],
+      "grip": [
+        328.837,
+        -8.222
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 14,
+      "phase": "withdraw",
+      "tip": [
+        355.696,
+        153.615
+      ],
+      "grip": [
+        326.554,
+        -21.983
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 15,
+      "phase": "withdraw",
+      "tip": [
+        353.894,
+        142.759
+      ],
+      "grip": [
+        324.752,
+        -32.839
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 16,
+      "phase": "withdraw",
+      "tip": [
+        352.712,
+        135.636
+      ],
+      "grip": [
+        323.57,
+        -39.962
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 17,
+      "phase": "withdraw",
+      "tip": [
+        352.287,
+        133.078
+      ],
+      "grip": [
+        323.145,
+        -42.52
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 18,
+      "phase": "carry",
+      "tip": [
+        351.468,
+        130.621
+      ],
+      "grip": [
+        327.074,
+        -41.406
+      ],
+      "rotation_cw": 1.3519,
+      "grip_distance": 173.748,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 19,
+      "phase": "carry",
+      "tip": [
+        347.672,
+        125.207
+      ],
+      "grip": [
+        335.082,
+        -36.655
+      ],
+      "rotation_cw": 4.9752,
+      "grip_distance": 162.351,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 20,
+      "phase": "carry",
+      "tip": [
+        338.588,
+        120.192
+      ],
+      "grip": [
+        340.619,
+        -25.646
+      ],
+      "rotation_cw": 10.2207,
+      "grip_distance": 145.852,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 21,
+      "phase": "carry",
+      "tip": [
+        323.542,
+        118.113
+      ],
+      "grip": [
+        338.97,
+        -7.232
+      ],
+      "rotation_cw": 16.4397,
+      "grip_distance": 126.291,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 22,
+      "phase": "carry",
+      "tip": [
+        304.416,
+        119.817
+      ],
+      "grip": [
+        329.201,
+        17.055
+      ],
+      "rotation_cw": 22.9831,
+      "grip_distance": 105.709,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 23,
+      "phase": "carry",
+      "tip": [
+        284.818,
+        123.553
+      ],
+      "grip": [
+        313.427,
+        42.294
+      ],
+      "rotation_cw": 28.8183,
+      "grip_distance": 86.148,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 24,
+      "phase": "carry",
+      "tip": [
+        268.445,
+        127.289
+      ],
+      "grip": [
+        296.497,
+        63.539
+      ],
+      "rotation_cw": 33.1742,
+      "grip_distance": 69.649,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 25,
+      "phase": "carry",
+      "tip": [
+        257.771,
+        130.016
+      ],
+      "grip": [
+        283.646,
+        77.826
+      ],
+      "rotation_cw": 35.7945,
+      "grip_distance": 58.252,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 26,
+      "phase": "carry",
+      "tip": [
+        254.0,
+        131.0
+      ],
+      "grip": [
+        278.516,
+        82.886
+      ],
+      "rotation_cw": 36.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 27,
+      "phase": "lower",
+      "tip": [
+        254.0,
+        134.593
+      ],
+      "grip": [
+        278.213,
+        86.326
+      ],
+      "rotation_cw": 36.0632,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 28,
+      "phase": "lower",
+      "tip": [
+        254.0,
+        142.248
+      ],
+      "grip": [
+        277.977,
+        93.863
+      ],
+      "rotation_cw": 35.7836,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 0,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 29,
+      "phase": "write",
+      "tip": [
+        254.0,
+        147.0
+      ],
+      "grip": [
+        277.672,
+        98.465
+      ],
+      "rotation_cw": 35.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 1,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 30,
+      "phase": "write",
+      "tip": [
+        254.053,
+        148.503
+      ],
+      "grip": [
+        277.124,
+        99.68
+      ],
+      "rotation_cw": 34.7156,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 2,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 31,
+      "phase": "write",
+      "tip": [
+        254.192,
+        152.691
+      ],
+      "grip": [
+        276.383,
+        103.461
+      ],
+      "rotation_cw": 33.6872,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 3,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 32,
+      "phase": "write",
+      "tip": [
+        254.363,
+        158.972
+      ],
+      "grip": [
+        275.627,
+        109.335
+      ],
+      "rotation_cw": 32.6124,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 4,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 33,
+      "phase": "write",
+      "tip": [
+        254.465,
+        166.327
+      ],
+      "grip": [
+        274.993,
+        116.381
+      ],
+      "rotation_cw": 31.766,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 5,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 34,
+      "phase": "write",
+      "tip": [
+        254.366,
+        173.319
+      ],
+      "grip": [
+        274.595,
+        123.251
+      ],
+      "rotation_cw": 31.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 6,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 35,
+      "phase": "write",
+      "tip": [
+        253.961,
+        178.487
+      ],
+      "grip": [
+        274.464,
+        128.531
+      ],
+      "rotation_cw": 31.7372,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 7,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 36,
+      "phase": "write",
+      "tip": [
+        253.241,
+        180.952
+      ],
+      "grip": [
+        274.34,
+        131.245
+      ],
+      "rotation_cw": 32.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 8,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 37,
+      "phase": "write",
+      "tip": [
+        249.796,
+        179.833
+      ],
+      "grip": [
+        271.98,
+        130.6
+      ],
+      "rotation_cw": 33.6788,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 9,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 38,
+      "phase": "write",
+      "tip": [
+        246.57,
+        177.301
+      ],
+      "grip": [
+        270.35,
+        128.819
+      ],
+      "rotation_cw": 35.5508,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 10,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 39,
+      "phase": "write",
+      "tip": [
+        245.5,
+        176.4
+      ],
+      "grip": [
+        270.851,
+        128.721
+      ],
+      "rotation_cw": 37.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 1,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 40,
+      "phase": "lift",
+      "tip": [
+        244.981,
+        169.869
+      ],
+      "grip": [
+        271.929,
+        123.074
+      ],
+      "rotation_cw": 39.3597,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 41,
+      "phase": "lift",
+      "tip": [
+        244.019,
+        159.993
+      ],
+      "grip": [
+        272.534,
+        114.135
+      ],
+      "rotation_cw": 41.2966,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 42,
+      "phase": "lift",
+      "tip": [
+        243.5,
+        155.338
+      ],
+      "grip": [
+        272.911,
+        110.05
+      ],
+      "rotation_cw": 42.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 43,
+      "phase": "lower",
+      "tip": [
+        242.517,
+        152.307
+      ],
+      "grip": [
+        272.251,
+        107.23
+      ],
+      "rotation_cw": 42.8325,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 44,
+      "phase": "lower",
+      "tip": [
+        240.909,
+        149.365
+      ],
+      "grip": [
+        270.89,
+        104.453
+      ],
+      "rotation_cw": 43.1481,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 45,
+      "phase": "lower",
+      "tip": [
+        239.881,
+        148.484
+      ],
+      "grip": [
+        270.021,
+        103.678
+      ],
+      "rotation_cw": 43.351,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 46,
+      "phase": "lower",
+      "tip": [
+        239.285,
+        151.656
+      ],
+      "grip": [
+        269.481,
+        106.888
+      ],
+      "rotation_cw": 43.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 11,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 47,
+      "phase": "write",
+      "tip": [
+        239,
+        155
+      ],
+      "grip": [
+        269.196,
+        110.232
+      ],
+      "rotation_cw": 43.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 2,
+      "ink_tile": 12,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 48,
+      "phase": "write",
+      "tip": [
+        237.719,
+        158.197
+      ],
+      "grip": [
+        268.387,
+        113.751
+      ],
+      "rotation_cw": 44.0283,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 2,
+      "ink_tile": 13,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 49,
+      "phase": "write",
+      "tip": [
+        233.0,
+        164.375
+      ],
+      "grip": [
+        264.764,
+        120.705
+      ],
+      "rotation_cw": 45.4541,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 2,
+      "ink_tile": 14,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 50,
+      "phase": "write",
+      "tip": [
+        226.863,
+        168.781
+      ],
+      "grip": [
+        259.879,
+        126.05
+      ],
+      "rotation_cw": 47.1142,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 2,
+      "ink_tile": 15,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 51,
+      "phase": "write",
+      "tip": [
+        224,
+        170
+      ],
+      "grip": [
+        257.983,
+        128.034
+      ],
+      "rotation_cw": 48.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 2,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 52,
+      "phase": "lift",
+      "tip": [
+        226.22,
+        159.917
+      ],
+      "grip": [
+        260.866,
+        118.497
+      ],
+      "rotation_cw": 49.3339,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 53,
+      "phase": "lift",
+      "tip": [
+        235.375,
+        142.5
+      ],
+      "grip": [
+        270.618,
+        101.587
+      ],
+      "rotation_cw": 50.1649,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 54,
+      "phase": "lift",
+      "tip": [
+        247.011,
+        130.755
+      ],
+      "grip": [
+        282.759,
+        90.282
+      ],
+      "rotation_cw": 50.8749,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 55,
+      "phase": "lift",
+      "tip": [
+        252,
+        127.0
+      ],
+      "grip": [
+        288.133,
+        86.87
+      ],
+      "rotation_cw": 51.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 56,
+      "phase": "pause",
+      "tip": [
+        252,
+        127.0
+      ],
+      "grip": [
+        288.455,
+        87.162
+      ],
+      "rotation_cw": 51.8835,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 57,
+      "phase": "pause",
+      "tip": [
+        252,
+        127.0
+      ],
+      "grip": [
+        288.719,
+        87.405
+      ],
+      "rotation_cw": 52.2643,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 58,
+      "phase": "pause",
+      "tip": [
+        252,
+        127.0
+      ],
+      "grip": [
+        288.828,
+        87.507
+      ],
+      "rotation_cw": 52.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 59,
+      "phase": "pause",
+      "tip": [
+        252,
+        129.431
+      ],
+      "grip": [
+        288.189,
+        89.351
+      ],
+      "rotation_cw": 51.502,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 60,
+      "phase": "lower",
+      "tip": [
+        255.889,
+        133.769
+      ],
+      "grip": [
+        290.451,
+        92.278
+      ],
+      "rotation_cw": 49.2173,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 61,
+      "phase": "lower",
+      "tip": [
+        263.111,
+        145.615
+      ],
+      "grip": [
+        295.506,
+        102.411
+      ],
+      "rotation_cw": 46.2854,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 16,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 62,
+      "phase": "write",
+      "tip": [
+        267.0,
+        155.0
+      ],
+      "grip": [
+        297.196,
+        110.232
+      ],
+      "rotation_cw": 43.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 3,
+      "ink_tile": 17,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 63,
+      "phase": "write",
+      "tip": [
+        271.793,
+        157.681
+      ],
+      "grip": [
+        299.213,
+        111.161
+      ],
+      "rotation_cw": 39.9388,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 3,
+      "ink_tile": 18,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 64,
+      "phase": "write",
+      "tip": [
+        278.376,
+        165.013
+      ],
+      "grip": [
+        302.688,
+        116.796
+      ],
+      "rotation_cw": 36.1808,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 3,
+      "ink_tile": 19,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 65,
+      "phase": "write",
+      "tip": [
+        280.0,
+        168.5
+      ],
+      "grip": [
+        302.821,
+        119.559
+      ],
+      "rotation_cw": 34.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": true,
+      "stroke": 3,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 66,
+      "phase": "lift",
+      "tip": [
+        280.222,
+        166.104
+      ],
+      "grip": [
+        303.207,
+        117.24
+      ],
+      "rotation_cw": 34.6148,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 67,
+      "phase": "lift",
+      "tip": [
+        280.778,
+        160.363
+      ],
+      "grip": [
+        304.192,
+        111.703
+      ],
+      "rotation_cw": 35.1188,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 68,
+      "phase": "lift",
+      "tip": [
+        281.5,
+        153.45
+      ],
+      "grip": [
+        305.514,
+        105.083
+      ],
+      "rotation_cw": 35.8268,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 69,
+      "phase": "lift",
+      "tip": [
+        282.222,
+        147.537
+      ],
+      "grip": [
+        306.912,
+        99.512
+      ],
+      "rotation_cw": 36.6308,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 70,
+      "phase": "lift",
+      "tip": [
+        282.778,
+        143.534
+      ],
+      "grip": [
+        308.129,
+        95.855
+      ],
+      "rotation_cw": 37.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 71,
+      "phase": "lift",
+      "tip": [
+        283,
+        141.6
+      ],
+      "grip": [
+        309.18,
+        94.371
+      ],
+      "rotation_cw": 38.4228,
+      "grip_distance": 54,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 72,
+      "phase": "return",
+      "tip": [
+        283.732,
+        139.071
+      ],
+      "grip": [
+        311.467,
+        90.32
+      ],
+      "rotation_cw": 39.0589,
+      "grip_distance": 56.088,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 73,
+      "phase": "return",
+      "tip": [
+        286.014,
+        133.409
+      ],
+      "grip": [
+        316.108,
+        79.314
+      ],
+      "rotation_cw": 38.5106,
+      "grip_distance": 61.902,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 74,
+      "phase": "return",
+      "tip": [
+        290.12,
+        126.225
+      ],
+      "grip": [
+        322.543,
+        63.327
+      ],
+      "rotation_cw": 36.6934,
+      "grip_distance": 70.763,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 75,
+      "phase": "return",
+      "tip": [
+        296.229,
+        119.101
+      ],
+      "grip": [
+        329.71,
+        44.253
+      ],
+      "rotation_cw": 33.5226,
+      "grip_distance": 81.995,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 76,
+      "phase": "return",
+      "tip": [
+        304.188,
+        113.317
+      ],
+      "grip": [
+        336.631,
+        24.115
+      ],
+      "rotation_cw": 29.4093,
+      "grip_distance": 94.919,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 77,
+      "phase": "return",
+      "tip": [
+        313.44,
+        109.817
+      ],
+      "grip": [
+        342.578,
+        4.929
+      ],
+      "rotation_cw": 24.9484,
+      "grip_distance": 108.86,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 78,
+      "phase": "return",
+      "tip": [
+        323.115,
+        109.084
+      ],
+      "grip": [
+        346.416,
+        -11.831
+      ],
+      "rotation_cw": 20.3304,
+      "grip_distance": 123.14,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 79,
+      "phase": "return",
+      "tip": [
+        332.235,
+        111.076
+      ],
+      "grip": [
+        347.332,
+        -25.171
+      ],
+      "rotation_cw": 15.7459,
+      "grip_distance": 137.081,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 80,
+      "phase": "return",
+      "tip": [
+        339.956,
+        115.222
+      ],
+      "grip": [
+        345.094,
+        -34.695
+      ],
+      "rotation_cw": 11.3858,
+      "grip_distance": 150.005,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 81,
+      "phase": "return",
+      "tip": [
+        345.768,
+        120.678
+      ],
+      "grip": [
+        340.19,
+        -40.463
+      ],
+      "rotation_cw": 7.4404,
+      "grip_distance": 161.237,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 82,
+      "phase": "return",
+      "tip": [
+        349.58,
+        126.361
+      ],
+      "grip": [
+        333.802,
+        -43.004
+      ],
+      "rotation_cw": 4.1006,
+      "grip_distance": 170.098,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 83,
+      "phase": "return",
+      "tip": [
+        351.641,
+        130.908
+      ],
+      "grip": [
+        327.567,
+        -43.349
+      ],
+      "rotation_cw": 1.5569,
+      "grip_distance": 175.912,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 84,
+      "phase": "return",
+      "tip": [
+        352.287,
+        133.078
+      ],
+      "grip": [
+        323.145,
+        -42.52
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": false
+    },
+    {
+      "i": 85,
+      "phase": "insert",
+      "tip": [
+        352.712,
+        135.636
+      ],
+      "grip": [
+        323.57,
+        -39.962
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 86,
+      "phase": "insert",
+      "tip": [
+        353.894,
+        142.759
+      ],
+      "grip": [
+        324.752,
+        -32.839
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 87,
+      "phase": "insert",
+      "tip": [
+        355.696,
+        153.615
+      ],
+      "grip": [
+        326.554,
+        -21.983
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 88,
+      "phase": "insert",
+      "tip": [
+        357.979,
+        167.376
+      ],
+      "grip": [
+        328.837,
+        -8.222
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 89,
+      "phase": "insert",
+      "tip": [
+        360.607,
+        183.212
+      ],
+      "grip": [
+        331.465,
+        7.614
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 90,
+      "phase": "insert",
+      "tip": [
+        363.442,
+        200.292
+      ],
+      "grip": [
+        334.3,
+        24.694
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 91,
+      "phase": "insert",
+      "tip": [
+        366.345,
+        217.786
+      ],
+      "grip": [
+        337.203,
+        42.188
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 92,
+      "phase": "insert",
+      "tip": [
+        369.18,
+        234.866
+      ],
+      "grip": [
+        340.038,
+        59.268
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 93,
+      "phase": "insert",
+      "tip": [
+        371.808,
+        250.702
+      ],
+      "grip": [
+        342.666,
+        75.104
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 94,
+      "phase": "insert",
+      "tip": [
+        374.092,
+        264.463
+      ],
+      "grip": [
+        344.95,
+        88.865
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 95,
+      "phase": "insert",
+      "tip": [
+        375.893,
+        275.319
+      ],
+      "grip": [
+        346.751,
+        99.721
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 96,
+      "phase": "insert",
+      "tip": [
+        377.075,
+        282.441
+      ],
+      "grip": [
+        347.933,
+        106.843
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 97,
+      "phase": "insert",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": true,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": false,
+      "loop_in_front": true
+    },
+    {
+      "i": 98,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 99,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 100,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": true,
+      "loop_in_front": true
+    },
+    {
+      "i": 101,
+      "phase": "stowed",
+      "tip": [
+        377.5,
+        285.0
+      ],
+      "grip": [
+        348.358,
+        109.402
+      ],
+      "rotation_cw": 0.0,
+      "grip_distance": 178,
+      "barrel_contact": false,
+      "paper_contact": false,
+      "stroke": null,
+      "ink_tile": 20,
+      "stowed": true,
+      "loop_in_front": true
+    }
+  ]
+}

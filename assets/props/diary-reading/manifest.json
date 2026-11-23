@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "atri-pc-diary-reading",
+  "coordinates": "完整 PNG 左上为原点，x 向右，y 向下。除 originalNovel.messageRectXYWH 外，所有 Rect 都是源像素半开 [left,top,right,bottom)。缩放或 letterbox 后，底图与文字必须使用同一个变换。",
+  "paper": {
+    "file": "open-blank-native.png",
+    "canvas": [
+      1280,
+      960
+    ],
+    "dateRect": [
+      658,
+      275,
+      908,
+      319
+    ],
+    "bodyRect": [
+      649,
+      340,
+      927,
+      708
+    ],
+    "page": "right",
+    "flow": "horizontal-ltr; rows-top-to-bottom",
+    "dateFontPx": 24,
+    "bodyFontPx": 22,
+    "lineHeightPx": 34,
+    "ink": "#443a32",
+    "textSource": "从主线传入日期及正文；推荐先按实际字体测宽换行，再处理超出 bodyRect 的文字。右页只排动态文本，c/d/e 上的字已烘入。",
+    "usage": "这些矩形是桌面书页排版预留区，避开中缝、右侧笔套和页边；游戏原图没有独立的日期输入区。视觉底页是未缩小、未重采样的原作 item039b。"
+  },
+  "originalNovel": {
+    "file": "novel-message-base.png",
+    "canvas": [
+      1280,
+      720
+    ],
+    "archiveLayout": "data.xp3!uipsd/novel.csv",
+    "bindings": "data.xp3!main/novel.func",
+    "messageRectXYWH": [
+      265,
+      47,
+      890,
+      637
+    ],
+    "messageRect": [
+      265,
+      47,
+      1155,
+      684
+    ],
+    "additionalRectsXYWH": {
+      "text2": [
+        265,
+        289,
+        890,
+        141
+      ],
+      "text3": [
+        265,
+        543,
+        890,
+        141
+      ],
+      "clickGlyph": [
+        1155,
+        652,
+        32,
+        32
+      ]
+    },
+    "dateInOriginal": "b402 正文的首行包含日期，脚本保存日期后的换行；原窗口没有单独 date 字段。",
+    "desktopDateRect": [
+      265,
+      47,
+      1155,
+      101
+    ],
+    "desktopBodyRect": [
+      265,
+      112,
+      1155,
+      674
+    ],
+    "flow": "简中横排，行内从左到右，逐行向下。可原样把日期、换行和正文作为一条消息输入整个 messageRect。两个 desktop 矩形仅供主线另绘日期时使用。",
+    "sourceDimensions": "data.xp3!main/Config.tjs 的 scWidth=1280、scHeight=720。此图是通用 novel 消息底板；b402 实际调用它。",
+    "directionEvidence": "main/Config.tjs 的消息层默认 vertical=false；uipsd/novel.csv 给 base.text 位置，main/novel.func 用 eval,elm,margin,base.text 绑定。简中 c/d/e 图上也可直接看到从左到右的横行。",
+    "handwritingManifest": "handwriting/manifest.json",
+    "stickersManifest": "stickers/manifest.json"
+  }
+}

@@ -1,0 +1,1587 @@
+{
+  "schema_version": 1,
+  "id": "right-to-left-single-leaf",
+  "canvas_px": [
+    432,
+    348
+  ],
+  "display_size_px": [
+    72,
+    58
+  ],
+  "pixels_per_logical_pixel": 6,
+  "book_spine_bottom_px": [
+    180,
+    276
+  ],
+  "paper_spine_endpoints_px": [
+    [
+      189,
+      95
+    ],
+    [
+      180,
+      273
+    ]
+  ],
+  "source": {
+    "game": "ATRI -My Dear Moments-",
+    "source_archive": "bgimage.xp3",
+    "front_page": "item/item039c.png",
+    "front_adler32": "be283be1",
+    "verso_and_bed": "item/item039b.png",
+    "verso_adler32": "c6677be2",
+    "front_registration": "../book/open-sparse.png",
+    "verso_registration": "../book/open-blank.png",
+    "registration_manifest": "../book/book.json",
+    "method": "Registered paper only, lifted from the front-right written leaf, mapped over a bending mesh with a separately sampled blank verso. Fixed book, pen, covers and page block use original art. Added sheet shading is exclusive to the moving leaf and its cast shadow."
+  },
+  "coordinate_system": "Intrinsic 432 x 348 pixel positions, origin top left; both paper corners are on the visible edge. The free corner is the boundary intersection of the two moving paper edges. material_corner_inside_px is its nearest visibly covered pixel (alpha at least 200); pinch_px uses that point while the fingers are in contact. All file paths relative to this manifest.",
+  "render_order": [
+    "bed_file",
+    "turning_fingers_behind_sheet",
+    "leaf_front_file",
+    "turning_fingers_in_front_of_sheet"
+  ],
+  "file_usage": "file is the ready-composited book-only frame; for finger occlusion replace it with bed_file + leaf_front_file in the stated render order. The front layer shows the visible surfaces of the complete moving leaf including its verso. Index 0 and 1 share the same page, and 10 and 11 share the landed page.",
+  "frames": [
+    {
+      "frame": 0,
+      "phase": "approach",
+      "label": "接近",
+      "file": "frame-rest-right.png",
+      "bed_file": "bed-rest-right.png",
+      "leaf_front_file": "leaf-rest-right.png",
+      "free_corner_px": [
+        331,
+        270
+      ],
+      "material_corner_inside_px": [
+        330,
+        269
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        307,
+        75
+      ],
+      "back_face_visible_fraction": 0.0,
+      "grip_phase": "approach"
+    },
+    {
+      "frame": 1,
+      "phase": "pinch",
+      "label": "夹住右下页角",
+      "file": "frame-rest-right.png",
+      "bed_file": "bed-rest-right.png",
+      "leaf_front_file": "leaf-rest-right.png",
+      "free_corner_px": [
+        331,
+        270
+      ],
+      "material_corner_inside_px": [
+        330,
+        269
+      ],
+      "pinch_px": [
+        330,
+        269
+      ],
+      "contact": true,
+      "outer_upper_corner_px": [
+        307,
+        75
+      ],
+      "back_face_visible_fraction": 0.0,
+      "grip_phase": "holding"
+    },
+    {
+      "frame": 2,
+      "phase": "lift_corner",
+      "label": "提角",
+      "file": "frame-lift.png",
+      "bed_file": "bed-lift.png",
+      "leaf_front_file": "leaf-lift.png",
+      "free_corner_px": [
+        325,
+        250
+      ],
+      "material_corner_inside_px": [
+        324,
+        249
+      ],
+      "pinch_px": [
+        324,
+        249
+      ],
+      "contact": true,
+      "outer_upper_corner_px": [
+        307,
+        75
+      ],
+      "back_face_visible_fraction": 0.0,
+      "grip_phase": "holding"
+    },
+    {
+      "frame": 3,
+      "phase": "curl",
+      "label": "卷起纸角",
+      "file": "frame-curl.png",
+      "bed_file": "bed-curl.png",
+      "leaf_front_file": "leaf-curl.png",
+      "free_corner_px": [
+        299,
+        216
+      ],
+      "material_corner_inside_px": [
+        298,
+        215
+      ],
+      "pinch_px": [
+        298,
+        215
+      ],
+      "contact": true,
+      "outer_upper_corner_px": [
+        308,
+        74
+      ],
+      "back_face_visible_fraction": 0.0,
+      "grip_phase": "holding"
+    },
+    {
+      "frame": 4,
+      "phase": "lift_sheet",
+      "label": "抬页",
+      "file": "frame-rise.png",
+      "bed_file": "bed-rise.png",
+      "leaf_front_file": "leaf-rise.png",
+      "free_corner_px": [
+        251,
+        190
+      ],
+      "material_corner_inside_px": [
+        251,
+        190
+      ],
+      "pinch_px": [
+        251,
+        190
+      ],
+      "contact": true,
+      "outer_upper_corner_px": [
+        309,
+        68
+      ],
+      "back_face_visible_fraction": 0.0108,
+      "grip_phase": "holding"
+    },
+    {
+      "frame": 5,
+      "phase": "cross_spine",
+      "label": "越过书脊",
+      "file": "frame-cross.png",
+      "bed_file": "bed-cross.png",
+      "leaf_front_file": "leaf-cross.png",
+      "free_corner_px": [
+        193,
+        184
+      ],
+      "material_corner_inside_px": [
+        193,
+        184
+      ],
+      "pinch_px": [
+        193,
+        184
+      ],
+      "contact": true,
+      "outer_upper_corner_px": [
+        296,
+        53
+      ],
+      "back_face_visible_fraction": 0.1071,
+      "grip_phase": "holding"
+    },
+    {
+      "frame": 6,
+      "phase": "turn_over",
+      "label": "翻过",
+      "file": "frame-turn.png",
+      "bed_file": "bed-turn.png",
+      "leaf_front_file": "leaf-turn.png",
+      "free_corner_px": [
+        141,
+        192
+      ],
+      "material_corner_inside_px": [
+        143,
+        190
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        260,
+        43
+      ],
+      "back_face_visible_fraction": 0.6734,
+      "grip_phase": "released"
+    },
+    {
+      "frame": 7,
+      "phase": "lower",
+      "label": "下降",
+      "file": "frame-lower.png",
+      "bed_file": "bed-lower.png",
+      "leaf_front_file": "leaf-lower.png",
+      "free_corner_px": [
+        99,
+        208
+      ],
+      "material_corner_inside_px": [
+        100,
+        206
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        212,
+        35
+      ],
+      "back_face_visible_fraction": 1.0,
+      "grip_phase": "released"
+    },
+    {
+      "frame": 8,
+      "phase": "land_corner",
+      "label": "落向左侧",
+      "file": "frame-land.png",
+      "bed_file": "bed-land.png",
+      "leaf_front_file": "leaf-land.png",
+      "free_corner_px": [
+        63,
+        232
+      ],
+      "material_corner_inside_px": [
+        64,
+        230
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        157,
+        29
+      ],
+      "back_face_visible_fraction": 1.0,
+      "grip_phase": "released"
+    },
+    {
+      "frame": 9,
+      "phase": "settle",
+      "label": "贴页",
+      "file": "frame-settle.png",
+      "bed_file": "bed-settle.png",
+      "leaf_front_file": "leaf-settle.png",
+      "free_corner_px": [
+        51,
+        250
+      ],
+      "material_corner_inside_px": [
+        51,
+        249
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        103,
+        30
+      ],
+      "back_face_visible_fraction": 1.0,
+      "grip_phase": "released"
+    },
+    {
+      "frame": 10,
+      "phase": "landed",
+      "label": "页已落定",
+      "file": "frame-rest-left.png",
+      "bed_file": "../book/open-blank.png",
+      "leaf_front_file": "leaf-rest-left.png",
+      "free_corner_px": [
+        51,
+        250
+      ],
+      "material_corner_inside_px": [
+        51,
+        249
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        97,
+        32
+      ],
+      "back_face_visible_fraction": 1.0,
+      "grip_phase": "released"
+    },
+    {
+      "frame": 11,
+      "phase": "withdraw",
+      "label": "收手",
+      "file": "frame-rest-left.png",
+      "bed_file": "../book/open-blank.png",
+      "leaf_front_file": "leaf-rest-left.png",
+      "free_corner_px": [
+        51,
+        250
+      ],
+      "material_corner_inside_px": [
+        51,
+        249
+      ],
+      "pinch_px": null,
+      "contact": false,
+      "outer_upper_corner_px": [
+        97,
+        32
+      ],
+      "back_face_visible_fraction": 1.0,
+      "grip_phase": "released"
+    }
+  ],
+  "file_checks": {
+    "../book/open-blank.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "f45e11cb99cbdcca9768ff53d774d2f0913b78f749ae777c47aa3aa3c919b9e4"
+    },
+    "bed-cross.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "e4094b133674eaac8581d11aed38efd0bfeaab0ed92d03a7aac6897400edb2b7"
+    },
+    "bed-curl.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "9e71038846ae0c13c43ba2d3b4c12c84f92bfc6c7a90341ea1abb5f30fa48a00"
+    },
+    "bed-land.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "c2cddadaa190efa6b29f87dca9fe93219b3d8d8d2d4fe02ffaea0c8aed7d87f7"
+    },
+    "bed-lift.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "7938933d548c94e24baf4b9f203eb4a4ab94f5d66e0b5076a5a5f8c7f3e7915c"
+    },
+    "bed-lower.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "4f16d71069e872e62994c89fea2a3a0f1b0e8d28d511dcf96ed41f9e039e7417"
+    },
+    "bed-rest-right.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "3aa98fffc8f569376a5aad4b20bfe31f7d49f86e689b6c0c215f71b80e5a944a"
+    },
+    "bed-rise.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "336cc201afc3ec5ead069ca251db077b1c41b6480ab2d474af77eb6c7e61c679"
+    },
+    "bed-settle.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "8f5ce6d466617344893e6f211dc07b3d9bd759c939f6e6946aeed5044c02ff8c"
+    },
+    "bed-turn.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "433dd47180593da78633c6d26c14eb70b122cc32b11ca7112f0b7124981a2a61"
+    },
+    "frame-cross.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "4f2ac4124eb197bdc4ec4ff05cb4b9ca4d07733509c79606ffb977eb8f051afa"
+    },
+    "frame-curl.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "2be16094448725611b629c9e11189fdb7325a73bf904dc09dffd31034b61397f"
+    },
+    "frame-land.png": {
+      "alpha_bbox_px": [
+        21,
+        27,
+        381,
+        315
+      ],
+      "sha256": "6651f32f83203f708f544efd5da7dd5aa2213d5c2ec01b38e8677f5269d87739"
+    },
+    "frame-lift.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "aa4e16d5ab04db8f9ec30d3665a22097d2996714d419b869ebfe34bbecf18c7f"
+    },
+    "frame-lower.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "2fab6d5a45183e66ef73d58778f19fe848a2aeb5200f007463db0e9e8d51a99f"
+    },
+    "frame-rest-left.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "f45e11cb99cbdcca9768ff53d774d2f0913b78f749ae777c47aa3aa3c919b9e4"
+    },
+    "frame-rest-right.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "b035e43ffed14e46a766e6448b3c4541dc08a337004b7782d610ef4959f39ccc"
+    },
+    "frame-rise.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "1ddc1e31260be9f5d012294a4dc34ff0799ac41366f7346d378277b43d45191f"
+    },
+    "frame-settle.png": {
+      "alpha_bbox_px": [
+        21,
+        28,
+        381,
+        315
+      ],
+      "sha256": "3dcae19406f5d0b707d6a7c87821ed2e026e74a86cab3a1cc965410ceff5adc6"
+    },
+    "frame-turn.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "b94143bef06a67bf975fb026d60f4cc24177bf7a828e79d00f7ee2c56ea99df4"
+    },
+    "leaf-cross.png": {
+      "alpha_bbox_px": [
+        177,
+        47,
+        298,
+        275
+      ],
+      "sha256": "7044f9f1c2b3de42af7322a4eb5eda3ec58c30cbfe8dc84bb02a8f840526888b"
+    },
+    "leaf-curl.png": {
+      "alpha_bbox_px": [
+        177,
+        67,
+        311,
+        275
+      ],
+      "sha256": "230f3bf401e0d2a88a8e7e696e0d9886a6e40c73fc2a91d9f98246ab1cd07088"
+    },
+    "leaf-land.png": {
+      "alpha_bbox_px": [
+        61,
+        27,
+        195,
+        275
+      ],
+      "sha256": "629e5fd6334c040214d73bbf5d1ac838aba964166979a52db03c82f034d00caa"
+    },
+    "leaf-lift.png": {
+      "alpha_bbox_px": [
+        177,
+        70,
+        328,
+        276
+      ],
+      "sha256": "994fbb136eb54b09adab48cd34c9b79750508df86f2075408fa7dad1f214e947"
+    },
+    "leaf-lower.png": {
+      "alpha_bbox_px": [
+        97,
+        32,
+        232,
+        269
+      ],
+      "sha256": "f3d6ef497b88bd478659ceeb91a37bbb92f2c19bb61b3e7cef071e12fc047680"
+    },
+    "leaf-rest-left.png": {
+      "alpha_bbox_px": [
+        48,
+        32,
+        192,
+        276
+      ],
+      "sha256": "b74f860b6045c1e7e737454b6e26cb7a2109beb4443a2fc1998c7d8b9681ce23"
+    },
+    "leaf-rest-right.png": {
+      "alpha_bbox_px": [
+        177,
+        73,
+        334,
+        276
+      ],
+      "sha256": "77fa96e0e2e89d550eab12ef5320b967f3dfaa52baf610a6e4c95326eb4d4f58"
+    },
+    "leaf-rise.png": {
+      "alpha_bbox_px": [
+        177,
+        61,
+        311,
+        275
+      ],
+      "sha256": "085b78b6cbae0a122dcfae9c008331c8f9824708fc35c00c3a50590c525beaf3"
+    },
+    "leaf-settle.png": {
+      "alpha_bbox_px": [
+        48,
+        28,
+        192,
+        276
+      ],
+      "sha256": "46135d93aa0a0b60534e5e8c56e1e9ce8ab9ab087fc1b365b0ab6b6361f6bf12"
+    },
+    "leaf-turn.png": {
+      "alpha_bbox_px": [
+        139,
+        40,
+        269,
+        275
+      ],
+      "sha256": "d30c6b3c70c7a926b37186dd1d07f82926124e40c005d9b4e80f75534b671734"
+    },
+    "bed-24fps.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        2973,
+        1359
+      ],
+      "sha256": "f48bdbe014123d6c683f70a46afde8f1b55e5df660602a5b8f96cebdc3e84d82",
+      "atlas_size_px": [
+        3024,
+        1392
+      ]
+    },
+    "leaf-24fps.png": {
+      "alpha_bbox_px": [
+        61,
+        67,
+        2903,
+        1320
+      ],
+      "sha256": "d6a4a28bcaa518bf1bb6bd7936a214efc999e7b947391c12fba0ff08d392211c",
+      "atlas_size_px": [
+        3024,
+        1392
+      ]
+    }
+  },
+  "motion_24fps": {
+    "fps": 24,
+    "frames_count": 34,
+    "duration_ms": 1416.667,
+    "keyframe_indices": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33
+    ],
+    "tile_size_px": [
+      432,
+      348
+    ],
+    "tile_grid": [
+      7,
+      4
+    ],
+    "atlas_files": {
+      "bed_file": "bed-24fps.png",
+      "leaf_front_file": "leaf-24fps.png"
+    },
+    "frames": [
+      {
+        "index": 0,
+        "key_position": 0.0,
+        "t_ms": 0.0,
+        "phase": "approach",
+        "atlas_tile": 0,
+        "atlas_rect_px": [
+          0,
+          0,
+          432,
+          348
+        ],
+        "free_corner_px": [
+          331.0,
+          270.0
+        ],
+        "material_corner_inside_px": [
+          330,
+          269
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "approach"
+      },
+      {
+        "index": 1,
+        "key_position": 0.333333,
+        "t_ms": 41.667,
+        "phase": "approach",
+        "atlas_tile": 0,
+        "atlas_rect_px": [
+          0,
+          0,
+          432,
+          348
+        ],
+        "free_corner_px": [
+          331.0,
+          270.0
+        ],
+        "material_corner_inside_px": [
+          330,
+          269
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "approach"
+      },
+      {
+        "index": 2,
+        "key_position": 0.666667,
+        "t_ms": 83.333,
+        "phase": "approach",
+        "atlas_tile": 0,
+        "atlas_rect_px": [
+          0,
+          0,
+          432,
+          348
+        ],
+        "free_corner_px": [
+          331.0,
+          270.0
+        ],
+        "material_corner_inside_px": [
+          330,
+          269
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "approach"
+      },
+      {
+        "index": 3,
+        "key_position": 1.0,
+        "t_ms": 125.0,
+        "phase": "pinch",
+        "atlas_tile": 0,
+        "atlas_rect_px": [
+          0,
+          0,
+          432,
+          348
+        ],
+        "free_corner_px": [
+          331.0,
+          270.0
+        ],
+        "material_corner_inside_px": [
+          330,
+          269
+        ],
+        "pinch_px": [
+          330,
+          269
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 4,
+        "key_position": 1.333333,
+        "t_ms": 166.667,
+        "phase": "pinch",
+        "atlas_tile": 1,
+        "atlas_rect_px": [
+          432,
+          0,
+          864,
+          348
+        ],
+        "free_corner_px": [
+          330.167,
+          266.68
+        ],
+        "material_corner_inside_px": [
+          329,
+          265
+        ],
+        "pinch_px": [
+          329,
+          265
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 5,
+        "key_position": 1.666667,
+        "t_ms": 208.333,
+        "phase": "pinch",
+        "atlas_tile": 2,
+        "atlas_rect_px": [
+          864,
+          0,
+          1296,
+          348
+        ],
+        "free_corner_px": [
+          328.0,
+          258.916
+        ],
+        "material_corner_inside_px": [
+          327,
+          258
+        ],
+        "pinch_px": [
+          327,
+          258
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 6,
+        "key_position": 2.0,
+        "t_ms": 250.0,
+        "phase": "lift_corner",
+        "atlas_tile": 3,
+        "atlas_rect_px": [
+          1296,
+          0,
+          1728,
+          348
+        ],
+        "free_corner_px": [
+          325.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          324,
+          249
+        ],
+        "pinch_px": [
+          324,
+          249
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 7,
+        "key_position": 2.333333,
+        "t_ms": 291.667,
+        "phase": "lift_corner",
+        "atlas_tile": 4,
+        "atlas_rect_px": [
+          1728,
+          0,
+          2160,
+          348
+        ],
+        "free_corner_px": [
+          319.313,
+          239.637
+        ],
+        "material_corner_inside_px": [
+          318,
+          238
+        ],
+        "pinch_px": [
+          318,
+          238
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 8,
+        "key_position": 2.666667,
+        "t_ms": 333.333,
+        "phase": "lift_corner",
+        "atlas_tile": 5,
+        "atlas_rect_px": [
+          2160,
+          0,
+          2592,
+          348
+        ],
+        "free_corner_px": [
+          310.016,
+          227.315
+        ],
+        "material_corner_inside_px": [
+          309,
+          226
+        ],
+        "pinch_px": [
+          309,
+          226
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 9,
+        "key_position": 3.0,
+        "t_ms": 375.0,
+        "phase": "curl",
+        "atlas_tile": 6,
+        "atlas_rect_px": [
+          2592,
+          0,
+          3024,
+          348
+        ],
+        "free_corner_px": [
+          299.0,
+          216.0
+        ],
+        "material_corner_inside_px": [
+          298,
+          215
+        ],
+        "pinch_px": [
+          298,
+          215
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 10,
+        "key_position": 3.333333,
+        "t_ms": 416.667,
+        "phase": "curl",
+        "atlas_tile": 7,
+        "atlas_rect_px": [
+          0,
+          348,
+          432,
+          696
+        ],
+        "free_corner_px": [
+          285.45,
+          205.616
+        ],
+        "material_corner_inside_px": [
+          284,
+          205
+        ],
+        "pinch_px": [
+          284,
+          205
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 11,
+        "key_position": 3.666667,
+        "t_ms": 458.333,
+        "phase": "curl",
+        "atlas_tile": 8,
+        "atlas_rect_px": [
+          432,
+          348,
+          864,
+          696
+        ],
+        "free_corner_px": [
+          268.728,
+          196.002
+        ],
+        "material_corner_inside_px": [
+          269,
+          196
+        ],
+        "pinch_px": [
+          269,
+          196
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0027,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 12,
+        "key_position": 4.0,
+        "t_ms": 500.0,
+        "phase": "lift_sheet",
+        "atlas_tile": 9,
+        "atlas_rect_px": [
+          864,
+          348,
+          1296,
+          696
+        ],
+        "free_corner_px": [
+          251.0,
+          190.0
+        ],
+        "material_corner_inside_px": [
+          251,
+          190
+        ],
+        "pinch_px": [
+          251,
+          190
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0108,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 13,
+        "key_position": 4.333333,
+        "t_ms": 541.667,
+        "phase": "lift_sheet",
+        "atlas_tile": 10,
+        "atlas_rect_px": [
+          1296,
+          348,
+          1728,
+          696
+        ],
+        "free_corner_px": [
+          232.243,
+          187.0
+        ],
+        "material_corner_inside_px": [
+          232,
+          187
+        ],
+        "pinch_px": [
+          232,
+          187
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0234,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 14,
+        "key_position": 4.666667,
+        "t_ms": 583.333,
+        "phase": "lift_sheet",
+        "atlas_tile": 11,
+        "atlas_rect_px": [
+          1728,
+          348,
+          2160,
+          696
+        ],
+        "free_corner_px": [
+          212.27,
+          184.833
+        ],
+        "material_corner_inside_px": [
+          212,
+          185
+        ],
+        "pinch_px": [
+          212,
+          185
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.0501,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 15,
+        "key_position": 5.0,
+        "t_ms": 625.0,
+        "phase": "cross_spine",
+        "atlas_tile": 12,
+        "atlas_rect_px": [
+          2160,
+          348,
+          2592,
+          696
+        ],
+        "free_corner_px": [
+          193.0,
+          184.0
+        ],
+        "material_corner_inside_px": [
+          193,
+          184
+        ],
+        "pinch_px": [
+          193,
+          184
+        ],
+        "contact": true,
+        "back_face_visible_fraction": 0.1071,
+        "grip_phase": "holding"
+      },
+      {
+        "index": 16,
+        "key_position": 5.333333,
+        "t_ms": 666.667,
+        "phase": "cross_spine",
+        "atlas_tile": 13,
+        "atlas_rect_px": [
+          2592,
+          348,
+          3024,
+          696
+        ],
+        "free_corner_px": [
+          174.837,
+          185.284
+        ],
+        "material_corner_inside_px": [
+          176,
+          184
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.2141,
+        "grip_phase": "releasing"
+      },
+      {
+        "index": 17,
+        "key_position": 5.666667,
+        "t_ms": 708.333,
+        "phase": "cross_spine",
+        "atlas_tile": 14,
+        "atlas_rect_px": [
+          0,
+          696,
+          432,
+          1044
+        ],
+        "free_corner_px": [
+          157.304,
+          188.346
+        ],
+        "material_corner_inside_px": [
+          158,
+          187
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.4039,
+        "grip_phase": "releasing"
+      },
+      {
+        "index": 18,
+        "key_position": 6.0,
+        "t_ms": 750.0,
+        "phase": "turn_over",
+        "atlas_tile": 15,
+        "atlas_rect_px": [
+          432,
+          696,
+          864,
+          1044
+        ],
+        "free_corner_px": [
+          141.0,
+          192.0
+        ],
+        "material_corner_inside_px": [
+          143,
+          190
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.6734,
+        "grip_phase": "released"
+      },
+      {
+        "index": 19,
+        "key_position": 6.333333,
+        "t_ms": 791.667,
+        "phase": "turn_over",
+        "atlas_tile": 16,
+        "atlas_rect_px": [
+          864,
+          696,
+          1296,
+          1044
+        ],
+        "free_corner_px": [
+          126.099,
+          196.306
+        ],
+        "material_corner_inside_px": [
+          128,
+          194
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.9153,
+        "grip_phase": "released"
+      },
+      {
+        "index": 20,
+        "key_position": 6.666667,
+        "t_ms": 833.333,
+        "phase": "turn_over",
+        "atlas_tile": 17,
+        "atlas_rect_px": [
+          1296,
+          696,
+          1728,
+          1044
+        ],
+        "free_corner_px": [
+          112.19,
+          201.798
+        ],
+        "material_corner_inside_px": [
+          113,
+          200
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 0.9983,
+        "grip_phase": "released"
+      },
+      {
+        "index": 21,
+        "key_position": 7.0,
+        "t_ms": 875.0,
+        "phase": "lower",
+        "atlas_tile": 18,
+        "atlas_rect_px": [
+          1728,
+          696,
+          2160,
+          1044
+        ],
+        "free_corner_px": [
+          99.0,
+          208.0
+        ],
+        "material_corner_inside_px": [
+          100,
+          206
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 22,
+        "key_position": 7.333333,
+        "t_ms": 916.667,
+        "phase": "lower",
+        "atlas_tile": 19,
+        "atlas_rect_px": [
+          2160,
+          696,
+          2592,
+          1044
+        ],
+        "free_corner_px": [
+          85.256,
+          215.543
+        ],
+        "material_corner_inside_px": [
+          86,
+          214
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 23,
+        "key_position": 7.666667,
+        "t_ms": 958.333,
+        "phase": "lower",
+        "atlas_tile": 20,
+        "atlas_rect_px": [
+          2592,
+          696,
+          3024,
+          1044
+        ],
+        "free_corner_px": [
+          72.128,
+          224.152
+        ],
+        "material_corner_inside_px": [
+          73,
+          223
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 24,
+        "key_position": 8.0,
+        "t_ms": 1000.0,
+        "phase": "land_corner",
+        "atlas_tile": 21,
+        "atlas_rect_px": [
+          0,
+          1044,
+          432,
+          1392
+        ],
+        "free_corner_px": [
+          63.0,
+          232.0
+        ],
+        "material_corner_inside_px": [
+          64,
+          230
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 25,
+        "key_position": 8.333333,
+        "t_ms": 1041.667,
+        "phase": "land_corner",
+        "atlas_tile": 22,
+        "atlas_rect_px": [
+          432,
+          1044,
+          864,
+          1392
+        ],
+        "free_corner_px": [
+          57.222,
+          239.714
+        ],
+        "material_corner_inside_px": [
+          58,
+          238
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 26,
+        "key_position": 8.666667,
+        "t_ms": 1083.333,
+        "phase": "land_corner",
+        "atlas_tile": 23,
+        "atlas_rect_px": [
+          864,
+          1044,
+          1296,
+          1392
+        ],
+        "free_corner_px": [
+          52.778,
+          246.857
+        ],
+        "material_corner_inside_px": [
+          53,
+          246
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 27,
+        "key_position": 9.0,
+        "t_ms": 1125.0,
+        "phase": "settle",
+        "atlas_tile": 24,
+        "atlas_rect_px": [
+          1296,
+          1044,
+          1728,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 28,
+        "key_position": 9.333333,
+        "t_ms": 1166.667,
+        "phase": "settle",
+        "atlas_tile": 25,
+        "atlas_rect_px": [
+          1728,
+          1044,
+          2160,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 29,
+        "key_position": 9.666667,
+        "t_ms": 1208.333,
+        "phase": "settle",
+        "atlas_tile": 26,
+        "atlas_rect_px": [
+          2160,
+          1044,
+          2592,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 30,
+        "key_position": 10.0,
+        "t_ms": 1250.0,
+        "phase": "landed",
+        "atlas_tile": 27,
+        "atlas_rect_px": [
+          2592,
+          1044,
+          3024,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 31,
+        "key_position": 10.333333,
+        "t_ms": 1291.667,
+        "phase": "landed",
+        "atlas_tile": 27,
+        "atlas_rect_px": [
+          2592,
+          1044,
+          3024,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 32,
+        "key_position": 10.666667,
+        "t_ms": 1333.333,
+        "phase": "landed",
+        "atlas_tile": 27,
+        "atlas_rect_px": [
+          2592,
+          1044,
+          3024,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      },
+      {
+        "index": 33,
+        "key_position": 11.0,
+        "t_ms": 1375.0,
+        "phase": "withdraw",
+        "atlas_tile": 27,
+        "atlas_rect_px": [
+          2592,
+          1044,
+          3024,
+          1392
+        ],
+        "free_corner_px": [
+          51.0,
+          250.0
+        ],
+        "material_corner_inside_px": [
+          51,
+          249
+        ],
+        "pinch_px": null,
+        "contact": false,
+        "back_face_visible_fraction": 1.0,
+        "grip_phase": "released"
+      }
+    ],
+    "sampling": "Three equally timed samples per original keyframe interval; piecewise shape-preserving cubic interpolation of the corner path, curl and rise guides, with a fresh texture projection and depth ordering at every moving sample. Endpoint holds reuse the same atlas tile. Composite the two atlas tiles around the turning fingers using the order above."
+  },
+  "contact_timing": {
+    "fps": 24,
+    "hand_manifest": "../action-hand/turn/turn.json",
+    "contact_indices_inclusive": [
+      3,
+      15
+    ],
+    "releasing_indices_inclusive": [
+      16,
+      17
+    ],
+    "fully_released_from_index": 18,
+    "note": "contact mirrors stages.turn[i].on_page. Fingers begin opening at 16. Index 18 onward has no remaining pinch; the released leaf continues to the left. material_corner_inside_px is valid through landing."
+  }
+}

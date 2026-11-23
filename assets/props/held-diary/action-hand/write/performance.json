@@ -1,0 +1,9102 @@
+{
+  "schema_version": 1,
+  "dress": "d1",
+  "pose": "p1",
+  "fps": 24,
+  "canvas_px": [
+    666,
+    1706
+  ],
+  "coordinate_space": "Unpadded d1/p1 native actor pixels. Draw atlas rect [left,top,right,bottom) at actor xy. All image paths relative to this file.",
+  "hand_source": "hand.json",
+  "pen_manifest": "../../pen-write/write.json",
+  "rest_repair": "../turn/turn.json#rest_patch",
+  "atlases": {
+    "sleeve": [
+      "sleeve-motion-wrist-01.webp",
+      "sleeve-motion-wrist-02.webp",
+      "sleeve-motion-wrist-03.webp"
+    ],
+    "far": [
+      "far-motion-wrist-01.webp"
+    ],
+    "near": [
+      "near-motion-wrist-01.webp"
+    ]
+  },
+  "stages": {
+    "reach": [
+      {
+        "stage": "reach",
+        "local_frame": 0,
+        "prop_frame": 0,
+        "original_rest": true,
+        "wrist_px": [
+          627.0,
+          980.0
+        ],
+        "angle_cw": -145.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": null,
+        "far": null,
+        "near": null
+      },
+      {
+        "stage": "reach",
+        "local_frame": 1,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          622.488,
+          975.656
+        ],
+        "angle_cw": -143.461,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            2,
+            215,
+            487
+          ],
+          "xy": [
+            427,
+            525
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            2,
+            44,
+            50
+          ],
+          "xy": [
+            613,
+            957
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 2,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          609.736,
+          963.41
+        ],
+        "angle_cw": -139.113,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            2,
+            534,
+            473
+          ],
+          "xy": [
+            428,
+            526
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            2,
+            126,
+            50
+          ],
+          "xy": [
+            599,
+            945
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 3,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          589.922,
+          944.631
+        ],
+        "angle_cw": -132.357,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            2,
+            850,
+            453
+          ],
+          "xy": [
+            428,
+            526
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            2,
+            205,
+            51
+          ],
+          "xy": [
+            578,
+            930
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 4,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          564.223,
+          921.164
+        ],
+        "angle_cw": -123.594,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            2,
+            1159,
+            427
+          ],
+          "xy": [
+            429,
+            526
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            2,
+            286,
+            51
+          ],
+          "xy": [
+            551,
+            912
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 5,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          533.815,
+          895.477
+        ],
+        "angle_cw": -113.225,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            2,
+            1463,
+            396
+          ],
+          "xy": [
+            430,
+            527
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            2,
+            368,
+            65
+          ],
+          "xy": [
+            519,
+            883
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 6,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          499.876,
+          870.515
+        ],
+        "angle_cw": -101.652,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            2,
+            1799,
+            367
+          ],
+          "xy": [
+            406,
+            527
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            2,
+            452,
+            79
+          ],
+          "xy": [
+            482,
+            854
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 7,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          463.583,
+          849.23
+        ],
+        "angle_cw": -89.277,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            2,
+            2155,
+            340
+          ],
+          "xy": [
+            376,
+            528
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            2,
+            48,
+            83
+          ],
+          "xy": [
+            440,
+            832
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            2,
+            530,
+            60
+          ],
+          "xy": [
+            440,
+            858
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 8,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          426.113,
+          833.928
+        ],
+        "angle_cw": -76.5,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            2,
+            2508,
+            320
+          ],
+          "xy": [
+            348,
+            530
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            2,
+            165,
+            93
+          ],
+          "xy": [
+            394,
+            812
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            2,
+            609,
+            63
+          ],
+          "xy": [
+            394,
+            841
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 9,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          388.643,
+          825.701
+        ],
+        "angle_cw": -63.723,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            2,
+            2863,
+            309
+          ],
+          "xy": [
+            322,
+            532
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            2,
+            290,
+            98
+          ],
+          "xy": [
+            348,
+            801
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            2,
+            690,
+            66
+          ],
+          "xy": [
+            345,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 10,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          352.35,
+          824.196
+        ],
+        "angle_cw": -51.348,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            495,
+            228,
+            804
+          ],
+          "xy": [
+            297,
+            534
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            2,
+            414,
+            98
+          ],
+          "xy": [
+            303,
+            797
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            83,
+            45,
+            145
+          ],
+          "xy": [
+            295,
+            823
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 11,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          318.411,
+          827.847
+        ],
+        "angle_cw": -39.775,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            495,
+            578,
+            815
+          ],
+          "xy": [
+            274,
+            537
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            2,
+            537,
+            96
+          ],
+          "xy": [
+            261,
+            799
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            83,
+            134,
+            144
+          ],
+          "xy": [
+            250,
+            822
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 12,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          288.004,
+          834.44
+        ],
+        "angle_cw": -29.406,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            495,
+            925,
+            828
+          ],
+          "xy": [
+            253,
+            540
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            2,
+            657,
+            89
+          ],
+          "xy": [
+            224,
+            805
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            83,
+            225,
+            143
+          ],
+          "xy": [
+            210,
+            825
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 13,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          262.304,
+          841.77
+        ],
+        "angle_cw": -20.643,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            495,
+            1269,
+            840
+          ],
+          "xy": [
+            235,
+            543
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            2,
+            779,
+            82
+          ],
+          "xy": [
+            190,
+            812
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            83,
+            313,
+            143
+          ],
+          "xy": [
+            178,
+            827
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 14,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          242.49,
+          848.106
+        ],
+        "angle_cw": -13.887,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            495,
+            1610,
+            850
+          ],
+          "xy": [
+            221,
+            545
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            2,
+            897,
+            75
+          ],
+          "xy": [
+            164,
+            819
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            83,
+            399,
+            143
+          ],
+          "xy": [
+            154,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 15,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          229.739,
+          852.345
+        ],
+        "angle_cw": -9.539,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            495,
+            1949,
+            856
+          ],
+          "xy": [
+            211,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            2,
+            1013,
+            69
+          ],
+          "xy": [
+            148,
+            824
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            83,
+            483,
+            143
+          ],
+          "xy": [
+            139,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "reach",
+        "local_frame": 16,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            102,
+            110,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            83,
+            565,
+            143
+          ],
+          "xy": [
+            134,
+            828
+          ]
+        }
+      }
+    ],
+    "write": [
+      {
+        "stage": "write",
+        "local_frame": 0,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            102,
+            110,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            83,
+            565,
+            143
+          ],
+          "xy": [
+            134,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 1,
+        "prop_frame": 1,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 2,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            102,
+            223,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            83,
+            644,
+            141
+          ],
+          "xy": [
+            136,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 2,
+        "prop_frame": 2,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 6,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            102,
+            334,
+            167
+          ],
+          "xy": [
+            144,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            83,
+            723,
+            139
+          ],
+          "xy": [
+            138,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 3,
+        "prop_frame": 3,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 10,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            102,
+            446,
+            167
+          ],
+          "xy": [
+            145,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            164,
+            72,
+            217
+          ],
+          "xy": [
+            141,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 4,
+        "prop_frame": 4,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          156.743,
+          869.54
+        ],
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            102,
+            558,
+            167
+          ],
+          "xy": [
+            146,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            164,
+            152,
+            216
+          ],
+          "xy": [
+            142,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 5,
+        "prop_frame": 5,
+        "original_rest": false,
+        "wrist_px": [
+          224.917,
+          851.991
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          156.433,
+          867.674
+        ],
+        "tip_actor_px": [
+          177.679,
+          995.696
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            495,
+            2615,
+            857
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            102,
+            672,
+            167
+          ],
+          "xy": [
+            145,
+            824
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            164,
+            233,
+            215
+          ],
+          "xy": [
+            142,
+            827
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.413,
+          759.789
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 6,
+        "prop_frame": 6,
+        "original_rest": false,
+        "wrist_px": [
+          224.055,
+          846.798
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          155.571,
+          862.482
+        ],
+        "tip_actor_px": [
+          176.818,
+          990.504
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            495,
+            2945,
+            852
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            102,
+            784,
+            167
+          ],
+          "xy": [
+            145,
+            819
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            164,
+            314,
+            216
+          ],
+          "xy": [
+            141,
+            821
+          ]
+        },
+        "elbow_guide_actor_px": [
+          440.451,
+          758.099
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 7,
+        "prop_frame": 7,
+        "original_rest": false,
+        "wrist_px": [
+          222.742,
+          838.884
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          154.258,
+          854.567
+        ],
+        "tip_actor_px": [
+          175.505,
+          982.589
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            988,
+            288,
+            1338
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            102,
+            898,
+            167
+          ],
+          "xy": [
+            143,
+            811
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            164,
+            395,
+            216
+          ],
+          "xy": [
+            140,
+            813
+          ]
+        },
+        "elbow_guide_actor_px": [
+          438.946,
+          755.551
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 8,
+        "prop_frame": 8,
+        "original_rest": false,
+        "wrist_px": [
+          221.077,
+          828.851
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          152.593,
+          844.535
+        ],
+        "tip_actor_px": [
+          173.84,
+          972.556
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            988,
+            619,
+            1327
+          ],
+          "xy": [
+            208,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            102,
+            1010,
+            167
+          ],
+          "xy": [
+            142,
+            801
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            164,
+            476,
+            216
+          ],
+          "xy": [
+            138,
+            803
+          ]
+        },
+        "elbow_guide_actor_px": [
+          436.966,
+          752.371
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 9,
+        "prop_frame": 9,
+        "original_rest": false,
+        "wrist_px": [
+          219.161,
+          817.306
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          150.677,
+          832.989
+        ],
+        "tip_actor_px": [
+          171.924,
+          961.011
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            988,
+            949,
+            1316
+          ],
+          "xy": [
+            208,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            202,
+            107,
+            266
+          ],
+          "xy": [
+            139,
+            790
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            164,
+            557,
+            215
+          ],
+          "xy": [
+            136,
+            792
+          ]
+        },
+        "elbow_guide_actor_px": [
+          434.583,
+          748.78
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 10,
+        "prop_frame": 10,
+        "original_rest": false,
+        "wrist_px": [
+          217.094,
+          804.853
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          148.61,
+          820.537
+        ],
+        "tip_actor_px": [
+          169.857,
+          948.559
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            988,
+            1281,
+            1304
+          ],
+          "xy": [
+            207,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            202,
+            219,
+            267
+          ],
+          "xy": [
+            138,
+            777
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            164,
+            638,
+            216
+          ],
+          "xy": [
+            134,
+            779
+          ]
+        },
+        "elbow_guide_actor_px": [
+          431.876,
+          744.988
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 11,
+        "prop_frame": 11,
+        "original_rest": false,
+        "wrist_px": [
+          214.978,
+          792.099
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          146.494,
+          807.783
+        ],
+        "tip_actor_px": [
+          167.74,
+          935.804
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            988,
+            1612,
+            1292
+          ],
+          "xy": [
+            206,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            202,
+            333,
+            267
+          ],
+          "xy": [
+            135,
+            764
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            164,
+            719,
+            215
+          ],
+          "xy": [
+            132,
+            767
+          ]
+        },
+        "elbow_guide_actor_px": [
+          428.944,
+          741.188
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 12,
+        "prop_frame": 12,
+        "original_rest": false,
+        "wrist_px": [
+          212.911,
+          779.647
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          144.427,
+          795.331
+        ],
+        "tip_actor_px": [
+          165.673,
+          923.352
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            988,
+            1942,
+            1281
+          ],
+          "xy": [
+            205,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            202,
+            446,
+            267
+          ],
+          "xy": [
+            133,
+            752
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            245,
+            71,
+            296
+          ],
+          "xy": [
+            130,
+            754
+          ]
+        },
+        "elbow_guide_actor_px": [
+          425.912,
+          737.558
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 13,
+        "prop_frame": 13,
+        "original_rest": false,
+        "wrist_px": [
+          210.995,
+          768.101
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          142.511,
+          783.785
+        ],
+        "tip_actor_px": [
+          163.757,
+          911.807
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            988,
+            2273,
+            1270
+          ],
+          "xy": [
+            204,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            202,
+            559,
+            267
+          ],
+          "xy": [
+            131,
+            740
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            245,
+            152,
+            296
+          ],
+          "xy": [
+            128,
+            743
+          ]
+        },
+        "elbow_guide_actor_px": [
+          422.939,
+          734.256
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 14,
+        "prop_frame": 14,
+        "original_rest": false,
+        "wrist_px": [
+          209.33,
+          758.069
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          140.847,
+          773.753
+        ],
+        "tip_actor_px": [
+          162.093,
+          901.774
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            988,
+            2605,
+            1260
+          ],
+          "xy": [
+            202,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            202,
+            672,
+            267
+          ],
+          "xy": [
+            130,
+            730
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            245,
+            233,
+            296
+          ],
+          "xy": [
+            126,
+            733
+          ]
+        },
+        "elbow_guide_actor_px": [
+          420.222,
+          731.432
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 15,
+        "prop_frame": 15,
+        "original_rest": false,
+        "wrist_px": [
+          208.017,
+          750.154
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          139.533,
+          765.838
+        ],
+        "tip_actor_px": [
+          160.779,
+          893.859
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            988,
+            2937,
+            1253
+          ],
+          "xy": [
+            201,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            202,
+            785,
+            267
+          ],
+          "xy": [
+            128,
+            722
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            245,
+            314,
+            296
+          ],
+          "xy": [
+            125,
+            725
+          ]
+        },
+        "elbow_guide_actor_px": [
+          417.985,
+          729.231
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 16,
+        "prop_frame": 16,
+        "original_rest": false,
+        "wrist_px": [
+          207.155,
+          744.961
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          138.671,
+          760.645
+        ],
+        "tip_actor_px": [
+          159.917,
+          888.666
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            1481,
+            281,
+            1741
+          ],
+          "xy": [
+            200,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            202,
+            897,
+            267
+          ],
+          "xy": [
+            128,
+            717
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            245,
+            395,
+            296
+          ],
+          "xy": [
+            124,
+            720
+          ]
+        },
+        "elbow_guide_actor_px": [
+          416.471,
+          727.798
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 17,
+        "prop_frame": 17,
+        "original_rest": false,
+        "wrist_px": [
+          206.845,
+          743.096
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          138.361,
+          758.78
+        ],
+        "tip_actor_px": [
+          159.608,
+          886.801
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            1481,
+            614,
+            1739
+          ],
+          "xy": [
+            200,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            202,
+            1011,
+            267
+          ],
+          "xy": [
+            127,
+            715
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            245,
+            476,
+            296
+          ],
+          "xy": [
+            124,
+            718
+          ]
+        },
+        "elbow_guide_actor_px": [
+          418.279,
+          726.639
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 18,
+        "prop_frame": 18,
+        "original_rest": false,
+        "wrist_px": [
+          209.775,
+          744.195
+        ],
+        "angle_cw": -7.76,
+        "grip_level": 12,
+        "grip_actor_px": [
+          141.226,
+          759.592
+        ],
+        "tip_actor_px": [
+          159.01,
+          885.01
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            1481,
+            942,
+            1740
+          ],
+          "xy": [
+            203,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            302,
+            107,
+            366
+          ],
+          "xy": [
+            130,
+            717
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            245,
+            557,
+            296
+          ],
+          "xy": [
+            127,
+            719
+          ]
+        },
+        "elbow_guide_actor_px": [
+          417.462,
+          727.355
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 19,
+        "prop_frame": 19,
+        "original_rest": false,
+        "wrist_px": [
+          215.78,
+          748.422
+        ],
+        "angle_cw": -7.123,
+        "grip_level": 12,
+        "grip_actor_px": [
+          147.064,
+          763.056
+        ],
+        "tip_actor_px": [
+          156.243,
+          881.063
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            1481,
+            1270,
+            1744
+          ],
+          "xy": [
+            209,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            302,
+            220,
+            366
+          ],
+          "xy": [
+            136,
+            721
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            245,
+            638,
+            296
+          ],
+          "xy": [
+            133,
+            722
+          ]
+        },
+        "elbow_guide_actor_px": [
+          420.113,
+          727.169
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 20,
+        "prop_frame": 20,
+        "original_rest": false,
+        "wrist_px": [
+          220.041,
+          757.542
+        ],
+        "angle_cw": -6.212,
+        "grip_level": 12,
+        "grip_actor_px": [
+          151.101,
+          771.082
+        ],
+        "tip_actor_px": [
+          149.62,
+          877.407
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            1481,
+            1601,
+            1753
+          ],
+          "xy": [
+            213,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            302,
+            333,
+            366
+          ],
+          "xy": [
+            140,
+            729
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            245,
+            720,
+            295
+          ],
+          "xy": [
+            137,
+            731
+          ]
+        },
+        "elbow_guide_actor_px": [
+          423.671,
+          728.166
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 21,
+        "prop_frame": 21,
+        "original_rest": false,
+        "wrist_px": [
+          219.077,
+          772.246
+        ],
+        "angle_cw": -5.151,
+        "grip_level": 12,
+        "grip_actor_px": [
+          149.899,
+          784.507
+        ],
+        "tip_actor_px": [
+          138.651,
+          875.891
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            1481,
+            1937,
+            1766
+          ],
+          "xy": [
+            211,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            302,
+            447,
+            365
+          ],
+          "xy": [
+            138,
+            744
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            326,
+            72,
+            376
+          ],
+          "xy": [
+            136,
+            745
+          ]
+        },
+        "elbow_guide_actor_px": [
+          426.65,
+          731.021
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 22,
+        "prop_frame": 22,
+        "original_rest": false,
+        "wrist_px": [
+          212.175,
+          791.267
+        ],
+        "angle_cw": -4.064,
+        "grip_level": 12,
+        "grip_actor_px": [
+          142.776,
+          802.214
+        ],
+        "tip_actor_px": [
+          124.707,
+          877.133
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            1481,
+            2276,
+            1786
+          ],
+          "xy": [
+            204,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            302,
+            558,
+            365
+          ],
+          "xy": [
+            132,
+            762
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            326,
+            153,
+            375
+          ],
+          "xy": [
+            129,
+            763
+          ]
+        },
+        "elbow_guide_actor_px": [
+          427.269,
+          736.674
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 23,
+        "prop_frame": 23,
+        "original_rest": false,
+        "wrist_px": [
+          200.854,
+          810.869
+        ],
+        "angle_cw": -3.074,
+        "grip_level": 12,
+        "grip_actor_px": [
+          131.276,
+          820.614
+        ],
+        "tip_actor_px": [
+          110.419,
+          879.857
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            1481,
+            2619,
+            1805
+          ],
+          "xy": [
+            191,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            302,
+            672,
+            365
+          ],
+          "xy": [
+            120,
+            781
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            326,
+            235,
+            375
+          ],
+          "xy": [
+            117,
+            782
+          ]
+        },
+        "elbow_guide_actor_px": [
+          423.81,
+          746.207
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 24,
+        "prop_frame": 24,
+        "original_rest": false,
+        "wrist_px": [
+          188.596,
+          826.99
+        ],
+        "angle_cw": -2.554,
+        "grip_level": 12,
+        "grip_actor_px": [
+          118.933,
+          836.103
+        ],
+        "tip_actor_px": [
+          98.482,
+          882.581
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            1481,
+            2961,
+            1822
+          ],
+          "xy": [
+            178,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            302,
+            785,
+            365
+          ],
+          "xy": [
+            107,
+            797
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            326,
+            316,
+            374
+          ],
+          "xy": [
+            105,
+            798
+          ]
+        },
+        "elbow_guide_actor_px": [
+          418.308,
+          754.787
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 25,
+        "prop_frame": 25,
+        "original_rest": false,
+        "wrist_px": [
+          179.205,
+          837.24
+        ],
+        "angle_cw": -2.69,
+        "grip_level": 12,
+        "grip_actor_px": [
+          109.564,
+          846.519
+        ],
+        "tip_actor_px": [
+          90.7,
+          884.569
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            1974,
+            312,
+            2325
+          ],
+          "xy": [
+            168,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            302,
+            898,
+            365
+          ],
+          "xy": [
+            98,
+            807
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            326,
+            397,
+            375
+          ],
+          "xy": [
+            96,
+            808
+          ]
+        },
+        "elbow_guide_actor_px": [
+          413.703,
+          760.582
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 26,
+        "prop_frame": 26,
+        "original_rest": false,
+        "wrist_px": [
+          175.357,
+          840.153
+        ],
+        "angle_cw": -3.33,
+        "grip_level": 12,
+        "grip_actor_px": [
+          105.824,
+          850.208
+        ],
+        "tip_actor_px": [
+          87.95,
+          885.286
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            1974,
+            646,
+            2328
+          ],
+          "xy": [
+            164,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            302,
+            1011,
+            366
+          ],
+          "xy": [
+            94,
+            810
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            326,
+            478,
+            375
+          ],
+          "xy": [
+            92,
+            811
+          ]
+        },
+        "elbow_guide_actor_px": [
+          411.349,
+          763.148
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 27,
+        "prop_frame": 27,
+        "original_rest": false,
+        "wrist_px": [
+          175.014,
+          841.848
+        ],
+        "angle_cw": -4.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          105.603,
+          852.716
+        ],
+        "tip_actor_px": [
+          87.95,
+          887.906
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            1974,
+            977,
+            2329
+          ],
+          "xy": [
+            164,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            402,
+            107,
+            465
+          ],
+          "xy": [
+            94,
+            813
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            326,
+            558,
+            376
+          ],
+          "xy": [
+            92,
+            813
+          ]
+        },
+        "elbow_guide_actor_px": [
+          409.207,
+          765.828
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 28,
+        "prop_frame": 28,
+        "original_rest": false,
+        "wrist_px": [
+          174.772,
+          846.907
+        ],
+        "angle_cw": -4.36,
+        "grip_level": 12,
+        "grip_actor_px": [
+          105.431,
+          858.211
+        ],
+        "tip_actor_px": [
+          87.95,
+          893.487
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            1974,
+            1310,
+            2334
+          ],
+          "xy": [
+            163,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            402,
+            220,
+            465
+          ],
+          "xy": [
+            94,
+            818
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            326,
+            640,
+            375
+          ],
+          "xy": [
+            91,
+            819
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.495,
+          767.645
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 29,
+        "prop_frame": 29,
+        "original_rest": false,
+        "wrist_px": [
+          174.494,
+          849.923
+        ],
+        "angle_cw": -4.64,
+        "grip_level": 12,
+        "grip_actor_px": [
+          105.209,
+          861.566
+        ],
+        "tip_actor_px": [
+          87.95,
+          896.951
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            1974,
+            1643,
+            2337
+          ],
+          "xy": [
+            162,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            402,
+            333,
+            466
+          ],
+          "xy": [
+            94,
+            821
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            326,
+            720,
+            376
+          ],
+          "xy": [
+            91,
+            822
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.544,
+          768.578
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 30,
+        "prop_frame": 30,
+        "original_rest": false,
+        "wrist_px": [
+          174.02,
+          850.374
+        ],
+        "angle_cw": -5.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          104.809,
+          862.452
+        ],
+        "tip_actor_px": [
+          87.989,
+          898.047
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            1974,
+            1976,
+            2337
+          ],
+          "xy": [
+            161,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            402,
+            447,
+            465
+          ],
+          "xy": [
+            93,
+            822
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            407,
+            72,
+            457
+          ],
+          "xy": [
+            91,
+            823
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.543,
+          769.5
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 31,
+        "prop_frame": 31,
+        "original_rest": false,
+        "wrist_px": [
+          173.322,
+          852.257
+        ],
+        "angle_cw": -5.724,
+        "grip_level": 12,
+        "grip_actor_px": [
+          104.269,
+          865.209
+        ],
+        "tip_actor_px": [
+          88.09,
+          901.1
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            1974,
+            2308,
+            2339
+          ],
+          "xy": [
+            161,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            402,
+            559,
+            466
+          ],
+          "xy": [
+            93,
+            824
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            407,
+            153,
+            457
+          ],
+          "xy": [
+            90,
+            825
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.437,
+          770.437
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 32,
+        "prop_frame": 32,
+        "original_rest": false,
+        "wrist_px": [
+          172.533,
+          855.333
+        ],
+        "angle_cw": -6.727,
+        "grip_level": 12,
+        "grip_actor_px": [
+          103.718,
+          869.491
+        ],
+        "tip_actor_px": [
+          88.215,
+          905.68
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            1974,
+            2642,
+            2342
+          ],
+          "xy": [
+            159,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            402,
+            672,
+            467
+          ],
+          "xy": [
+            92,
+            827
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            407,
+            234,
+            458
+          ],
+          "xy": [
+            89,
+            829
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.198,
+          771.254
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 33,
+        "prop_frame": 33,
+        "original_rest": false,
+        "wrist_px": [
+          171.843,
+          859.404
+        ],
+        "angle_cw": -7.616,
+        "grip_level": 12,
+        "grip_actor_px": [
+          103.256,
+          874.628
+        ],
+        "tip_actor_px": [
+          88.289,
+          911.042
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            1974,
+            2974,
+            2346
+          ],
+          "xy": [
+            158,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            402,
+            785,
+            466
+          ],
+          "xy": [
+            92,
+            832
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            407,
+            314,
+            458
+          ],
+          "xy": [
+            89,
+            834
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.047,
+          772.509
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 34,
+        "prop_frame": 34,
+        "original_rest": false,
+        "wrist_px": [
+          171.449,
+          863.953
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          102.965,
+          879.637
+        ],
+        "tip_actor_px": [
+          88.217,
+          916.139
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            2467,
+            319,
+            2843
+          ],
+          "xy": [
+            157,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            402,
+            898,
+            467
+          ],
+          "xy": [
+            92,
+            836
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            407,
+            396,
+            458
+          ],
+          "xy": [
+            88,
+            839
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.057,
+          774.035
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 35,
+        "prop_frame": 35,
+        "original_rest": false,
+        "wrist_px": [
+          171.53,
+          868.591
+        ],
+        "angle_cw": -7.341,
+        "grip_level": 12,
+        "grip_actor_px": [
+          102.87,
+          883.486
+        ],
+        "tip_actor_px": [
+          87.922,
+          919.907
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            2467,
+            652,
+            2848
+          ],
+          "xy": [
+            157,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            402,
+            1011,
+            466
+          ],
+          "xy": [
+            92,
+            841
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            407,
+            477,
+            458
+          ],
+          "xy": [
+            88,
+            843
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.319,
+          775.704
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 36,
+        "prop_frame": 36,
+        "original_rest": false,
+        "wrist_px": [
+          171.769,
+          872.181
+        ],
+        "angle_cw": -6.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          102.78,
+          885.465
+        ],
+        "tip_actor_px": [
+          87.397,
+          921.704
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            2467,
+            984,
+            2851
+          ],
+          "xy": [
+            157,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            502,
+            108,
+            566
+          ],
+          "xy": [
+            91,
+            844
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            407,
+            558,
+            458
+          ],
+          "xy": [
+            88,
+            845
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.684,
+          777.21
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 37,
+        "prop_frame": 37,
+        "original_rest": false,
+        "wrist_px": [
+          170.489,
+          874.252
+        ],
+        "angle_cw": -3.896,
+        "grip_level": 12,
+        "grip_actor_px": [
+          101.059,
+          884.995
+        ],
+        "tip_actor_px": [
+          84.885,
+          920.889
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            2467,
+            1318,
+            2853
+          ],
+          "xy": [
+            155,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            502,
+            220,
+            565
+          ],
+          "xy": [
+            90,
+            845
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            407,
+            640,
+            456
+          ],
+          "xy": [
+            87,
+            846
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.546,
+          778.567
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 38,
+        "prop_frame": 38,
+        "original_rest": false,
+        "wrist_px": [
+          169.737,
+          876.297
+        ],
+        "angle_cw": -1.146,
+        "grip_level": 12,
+        "grip_actor_px": [
+          99.871,
+          883.696
+        ],
+        "tip_actor_px": [
+          82.534,
+          919.043
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            2467,
+            1651,
+            2856
+          ],
+          "xy": [
+            154,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            502,
+            333,
+            565
+          ],
+          "xy": [
+            88,
+            845
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            407,
+            722,
+            455
+          ],
+          "xy": [
+            86,
+            846
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.604,
+          779.715
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 39,
+        "prop_frame": 39,
+        "original_rest": false,
+        "wrist_px": [
+          170.33,
+          878.847
+        ],
+        "angle_cw": 1.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          100.236,
+          883.625
+        ],
+        "tip_actor_px": [
+          81.753,
+          918.386
+        ],
+        "paper_contact": true,
+        "stroke": 1,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            2467,
+            1983,
+            2858
+          ],
+          "xy": [
+            154,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            502,
+            447,
+            565
+          ],
+          "xy": [
+            88,
+            846
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            488,
+            74,
+            535
+          ],
+          "xy": [
+            87,
+            847
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.712,
+          780.712
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 40,
+        "prop_frame": 40,
+        "original_rest": false,
+        "wrist_px": [
+          171.213,
+          876.478
+        ],
+        "angle_cw": 2.428,
+        "grip_level": 12,
+        "grip_actor_px": [
+          101.022,
+          879.508
+        ],
+        "tip_actor_px": [
+          81.375,
+          913.624
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            2467,
+            2314,
+            2856
+          ],
+          "xy": [
+            155,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            502,
+            560,
+            565
+          ],
+          "xy": [
+            89,
+            843
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            488,
+            155,
+            535
+          ],
+          "xy": [
+            88,
+            843
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.813,
+          780.558
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 41,
+        "prop_frame": 41,
+        "original_rest": false,
+        "wrist_px": [
+          171.704,
+          871.537
+        ],
+        "angle_cw": 3.714,
+        "grip_level": 12,
+        "grip_actor_px": [
+          101.463,
+          872.991
+        ],
+        "tip_actor_px": [
+          80.674,
+          906.424
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            2467,
+            2645,
+            2852
+          ],
+          "xy": [
+            156,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            502,
+            674,
+            565
+          ],
+          "xy": [
+            89,
+            837
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            488,
+            237,
+            534
+          ],
+          "xy": [
+            88,
+            837
+          ]
+        },
+        "elbow_guide_actor_px": [
+          409.004,
+          779.855
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 42,
+        "prop_frame": 42,
+        "original_rest": false,
+        "wrist_px": [
+          171.994,
+          869.698
+        ],
+        "angle_cw": 4.643,
+        "grip_level": 12,
+        "grip_actor_px": [
+          101.738,
+          870.013
+        ],
+        "tip_actor_px": [
+          80.295,
+          903.03
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            2467,
+            2976,
+            2850
+          ],
+          "xy": [
+            157,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            502,
+            787,
+            564
+          ],
+          "xy": [
+            90,
+            835
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            488,
+            319,
+            534
+          ],
+          "xy": [
+            88,
+            835
+          ]
+        },
+        "elbow_guide_actor_px": [
+          409.171,
+          779.029
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 43,
+        "prop_frame": 43,
+        "original_rest": false,
+        "wrist_px": [
+          171.513,
+          868.08
+        ],
+        "angle_cw": 5.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          101.256,
+          867.957
+        ],
+        "tip_actor_px": [
+          79.579,
+          900.82
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2,
+            2,
+            320,
+            383
+          ],
+          "xy": [
+            157,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            502,
+            901,
+            564
+          ],
+          "xy": [
+            89,
+            833
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            488,
+            399,
+            534
+          ],
+          "xy": [
+            88,
+            833
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.859,
+          777.949
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 44,
+        "prop_frame": 44,
+        "original_rest": false,
+        "wrist_px": [
+          170.52,
+          865.673
+        ],
+        "angle_cw": 4.688,
+        "grip_level": 12,
+        "grip_actor_px": [
+          100.264,
+          865.932
+        ],
+        "tip_actor_px": [
+          78.406,
+          898.676
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            334,
+            2,
+            653,
+            381
+          ],
+          "xy": [
+            156,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            502,
+            1013,
+            564
+          ],
+          "xy": [
+            88,
+            831
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            488,
+            480,
+            534
+          ],
+          "xy": [
+            87,
+            831
+          ]
+        },
+        "elbow_guide_actor_px": [
+          408.371,
+          777.236
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 45,
+        "prop_frame": 45,
+        "original_rest": false,
+        "wrist_px": [
+          169.879,
+          864.265
+        ],
+        "angle_cw": 4.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          99.631,
+          865.367
+        ],
+        "tip_actor_px": [
+          77.657,
+          898.033
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            666,
+            2,
+            984,
+            380
+          ],
+          "xy": [
+            156,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            602,
+            109,
+            664
+          ],
+          "xy": [
+            88,
+            830
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            488,
+            561,
+            534
+          ],
+          "xy": [
+            86,
+            830
+          ]
+        },
+        "elbow_guide_actor_px": [
+          407.865,
+          776.778
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 46,
+        "prop_frame": 46,
+        "original_rest": false,
+        "wrist_px": [
+          169.467,
+          865.762
+        ],
+        "angle_cw": 3.312,
+        "grip_level": 12,
+        "grip_actor_px": [
+          99.237,
+          867.707
+        ],
+        "tip_actor_px": [
+          77.222,
+          900.346
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            998,
+            2,
+            1317,
+            381
+          ],
+          "xy": [
+            155,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            602,
+            222,
+            664
+          ],
+          "xy": [
+            87,
+            832
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            488,
+            642,
+            534
+          ],
+          "xy": [
+            86,
+            832
+          ]
+        },
+        "elbow_guide_actor_px": [
+          407.432,
+          776.825
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 47,
+        "prop_frame": 47,
+        "original_rest": false,
+        "wrist_px": [
+          169.247,
+          867.817
+        ],
+        "angle_cw": 3.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          99.029,
+          870.145
+        ],
+        "tip_actor_px": [
+          77.015,
+          902.784
+        ],
+        "paper_contact": true,
+        "stroke": 2,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1330,
+            2,
+            1649,
+            383
+          ],
+          "xy": [
+            155,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            602,
+            335,
+            665
+          ],
+          "xy": [
+            87,
+            834
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            488,
+            722,
+            535
+          ],
+          "xy": [
+            86,
+            834
+          ]
+        },
+        "elbow_guide_actor_px": [
+          407.231,
+          777.103
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 48,
+        "prop_frame": 48,
+        "original_rest": false,
+        "wrist_px": [
+          168.681,
+          871.244
+        ],
+        "angle_cw": 3.703,
+        "grip_level": 12,
+        "grip_actor_px": [
+          98.439,
+          872.711
+        ],
+        "tip_actor_px": [
+          76.081,
+          905.115
+        ],
+        "paper_contact": true,
+        "stroke": 2,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1662,
+            2,
+            1982,
+            386
+          ],
+          "xy": [
+            154,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            602,
+            447,
+            664
+          ],
+          "xy": [
+            87,
+            837
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            569,
+            75,
+            615
+          ],
+          "xy": [
+            85,
+            837
+          ]
+        },
+        "elbow_guide_actor_px": [
+          407.153,
+          778.173
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 49,
+        "prop_frame": 49,
+        "original_rest": false,
+        "wrist_px": [
+          166.053,
+          878.262
+        ],
+        "angle_cw": 5.292,
+        "grip_level": 12,
+        "grip_actor_px": [
+          95.798,
+          877.781
+        ],
+        "tip_actor_px": [
+          72.64,
+          909.619
+        ],
+        "paper_contact": true,
+        "stroke": 2,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1994,
+            2,
+            2318,
+            393
+          ],
+          "xy": [
+            150,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            602,
+            561,
+            664
+          ],
+          "xy": [
+            84,
+            843
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            569,
+            157,
+            614
+          ],
+          "xy": [
+            82,
+            843
+          ]
+        },
+        "elbow_guide_actor_px": [
+          406.574,
+          780.345
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 50,
+        "prop_frame": 50,
+        "original_rest": false,
+        "wrist_px": [
+          162.447,
+          884.234
+        ],
+        "angle_cw": 6.984,
+        "grip_level": 12,
+        "grip_actor_px": [
+          92.237,
+          881.677
+        ],
+        "tip_actor_px": [
+          68.166,
+          912.831
+        ],
+        "paper_contact": true,
+        "stroke": 2,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2326,
+            2,
+            2653,
+            399
+          ],
+          "xy": [
+            146,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            602,
+            675,
+            664
+          ],
+          "xy": [
+            80,
+            848
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            569,
+            238,
+            613
+          ],
+          "xy": [
+            79,
+            848
+          ]
+        },
+        "elbow_guide_actor_px": [
+          405.538,
+          782.66
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 51,
+        "prop_frame": 51,
+        "original_rest": false,
+        "wrist_px": [
+          161.008,
+          886.924
+        ],
+        "angle_cw": 8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          90.854,
+          883.124
+        ],
+        "tip_actor_px": [
+          66.079,
+          913.72
+        ],
+        "paper_contact": true,
+        "stroke": 2,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2658,
+            2,
+            2986,
+            402
+          ],
+          "xy": [
+            145,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            602,
+            789,
+            664
+          ],
+          "xy": [
+            78,
+            850
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            569,
+            319,
+            614
+          ],
+          "xy": [
+            78,
+            849
+          ]
+        },
+        "elbow_guide_actor_px": [
+          404.711,
+          784.757
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 52,
+        "prop_frame": 52,
+        "original_rest": false,
+        "wrist_px": [
+          163.082,
+          880.45
+        ],
+        "angle_cw": 8.391,
+        "grip_level": 12,
+        "grip_actor_px": [
+          92.956,
+          876.171
+        ],
+        "tip_actor_px": [
+          67.697,
+          906.369
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2,
+            495,
+            328,
+            889
+          ],
+          "xy": [
+            147,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            602,
+            901,
+            664
+          ],
+          "xy": [
+            81,
+            843
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            569,
+            400,
+            613
+          ],
+          "xy": [
+            80,
+            843
+          ]
+        },
+        "elbow_guide_actor_px": [
+          404.407,
+          784.381
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 53,
+        "prop_frame": 53,
+        "original_rest": false,
+        "wrist_px": [
+          170.167,
+          868.51
+        ],
+        "angle_cw": 8.708,
+        "grip_level": 12,
+        "grip_actor_px": [
+          100.066,
+          863.842
+        ],
+        "tip_actor_px": [
+          74.372,
+          893.671
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            334,
+            495,
+            653,
+            877
+          ],
+          "xy": [
+            155,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            602,
+            1014,
+            664
+          ],
+          "xy": [
+            88,
+            831
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            569,
+            481,
+            613
+          ],
+          "xy": [
+            87,
+            831
+          ]
+        },
+        "elbow_guide_actor_px": [
+          406.111,
+          781.599
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 54,
+        "prop_frame": 54,
+        "original_rest": false,
+        "wrist_px": [
+          179.001,
+          860.529
+        ],
+        "angle_cw": 8.922,
+        "grip_level": 12,
+        "grip_actor_px": [
+          108.917,
+          855.6
+        ],
+        "tip_actor_px": [
+          82.855,
+          885.108
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            666,
+            495,
+            976,
+            869
+          ],
+          "xy": [
+            165,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            702,
+            110,
+            765
+          ],
+          "xy": [
+            97,
+            822
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            569,
+            562,
+            613
+          ],
+          "xy": [
+            96,
+            822
+          ]
+        },
+        "elbow_guide_actor_px": [
+          409.643,
+          777.286
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 55,
+        "prop_frame": 55,
+        "original_rest": false,
+        "wrist_px": [
+          182.912,
+          858.137
+        ],
+        "angle_cw": 9.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          112.835,
+          853.113
+        ],
+        "tip_actor_px": [
+          86.492,
+          882.37
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            998,
+            495,
+            1307,
+            867
+          ],
+          "xy": [
+            168,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            702,
+            224,
+            764
+          ],
+          "xy": [
+            100,
+            820
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            569,
+            644,
+            613
+          ],
+          "xy": [
+            99,
+            820
+          ]
+        },
+        "elbow_guide_actor_px": [
+          412.041,
+          774.38
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 56,
+        "prop_frame": 56,
+        "original_rest": false,
+        "wrist_px": [
+          183.16,
+          858.164
+        ],
+        "angle_cw": 8.848,
+        "grip_level": 12,
+        "grip_actor_px": [
+          113.07,
+          853.326
+        ],
+        "tip_actor_px": [
+          86.492,
+          882.37
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1330,
+            495,
+            1639,
+            866
+          ],
+          "xy": [
+            169,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            702,
+            336,
+            764
+          ],
+          "xy": [
+            101,
+            820
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            569,
+            724,
+            613
+          ],
+          "xy": [
+            100,
+            820
+          ]
+        },
+        "elbow_guide_actor_px": [
+          414.198,
+          772.415
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 57,
+        "prop_frame": 57,
+        "original_rest": false,
+        "wrist_px": [
+          183.386,
+          857.823
+        ],
+        "angle_cw": 8.424,
+        "grip_level": 12,
+        "grip_actor_px": [
+          113.263,
+          853.503
+        ],
+        "tip_actor_px": [
+          86.492,
+          882.37
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1662,
+            495,
+            1972,
+            866
+          ],
+          "xy": [
+            169,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            702,
+            450,
+            764
+          ],
+          "xy": [
+            101,
+            820
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            650,
+            76,
+            694
+          ],
+          "xy": [
+            100,
+            820
+          ]
+        },
+        "elbow_guide_actor_px": [
+          415.225,
+          771.618
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 58,
+        "prop_frame": 58,
+        "original_rest": false,
+        "wrist_px": [
+          183.51,
+          857.104
+        ],
+        "angle_cw": 7.776,
+        "grip_level": 12,
+        "grip_actor_px": [
+          113.342,
+          853.577
+        ],
+        "tip_actor_px": [
+          86.492,
+          882.37
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1994,
+            495,
+            2304,
+            865
+          ],
+          "xy": [
+            169,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            702,
+            562,
+            764
+          ],
+          "xy": [
+            101,
+            820
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            650,
+            157,
+            694
+          ],
+          "xy": [
+            100,
+            820
+          ]
+        },
+        "elbow_guide_actor_px": [
+          415.301,
+          771.416
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 59,
+        "prop_frame": 59,
+        "original_rest": false,
+        "wrist_px": [
+          183.088,
+          857.438
+        ],
+        "angle_cw": 6.952,
+        "grip_level": 12,
+        "grip_actor_px": [
+          112.876,
+          854.922
+        ],
+        "tip_actor_px": [
+          86.492,
+          884.142
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2326,
+            495,
+            2636,
+            865
+          ],
+          "xy": [
+            169,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            702,
+            675,
+            764
+          ],
+          "xy": [
+            101,
+            821
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            650,
+            237,
+            695
+          ],
+          "xy": [
+            100,
+            821
+          ]
+        },
+        "elbow_guide_actor_px": [
+          415.209,
+          771.438
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 60,
+        "prop_frame": 60,
+        "original_rest": false,
+        "wrist_px": [
+          184.769,
+          858.406
+        ],
+        "angle_cw": 6.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          114.525,
+          857.056
+        ],
+        "tip_actor_px": [
+          89.328,
+          887.305
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2658,
+            495,
+            2968,
+            866
+          ],
+          "xy": [
+            170,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            702,
+            788,
+            764
+          ],
+          "xy": [
+            102,
+            823
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            650,
+            319,
+            696
+          ],
+          "xy": [
+            101,
+            822
+          ]
+        },
+        "elbow_guide_actor_px": [
+          415.891,
+          771.297
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 61,
+        "prop_frame": 61,
+        "original_rest": false,
+        "wrist_px": [
+          188.464,
+          863.76
+        ],
+        "angle_cw": 4.342,
+        "grip_level": 12,
+        "grip_actor_px": [
+          118.211,
+          864.443
+        ],
+        "tip_actor_px": [
+          94.593,
+          895.942
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2,
+            988,
+            310,
+            1364
+          ],
+          "xy": [
+            173,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            702,
+            900,
+            764
+          ],
+          "xy": [
+            106,
+            829
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            650,
+            399,
+            696
+          ],
+          "xy": [
+            105,
+            829
+          ]
+        },
+        "elbow_guide_actor_px": [
+          417.437,
+          772.048
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 62,
+        "prop_frame": 62,
+        "original_rest": false,
+        "wrist_px": [
+          189.61,
+          866.592
+        ],
+        "angle_cw": 2.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          119.443,
+          870.145
+        ],
+        "tip_actor_px": [
+          97.428,
+          902.784
+        ],
+        "paper_contact": true,
+        "stroke": 3,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            334,
+            988,
+            641,
+            1366
+          ],
+          "xy": [
+            174,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            702,
+            1013,
+            764
+          ],
+          "xy": [
+            107,
+            834
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            650,
+            479,
+            697
+          ],
+          "xy": [
+            106,
+            834
+          ]
+        },
+        "elbow_guide_actor_px": [
+          418.486,
+          772.461
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 63,
+        "prop_frame": 63,
+        "original_rest": false,
+        "wrist_px": [
+          190.748,
+          863.131
+        ],
+        "angle_cw": -1.386,
+        "grip_level": 12,
+        "grip_actor_px": [
+          120.913,
+          870.823
+        ],
+        "tip_actor_px": [
+          100.923,
+          904.738
+        ],
+        "paper_contact": true,
+        "stroke": 3,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            666,
+            988,
+            973,
+            1363
+          ],
+          "xy": [
+            175,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            802,
+            107,
+            864
+          ],
+          "xy": [
+            109,
+            833
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            650,
+            559,
+            698
+          ],
+          "xy": [
+            107,
+            833
+          ]
+        },
+        "elbow_guide_actor_px": [
+          419.911,
+          772.0
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 64,
+        "prop_frame": 64,
+        "original_rest": false,
+        "wrist_px": [
+          192.617,
+          862.62
+        ],
+        "angle_cw": -5.193,
+        "grip_level": 12,
+        "grip_actor_px": [
+          123.447,
+          874.931
+        ],
+        "tip_actor_px": [
+          105.722,
+          910.084
+        ],
+        "paper_contact": true,
+        "stroke": 3,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            998,
+            988,
+            1304,
+            1362
+          ],
+          "xy": [
+            177,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            802,
+            220,
+            866
+          ],
+          "xy": [
+            112,
+            834
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            650,
+            639,
+            700
+          ],
+          "xy": [
+            109,
+            835
+          ]
+        },
+        "elbow_guide_actor_px": [
+          420.956,
+          771.891
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 65,
+        "prop_frame": 65,
+        "original_rest": false,
+        "wrist_px": [
+          192.291,
+          862.459
+        ],
+        "angle_cw": -7.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          123.544,
+          876.945
+        ],
+        "tip_actor_px": [
+          106.906,
+          912.626
+        ],
+        "paper_contact": true,
+        "stroke": 3,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1330,
+            988,
+            1636,
+            1361
+          ],
+          "xy": [
+            177,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            802,
+            333,
+            866
+          ],
+          "xy": [
+            112,
+            835
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            650,
+            720,
+            701
+          ],
+          "xy": [
+            109,
+            836
+          ]
+        },
+        "elbow_guide_actor_px": [
+          420.978,
+          771.168
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 66,
+        "prop_frame": 66,
+        "original_rest": false,
+        "wrist_px": [
+          192.593,
+          860.869
+        ],
+        "angle_cw": -6.916,
+        "grip_level": 12,
+        "grip_actor_px": [
+          123.825,
+          875.254
+        ],
+        "tip_actor_px": [
+          107.068,
+          910.879
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1662,
+            988,
+            1968,
+            1360
+          ],
+          "xy": [
+            177,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            802,
+            446,
+            866
+          ],
+          "xy": [
+            113,
+            833
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            731,
+            72,
+            781
+          ],
+          "xy": [
+            109,
+            835
+          ]
+        },
+        "elbow_guide_actor_px": [
+          421.475,
+          770.495
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 67,
+        "prop_frame": 67,
+        "original_rest": false,
+        "wrist_px": [
+          193.367,
+          857.101
+        ],
+        "angle_cw": -6.692,
+        "grip_level": 12,
+        "grip_actor_px": [
+          124.543,
+          871.218
+        ],
+        "tip_actor_px": [
+          107.473,
+          906.694
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1994,
+            988,
+            2298,
+            1356
+          ],
+          "xy": [
+            179,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            802,
+            559,
+            866
+          ],
+          "xy": [
+            113,
+            829
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            731,
+            153,
+            781
+          ],
+          "xy": [
+            110,
+            831
+          ]
+        },
+        "elbow_guide_actor_px": [
+          421.467,
+          769.581
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 68,
+        "prop_frame": 68,
+        "original_rest": false,
+        "wrist_px": [
+          194.409,
+          852.659
+        ],
+        "angle_cw": -6.373,
+        "grip_level": 12,
+        "grip_actor_px": [
+          125.507,
+          866.391
+        ],
+        "tip_actor_px": [
+          108.0,
+          901.654
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2326,
+            988,
+            2629,
+            1352
+          ],
+          "xy": [
+            180,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            802,
+            672,
+            866
+          ],
+          "xy": [
+            114,
+            825
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            731,
+            234,
+            782
+          ],
+          "xy": [
+            111,
+            826
+          ]
+        },
+        "elbow_guide_actor_px": [
+          421.65,
+          768.251
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 69,
+        "prop_frame": 69,
+        "original_rest": false,
+        "wrist_px": [
+          195.516,
+          849.046
+        ],
+        "angle_cw": -6.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          126.526,
+          862.33
+        ],
+        "tip_actor_px": [
+          108.526,
+          897.343
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2658,
+            988,
+            2959,
+            1349
+          ],
+          "xy": [
+            182,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            802,
+            785,
+            866
+          ],
+          "xy": [
+            115,
+            821
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            731,
+            315,
+            781
+          ],
+          "xy": [
+            112,
+            822
+          ]
+        },
+        "elbow_guide_actor_px": [
+          421.947,
+          766.719
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 70,
+        "prop_frame": 70,
+        "original_rest": false,
+        "wrist_px": [
+          196.563,
+          847.237
+        ],
+        "angle_cw": -5.288,
+        "grip_level": 12,
+        "grip_actor_px": [
+          127.414,
+          859.664
+        ],
+        "tip_actor_px": [
+          108.931,
+          894.424
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2,
+            1481,
+            303,
+            1840
+          ],
+          "xy": [
+            183,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            802,
+            898,
+            865
+          ],
+          "xy": [
+            116,
+            819
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            731,
+            396,
+            781
+          ],
+          "xy": [
+            113,
+            820
+          ]
+        },
+        "elbow_guide_actor_px": [
+          422.364,
+          765.461
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 71,
+        "prop_frame": 71,
+        "original_rest": false,
+        "wrist_px": [
+          197.571,
+          847.589
+        ],
+        "angle_cw": -4.103,
+        "grip_level": 12,
+        "grip_actor_px": [
+          128.18,
+          858.582
+        ],
+        "tip_actor_px": [
+          109.093,
+          893.014
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            334,
+            1481,
+            634,
+            1840
+          ],
+          "xy": [
+            184,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            802,
+            1011,
+            866
+          ],
+          "xy": [
+            117,
+            818
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            731,
+            478,
+            781
+          ],
+          "xy": [
+            114,
+            819
+          ]
+        },
+        "elbow_guide_actor_px": [
+          422.936,
+          764.795
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 72,
+        "prop_frame": 72,
+        "original_rest": false,
+        "wrist_px": [
+          199.463,
+          846.16
+        ],
+        "angle_cw": -2.846,
+        "grip_level": 12,
+        "grip_actor_px": [
+          129.847,
+          855.628
+        ],
+        "tip_actor_px": [
+          109.627,
+          891.171
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            666,
+            1481,
+            965,
+            1839
+          ],
+          "xy": [
+            186,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            902,
+            107,
+            965
+          ],
+          "xy": [
+            118,
+            816
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            731,
+            559,
+            780
+          ],
+          "xy": [
+            116,
+            817
+          ]
+        },
+        "elbow_guide_actor_px": [
+          423.798,
+          763.934
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 73,
+        "prop_frame": 73,
+        "original_rest": false,
+        "wrist_px": [
+          202.994,
+          839.293
+        ],
+        "angle_cw": -1.894,
+        "grip_level": 12,
+        "grip_actor_px": [
+          133.231,
+          847.604
+        ],
+        "tip_actor_px": [
+          111.291,
+          887.043
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            998,
+            1481,
+            1293,
+            1832
+          ],
+          "xy": [
+            190,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            902,
+            220,
+            965
+          ],
+          "xy": [
+            122,
+            809
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            731,
+            640,
+            780
+          ],
+          "xy": [
+            120,
+            809
+          ]
+        },
+        "elbow_guide_actor_px": [
+          425.058,
+          762.067
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 74,
+        "prop_frame": 74,
+        "original_rest": false,
+        "wrist_px": [
+          207.745,
+          828.152
+        ],
+        "angle_cw": -1.473,
+        "grip_level": 12,
+        "grip_actor_px": [
+          137.922,
+          835.949
+        ],
+        "tip_actor_px": [
+          114.284,
+          881.805
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1330,
+            1481,
+            1620,
+            1821
+          ],
+          "xy": [
+            196,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            902,
+            333,
+            965
+          ],
+          "xy": [
+            126,
+            797
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            731,
+            721,
+            779
+          ],
+          "xy": [
+            124,
+            798
+          ]
+        },
+        "elbow_guide_actor_px": [
+          426.7,
+          758.813
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 75,
+        "prop_frame": 75,
+        "original_rest": false,
+        "wrist_px": [
+          212.924,
+          813.839
+        ],
+        "angle_cw": -1.806,
+        "grip_level": 12,
+        "grip_actor_px": [
+          143.148,
+          822.043
+        ],
+        "tip_actor_px": [
+          118.738,
+          876.611
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1662,
+            1481,
+            1947,
+            1807
+          ],
+          "xy": [
+            202,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            902,
+            447,
+            965
+          ],
+          "xy": [
+            131,
+            783
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            812,
+            73,
+            860
+          ],
+          "xy": [
+            130,
+            784
+          ]
+        },
+        "elbow_guide_actor_px": [
+          428.522,
+          753.901
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 76,
+        "prop_frame": 76,
+        "original_rest": false,
+        "wrist_px": [
+          217.843,
+          798.143
+        ],
+        "angle_cw": -2.64,
+        "grip_level": 12,
+        "grip_actor_px": [
+          148.193,
+          807.361
+        ],
+        "tip_actor_px": [
+          124.54,
+          872.394
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1994,
+            1481,
+            2274,
+            1792
+          ],
+          "xy": [
+            209,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            902,
+            559,
+            965
+          ],
+          "xy": [
+            137,
+            768
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            812,
+            154,
+            861
+          ],
+          "xy": [
+            134,
+            769
+          ]
+        },
+        "elbow_guide_actor_px": [
+          430.391,
+          747.55
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 77,
+        "prop_frame": 77,
+        "original_rest": false,
+        "wrist_px": [
+          222.025,
+          783.063
+        ],
+        "angle_cw": -3.539,
+        "grip_level": 12,
+        "grip_actor_px": [
+          152.529,
+          793.373
+        ],
+        "tip_actor_px": [
+          131.286,
+          869.843
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2326,
+            1481,
+            2601,
+            1777
+          ],
+          "xy": [
+            214,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            902,
+            672,
+            966
+          ],
+          "xy": [
+            141,
+            753
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            812,
+            234,
+            862
+          ],
+          "xy": [
+            139,
+            754
+          ]
+        },
+        "elbow_guide_actor_px": [
+          431.707,
+          741.635
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 78,
+        "prop_frame": 78,
+        "original_rest": false,
+        "wrist_px": [
+          224.649,
+          769.728
+        ],
+        "angle_cw": -4.461,
+        "grip_level": 12,
+        "grip_actor_px": [
+          155.327,
+          781.154
+        ],
+        "tip_actor_px": [
+          138.339,
+          869.308
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2658,
+            1481,
+            2930,
+            1764
+          ],
+          "xy": [
+            217,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            902,
+            785,
+            965
+          ],
+          "xy": [
+            144,
+            741
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            812,
+            316,
+            861
+          ],
+          "xy": [
+            141,
+            742
+          ]
+        },
+        "elbow_guide_actor_px": [
+          432.281,
+          736.387
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 79,
+        "prop_frame": 79,
+        "original_rest": false,
+        "wrist_px": [
+          225.128,
+          758.916
+        ],
+        "angle_cw": -5.36,
+        "grip_level": 12,
+        "grip_actor_px": [
+          155.995,
+          771.428
+        ],
+        "tip_actor_px": [
+          144.988,
+          870.761
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2,
+            1974,
+            273,
+            2246
+          ],
+          "xy": [
+            218,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            902,
+            898,
+            966
+          ],
+          "xy": [
+            145,
+            730
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            812,
+            396,
+            862
+          ],
+          "xy": [
+            142,
+            732
+          ]
+        },
+        "elbow_guide_actor_px": [
+          431.963,
+          731.821
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 80,
+        "prop_frame": 80,
+        "original_rest": false,
+        "wrist_px": [
+          223.307,
+          750.967
+        ],
+        "angle_cw": -6.194,
+        "grip_level": 12,
+        "grip_actor_px": [
+          154.363,
+          764.485
+        ],
+        "tip_actor_px": [
+          150.617,
+          873.783
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            334,
+            1974,
+            606,
+            2239
+          ],
+          "xy": [
+            216,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            902,
+            1011,
+            966
+          ],
+          "xy": [
+            143,
+            723
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            812,
+            477,
+            863
+          ],
+          "xy": [
+            140,
+            724
+          ]
+        },
+        "elbow_guide_actor_px": [
+          430.489,
+          728.559
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 81,
+        "prop_frame": 81,
+        "original_rest": false,
+        "wrist_px": [
+          219.556,
+          745.891
+        ],
+        "angle_cw": -6.919,
+        "grip_level": 12,
+        "grip_actor_px": [
+          150.788,
+          760.28
+        ],
+        "tip_actor_px": [
+          154.855,
+          877.761
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            666,
+            1974,
+            939,
+            2234
+          ],
+          "xy": [
+            213,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            1002,
+            107,
+            1066
+          ],
+          "xy": [
+            139,
+            718
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            812,
+            558,
+            862
+          ],
+          "xy": [
+            136,
+            720
+          ]
+        },
+        "elbow_guide_actor_px": [
+          427.926,
+          726.657
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 82,
+        "prop_frame": 82,
+        "original_rest": false,
+        "wrist_px": [
+          214.751,
+          743.353
+        ],
+        "angle_cw": -7.49,
+        "grip_level": 12,
+        "grip_actor_px": [
+          146.131,
+          758.427
+        ],
+        "tip_actor_px": [
+          157.634,
+          881.904
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            998,
+            1974,
+            1274,
+            2232
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            1002,
+            220,
+            1066
+          ],
+          "xy": [
+            135,
+            716
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            812,
+            638,
+            863
+          ],
+          "xy": [
+            132,
+            718
+          ]
+        },
+        "elbow_guide_actor_px": [
+          424.627,
+          725.943
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 83,
+        "prop_frame": 83,
+        "original_rest": false,
+        "wrist_px": [
+          210.106,
+          742.653
+        ],
+        "angle_cw": -7.865,
+        "grip_level": 12,
+        "grip_actor_px": [
+          141.585,
+          758.175
+        ],
+        "tip_actor_px": [
+          159.137,
+          885.219
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1330,
+            1974,
+            1609,
+            2232
+          ],
+          "xy": [
+            203,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            1002,
+            333,
+            1067
+          ],
+          "xy": [
+            130,
+            715
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            812,
+            719,
+            863
+          ],
+          "xy": [
+            127,
+            717
+          ]
+        },
+        "elbow_guide_actor_px": [
+          421.178,
+          726.072
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 84,
+        "prop_frame": 84,
+        "original_rest": false,
+        "wrist_px": [
+          206.845,
+          743.096
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          138.361,
+          758.78
+        ],
+        "tip_actor_px": [
+          159.608,
+          886.801
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            1481,
+            614,
+            1739
+          ],
+          "xy": [
+            200,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            202,
+            1011,
+            267
+          ],
+          "xy": [
+            127,
+            715
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            245,
+            476,
+            296
+          ],
+          "xy": [
+            124,
+            718
+          ]
+        },
+        "elbow_guide_actor_px": [
+          418.279,
+          726.639
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 85,
+        "prop_frame": 85,
+        "original_rest": false,
+        "wrist_px": [
+          207.155,
+          744.961
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          138.671,
+          760.645
+        ],
+        "tip_actor_px": [
+          159.917,
+          888.666
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            1481,
+            281,
+            1741
+          ],
+          "xy": [
+            200,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            202,
+            897,
+            267
+          ],
+          "xy": [
+            128,
+            717
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            245,
+            395,
+            296
+          ],
+          "xy": [
+            124,
+            720
+          ]
+        },
+        "elbow_guide_actor_px": [
+          416.471,
+          727.798
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 86,
+        "prop_frame": 86,
+        "original_rest": false,
+        "wrist_px": [
+          208.017,
+          750.154
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          139.533,
+          765.838
+        ],
+        "tip_actor_px": [
+          160.779,
+          893.859
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            988,
+            2937,
+            1253
+          ],
+          "xy": [
+            201,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            202,
+            785,
+            267
+          ],
+          "xy": [
+            128,
+            722
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            245,
+            314,
+            296
+          ],
+          "xy": [
+            125,
+            725
+          ]
+        },
+        "elbow_guide_actor_px": [
+          417.985,
+          729.231
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 87,
+        "prop_frame": 87,
+        "original_rest": false,
+        "wrist_px": [
+          209.33,
+          758.069
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          140.847,
+          773.753
+        ],
+        "tip_actor_px": [
+          162.093,
+          901.774
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            988,
+            2605,
+            1260
+          ],
+          "xy": [
+            202,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            202,
+            672,
+            267
+          ],
+          "xy": [
+            130,
+            730
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            245,
+            233,
+            296
+          ],
+          "xy": [
+            126,
+            733
+          ]
+        },
+        "elbow_guide_actor_px": [
+          420.222,
+          731.432
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 88,
+        "prop_frame": 88,
+        "original_rest": false,
+        "wrist_px": [
+          210.995,
+          768.101
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          142.511,
+          783.785
+        ],
+        "tip_actor_px": [
+          163.757,
+          911.807
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            988,
+            2273,
+            1270
+          ],
+          "xy": [
+            204,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            202,
+            559,
+            267
+          ],
+          "xy": [
+            131,
+            740
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            245,
+            152,
+            296
+          ],
+          "xy": [
+            128,
+            743
+          ]
+        },
+        "elbow_guide_actor_px": [
+          422.939,
+          734.256
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 89,
+        "prop_frame": 89,
+        "original_rest": false,
+        "wrist_px": [
+          212.911,
+          779.647
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          144.427,
+          795.331
+        ],
+        "tip_actor_px": [
+          165.673,
+          923.352
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            988,
+            1942,
+            1281
+          ],
+          "xy": [
+            205,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            202,
+            446,
+            267
+          ],
+          "xy": [
+            133,
+            752
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            245,
+            71,
+            296
+          ],
+          "xy": [
+            130,
+            754
+          ]
+        },
+        "elbow_guide_actor_px": [
+          425.912,
+          737.558
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 90,
+        "prop_frame": 90,
+        "original_rest": false,
+        "wrist_px": [
+          214.978,
+          792.099
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          146.494,
+          807.783
+        ],
+        "tip_actor_px": [
+          167.74,
+          935.804
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            988,
+            1612,
+            1292
+          ],
+          "xy": [
+            206,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            202,
+            333,
+            267
+          ],
+          "xy": [
+            135,
+            764
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            164,
+            719,
+            215
+          ],
+          "xy": [
+            132,
+            767
+          ]
+        },
+        "elbow_guide_actor_px": [
+          428.944,
+          741.188
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 91,
+        "prop_frame": 91,
+        "original_rest": false,
+        "wrist_px": [
+          217.094,
+          804.853
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          148.61,
+          820.537
+        ],
+        "tip_actor_px": [
+          169.857,
+          948.559
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            988,
+            1281,
+            1304
+          ],
+          "xy": [
+            207,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            202,
+            219,
+            267
+          ],
+          "xy": [
+            138,
+            777
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            164,
+            638,
+            216
+          ],
+          "xy": [
+            134,
+            779
+          ]
+        },
+        "elbow_guide_actor_px": [
+          431.876,
+          744.988
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 92,
+        "prop_frame": 92,
+        "original_rest": false,
+        "wrist_px": [
+          219.161,
+          817.306
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          150.677,
+          832.989
+        ],
+        "tip_actor_px": [
+          171.924,
+          961.011
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            988,
+            949,
+            1316
+          ],
+          "xy": [
+            208,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            202,
+            107,
+            266
+          ],
+          "xy": [
+            139,
+            790
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            164,
+            557,
+            215
+          ],
+          "xy": [
+            136,
+            792
+          ]
+        },
+        "elbow_guide_actor_px": [
+          434.583,
+          748.78
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 93,
+        "prop_frame": 93,
+        "original_rest": false,
+        "wrist_px": [
+          221.077,
+          828.851
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          152.593,
+          844.535
+        ],
+        "tip_actor_px": [
+          173.84,
+          972.556
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            988,
+            619,
+            1327
+          ],
+          "xy": [
+            208,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            102,
+            1010,
+            167
+          ],
+          "xy": [
+            142,
+            801
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            164,
+            476,
+            216
+          ],
+          "xy": [
+            138,
+            803
+          ]
+        },
+        "elbow_guide_actor_px": [
+          436.966,
+          752.371
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 94,
+        "prop_frame": 94,
+        "original_rest": false,
+        "wrist_px": [
+          222.742,
+          838.884
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          154.258,
+          854.567
+        ],
+        "tip_actor_px": [
+          175.505,
+          982.589
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            988,
+            288,
+            1338
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            102,
+            898,
+            167
+          ],
+          "xy": [
+            143,
+            811
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            164,
+            395,
+            216
+          ],
+          "xy": [
+            140,
+            813
+          ]
+        },
+        "elbow_guide_actor_px": [
+          438.946,
+          755.551
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 95,
+        "prop_frame": 95,
+        "original_rest": false,
+        "wrist_px": [
+          224.055,
+          846.798
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          155.571,
+          862.482
+        ],
+        "tip_actor_px": [
+          176.818,
+          990.504
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            495,
+            2945,
+            852
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            102,
+            784,
+            167
+          ],
+          "xy": [
+            145,
+            819
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            164,
+            314,
+            216
+          ],
+          "xy": [
+            141,
+            821
+          ]
+        },
+        "elbow_guide_actor_px": [
+          440.451,
+          758.099
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 96,
+        "prop_frame": 96,
+        "original_rest": false,
+        "wrist_px": [
+          224.917,
+          851.991
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          156.433,
+          867.674
+        ],
+        "tip_actor_px": [
+          177.679,
+          995.696
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            495,
+            2615,
+            857
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            102,
+            672,
+            167
+          ],
+          "xy": [
+            145,
+            824
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            164,
+            233,
+            215
+          ],
+          "xy": [
+            142,
+            827
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.413,
+          759.789
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 97,
+        "prop_frame": 97,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 12,
+        "grip_actor_px": [
+          156.743,
+          869.54
+        ],
+        "tip_actor_px": [
+          177.989,
+          997.562
+        ],
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            102,
+            558,
+            167
+          ],
+          "xy": [
+            146,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            164,
+            152,
+            216
+          ],
+          "xy": [
+            142,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 98,
+        "prop_frame": 98,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 10,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            102,
+            446,
+            167
+          ],
+          "xy": [
+            145,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            164,
+            72,
+            217
+          ],
+          "xy": [
+            141,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 99,
+        "prop_frame": 99,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 6,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            102,
+            334,
+            167
+          ],
+          "xy": [
+            144,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            83,
+            723,
+            139
+          ],
+          "xy": [
+            138,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 100,
+        "prop_frame": 100,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 2,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            102,
+            223,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            83,
+            644,
+            141
+          ],
+          "xy": [
+            136,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      },
+      {
+        "stage": "write",
+        "local_frame": 101,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            102,
+            110,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            83,
+            565,
+            143
+          ],
+          "xy": [
+            134,
+            828
+          ]
+        },
+        "elbow_guide_actor_px": [
+          441.754,
+          760.4
+        ]
+      }
+    ],
+    "return": [
+      {
+        "stage": "return",
+        "local_frame": 0,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            102,
+            110,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            83,
+            565,
+            143
+          ],
+          "xy": [
+            134,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 1,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          229.739,
+          852.345
+        ],
+        "angle_cw": -9.539,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            495,
+            1949,
+            856
+          ],
+          "xy": [
+            211,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            2,
+            1013,
+            69
+          ],
+          "xy": [
+            148,
+            824
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            83,
+            483,
+            143
+          ],
+          "xy": [
+            139,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 2,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          242.49,
+          848.106
+        ],
+        "angle_cw": -13.887,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            495,
+            1610,
+            850
+          ],
+          "xy": [
+            221,
+            545
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            2,
+            897,
+            75
+          ],
+          "xy": [
+            164,
+            819
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            83,
+            399,
+            143
+          ],
+          "xy": [
+            154,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 3,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          262.304,
+          841.77
+        ],
+        "angle_cw": -20.643,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            495,
+            1269,
+            840
+          ],
+          "xy": [
+            235,
+            543
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            2,
+            779,
+            82
+          ],
+          "xy": [
+            190,
+            812
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            83,
+            313,
+            143
+          ],
+          "xy": [
+            178,
+            827
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 4,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          288.004,
+          834.44
+        ],
+        "angle_cw": -29.406,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            495,
+            925,
+            828
+          ],
+          "xy": [
+            253,
+            540
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            2,
+            657,
+            89
+          ],
+          "xy": [
+            224,
+            805
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            83,
+            225,
+            143
+          ],
+          "xy": [
+            210,
+            825
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 5,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          318.411,
+          827.847
+        ],
+        "angle_cw": -39.775,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            495,
+            578,
+            815
+          ],
+          "xy": [
+            274,
+            537
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            2,
+            537,
+            96
+          ],
+          "xy": [
+            261,
+            799
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            83,
+            134,
+            144
+          ],
+          "xy": [
+            250,
+            822
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 6,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          352.35,
+          824.196
+        ],
+        "angle_cw": -51.348,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            495,
+            228,
+            804
+          ],
+          "xy": [
+            297,
+            534
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            2,
+            414,
+            98
+          ],
+          "xy": [
+            303,
+            797
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            83,
+            45,
+            145
+          ],
+          "xy": [
+            295,
+            823
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 7,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          388.643,
+          825.701
+        ],
+        "angle_cw": -63.723,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2658,
+            2,
+            2863,
+            309
+          ],
+          "xy": [
+            322,
+            532
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            2,
+            290,
+            98
+          ],
+          "xy": [
+            348,
+            801
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            2,
+            690,
+            66
+          ],
+          "xy": [
+            345,
+            828
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 8,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          426.113,
+          833.928
+        ],
+        "angle_cw": -76.5,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2326,
+            2,
+            2508,
+            320
+          ],
+          "xy": [
+            348,
+            530
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            2,
+            165,
+            93
+          ],
+          "xy": [
+            394,
+            812
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            2,
+            609,
+            63
+          ],
+          "xy": [
+            394,
+            841
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 9,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          463.583,
+          849.23
+        ],
+        "angle_cw": -89.277,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            2,
+            2155,
+            340
+          ],
+          "xy": [
+            376,
+            528
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            2,
+            48,
+            83
+          ],
+          "xy": [
+            440,
+            832
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            2,
+            530,
+            60
+          ],
+          "xy": [
+            440,
+            858
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 10,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          499.876,
+          870.515
+        ],
+        "angle_cw": -101.652,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1662,
+            2,
+            1799,
+            367
+          ],
+          "xy": [
+            406,
+            527
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            2,
+            452,
+            79
+          ],
+          "xy": [
+            482,
+            854
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 11,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          533.815,
+          895.477
+        ],
+        "angle_cw": -113.225,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1330,
+            2,
+            1463,
+            396
+          ],
+          "xy": [
+            430,
+            527
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            2,
+            368,
+            65
+          ],
+          "xy": [
+            519,
+            883
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 12,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          564.223,
+          921.164
+        ],
+        "angle_cw": -123.594,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            998,
+            2,
+            1159,
+            427
+          ],
+          "xy": [
+            429,
+            526
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            2,
+            286,
+            51
+          ],
+          "xy": [
+            551,
+            912
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 13,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          589.922,
+          944.631
+        ],
+        "angle_cw": -132.357,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            666,
+            2,
+            850,
+            453
+          ],
+          "xy": [
+            428,
+            526
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            2,
+            205,
+            51
+          ],
+          "xy": [
+            578,
+            930
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 14,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          609.736,
+          963.41
+        ],
+        "angle_cw": -139.113,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            334,
+            2,
+            534,
+            473
+          ],
+          "xy": [
+            428,
+            526
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            2,
+            126,
+            50
+          ],
+          "xy": [
+            599,
+            945
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 15,
+        "prop_frame": 101,
+        "original_rest": false,
+        "wrist_px": [
+          622.488,
+          975.656
+        ],
+        "angle_cw": -143.461,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            2,
+            2,
+            215,
+            487
+          ],
+          "xy": [
+            427,
+            525
+          ]
+        },
+        "far": null,
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            2,
+            44,
+            50
+          ],
+          "xy": [
+            613,
+            957
+          ]
+        }
+      },
+      {
+        "stage": "return",
+        "local_frame": 16,
+        "prop_frame": 101,
+        "original_rest": true,
+        "wrist_px": [
+          627.0,
+          980.0
+        ],
+        "angle_cw": -145.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": null,
+        "far": null,
+        "near": null
+      }
+    ],
+    "turn_to_pen": [
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 0,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          211.0,
+          989.0
+        ],
+        "angle_cw": 0.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1662,
+            1974,
+            1960,
+            2463
+          ],
+          "xy": [
+            174,
+            545
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            1002,
+            425,
+            1035
+          ],
+          "xy": [
+            152,
+            986
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            893,
+            76,
+            942
+          ],
+          "xy": [
+            140,
+            952
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 1,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          211.207,
+          986.114
+        ],
+        "angle_cw": -0.117,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1994,
+            1974,
+            2292,
+            2460
+          ],
+          "xy": [
+            175,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            1002,
+            536,
+            1033
+          ],
+          "xy": [
+            153,
+            984
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            893,
+            155,
+            939
+          ],
+          "xy": [
+            141,
+            951
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 2,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          211.788,
+          978.051
+        ],
+        "angle_cw": -0.443,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2326,
+            1974,
+            2626,
+            2454
+          ],
+          "xy": [
+            177,
+            546
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            1002,
+            650,
+            1034
+          ],
+          "xy": [
+            153,
+            975
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            893,
+            238,
+            939
+          ],
+          "xy": [
+            140,
+            943
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 3,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          212.68,
+          965.793
+        ],
+        "angle_cw": -0.945,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2658,
+            1974,
+            2961,
+            2443
+          ],
+          "xy": [
+            181,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            1002,
+            763,
+            1035
+          ],
+          "xy": [
+            154,
+            962
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            893,
+            313,
+            935
+          ],
+          "xy": [
+            141,
+            931
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 4,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          213.82,
+          950.541
+        ],
+        "angle_cw": -1.586,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2,
+            2467,
+            307,
+            2922
+          ],
+          "xy": [
+            186,
+            548
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            1002,
+            874,
+            1035
+          ],
+          "xy": [
+            154,
+            945
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            893,
+            391,
+            933
+          ],
+          "xy": [
+            141,
+            917
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 5,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          215.148,
+          933.737
+        ],
+        "angle_cw": -2.332,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            334,
+            2467,
+            640,
+            2907
+          ],
+          "xy": [
+            190,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            906,
+            1002,
+            985,
+            1036
+          ],
+          "xy": [
+            154,
+            926
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            407,
+            893,
+            470,
+            931
+          ],
+          "xy": [
+            141,
+            902
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 6,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          216.599,
+          916.917
+        ],
+        "angle_cw": -3.149,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            666,
+            2467,
+            969,
+            2891
+          ],
+          "xy": [
+            193,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            1102,
+            79,
+            1139
+          ],
+          "xy": [
+            153,
+            907
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            893,
+            550,
+            931
+          ],
+          "xy": [
+            140,
+            887
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 7,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          218.113,
+          901.428
+        ],
+        "angle_cw": -4.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            998,
+            2467,
+            1298,
+            2877
+          ],
+          "xy": [
+            196,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            115,
+            1102,
+            196,
+            1142
+          ],
+          "xy": [
+            152,
+            889
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            569,
+            893,
+            633,
+            933
+          ],
+          "xy": [
+            138,
+            873
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 8,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          219.627,
+          888.154
+        ],
+        "angle_cw": -4.851,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1330,
+            2467,
+            1627,
+            2864
+          ],
+          "xy": [
+            199,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            228,
+            1102,
+            314,
+            1147
+          ],
+          "xy": [
+            151,
+            873
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            650,
+            893,
+            717,
+            940
+          ],
+          "xy": [
+            137,
+            860
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 9,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          221.079,
+          877.394
+        ],
+        "angle_cw": -5.668,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1662,
+            2467,
+            1957,
+            2854
+          ],
+          "xy": [
+            201,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            341,
+            1102,
+            435,
+            1151
+          ],
+          "xy": [
+            147,
+            860
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            2,
+            974,
+            70,
+            1024
+          ],
+          "xy": [
+            137,
+            851
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 10,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          222.406,
+          868.982
+        ],
+        "angle_cw": -6.414,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            1994,
+            2467,
+            2286,
+            2846
+          ],
+          "xy": [
+            204,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            454,
+            1102,
+            554,
+            1155
+          ],
+          "xy": [
+            145,
+            849
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            83,
+            974,
+            153,
+            1025
+          ],
+          "xy": [
+            136,
+            844
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 11,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          223.547,
+          862.564
+        ],
+        "angle_cw": -7.055,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2326,
+            2467,
+            2617,
+            2839
+          ],
+          "xy": [
+            206,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            567,
+            1102,
+            669,
+            1158
+          ],
+          "xy": [
+            144,
+            840
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            164,
+            974,
+            235,
+            1028
+          ],
+          "xy": [
+            136,
+            838
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 12,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          224.439,
+          857.88
+        ],
+        "angle_cw": -7.557,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 1,
+          "rect": [
+            2658,
+            2467,
+            2948,
+            2835
+          ],
+          "xy": [
+            207,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            680,
+            1102,
+            784,
+            1161
+          ],
+          "xy": [
+            143,
+            833
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            245,
+            974,
+            317,
+            1029
+          ],
+          "xy": [
+            136,
+            834
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 13,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          225.019,
+          854.911
+        ],
+        "angle_cw": -7.883,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 2,
+          "rect": [
+            2,
+            2,
+            291,
+            367
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            793,
+            1102,
+            897,
+            1161
+          ],
+          "xy": [
+            144,
+            830
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            326,
+            974,
+            398,
+            1028
+          ],
+          "xy": [
+            137,
+            832
+          ]
+        }
+      },
+      {
+        "stage": "turn_to_pen",
+        "local_frame": 14,
+        "prop_frame": 0,
+        "original_rest": false,
+        "wrist_px": [
+          225.227,
+          853.856
+        ],
+        "angle_cw": -8.0,
+        "grip_level": 0,
+        "grip_actor_px": null,
+        "tip_actor_px": null,
+        "paper_contact": false,
+        "stroke": null,
+        "sleeve": {
+          "image": 0,
+          "rect": [
+            1994,
+            495,
+            2283,
+            859
+          ],
+          "xy": [
+            208,
+            547
+          ]
+        },
+        "far": {
+          "image": 0,
+          "rect": [
+            2,
+            102,
+            110,
+            167
+          ],
+          "xy": [
+            142,
+            826
+          ]
+        },
+        "near": {
+          "image": 0,
+          "rect": [
+            488,
+            83,
+            565,
+            143
+          ],
+          "xy": [
+            134,
+            828
+          ]
+        }
+      }
+    ]
+  },
+  "composite": "Start with the standing d1/p1 sprite, apply accepted left-hand erase. When original_rest=false also apply the turn rest_patch (destination-out erase, then restore). Draw accepted support back, current book with persistent ink, accepted support front, far working fingers, one loose pen, the loop lip when engaged, near working fingers, and the sleeve across the wrist. An original_rest frame uses the original right arm only. Do not draw a loose pen when stowed=true.",
+  "direct_transition": "After turn/turn.json stages.turn[-1] choose turn_to_pen[1:] then write then return. The hand does not drop to its side between those activities. After standalone return, the small new inscription remains on the stowed page.",
+  "art_revision": {
+    "id": "wrist-elbow-contact-390",
+    "scope": "Existing 24fps 102-frame actor/pen clip. Fixed support hand is reused. Only the active sleeve deformation, finger placements/angle, loose-pen nib and per-frame free lift/pitch are revised.",
+    "geometry": "Angle and xy express the same actor-space hand as the previous schema. elbow_guide_actor_px is a check point halfway along the deformed shoulder-to-wrist sleeve curve, not a new runtime interpolation hook."
+  }
+}

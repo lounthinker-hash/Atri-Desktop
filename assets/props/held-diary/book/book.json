@@ -1,0 +1,977 @@
+{
+  "schema_version": 1,
+  "canvas_px": [
+    432,
+    348
+  ],
+  "display_size_px": [
+    72,
+    58
+  ],
+  "pixels_per_logical_pixel": 6,
+  "pivot_px": [
+    180,
+    276
+  ],
+  "pivot_display_px": [
+    30,
+    46
+  ],
+  "coordinate_system": "Pixel coordinates from top left. Rectangles [left,top,right,bottom). All PNG paths relative to this JSON. Anchor is a material landmark on the bottom end of the binding, no registration marks are painted.",
+  "source_archive": "bgimage.xp3",
+  "states": {
+    "closed": "closed.png",
+    "open_blank": "open-blank.png",
+    "open_sparse": "open-sparse.png",
+    "open_filled": "open-filled.png"
+  },
+  "opening_frames": [
+    "closed.png",
+    "angle-014.png",
+    "angle-032.png",
+    "angle-052.png",
+    "angle-070.png",
+    "angle-083.png",
+    "angle-097.png",
+    "angle-111.png",
+    "angle-132.png",
+    "angle-153.png",
+    "angle-169.png",
+    "open-blank.png"
+  ],
+  "closing_frames": [
+    "open-blank.png",
+    "angle-169.png",
+    "angle-153.png",
+    "angle-132.png",
+    "angle-111.png",
+    "angle-097.png",
+    "angle-083.png",
+    "angle-070.png",
+    "angle-052.png",
+    "angle-032.png",
+    "angle-014.png",
+    "closed.png"
+  ],
+  "opening_frames_by_state": {
+    "open_blank": [
+      "closed.png",
+      "angle-014.png",
+      "angle-032.png",
+      "angle-052.png",
+      "angle-070.png",
+      "angle-083.png",
+      "angle-097.png",
+      "angle-111.png",
+      "angle-132.png",
+      "angle-153.png",
+      "angle-169.png",
+      "open-blank.png"
+    ],
+    "open_sparse": [
+      "closed.png",
+      "sparse-angle-014.png",
+      "sparse-angle-032.png",
+      "sparse-angle-052.png",
+      "sparse-angle-070.png",
+      "sparse-angle-083.png",
+      "sparse-angle-097.png",
+      "sparse-angle-111.png",
+      "sparse-angle-132.png",
+      "sparse-angle-153.png",
+      "sparse-angle-169.png",
+      "open-sparse.png"
+    ],
+    "open_filled": [
+      "closed.png",
+      "filled-angle-014.png",
+      "filled-angle-032.png",
+      "filled-angle-052.png",
+      "filled-angle-070.png",
+      "filled-angle-083.png",
+      "filled-angle-097.png",
+      "filled-angle-111.png",
+      "filled-angle-132.png",
+      "filled-angle-153.png",
+      "filled-angle-169.png",
+      "open-filled.png"
+    ]
+  },
+  "closing_frames_by_state": {
+    "open_blank": [
+      "open-blank.png",
+      "angle-169.png",
+      "angle-153.png",
+      "angle-132.png",
+      "angle-111.png",
+      "angle-097.png",
+      "angle-083.png",
+      "angle-070.png",
+      "angle-052.png",
+      "angle-032.png",
+      "angle-014.png",
+      "closed.png"
+    ],
+    "open_sparse": [
+      "open-sparse.png",
+      "sparse-angle-169.png",
+      "sparse-angle-153.png",
+      "sparse-angle-132.png",
+      "sparse-angle-111.png",
+      "sparse-angle-097.png",
+      "sparse-angle-083.png",
+      "sparse-angle-070.png",
+      "sparse-angle-052.png",
+      "sparse-angle-032.png",
+      "sparse-angle-014.png",
+      "closed.png"
+    ],
+    "open_filled": [
+      "open-filled.png",
+      "filled-angle-169.png",
+      "filled-angle-153.png",
+      "filled-angle-132.png",
+      "filled-angle-111.png",
+      "filled-angle-097.png",
+      "filled-angle-083.png",
+      "filled-angle-070.png",
+      "filled-angle-052.png",
+      "filled-angle-032.png",
+      "filled-angle-014.png",
+      "closed.png"
+    ]
+  },
+  "source_materials": {
+    "closed": {
+      "file": "../../diary-closed.png",
+      "archive_entry": "item/item039a.png",
+      "source_png_adler32": "32ebe0cb",
+      "input_sha256": "fa388123b49de42a49720514354d7fa2559aeb26785bac456ebbb8b162af113e",
+      "input_size_px": [
+        288,
+        229
+      ],
+      "spine_bottom_in_input_px": [
+        67,
+        175
+      ],
+      "spine_top_in_input_px": [
+        132,
+        3
+      ],
+      "original_canvas_px": [
+        1280,
+        1392
+      ],
+      "original_alpha_bbox_px": [
+        30,
+        313,
+        1280,
+        1305
+      ],
+      "spine_bottom_estimate_on_archive_canvas_px": [
+        322,
+        1073
+      ],
+      "output_translation_px": [
+        113,
+        101
+      ]
+    },
+    "open_blank": {
+      "file": "../../diary-open-blank.png",
+      "archive_entry": "item/item039b.png",
+      "source_png_adler32": "c6677be2",
+      "input_sha256": "7d9bc51be77d44f97ed098783ef3208a43b63e2e2fd68c98f64d65eee46405f7",
+      "input_size_px": [
+        360,
+        285
+      ],
+      "spine_bottom_in_input_px": [
+        159,
+        246
+      ],
+      "spine_top_in_input_px": [
+        168,
+        65
+      ],
+      "original_canvas_px": [
+        1280,
+        960
+      ],
+      "original_alpha_bbox_px": [
+        160,
+        93,
+        1143,
+        872
+      ],
+      "spine_bottom_estimate_on_archive_canvas_px": [
+        595,
+        766
+      ],
+      "output_translation_px": [
+        21,
+        30
+      ]
+    },
+    "open_sparse": {
+      "file": "../../diary-open-sparse.png",
+      "archive_entry": "item/item039c.png",
+      "source_png_adler32": "be283be1",
+      "input_sha256": "cfb9496f3c112811d5f94a13da1e31a4c2abdffa34d4adf78647505581f04bbe",
+      "input_size_px": [
+        360,
+        285
+      ],
+      "spine_bottom_in_input_px": [
+        159,
+        246
+      ],
+      "spine_top_in_input_px": [
+        168,
+        65
+      ],
+      "original_canvas_px": [
+        4032,
+        3024
+      ],
+      "original_alpha_bbox_px": [
+        506,
+        296,
+        3600,
+        2745
+      ],
+      "spine_bottom_estimate_on_archive_canvas_px": [
+        1876,
+        2414
+      ],
+      "output_translation_px": [
+        21,
+        30
+      ]
+    },
+    "open_filled": {
+      "file": "../../diary-open-filled.png",
+      "archive_entry": "item/item039d.png",
+      "source_png_adler32": "5a6268e0",
+      "input_sha256": "b60769b8142247e613376837be1a1109e64a09ebddeb07bfbbd2e6898ac4c15b",
+      "input_size_px": [
+        360,
+        285
+      ],
+      "spine_bottom_in_input_px": [
+        159,
+        246
+      ],
+      "spine_top_in_input_px": [
+        168,
+        65
+      ],
+      "original_canvas_px": [
+        4032,
+        3024
+      ],
+      "original_alpha_bbox_px": [
+        506,
+        296,
+        3600,
+        2745
+      ],
+      "spine_bottom_estimate_on_archive_canvas_px": [
+        1876,
+        2414
+      ],
+      "output_translation_px": [
+        21,
+        30
+      ]
+    }
+  },
+  "pen_attachment": "The same original pen remains in its loop on the right board in all art, including the written views. No hand-held writing pen is depicted.",
+  "method": "Endpoint states retain source PNG samples by integer translation. In-between poses are derived geometric composites, not original action drawings. A masked leather cover and inside left page block rotate about their shared spine. The right page block and its single original pen follow the stable rear board. No two complete notebooks are blended. Intermediate angles are art-direction angles, not measured 3D orientations. The default loop uses blank leaves. State-specific lists keep the selected handwriting on the paper until the closing cover hides it. Use closing_frames_by_state.open_filled after writing.",
+  "intermediates": [
+    {
+      "file": "angle-014.png",
+      "angle_deg": 14,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        244.0,
+        103.8
+      ],
+      "outer_lower_corner_px": [
+        317.4,
+        313.3
+      ],
+      "visible_turning_surface": "front_cover"
+    },
+    {
+      "file": "angle-032.png",
+      "angle_deg": 32,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        240.3,
+        103.2
+      ],
+      "outer_lower_corner_px": [
+        306.1,
+        290.6
+      ],
+      "visible_turning_surface": "front_cover"
+    },
+    {
+      "file": "angle-052.png",
+      "angle_deg": 52,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        233.7,
+        102.2
+      ],
+      "outer_lower_corner_px": [
+        278.1,
+        263.4
+      ],
+      "visible_turning_surface": "front_cover"
+    },
+    {
+      "file": "angle-070.png",
+      "angle_deg": 70,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        226.2,
+        101.0
+      ],
+      "outer_lower_corner_px": [
+        240.8,
+        242.2
+      ],
+      "visible_turning_surface": "front_cover"
+    },
+    {
+      "file": "angle-083.png",
+      "angle_deg": 83,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        220.3,
+        100.0
+      ],
+      "outer_lower_corner_px": [
+        208.7,
+        231.1
+      ],
+      "visible_turning_surface": "front_cover"
+    },
+    {
+      "file": "angle-097.png",
+      "angle_deg": 97,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        213.7,
+        99.0
+      ],
+      "outer_lower_corner_px": [
+        170.7,
+        225.0
+      ],
+      "visible_turning_surface": "inside_left_pages"
+    },
+    {
+      "file": "angle-111.png",
+      "angle_deg": 111,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        207.4,
+        98.0
+      ],
+      "outer_lower_corner_px": [
+        132.0,
+        224.7
+      ],
+      "visible_turning_surface": "inside_left_pages"
+    },
+    {
+      "file": "angle-132.png",
+      "angle_deg": 132,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        198.8,
+        96.6
+      ],
+      "outer_lower_corner_px": [
+        79.7,
+        232.9
+      ],
+      "visible_turning_surface": "inside_left_pages"
+    },
+    {
+      "file": "angle-153.png",
+      "angle_deg": 153,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        192.4,
+        95.5
+      ],
+      "outer_lower_corner_px": [
+        41.5,
+        248.8
+      ],
+      "visible_turning_surface": "inside_left_pages"
+    },
+    {
+      "file": "angle-169.png",
+      "angle_deg": 169,
+      "pivot_px": [
+        180,
+        276
+      ],
+      "upper_spine_px": [
+        189.6,
+        95.1
+      ],
+      "outer_lower_corner_px": [
+        25.5,
+        263.2
+      ],
+      "visible_turning_surface": "inside_left_pages"
+    }
+  ],
+  "file_checks": {
+    "closed.png": {
+      "alpha_bbox_px": [
+        113,
+        101,
+        401,
+        330
+      ],
+      "sha256": "680f601681b2cb774578dbb7d3e7b13a508a4a2339df55708ef41aaaddb507fb",
+      "pivot_sample_rgba": [
+        114,
+        96,
+        73,
+        253
+      ]
+    },
+    "open-blank.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "f45e11cb99cbdcca9768ff53d774d2f0913b78f749ae777c47aa3aa3c919b9e4",
+      "pivot_sample_rgba": [
+        72,
+        57,
+        49,
+        255
+      ]
+    },
+    "open-sparse.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "b035e43ffed14e46a766e6448b3c4541dc08a337004b7782d610ef4959f39ccc",
+      "pivot_sample_rgba": [
+        73,
+        58,
+        50,
+        255
+      ]
+    },
+    "open-filled.png": {
+      "alpha_bbox_px": [
+        21,
+        30,
+        381,
+        315
+      ],
+      "sha256": "fa7f5df56838abb336fa3332f1275c336afce150c719a5c5d1fa791dfacee1a2",
+      "pivot_sample_rgba": [
+        73,
+        58,
+        50,
+        255
+      ]
+    },
+    "angle-014.png": {
+      "alpha_bbox_px": [
+        111,
+        80,
+        384,
+        322
+      ],
+      "sha256": "c0d5394d19f6e148a2e1110eeb43e929a02c42c1cc52ed112961135d0f14a048",
+      "pivot_sample_rgba": [
+        111,
+        93,
+        71,
+        255
+      ]
+    },
+    "sparse-angle-014.png": {
+      "alpha_bbox_px": [
+        111,
+        80,
+        391,
+        322
+      ],
+      "sha256": "1f1bb47f9226ba44182b590855acba051ccd77b28b1a2e783649739517130bec",
+      "pivot_sample_rgba": [
+        112,
+        94,
+        72,
+        255
+      ]
+    },
+    "filled-angle-014.png": {
+      "alpha_bbox_px": [
+        111,
+        80,
+        391,
+        322
+      ],
+      "sha256": "f376e8eff735d479237c5f005a4d352d4c3885fb658cdc45f332571590b92a02",
+      "pivot_sample_rgba": [
+        112,
+        94,
+        72,
+        255
+      ]
+    },
+    "angle-032.png": {
+      "alpha_bbox_px": [
+        111,
+        78,
+        383,
+        320
+      ],
+      "sha256": "52be8ff1ddf8b3a2ae75f92d955aab4b5da4ddd5b9f95a5ebbdc522745773154",
+      "pivot_sample_rgba": [
+        109,
+        91,
+        70,
+        255
+      ]
+    },
+    "sparse-angle-032.png": {
+      "alpha_bbox_px": [
+        111,
+        78,
+        389,
+        320
+      ],
+      "sha256": "fa1dafa87acc760d43e529c5468a8c51fece55eefa07731d15b1bdcd1f35477f",
+      "pivot_sample_rgba": [
+        109,
+        91,
+        70,
+        255
+      ]
+    },
+    "filled-angle-032.png": {
+      "alpha_bbox_px": [
+        111,
+        78,
+        389,
+        320
+      ],
+      "sha256": "fa1dafa87acc760d43e529c5468a8c51fece55eefa07731d15b1bdcd1f35477f",
+      "pivot_sample_rgba": [
+        109,
+        91,
+        70,
+        255
+      ]
+    },
+    "angle-052.png": {
+      "alpha_bbox_px": [
+        110,
+        67,
+        380,
+        314
+      ],
+      "sha256": "3584ed3b082314ab5164b3b6ef00e2a65e341cf5bb030b533c6938420c310ce1",
+      "pivot_sample_rgba": [
+        105,
+        86,
+        68,
+        255
+      ]
+    },
+    "sparse-angle-052.png": {
+      "alpha_bbox_px": [
+        110,
+        67,
+        385,
+        315
+      ],
+      "sha256": "69f660a84c490280c3ff50cc390ec0956397446334aed458ec6288a53497eaa0",
+      "pivot_sample_rgba": [
+        105,
+        87,
+        69,
+        255
+      ]
+    },
+    "filled-angle-052.png": {
+      "alpha_bbox_px": [
+        110,
+        67,
+        385,
+        315
+      ],
+      "sha256": "80602e46ea92bbbb35b00095d54a884a8c0cd6de57541c53798980779a0a8f0c",
+      "pivot_sample_rgba": [
+        105,
+        87,
+        69,
+        255
+      ]
+    },
+    "angle-070.png": {
+      "alpha_bbox_px": [
+        109,
+        47,
+        377,
+        311
+      ],
+      "sha256": "9f75f00effe7d4f434796128ff2af798bd4783c4c32349ff983ccca154b7aa00",
+      "pivot_sample_rgba": [
+        87,
+        69,
+        60,
+        255
+      ]
+    },
+    "sparse-angle-070.png": {
+      "alpha_bbox_px": [
+        109,
+        47,
+        381,
+        311
+      ],
+      "sha256": "7e8809622794dc01c395f3a0f60facd074904ca1f39ad7f7eb30b286e4be7fdf",
+      "pivot_sample_rgba": [
+        88,
+        71,
+        61,
+        255
+      ]
+    },
+    "filled-angle-070.png": {
+      "alpha_bbox_px": [
+        109,
+        47,
+        381,
+        311
+      ],
+      "sha256": "169879a1817421d89c3628c443f6355f5ca7bdaaa687db7180441b609792372c",
+      "pivot_sample_rgba": [
+        88,
+        71,
+        61,
+        255
+      ]
+    },
+    "angle-083.png": {
+      "alpha_bbox_px": [
+        108,
+        36,
+        375,
+        307
+      ],
+      "sha256": "d1eed2d681e48742a945075c6c6993197e716b740bdc6774894d28fe18500eb2",
+      "pivot_sample_rgba": [
+        83,
+        66,
+        58,
+        255
+      ]
+    },
+    "sparse-angle-083.png": {
+      "alpha_bbox_px": [
+        108,
+        36,
+        377,
+        307
+      ],
+      "sha256": "87ff2ba342f0f9875a1ecd7d475d72dde83f2b20c2233aa0859e8d39fab9bb7d",
+      "pivot_sample_rgba": [
+        85,
+        68,
+        60,
+        255
+      ]
+    },
+    "filled-angle-083.png": {
+      "alpha_bbox_px": [
+        108,
+        36,
+        377,
+        307
+      ],
+      "sha256": "df8b1b13d02fb99be37fe7d1ecf0b04adf2d21b868043e659cc95c86d82bc81d",
+      "pivot_sample_rgba": [
+        85,
+        68,
+        60,
+        255
+      ]
+    },
+    "angle-097.png": {
+      "alpha_bbox_px": [
+        98,
+        6,
+        374,
+        303
+      ],
+      "sha256": "d1459e369b537ac2bc1c7c0a6eec6d6b893828bd903b6715714b34edcc4a932c",
+      "pivot_sample_rgba": [
+        82,
+        65,
+        56,
+        255
+      ]
+    },
+    "sparse-angle-097.png": {
+      "alpha_bbox_px": [
+        98,
+        6,
+        374,
+        303
+      ],
+      "sha256": "eedf22768eb526c0fce6009f7f51d25c2317a54bd4794679423729b099cab0ed",
+      "pivot_sample_rgba": [
+        83,
+        67,
+        58,
+        255
+      ]
+    },
+    "filled-angle-097.png": {
+      "alpha_bbox_px": [
+        98,
+        6,
+        374,
+        303
+      ],
+      "sha256": "c5d45b61452de42d5ebedf2af209722b093bffa01a4855ef654352528eed0699",
+      "pivot_sample_rgba": [
+        83,
+        67,
+        58,
+        255
+      ]
+    },
+    "angle-111.png": {
+      "alpha_bbox_px": [
+        79,
+        4,
+        375,
+        299
+      ],
+      "sha256": "ee160aeda6b6696910c2b41af095f4a0578bba25a9b1774c61cb6bd6cd7cf76e",
+      "pivot_sample_rgba": [
+        111,
+        94,
+        86,
+        255
+      ]
+    },
+    "sparse-angle-111.png": {
+      "alpha_bbox_px": [
+        79,
+        4,
+        375,
+        299
+      ],
+      "sha256": "d02be784a5d5ccfe94744b3625805a9fe38410b545ed7cc09566f2fc36e4dbd3",
+      "pivot_sample_rgba": [
+        117,
+        100,
+        92,
+        255
+      ]
+    },
+    "filled-angle-111.png": {
+      "alpha_bbox_px": [
+        79,
+        4,
+        375,
+        299
+      ],
+      "sha256": "2e173bd50719a6936fb481798eba9d670c9d3ed5f95559fa089b97c5db7ee3dd",
+      "pivot_sample_rgba": [
+        117,
+        100,
+        92,
+        255
+      ]
+    },
+    "angle-132.png": {
+      "alpha_bbox_px": [
+        55,
+        7,
+        377,
+        301
+      ],
+      "sha256": "4f1a3ea8d4b96d2ec5d37019dc2ea6e303b11bec5c2dc0bf7235f657802c2c2c",
+      "pivot_sample_rgba": [
+        91,
+        74,
+        64,
+        255
+      ]
+    },
+    "sparse-angle-132.png": {
+      "alpha_bbox_px": [
+        55,
+        7,
+        377,
+        301
+      ],
+      "sha256": "212a38f2e2d5bfc2594446bd4d4525a39dd719f6a74f9fec9cd43543867535f4",
+      "pivot_sample_rgba": [
+        93,
+        76,
+        66,
+        255
+      ]
+    },
+    "filled-angle-132.png": {
+      "alpha_bbox_px": [
+        55,
+        7,
+        377,
+        301
+      ],
+      "sha256": "16440fdf06a153fc687ec4ec89e5b808d703880940053161a1d7a6022a079505",
+      "pivot_sample_rgba": [
+        93,
+        76,
+        66,
+        255
+      ]
+    },
+    "angle-153.png": {
+      "alpha_bbox_px": [
+        37,
+        16,
+        379,
+        307
+      ],
+      "sha256": "0914d5efae3c739be121eb5c69f1a0f1874886e53655a7b1562b49de4f509909",
+      "pivot_sample_rgba": [
+        75,
+        59,
+        51,
+        255
+      ]
+    },
+    "sparse-angle-153.png": {
+      "alpha_bbox_px": [
+        37,
+        16,
+        379,
+        307
+      ],
+      "sha256": "d973044ed033e249a0706377b686e62571755c85b0886d1eb470cb4351a68e72",
+      "pivot_sample_rgba": [
+        76,
+        61,
+        53,
+        255
+      ]
+    },
+    "filled-angle-153.png": {
+      "alpha_bbox_px": [
+        37,
+        16,
+        379,
+        307
+      ],
+      "sha256": "ff485250ab4b1e1a956266967ce2616e659e761906c8456d2135555ff2726804",
+      "pivot_sample_rgba": [
+        76,
+        61,
+        53,
+        255
+      ]
+    },
+    "angle-169.png": {
+      "alpha_bbox_px": [
+        25,
+        24,
+        381,
+        310
+      ],
+      "sha256": "b1df10714f1c82f682c10d39183f421383d5bdcc77f07709a1ea39528d23c167",
+      "pivot_sample_rgba": [
+        72,
+        57,
+        49,
+        255
+      ]
+    },
+    "sparse-angle-169.png": {
+      "alpha_bbox_px": [
+        25,
+        24,
+        381,
+        310
+      ],
+      "sha256": "d2c0005d5c0e508fb693aa8ce7d28ac0a33f47f559459ff6945e3ec1e30e1213",
+      "pivot_sample_rgba": [
+        73,
+        58,
+        50,
+        255
+      ]
+    },
+    "filled-angle-169.png": {
+      "alpha_bbox_px": [
+        25,
+        24,
+        381,
+        310
+      ],
+      "sha256": "1c7873e437bf10566c6f7b0fbaeb736bb61f516c48f3551f31f32ff9b5a48586",
+      "pivot_sample_rgba": [
+        73,
+        58,
+        50,
+        255
+      ]
+    }
+  },
+  "source_archive_path": "bgimage.xp3"
+}

@@ -1,0 +1,265 @@
+{
+  "sourceGame": "ATRI -My Dear Moments-",
+  "copyright": "© Aniplex Inc. All rights reserved.",
+  "terms": "https://aniplex-exe.com/guidelines/",
+  "assets": {
+    "submarine": {
+      "id": "submarine",
+      "file": "submarine.png",
+      "archive": "bgimage.xp3",
+      "sourcePath": "item/item011a.png",
+      "sourceAdler32": "c81273e5",
+      "sourceSha256": "3eb6e94d4971ee4931c2f25a43b54928855a019d54288537fab19a6353b6f800",
+      "sourceCanvas": [
+        2000,
+        1000
+      ],
+      "sourceCropXYXY": [
+        312,
+        56,
+        1633,
+        976
+      ],
+      "cutout": {
+        "method": "从水下背景中手工贴合艇身、上方栏杆、下方支架和灯头轮廓；细小远端工作臂与光晕未纳入贴纸。",
+        "maskViewBox": [
+          0,
+          0,
+          700,
+          350
+        ],
+        "maskPaths": [
+          "M111 111 Q108 97 116 85 L125 71 141 66 137 60 155 30 177 31 193 37 195 66 Q207 62 234 60 L235 37 Q235 23 249 23 L278 23 Q281 19 299 20 L307 22 308 28 Q335 31 348 41 Q355 45 356 52 L355 89 386 97 387 74 Q392 66 413 67 L410 63 397 64 402 60 398 58 405 56 400 52 410 54 413 50 417 55 421 50 426 55 431 51 436 55 437 52 442 61 439 66 432 70 Q449 73 447 83 L447 106 Q461 113 475 129 L504 157 519 169 525 184 Q528 204 515 222 L499 242 486 252 476 262 463 271 Q446 281 428 280 L380 279 344 270 299 262 280 252 288 218 198 197 179 192 163 205 137 197 158 181 159 164 Q122 164 115 152 Q106 138 111 111 Z",
+          "M357 82 Q420 89 484 105 L553 125 Q563 128 564 135 M447 105 L541 145 Q552 151 557 145 M448 154 L479 120 Q499 93 509 100 Q515 104 515 114 M524 184 L546 167 Q563 151 564 146 M461 185 L535 185 Q547 182 556 172 L569 152",
+          "M156 198 Q162 242 190 267 Q198 275 224 281 Q265 299 330 316 L347 323 Q389 342 405 339 Q417 338 430 326 M229 199 L237 279 M290 217 L248 282 M346 232 L356 313 M415 250 L369 316 M460 227 L451 285 Q447 305 436 317",
+          "M416 324 L425 328 454 338 461 333 459 325 432 318 Z M508 220 L543 225 545 235 537 239 509 232 Z M493 241 L503 244 499 253 486 262 474 261 Z"
+        ]
+      },
+      "sha256": "d451d0eb275ee608693dbe083264409bab8896eee69e999e3798eec0c3c49991",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        26,
+        156,
+        133
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    },
+    "photo_album": {
+      "id": "photo_album",
+      "file": "photo_album.png",
+      "archive": "bgimage.xp3",
+      "sourcePath": "item/item059b.png",
+      "sourceAdler32": "d3ed6f29",
+      "sourceSha256": "45744ed2c34557da527817faccecf200810e24fdc168dae3b597eab8f6aab464",
+      "sourceCanvas": [
+        1280,
+        960
+      ],
+      "sourceCropXYXY": [
+        37,
+        128,
+        1168,
+        844
+      ],
+      "cutout": {
+        "method": "沿原有透明边界裁切，保留原画。"
+      },
+      "sha256": "cdbe52fb01f88fdbff95b6ed430104ffc6186f39e343be5a62973eea5ad754e9",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        31,
+        156,
+        129
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    },
+    "steak_plate": {
+      "id": "steak_plate",
+      "file": "steak_plate.png",
+      "archive": "data.xp3",
+      "sourcePath": "image/item/item060.png",
+      "sourceAdler32": "05b8d307",
+      "sourceSha256": "e75b6239dd9ba9bc9bd44e74238ce1393dfc83419d1a5e38393c046319e2bb57",
+      "sourceCanvas": [
+        1280,
+        960
+      ],
+      "sourceCropXYXY": [
+        29,
+        66,
+        1236,
+        801
+      ],
+      "cutout": {
+        "method": "沿原有透明边界裁切，保留原画。"
+      },
+      "sha256": "415ab0371182ee003ab21689a11342e7d576b7d9c5b8ad3c1076203421b394f4",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        33,
+        156,
+        127
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    },
+    "brown_loafers": {
+      "id": "brown_loafers",
+      "file": "brown_loafers.png",
+      "archive": "bgimage.xp3",
+      "sourcePath": "item/item028.png",
+      "sourceAdler32": "26f2819e",
+      "sourceSha256": "f9a983db5e1b6a4e6f6bf93d8563fd32aa1a882a2071c76875209d9d8c59d840",
+      "sourceCanvas": [
+        500,
+        500
+      ],
+      "sourceCropXYXY": [
+        27,
+        51,
+        454,
+        477
+      ],
+      "cutout": {
+        "method": "按颜色阈值与连通轮廓分离两只鞋，保留原色、脚踝带镂空。",
+        "redChannelBelow": 214
+      },
+      "sha256": "126e46a5062e40e5286f5ea31c4532c577958424e8c0c1e4fff339c88ae38caf",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        4,
+        156,
+        156
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    },
+    "strap_sandals": {
+      "id": "strap_sandals",
+      "file": "strap_sandals.png",
+      "archive": "bgimage.xp3",
+      "sourcePath": "item/item061.png",
+      "sourceAdler32": "d9752e13",
+      "sourceSha256": "1fecbba1fffa8beba31852d9917cc7bcde5b67fddfb503b2a32e7391256631db",
+      "sourceCanvas": [
+        500,
+        500
+      ],
+      "sourceCropXYXY": [
+        28,
+        110,
+        476,
+        452
+      ],
+      "cutout": {
+        "method": "按颜色阈值与连通轮廓分离两只鞋，保留原色、脚踝带镂空。",
+        "redChannelBelow": 231
+      },
+      "sha256": "69c232b5ebe5d4e017eefb28549ed3980a5b5b07d34f2f48fc41e673b62bcaf3",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        21,
+        156,
+        138
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    },
+    "yes_pillow": {
+      "id": "yes_pillow",
+      "file": "yes_pillow.png",
+      "archive": "bgimage.xp3",
+      "sourcePath": "item/item069a.png",
+      "sourceAdler32": "e14cb78b",
+      "sourceSha256": "b9656efeb5ecbf095a58d502c8c67ad6184b6f9c8b9f37c6e7cd84a742e3b670",
+      "sourceCanvas": [
+        889,
+        500
+      ],
+      "sourceCropXYXY": [
+        152,
+        30,
+        752,
+        423
+      ],
+      "cutout": {
+        "method": "沿枕套轮廓手工裁掉原图粉色背景，保留原版印字。",
+        "maskViewBox": [
+          0,
+          0,
+          700,
+          394
+        ],
+        "maskPath": "M120 36 Q119 21 135 25 C164 30 201 28 237 31 C279 34 346 40 409 39 L503 35 Q555 32 579 34 Q593 34 591 48 Q583 75 587 101 C593 126 580 165 581 190 L577 231 Q579 239 585 246 Q595 258 590 279 L590 314 Q590 327 579 328 C542 329 529 332 482 326 C433 324 413 319 382 318 C335 320 294 316 258 321 L197 328 Q170 331 142 333 Q126 334 128 318 Q135 294 132 275 Q130 261 135 240 L138 191 Q135 179 133 161 L127 125 Q123 113 127 97 L129 83 Q123 63 120 36 Z"
+      },
+      "sha256": "d29b2b03d570d165e0b3cb9df2010be5b33d29d6b3e77ab595b775283b3017c3",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        29,
+        156,
+        130
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    },
+    "july_calendar": {
+      "id": "july_calendar",
+      "file": "july_calendar.png",
+      "archive": "bgimage.xp3",
+      "sourcePath": "item/item032a_0.png",
+      "sourceAdler32": "66fb3936",
+      "sourceSha256": "4d9b04bbd8aaccaaacaf39640deb4fb2cf370275f1007615812d11813633e709",
+      "sourceCanvas": [
+        1280,
+        720
+      ],
+      "sourceCropXYXY": [
+        477,
+        74,
+        872,
+        344
+      ],
+      "cutout": {
+        "method": "取原月历页顶部的 7 / July 月标和日期格作页边缩略，以保证小窗能看出月份。",
+        "focusCropXYXY": [
+          477,
+          74,
+          872,
+          344
+        ]
+      },
+      "sha256": "fc3518be1da640af3f9723565234eac8564729e1490fddf2bf0ff822586dd6a8",
+      "size": [
+        160,
+        160
+      ],
+      "alphaBounds": [
+        4,
+        27,
+        156,
+        132
+      ],
+      "source": "ATRI -My Dear Moments- · 游戏物品原画"
+    }
+  }
+}
