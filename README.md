@@ -23,7 +23,7 @@
 
 ## 在 Windows 桌面见到她
 
-准备 64 位 Windows 和 64 位 Python 3.11 或以上版本，在 PowerShell 运行下面的命令。
+准备 64 位 Windows 和 64 位 Python 3.11 或以上版本，在 PowerShell 运行下面的命令。也可以下载 ZIP，解压后在项目目录从创建虚拟环境那一行开始。[下载项目 ZIP](https://github.com/lounthinker-hash/Atri-Desktop/archive/refs/heads/main.zip)
 
 ~~~powershell
 git clone https://github.com/lounthinker-hash/Atri-Desktop.git
@@ -34,7 +34,7 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe desktop_atri.pyw
 ~~~
 
-右键亚托莉，选「试演身体动作」可以看她走路和收势，选「立即演示一次日常活动」可以看调度器安排她做什么。菜单里也能聊天、翻日记、切换背景、静音和退出。Windows OCR 和原生渲染组件随仓库提供，想自行编译可以按本地指南操作。[本地配置](docs/local-setup.md) · [配置日语声音](docs/voice-models.md)
+右键亚托莉，选「试演身体动作」可以看她走路和收势，选「立即演示一次日常活动」可以看调度器安排她做什么。菜单里也能聊天、翻日记、切换背景、静音和退出。Windows OCR 和原生渲染组件随仓库提供，想自行编译可以按本地指南操作。[本地配置](docs/local-setup.md) · [配置日语声音](docs/voice-models.md) · [下载离线语音模型分卷](https://github.com/lounthinker-hash/Atri-Desktop/releases/tag/voice-models-2026-11)
 
 ### 和她聊两句
 
