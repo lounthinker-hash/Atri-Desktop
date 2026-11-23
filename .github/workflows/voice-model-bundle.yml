@@ -54,7 +54,7 @@ jobs:
           rvc='tts/voice_lab/assets'
           install -m 644 "$qwen/LICENSE" "$stage/$qwen/LICENSE"
           install -m 644 tts/voice_lab/rvc/LICENSE "$stage/$rvc/LICENSE-RVC.txt"
-          install -m 644 "$qwen/LICENSE" "$stage/$rvc/hubert_base/LICENSE-APACHE-2.0.txt"
+          install -m 644 /usr/share/common-licenses/Apache-2.0 "$stage/$rvc/hubert_base/LICENSE-APACHE-2.0.txt"
           cat > "$out/MODEL-BUNDLE.txt" <<'NOTES'
           Atri Desktop voice model bundle · 2026-11
 
@@ -72,7 +72,7 @@ jobs:
 
           lj1995 / RVC-Project · VoiceConversionWebUI general models · MIT
           https://huggingface.co/lj1995/VoiceConversionWebUI/tree/e6d0c1a17da07c33557852f9dfa2bd44cc75737d
-          The RVC MIT notice credits liujing04 and 源文雨. Encoder and pretrained
+          The RVC MIT notice credits liujing04, 源文雨 and Ftps. Encoder and pretrained
           generator/discriminator files are installed in tts/voice_lab/assets/.
           HuBERT was developed by Facebook AI. The HuBERT base model card lists
           Apache License 2.0: https://huggingface.co/facebook/hubert-base-ls960
@@ -126,17 +126,22 @@ jobs:
           fi
           api="repos/$GH_REPO/releases/$release_id"
           files=(Atri-voice-models.7z.* MODEL-BUNDLE.txt SHA256SUMS)
-          gh api "$api/assets?per_page=100" > "$RUNNER_TEMP/existing-assets.json"
           for file in "${files[@]}"; do
             sha="sha256:$(sha256sum "$file" | cut -d' ' -f1)"
-            found=$(jq -r --arg n "$file" '.[] | select(.name==$n) | .digest // "unknown"' \
-              "$RUNNER_TEMP/existing-assets.json")
-            if [[ -n "$found" ]]; then
-              [[ "$found" == "$sha" ]] || { echo "::error::Draft asset differs: $file"; exit 1; }
+            gh api "$api" --jq .draft | grep -qx true
+            assets=$(gh api "$api/assets?per_page=100")
+            found=$(jq -c --arg n "$file" '.[] | select(.name==$n)' <<<"$assets")
+            if [[ -n "$found" ]] && jq -e '.state=="starter" and .size==0 and .digest==null' <<<"$found" > /dev/null; then
+              # A failed transfer can leave an empty placeholder. Only this disposable draft entry is retried.
+              gh api --method DELETE "repos/$GH_REPO/releases/assets/$(jq -r .id <<<"$found")"
+            elif [[ -n "$found" ]]; then
+              jq -e --arg sha "$sha" '.state=="uploaded" and .digest==$sha' <<<"$found" > /dev/null || {
+                echo "::error::Draft asset differs: $file"; exit 1;
+              }
               continue
             fi
             curl --fail --silent --show-error --request POST --header "Authorization: Bearer $GH_TOKEN" \
-              --header 'Content-Type: application/octet-stream' --data-binary "@$file" \
+              --header 'Content-Type: application/octet-stream' --upload-file "$file" \
               "https://uploads.github.com/repos/$GH_REPO/releases/$release_id/assets?name=$file" \
               | jq -e --arg sha "$sha" '.state == "uploaded" and .digest == $sha' > /dev/null
           done
